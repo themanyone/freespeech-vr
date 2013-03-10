@@ -16,9 +16,15 @@ Q. "I personally know quite a few graphics artists if you already have graphics 
 
 A. I'm no stranger to graphics myself, but the project is currently open to contributions...
 
-= Details =
+= Todo =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Q. "Can I contribute? What needs to be done around here?"
+
+A. There is much to be done. This is just the beginning. Here are some of the areas I will be working on over the coming months.
+
+When a user types of pastes text into the editor, I would like it to...
+  * Pop-up a list of unrecognised words
+  * Allow manual editing of the dictionary and pronunciations
+  * Automatically generate / suggest new pronunciations
+
+$$ We are in dire need of funding $$. Send [bitcoin http://bitcoin.org] to 1KjEBYUh9WJ2z8UBhhu5hX8t6XTsBUFH4G
