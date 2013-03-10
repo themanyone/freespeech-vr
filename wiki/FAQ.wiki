@@ -1,9 +1,10 @@
 #labels Featured,Phase-Requirements,Phase-QA
 #Frequently Asked Questions
 
-= Introduction =
+= Graphical Interface =
 
 Q. "I personally know quite a few graphics artists if you already have graphics in mind, I'd be happy to refer yo to them."
+
 A. I'm no stranger to graphics myself, but the project is currently open to contributions...
 
 = Details =
