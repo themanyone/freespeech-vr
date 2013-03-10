@@ -1,0 +1,197 @@
+anch.org: Anchor
+
+   Advanced Negative Compilation Heuristic Ontological Refactorer
+
+   Anchor: for  i=5;i--;  C: for (i=5;i--;){
+
+  Why Anchor?
+
+   Anchor automatically adds curly braces and semicolons to code written in
+   various programming languages, saving typing and making programs easier to
+   read. It lets programmers pretend to be coding in Python or Lua while
+   actually writing standard C, Java, PHP, C++, .NET, C#, or D. An example
+   bash script integrates with the TCC compiler to make runnable "scripts"
+   with the speed of C.
+
+  Where to get it
+
+   Anchor is hosted on Google Code. Subversion, user wiki and issue trackers
+   available.
+
+  Installation
+
+   A windows .exe is provided already. Just copy it somewhere in the
+   computer`s path. Compilation on Linux and other systems requires flex and
+   a C compiler. Download and extract the archive.
+
+ unzip anchor.zip
+ cd anchor
+
+   Run "make" from within the newly extracted directory.
+
+ make
+ su -c `make install`
+
+  Programming with Anchor
+
+   The rules are very simple. A double-space, "  " (tells anchor to enclose
+   the rest of the line in parenthesis). Indentation of 4 spaces {controls
+   the placement of curly brackets}. The remaining lines are automatically
+   terminated with semicolons; any of these rules may be circumvented by
+   placing a space at the end of the line. Conversely, if the output is not
+   what is expected there is probably extra whitespace at the end of a line
+   somewhere. Comments are ignored, but it is a good idea to put them on a
+   separate line.
+
+  Compilation
+
+   Example usage: converting example.anch to C:
+
+ anchor example.anch > example.c
+
+   Compiling the result with gcc (or any C compiler).
+
+ gcc example.c -o example.exe
+
+   If the indent style Anchor produces is undesirable for some reason, simply
+   pipe the output through one of many other source code formatters.
+
+   Removing brackets from existing code is made possible with "unanchor."
+   Install GNU indent and use use the -i or -indent option for best results.
+
+ unanchor -i example.c #see how it might look
+ unanchor -i example.c > editme.anch # create a file
+
+   see an unanchored C windows program
+
+   Anchor knows nothing about the underlying language, so it processes a
+   variety of curly bracket languages. The author uses it on C code, but it
+   will most likely work with little or no change on C++, Java, .NET, PHP,
+   Perl, awk and other types of configuration files or scripts. Programs may
+   be compiled on Linux or unix by putting "anch" in front of the existing
+   compiler or interpreter. Windows users may optionally install something
+   like MingW, cygwin, or some other unix-like bourne shell like win bash to
+   interpret the included "anch" convenience script.
+
+  GNU Makefiles
+
+   Add this rule to a GNU Makefile to make .c sources from .anch as needed.
+
+ #~ make foo.c
+ %.c : %.anch
+         anchor -q "$<" > "$@"
+
+  Optional TinyCC integration
+
+   The latest version of TinyCC may be obtained from the git repo, but we
+   recommend the unstable mob branch for the latest user-contributed patches.
+
+   With TinyCC (TCC) installed, Anchor can execute pseudocode directly from
+   the command line.
+
+ anch -run example.anch
+
+   Or put the following line
+
+ #!/usr/local/bin/anch [cflags] [libs] -run [program args]
+
+   at the top of files to make executable C scripts:
+
+ #!/usr/local/bin/anch -run test args
+ #include <stdio.h>
+ int main  int c, char **v
+     while  c--
+         printf  "Argument %i is \"%s\"\n",c,v[c]
+     return 0
+
+   Note: The #!shebang line is pretty limited and it was not intended for
+   passing arguments, so they may not work at all. For something more
+   powerful, use this:
+
+ //usr/local/bin/anch -run  "$0" "$@";exit
+    -or-
+ //usr/bin/env anch [cflags] [libs] -run  "$0" [some args] "$@" [more args];exit
+
+   By turning the executable line into a C comment, BASH will execute it, but
+   compilers will ignore it. Clever, huh? Don't forget to run chmod +x on the
+   source code to mark it executable and then it will work like any other
+   bash script. Passing arguments to a program this way is convenient for
+   testing and demonstrations, but not much else. You should write your
+   programs so they will run without arguments. Still, we like the way an IDE
+   can be set up so that pressing F5 will run our program with arguments
+   defined in the source!
+
+  Direct execution
+
+   The anch script can use TCC to execute through a pipe from stdin. For
+   example, if both xsel and TCC are installed, the above code may be
+   highlighted with the mouse and executed directly from the selection
+   buffer, with arguments (and without even saving to disk).
+
+ xsel | anch -run - arg1 arg2
+
+   Other compilers or interpreters may be invoked through pipes as well (the
+   -q option silences Anchor's advertising message):
+
+ xsel|anchor -q|gcc -Wall -g -xc -
+    -or-
+ anchor -q some_file.anch|tcc -run -
+
+  Bugs, wiki, changelog
+
+   The bugs, wiki, and changelog have moved to Google Code. Bugs may be
+   reported using the issue tracker. The latest version may be checked out
+   from svn, and the wiki may contain updates, tips, and suggestions from
+   users.
+
+  Other Source Code Formatters
+
+     * Artistic Style
+     * BCOO
+     * GNU Indent
+     * Uncrustify
+     * UniversalIndentGUI
+
+  Style Guides
+
+     * Indenting Styles
+     * Programming Style
+     * PrettyPrinting
+
+  Limitations and Copyright
+
+   No warrantee! Anchor is a learning toy for hobbies and fun; it might lack
+   the swagger of commercial projects. The algorithm is potentially lossy and
+   subject to change, so don't distribute important software that depends on
+   it (convert it to the target language first). Programming is a difficult
+   task and Anchor is not guaranteed to make it easier.
+
+   Anchor and accompanying documentation are Copyright (c) 2012 Henry Kroll
+   III. This page may be adapted and shared under the terms of the Creative
+   Commons SA license inasmuch as it agrees with the terms of the Gnu Public
+   License. Any of the above conditions can be waived by getting permission
+   from the copyright holder.
+
+   Anchor
+   CONTACT
+   AUTHOR
+   DOWNLOAD
+   LISCENSE
+   FAVORITE
+   [ PayPal - The safer, easier way to pay online! ]
+   Follow me on Twitter, YouTube Blogspot
+
+   Announce to:
+
+   BlinkList
+   del.icio.us
+   Digg it
+   Furl
+   Netvouz
+   Shadows
+   Spurl
+   Yahoo MyWeb
+   Google
+   DZone
+   StumbleUpon
+   Create Social Bookmark Links
