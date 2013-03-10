@@ -1,0 +1,14 @@
+#labels Featured,Phase-Requirements,Phase-QA
+#Frequently Asked Questions
+
+= Introduction =
+
+Q. "I personally know quite a few graphics artists if you already have graphics in mind, I'd be happy to refer yo to them."
+A. I'm no stranger to graphics myself, but the project is currently open to contributions...
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
