@@ -1,6 +1,15 @@
 #labels Featured,Phase-Requirements,Phase-QA
 #Frequently Asked Questions
 
+= Operating System =
+
+Q. "What operating system are you developing it for?"
+
+A. Program ought to work on multiple platforms, Windows, Linux, Android, Mac..., providing they can successfully compile or otherwise install the following prerequisites:
+* gstreamer multimedia framework
+* pocketsphinx
+* [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html CMU-Cambridge Statistical Language Modeling[sic] Toolkit v2]
+
 = Graphical Interface =
 
 Q. "I personally know quite a few graphics artists if you already have graphics in mind, I'd be happy to refer yo to them."
