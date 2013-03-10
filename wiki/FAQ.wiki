@@ -27,4 +27,4 @@ When a user types of pastes text into the editor, I would like it to...
   * Allow manual editing of the dictionary and pronunciations
   * Automatically generate / suggest new pronunciations
 
-$$ We are in dire need of funding $$. Send [bitcoin http://bitcoin.org] to 1KjEBYUh9WJ2z8UBhhu5hX8t6XTsBUFH4G
+$$ Yes, being free indie software, FreeSpeech needs funding! $$. Send [http://bitcoin.org/ bitcoin] to 1KjEBYUh9WJ2z8UBhhu5hX8t6XTsBUFH4G
