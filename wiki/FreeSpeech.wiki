@@ -5,11 +5,14 @@ FreeSpeech is a real-time voice recognition application for the desktop (Android
 
 == Requirements ==
 
-The following packages need to be installed.
+The following packages should be installed.
 
-  * gstreamer multimedia framework
-  * pocketsphinx
-  * [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html CMU-Cambridge Statistical Language Modeling Toolkit v2]
+  * [http://www.python.org/ Python 2.7]
+  * [http://www.pygtk.org/ pygtk2]
+  * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+  * [http://cmusphinx.sourceforge.net/ pocketsphinx]
+  * [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html 
+  CMU-Cambridge Statistical Language Modeling Toolkit v2]
 
 == Improving accuracy  ==
 
