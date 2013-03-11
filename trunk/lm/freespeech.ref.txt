@@ -1082,3 +1082,5 @@
 <s> you may send us a contribution using the Bitcoin client .period </s>
 <s> it's fast and easy to send money around the world with very low fees .period </s>
 <s>  </s>
+<s> position the microphone somewhere near your face and begin talking .period </s>
+<s> to end of the sentence ,comma say "quote period "quote (left-paren or "quote colon "quote ,comma "quote question -hyphen mark "quote ,comma "quote exclamation -hyphen point "quote )right-paren Look at the dictionary ,comma "quote custom .dot dic "quote for ideas .period </s>
