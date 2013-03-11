@@ -28,9 +28,9 @@ Make sure the various requirements work. For example, "pocketsphinx" itself, whi
 
 The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level is adjusted automatically and tweaking it is not likely to improve much. You may try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
 
-The language model that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that being pared-down as it is will save memory while providing room to more easily learn your manner of speaking. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time!
+The rlanguage corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size will save memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time!
 
-Don't worry if you inadvertently teach it bad grammar. The file, "freespeech.ref.txt" may be manually corrected. Changes will apply next time you hit the "Learn" button.
+Don't worry if you inadvertently teach it bad grammar or say something that later has been found to [https://en.wikipedia.org/wiki/Split_infinitive boldly split the infinitive]. The file, "freespeech.ref.txt" may be manually corrected. Changes will apply next time you hit the "Learn" button.
 
 The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
