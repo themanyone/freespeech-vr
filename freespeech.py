@@ -36,28 +36,6 @@ idngram = 'lm/freespeech.idngram'
 arpa    = 'lm/freespeech.arpa'
 dmp     = 'lm/freespeech.dmp'
 
-def collapse_punctuation(hyp, started):
-    index = 0
-    words = hyp.split()
-    words[0] = words[0].capitalize()
-    # remove the extra text to the right of the punctuation mark
-    while True:
-        if (index >= len(words)):
-            break
-        word = words[index]
-        if (re.match("^\W\w", word)):
-            words[index] = word[0]
-        index += 1
-    hyp = " ".join(words)
-    hyp = hyp.replace(" ...ellipsis"," ...")
-    hyp = re.sub(r" ([^\w\s]{1,3})\s*",r"\1 ",hyp)
-    hyp = re.sub(r"([({[]) ",r" \1",hyp)
-    if re.match(r"\w",hyp[0]) and started:
-        space = " "
-    else:
-        space = ""
-    return space + hyp.strip()
-    
 def expand_punctuation(corpus):
     # tweak punctuation to match dictionary utterances
     for ind,line in enumerate(corpus):
@@ -135,6 +113,7 @@ def prepare_corpus(txt):
 
 class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
+    capitalize_first_letter = True
     def __init__(self):
         """Initialize a freespeech object"""
         self.init_gui()
@@ -285,7 +264,8 @@ class freespeech(object):
         txt_bounds = txt.get_bounds()
         # Fix punctuation
         if not self.do_command(hyp):
-            hyp = collapse_punctuation(hyp, not txt_bounds[1].is_start())
+            hyp = self.collapse_punctuation(hyp, \
+            not txt_bounds[1].is_start())
             txt.insert_at_cursor(hyp)
         txt.end_user_action()
 
@@ -368,7 +348,31 @@ class freespeech(object):
         txt = self.textbuf
         txt.set_text('')
         print('cleared')
-
+        
+    def collapse_punctuation(self, hyp, started):
+        index = 0
+        words = hyp.split()
+        # remove the extra text to the right of the punctuation mark
+        while True:
+            if (index >= len(words)):
+                break
+            word = words[index]
+            if (re.match("^\W\w", word)):
+                words[index] = word[0]
+            index += 1
+        hyp = " ".join(words)
+        hyp = hyp.replace(" ...ellipsis"," ...")
+        hyp = re.sub(r" ([^\w\s]{1,3})\s*",r"\1 ",hyp)
+        hyp = re.sub(r"([({[]) ",r" \1",hyp).strip()
+        if self.capitalize_first_letter:
+            hyp = hyp[0].capitalize()+hyp[1:]
+        print('('+hyp+')')
+        self.capitalize_first_letter = hyp[-1] in ".:!?"
+        if re.match(r"\w",hyp[0]) and started:
+            space = " "
+        else:
+            space = ""
+        return space + hyp
 
 app = freespeech()
 gtk.main()
