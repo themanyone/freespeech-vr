@@ -1,7 +1,7 @@
 #labels Featured,Phase-Requirements,Phase-Design
 == About ==
 
-FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ pocketsphinx] back-end. Essentially, FreeSpeech is a "front-end" for pocketsphinx with additional learning ability and automation. It automatically manages the difficult process of [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html creating language models].
+FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ PocketSphinx] back-end. Essentially, FreeSpeech is a front-end for pocketsphinx with additional learning ability and automation. It automatically manages the difficult process of [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html creating language models].
 
 == Requirements ==
 
@@ -30,13 +30,13 @@ Voice commands are included. For the most updated information about this, take a
     
 == Troubleshooting ==
 
-Make sure the various requirements work. For example, "pocketsphinx" itself, which may be run from the command line.
+Make sure the various requirements work. For example, "pocketsphinx", which may be run from the command line.
 
 == Improving accuracy  ==
 
 The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level is adjusted automatically and tweaking it is not likely to improve much. You may try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
 
-The rlanguage corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size will save memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time!
+The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size will save memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time!
 
 Don't worry if you inadvertently teach it bad grammar. It's not strictly necessary, but the file, "freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
 
@@ -44,5 +44,5 @@ The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_docu
 
 If there is a word that it stubbornly refuses to recognize, even after using it in several sentences, you may need to edit the dictionary: "freespeech.dic" This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say "period"?) and some capitalized words. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
 
-Adapt pocketsphinx to your voice for better accuracy.
+Adapt PocketSphinx to your voice for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
