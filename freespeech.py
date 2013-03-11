@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: iso-8859-15 -*-
 # FreeSpeech
-# Real-time voice recognition and control
+# Continuous realtime speech recognition and control via pocketsphinx
 # Copyright (c) Henry Kroll III, http://www.TheNerdShow.com
 
 # This program is free software: you can redistribute it and/or modify

@@ -1228,3 +1228,5 @@
 <s> the biggest improvements in accuracy have been achieved by adjusting the type of microphone and position .period </s>
 <s> the volume level is adjusted automatically and tweaking it is not likely to improve much .period </s>
 <s> you may try making a recording with audacity and checking the noise levels to make sure it sounds like intelligible speech when played back .period </s>
+<s> essentially ,comma FreeSpeech is a "quote front -hyphen end "quote for pocketsphinx with additional learning ability .period </s>
+<s> it automatically manages the difficult process of creating language models .period </s>
