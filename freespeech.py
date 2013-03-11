@@ -347,7 +347,7 @@ class freespeech(object):
     def clear_edits(self):
         txt = self.textbuf
         txt.set_text('')
-        print('cleared')
+        self.capitalize_first_letter = True
         
     def collapse_punctuation(self, hyp, started):
         index = 0
@@ -366,7 +366,7 @@ class freespeech(object):
         hyp = re.sub(r"([({[]) ",r" \1",hyp).strip()
         if self.capitalize_first_letter:
             hyp = hyp[0].capitalize()+hyp[1:]
-        print('('+hyp+')')
+        print(hyp)
         self.capitalize_first_letter = hyp[-1] in ".:!?"
         if re.match(r"\w",hyp[0]) and started:
             space = " "
