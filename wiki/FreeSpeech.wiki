@@ -1,7 +1,7 @@
 #labels Featured,Phase-Requirements,Phase-Design
 == About ==
 
-FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ pocketsphinx] back-end.
+FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ pocketsphinx] back-end. Essentially, FreeSpeech is a "front-end" for pocketsphinx with additional learning ability and automation. It automatically manages the difficult process of [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html creating language models].
 
 == Requirements ==
 
