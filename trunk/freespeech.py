@@ -36,14 +36,6 @@ idngram = 'lm/freespeech.idngram'
 arpa    = 'lm/freespeech.arpa'
 dmp     = 'lm/freespeech.dmp'
 
-def do_command(textbox, hyp):
-    if (hyp == 'File quit'):
-        gtk.main_quit()
-    if (hyp == 'File preferences'):
-        self.prefsdialog.run()
-        self.prefsdialog.hide()
-    print(hyp)
-
 def collapse_punctuation(hyp, started):
     index = 0
     words = hyp.split()
@@ -154,9 +146,11 @@ class freespeech(object):
         self.undo = [] # Say "Scratch that" or "Undo that"
         """Initialize the GUI components"""
         self.window = gtk.Window()
+        self.icon = gtk.gdk.pixbuf_new_from_file("icon.png")
         self.window.connect("delete-event", gtk.main_quit)
         self.window.set_default_size(400,200)
         self.window.set_border_width(10)
+        self.window.set_icon(self.icon)
         vbox = gtk.VBox()
         hbox = gtk.HBox(homogeneous=True)
         self.textbuf = gtk.TextBuffer()
@@ -193,7 +187,7 @@ class freespeech(object):
             gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
-        me.set_default_size(400,500)
+        me.set_default_size(400,300)
         me.label = gtk.Label("Nice label")
         me.vbox.pack_start(me.label)
         me.label.show()
@@ -290,9 +284,9 @@ class freespeech(object):
         txt.delete_selection(True, self.text.get_editable())
         txt_bounds = txt.get_bounds()
         # Fix punctuation
-        do_command(txt, hyp)
-        hyp = collapse_punctuation(hyp, not txt_bounds[1].is_start())
-        txt.insert_at_cursor(hyp)
+        if not self.do_command(hyp):
+            hyp = collapse_punctuation(hyp, not txt_bounds[1].is_start())
+            txt.insert_at_cursor(hyp)
         txt.end_user_action()
 
     def learn_new_words(self, button):
@@ -336,7 +330,9 @@ class freespeech(object):
         # load the dmp
         asr = self.pipeline.get_by_name('asr')
         self.pipeline.set_state(gst.STATE_PAUSED)
+        asr.set_property('configured', False)
         asr.set_property('lm', os.getcwd() + '/' + dmp)
+        asr.set_property('configured', True)
         self.pipeline.set_state(gst.STATE_PLAYING)
         
     def mute(self, button):
@@ -350,11 +346,29 @@ class freespeech(object):
             vader.set_property('silent', True)
             self.pipeline.set_state(gst.STATE_PAUSED)
 
-
     def err(self, errormsg):
         self.errmsg.label.set_text(errormsg)
         self.errmsg.run()
         self.errmsg.hide()
+    
+    def do_command(self, hyp):
+        # todo: load command list from file?
+        commands = {'file quit': gtk.main_quit, \
+                    'file preferences': self.launch_preferences, \
+                    'editor clear': self.clear_edits}
+        if commands.has_key(hyp):
+            commands[hyp]()
+            return True
+        return False
+
+    def launch_preferences(self):
+        self.prefsdialog.run()
+        self.prefsdialog.hide()
+    def clear_edits(self):
+        txt = self.textbuf
+        txt.set_text('')
+        print('cleared')
+
 
 app = freespeech()
 gtk.main()
