@@ -1,26 +1,26 @@
 <s> hi there ,comma so what is the plan ?question-mark </s>
 <s> do you know what this is ?question-mark we should show file preferences . </s>
 <s> my name is Henry and I would like to introduce you to something new . </s>
-<s> Henry is my name and I am working on speech recognition software for linux . </s>
+<s> Henry is my name and I am working on speech recognition software for Linux . </s>
 <s> hi ,comma i am Henry and I am happy to say that this is working pretty well for a wall . </s>
 <s> this is much better than a paper and pencil wall ,comma even if you eat spaghetti . </s>
 <s> i am going to put this on my wall or any kind of wall where you put spaghetti or a pencil on . </s>
 <s> a wall is something that you put status messages on . </s>
-<s> do you need a twitter profile or facebook wall status message on your wall ?question-mark </s>
+<s> do you need a twitter profile or Facebook wall status message on your wall ?question-mark </s>
 <s> objects (left-paren instances )right-paren -hyphen a collection of data along with the spaghetti and functions to work with that data as opposed to purely procedural languages where the data and functions are separate ...ellipsis all code must be written inside object definitions such as class that is an object definition containing the data and function elements </s>
 <s> necessary to create an object ...ellipsis an instance of an object is one object created from the class definition ...ellipsis the data and function elements are known as members ...ellipsis data members are also known as fields ,comma properties ,comma or attributes ,comma and function members as methods ...ellipsis </s>
 <s> encapsulation -hyphen in programming there is a technique that is used to hide data inside of an object ;semi-colon it is called encapsulation ...ellipsis all of the data is hidden from view and is only accessed from within the object ...ellipsis </s>
 <s> hi there ,comma this is Henry Kroll and I am going to the zoo . </s>
-<s> is Henry here for evaluation of events  that are going on with the wall ?question-mark </s>
+<s> is Henry here for evaluation of events that are going on with the wall ?question-mark </s>
 <s> by hiding the code within the object protects it from being accessed outside the class ...ellipsis the code can still be modified or accessed even when the user is accessing it by the book or buying the book from the bookstore ...ellipsis </s>
 <s> polymorphism -hyphen polymorphism generally means one name ,comma many forms ...ellipsis in oop ,comma it gives allows a response from spaghetti that belong to different types to methods ,comma fields ,comma or properties of the same name ...ellipsis the exact type of the object does not need to be known before hand ,comma and is determined at run -hyphen time ...ellipsis the objects start to proliferate wildly . </s>
 <s> only need to present compatible interfaces ...ellipsis </s>
-<s> assignment basic checkbook organizer for this turing test . </s>
+<s> assignment basic checkbook organizer for this Turing test . </s>
 <s> this assignment requires a bit more thought on design ,comma so be sure to check it ...ellipsis </s>
 <s> it must be extendable from the start ...ellipsis </s>
 <s> i am wrapping spaghetti around a pencil ,comma so check this out . </s>
 <s> for Henry ,comma and Henry ,comma and to Henry is Henry here ?question-mark </s>
-<s> i am going to put this in my facebook status and twitter status today . </s>
+<s> i am going to put this in my Facebook status and twitter status today . </s>
 <s> the use of pencils and spaghetti dates back to ancient times . </s>
 <s> it has been a while since i used myspace . </s>
 <s> luther focus on object oriented principles to </s>
@@ -39,7 +39,7 @@
 <s> research file io handing in vb .period net make sure to include </s>
 <s> the proper error handing as part of the design from the start .period </s>
 <s> assignment extended checkbook organizer web based </s>
-<s> I 'single-quote ve never converted a vb application to a web application before . </s>
+<s> I've never converted a vb application to a web application before . </s>
 <s> I can only assume there will be some details with </s>
 <s> that ,comma such as ui that may need some attention .period </s>
 <s> luther as the instructions point out ,comma session </s>
@@ -60,8 +60,8 @@
 <s> if you wish to view the detail info concerning a transaction ,comma highlight any transaction in the transaction register and double click it .period </s>
 <s> if you wish to load a transaction batch file format is exactly same as specified in assignment requirements )right-paren ,comma click load trans batch ,comma browse to a specific file either data dat )right-paren or text txt )right-paren )right-paren ,comma select it and click ok in the file dialog .period </s>
 <s> week individual assignment instructions :colon </s>
-<s> url :colon http :colon /slash /slash www .period thebectons .period com /slash tools /slash uopx /slash </s>
-<s> testing approaches smith consulting :colon testing approaches tony zedar ,comma josh klenk ,comma jacob morehouse ,comma Henry Kroll ,comma evan noren </s>
+<s> url :colon http :colon /slash /slash www .period the .period com /slash tools /slash uopx /slash </s>
+<s> testing approaches smith consulting :colon testing approaches Tony Zedar ,comma Josh Klenk ,comma Jacob morehouse ,comma Henry Kroll ,comma Evan Noren </s>
 <s> joseph aguirre testing approaches introduction </s>
 <s> testing is a vital part of software development .period thorough testing in each phase improves software quality .period testing procedures have been developed to address areas of software development experienced in all projects .period the following describes the most common testing </s>
 <s> approaches used in the system development life cycle and how smith consulting can utilize these approaches in their projects .period </s>
@@ -94,9 +94,9 @@
 <s> also the fix will come with reduced development expenses .period as many issues that can be found at the programmers desk and hands the better the software will function in later stages of testing .period </s>
 <s> this type of testing can be done on custom software just as easily as it can on off the shelf software .period of course the off the shelf software is tested only in this stage once while it is developed .period future customers can purchase the off the shelf software without white box testing to </s>
 <s> black box testing black box testing focuses on how a product works ,comma and whether it performs the tasks outlined in the functional requirements .period also known as functional and behavioral testing ,comma it </s>
-<s> attempts to find errors in behavior .period williams ,comma this includes missing or broken functionality ,comma user interface testing ,comma and data errors .period black box testing will ensure that the program does what the client requested .period </s>
+<s> attempts to find errors in behavior .period Williams ,comma this includes missing or broken functionality ,comma user interface testing ,comma and data errors .period black box testing will ensure that the program does what the client requested .period </s>
 <s> because the concept of black box testing is to guarantee that the product executes correctly ,comma the person performing testing should not be the programmer who designed the testing approaches </s>
-<s> application .period the williams article explains that programmers are often biased toward their own code ,comma and will test to make sure the application behaves how they programmed it .period </s>
+<s> application .period the Williams article explains that programmers are often biased toward their own code ,comma and will test to make sure the application behaves how they programmed it .period </s>
 <s> independent testers ,comma however ,comma will test to certify the application works the way the customer requested it .period these testers will need to examine each component using best -hyphen practice strategies .period </s>
 <s> everett and mcleod outline the following strategies available to testers :colon equivalence classes ,comma boundary value analysis ,comma and expected results coverage .period </s>
 <s> certain techniques are employed to assist in black box testing .period equivalence classes testing is an input testing technique that allows testers to categorically test data .period for example ,comma </s>
@@ -152,7 +152,7 @@
 <s> running head :colon ethical development ethical development Henry Kroll iii </s>
 <s> phl /slash 3 2 3 lorin loverde ethical development </s>
 <s> ethical development :colon personal discovery introduction there is little i can think of as more important today than the subject of ethics .period consider </s>
-<s> the cynicism expressed towards ethics in response to widespread media coverage of unethical business practices trevino nelson ,comma p .period this creates a demand for companies and individuals to distance themselves from apparent unethical norms and improve their image .period </s>
+<s> the cynicism expressed towards ethics in response to widespread media coverage of unethical business practices Trevino Nelson ,comma p .period this creates a demand for companies and individuals to distance themselves from apparent unethical norms and improve their image .period </s>
 <s> organizations use published ethics and ethical business behavior to convey a sense of stability and integrity to stakeholders and prospective customers .period job seekers want potential employers to recognize their reliability and sincerity .period </s>
 <s> some published ethics are needed by organizations to stay in business and to foster a good reputation .period many organizations integrate ethics by monitoring statistics of business activities .period when statistics are down ,comma management ethics seeks to intervene for the good of the </s>
 <s> company and its employees .period when statistics are up ,comma ethics takes note ,comma recommends promotions ,comma </s>
@@ -166,32 +166,32 @@
 <s> and goals with minimum intervention by organizations and society .period this level of self -hyphen direction is only possible with good ethics .period the potential effect of my ethics is i stand on the shoulders of giants ,comma free to commit to a task for maximum performance .period no matter the circumstances ,comma </s>
 <s> ethics grants me the strength to pick up and carry on .period </s>
 <s> values values are defined as those things on which we spend time ,comma money ,comma and energy .period i will attempt to communicate my values ,comma my daily activities ,comma and how they were influenced with </s>
-<s> regard to kohlberg 'single-quote s model of ethical development trevino nelson ,comma p .period </s>
+<s> regard to kohlberg 'single-quote s model of ethical development Trevino Nelson ,comma p .period </s>
 <s> level i stage i had what some would consider to be a strict upbringing .period i proceeded through kohlberg 'single-quote s level i preconventional stage early in childhood .period punishment mainly taught me the </s>
 <s> values of fear and that bigger people are obligated to hit smaller ones whenever they make bigger people mad .period i became a robot obeying rules for their own sake .period do the dishes .period "quote take out the trash .period "quote make the bed .period ...ellipsis .period "quote the sense of external control provided the robot with a storehouse of </s>
 <s> pent -hyphen up anger .period i would charge batteries with the punishment i was given and spend time waiting for smaller people to make me mad ,comma so i could strike them .period </s>
-<s> stage after i learned to speak my parents were able to communicate to me the values of personal satisfaction and reciprocity trevino nelson ,comma p .period i received less punishment and more incentives ,comma reasoning .period i spent time sharing and thinking about others 'single-quote </s>
+<s> stage after i learned to speak my parents were able to communicate to me the values of personal satisfaction and reciprocity Trevino Nelson ,comma p .period i received less punishment and more incentives ,comma reasoning .period i spent time sharing and thinking about others 'single-quote </s>
 <s> ethical development level ii stage my parents would read the bible to us and we began to follow rules and laws .period </s>
 <s> instead of being told what to do we had a list of chores we could complete any time .period dilemmas and disputes ,comma where one law conflicted with another ,comma were settled by adults .period </s>
 <s> stage .period when i was almost four years old some of my father 'single-quote s crew played a cruel joke on me .period they told me they were collecting a big pile of dynamite and they were planning to blow up the world .period i tried to talk them out of it ,comma but they were adamant and i was too small to stop </s>
 <s> them .period i started crying and went to tell my parents .period i would have to tell them about the plan .period this was a very young age to be concerned about the fate of the world .period it changed my perspective .period i began thinking of everyone as being connected .period infrastructure became a major concern .period a </s>
 <s> favorite pastime was playing with small boats ,comma canals ,comma railroads ,comma pipelines ,comma and distribution networks .period </s>
 <s> level iii stage .period after high school i slipped a disk and developed a bad back from commercial fishing .period i was also suffering from partial paralysis ,comma tooth problems ,comma pneumonia ,comma and an itchy rash </s>
-<s> that was driving me insane because none of the products or prescriptions would cure it .period hospitals bills were accumulating .period i decided to try scientology .period </s>
-<s> scientology 'single-quote s introductory practices seemed to help .period i took some courses where i learned scientology 'single-quote s study technology tm )right-paren .dot the technology basically says to look up the definition of words ,comma but it has some additional tricks that a person can use tell when they are falling asleep </s>
+<s> that was driving me insane because none of the products or prescriptions would cure it .period hospitals bills were accumulating .period i decided to try Scientology .period </s>
+<s> Scientology 'single-quote s introductory practices seemed to help .period i took some courses where i learned Scientology 'single-quote s study technology tm )right-paren .dot the technology basically says to look up the definition of words ,comma but it has some additional tricks that a person can use tell when they are falling asleep </s>
 <s> because of a misunderstood word .period it also deals with fully understanding the definition ,comma </s>
 <s> derivations ,comma epistemology ,comma and etymology of words and being able to demonstrate that understanding .period having been home -hyphen schooled this helped me a great deal as my understanding of words was fairly glib .period study technology helped me to understand medical materials .period i developed </s>
-<s> my own cures which i used on myself with success .period after that i became somewhat of a doctor in scientology ethics .period </s>
-<s> ethical development i am by no means trying to use this opportunity to sell the controversial scientology business ethics .period it is relevant to my development because i was head of the scientology ethics </s>
-<s> department for ten years at the local mission where i made great strides in personal development .period the experience helped to refine ,comma or rather ,comma uncover my own built -hyphen in ethics which differs from scientology ethics in important ways .period scientology 'single-quote s social contract purports to </s>
+<s> my own cures which i used on myself with success .period after that i became somewhat of a doctor in Scientology ethics .period </s>
+<s> ethical development i am by no means trying to use this opportunity to sell the controversial Scientology business ethics .period it is relevant to my development because i was head of the Scientology ethics </s>
+<s> department for ten years at the local mission where i made great strides in personal development .period the experience helped to refine ,comma or rather ,comma uncover my own built -hyphen in ethics which differs from Scientology ethics in important ways .period Scientology 'single-quote s social contract purports to </s>
 <s> uphold universal ethics principles while avoiding group think ,comma "quote advocating among other things persistence of ones own moral standing in the face of a perceived majority opinion .period it is this last bit that defends my later intentions to defect .period </s>
-<s> the scientology ethical system is proprietary ,comma copyrighted business ethics behavior relative to a group .period it is a statistical system that is rule -hyphen based ,comma goal -hyphen based ,comma duty -hyphen based ,comma </s>
+<s> the Scientology ethical system is proprietary ,comma copyrighted business ethics behavior relative to a group .period it is a statistical system that is rule -hyphen based ,comma goal -hyphen based ,comma duty -hyphen based ,comma </s>
 <s> humanistic ,comma relativistic ,comma and even machiavellian in the sense that there are no absolutes and some rules suggest the end justifies the means .period staff members are duty -hyphen bound to raise statistics .period </s>
 <s> anything is excused ,comma so long as it gets statistics up .period Henry -hyphen based and goal -hyphen based formulas can be taken to extremes towards short -hyphen term statistic push .period "quote such ethics then become an organizational entitlement -hyphen based and rights -hyphen based nightmare where once -hyphen good ideals become corporate ideals .period i </s>
 <s> have to be careful to distinguish self -hyphen chosen rights and rights assigned and controlled by an organization .period rights may become twisted within small communities to justify some fairly outrageous behavior in the name of what is seen as a majority .period during my occupation of this </s>
-<s> position my morals and values were to look at the broader picture ,comma not just statistics .period repeatedly standing up for universal principles in spite of the group helped to develop a self -hyphen chosen ethical sense of justice and rights that enabled me to escape scientology 'single-quote s proprietary ethical web </s>
+<s> position my morals and values were to look at the broader picture ,comma not just statistics .period repeatedly standing up for universal principles in spite of the group helped to develop a self -hyphen chosen ethical sense of justice and rights that enabled me to escape Scientology 'single-quote s proprietary ethical web </s>
 <s> towards greater ideals of free ethical principles .period </s>
-<s> the main ethical dilemma i faced was that a career in scientology does not pay well .period </s>
+<s> the main ethical dilemma i faced was that a career in Scientology does not pay well .period </s>
 <s> debts were piling up .period it felt unethical to represent the church while owing so much money .period i would have to find an equitable occupation .period during the time i had spent volunteering at the ethical development </s>
 <s> mission ,comma i learned valuable office skills and had the most fun writing computer programs .period i decided to seek a career as a computer programmer .period but there are few jobs for computer programmers out here in alaska .period most of them are filled from out -hyphen of -hyphen state applicants with </s>
 <s> degrees .period furthermore ,comma my debts were showing up in background checks ,comma making it impossible to get a good -hyphen paying job doing what i love .period i would have to go into business for myself .period </s>
@@ -211,12 +211,12 @@
 <s> conclusion my position is that ethical behavior actions ,comma character ,comma and values )right-paren can be self -hyphen taught ,comma if a person desires improvement for themselves .period like anything ,comma it takes practice .period it does not matter to </s>
 <s> me so much which discipline ,comma religion ,comma or instrument someone practices ,comma so long as it brings satisfaction to the soul .period practice brings discipline ,comma self -hyphen control ,comma and the ability to think ahead .period </s>
 <s> with enough practice ,comma a person can climb to professional standards and journey freely with love into that bright future .period </s>
-<s> ethical development references trevino ,comma l .period nelson ,comma k .period ,comma managing business ethics :colon straight talk about how to do it </s>
+<s> ethical development references Trevino ,comma l .period Nelson ,comma k .period ,comma managing business ethics :colon straight talk about how to do it </s>
 <s> right th ed .period )right-paren .dot new york :colon wiley .period </s>
-<s> windows and linux windows windows xp ,comma and linux Henry Kroll ,comma sean zaleski and james briggs </s>
+<s> windows and Linux windows windows xp ,comma and Linux Henry Kroll ,comma sean zaleski and james briggs </s>
 <s> pos /slash 3 5 5 january joseph fischer ,comma now that is what Henry does . </s>
 <s> is Henry here for the role call ?question-mark </s>
-<s> windows and linux windows xp operating system </s>
+<s> windows and Linux windows xp operating system </s>
 <s> an operating system os )right-paren is a type of software that enables communication and operation between the hardware and the software of a computer system .period a computer would be completely useless without an operating system in place .period </s>
 <s> features graphical user interface gui )right-paren :colon uses icons and graphics to navigate and control a virtual desktop via a peripheral device known as a mouse .period </s>
 <s> multi -hyphen user :colon several users may use a single computer at the same time .period </s>
@@ -224,91 +224,86 @@
 <s> multitasking :colon allows the user to run more than one process at a time multithreading :colon allows a software program to run different parts of a program .period </s>
 <s> new features windows xp not only had changed the look of the user interface ,comma it gives the user the tools to change the look for personalization .period </s>
 <s> windows xp has the ability to automatically download updates directly from the internet .period </s>
-<s> windows xp is multilingual operating system and has the ability to not only change its language to fit the user ,comma but allow the user to understand the operating system in other windows and linux </s>
+<s> windows xp is multilingual operating system and has the ability to not only change its language to fit the user ,comma but allow the user to understand the operating system in other windows and Linux </s>
 <s> about windows experienced is what the xp stands for in windows xp and this operating system has a codename ,comma codename whistler ;semi-colon it is a melding together of the two previous windows </s>
 <s> operating systems usability 'single-quote s and their features .period it is available in both a professional version and a home version .period </s>
 <s> windows xp is designed with the novice user in mind and has implemented several new features which have made the windows experience less frustrating to new users than its predecessor .period </s>
-<s> xp vs .period linux windows xp is part of the nt version of windows ;semi-colon that is to say that it is a newer version rather than an older one .period </s>
-<s> there are many versions of linux operating systems including some that can be ran from a single floppy by simply booting from cd .period </s>
-<s> linux is more flexible than windows xp is ;semi-colon it allows the user not only to manipulate the look and the feel of the gui ,comma but also the way that it runs all together .period this is both good and bad as the owner will be proficient at using it ,comma but anyone else trying to is it will find that it is more </s>
+<s> xp vs .period Linux windows xp is part of the nt version of windows ;semi-colon that is to say that it is a newer version rather than an older one .period </s>
+<s> there are many versions of Linux operating systems including some that can be ran from a single floppy by simply booting from cd .period </s>
+<s> Linux is more flexible than windows xp is ;semi-colon it allows the user not only to manipulate the look and the feel of the gui ,comma but also the way that it runs all together .period this is both good and bad as the owner will be proficient at using it ,comma but anyone else trying to is it will find that it is more </s>
 <s> difficult than one would think .period </s>
-<s> windows and linux windows according to windows server features n .period d .period )right-paren ,comma windows web edition is </s>
-<s> specifically designed for is in web server farms .period web edition costs less and focuses on web serving .period net common language runtime clr )right-paren is standard .period windows supports universal description ,comma discovery ,comma and integration uddi )right-paren services .period </s>
+<s> windows and Linux windows according to windows server features n .period d .period )right-paren ,comma windows web edition is </s>
+<s> specifically designed for is in web server farms .period web edition costs less and focuses on web serving .period net common language runtime clr )right-paren is standard .period windows supports universal description ,comma discovery ,comma and integration )right-paren services .period </s>
 <s> pis support performs installations and is included in windows in windows it was available for clients ,comma but not servers .period the new pis will install all versions up to windows server </s>
 <s> headless operation is supported in windows it can run without monitor ,comma keyboard ,comma </s>
 <s> and mouse attached .period the servers can be restarted via serial .period it can even run without a video card ,comma </s>
 <s> iis is bundled in .period the new security settings are locked down from the start .period </s>
 <s> replication install from media can use tape or cd /slash dvd to speed up remote installations over wan links .period </s>
-<s> resultant set of polices rsop )right-paren makes information available about the effects of policy settings on users .period rsop helps debug policies also by seeing the results before deployment .period </s>
+<s> resultant set of polices are)right-paren makes information available about the effects of policy settings on users .period rsop helps debug policies also by seeing the results before deployment .period </s>
 <s> renaming a domain is easier in windows server it is no longer necessary to create a new domain and migrate all the objects to it .period </s>
-<s> microsoft volume shadow copy service vss )right-paren keeps backups of files as they are changed .period recovering old versions of software from network shares has been made easier .period </s>
-<s> windows and linux linux linux is very different from microsoft windows operating systems .period most versions of </s>
-<s> linux are free to download and come under the gnu gpl license which encourages software education ,comma innovation ,comma development ,comma and redistribution .period according to distrowatch .period com n .period d .period )right-paren ,comma </s>
-<s> popular linux distributions distros )right-paren include ubuntu ,comma linux mint ,comma pclinuxos ,comma slackware linux ,comma </s>
-<s> arch linux ,comma freebsd ,comma opensuse ,comma fedora ,comma debian gnu /slash linux ,comma mageia ,comma and centos .period </s>
-<s> linux features according to linux information sheet n .period d .period )right-paren ,comma linux supports multitasking :colon running several programs at the same time </s>
+<s> microsoft volume shadow copy service )right-paren keeps backups of files as they are changed .period recovering old versions of software from network shares has been made easier .period </s>
+<s> windows and Linux Linux Linux is very different from microsoft windows operating systems .period most versions of </s>
+<s> Linux are free to download and come under the gnu gpl license which encourages software education ,comma innovation ,comma development ,comma and redistribution .period according to distrowatch .period com n .period d .period )right-paren ,comma </s>
+<s> popular Linux distributions distros )right-paren include ubuntu ,comma Linux mint ,comma pcLinuxos ,comma slackware Linux ,comma </s>
+<s> arch Linux ,comma freebsd ,comma opensuse ,comma fedora ,comma debian gnu /slash Linux ,comma mageia ,comma and centos .period </s>
+<s> Linux features according to Linux information sheet n .period d .period )right-paren ,comma Linux supports multitasking :colon running several programs at the same time </s>
 <s> multiuser :colon many users at the same time on the same box multiplatform :colon supports different cpus multithreading :colon multiple threads run at the same time in the same memory space for pencils </s>
-<s> protected mode memory protection :colon one program can not bring down the whole system demand loads :colon linux only reads parts of a program that are used </s>
+<s> protected mode memory protection :colon one program can not bring down the whole system demand loads :colon Linux only reads parts of a program that are used </s>
 <s> shared copy -hyphen on -hyphen write pages :colon multiple processes can share memory virtual memory :colon paging ,comma not swapping ,comma up to gb unified memory pool :colon cache expands and shrinks with memory demands </s>
-<s> windows and linux core dumps :colon debug crashed programs compatibility :colon source code compatible with posix ,comma system v ,comma and bsd </s>
-<s> comparison with other operating systems we will start comparing linux with other operating systems by looking at linux features that some windows users wish were included in their operating system for a pencil .period </s>
-<s> windows and linux easy window positioning /slash resizing a feature common to most linux desktops is using the alt key for easier organizing of </s>
-<s> windows on the desktop .period moving and resizing windows on linux is exactly the same as on windows ,comma but by pressing and holding down the alt key a user can click -hyphen drag anywhere in a linux window to make the whole window move around .period windows can be re -hyphen sized on linux by </s>
+<s> windows and Linux core dumps :colon debug crashed programs compatibility :colon source code compatible with posix ,comma system,comma and bsd </s>
+<s> comparison with other operating systems we will start comparing Linux with other operating systems by looking at Linux features that some windows users wish were included in their operating system for a pencil .period </s>
+<s> windows and Linux easy window positioning /slash resizing a feature common to most Linux desktops is using the alt key for easier organizing of </s>
+<s> windows on the desktop .period moving and resizing windows on Linux is exactly the same as on windows ,comma but by pressing and holding down the alt key a user can click -hyphen drag anywhere in a Linux window to make the whole window move around .period windows can be re -hyphen sized on Linux by </s>
 <s> pressing and holding the alt key and clicking the middle mouse button anywhere near one of the window edges or corners .period on windows ,comma the user has to position the mouse exactly over an edge or corner to re -hyphen size a window .period there is a secret key combination to move and size a window </s>
 <s> on windows ,comma however ;semi-colon pressing alt -hyphen space pulls up a menu of options .period </s>
-<s> compiz according to linux features n .period d .period )right-paren ,comma compiz is one feature windows users wish they had .period compiz is a versatile d desktop environment that increases the apparent size of the </s>
+<s> compiz according to Linux features n .period d .period )right-paren ,comma compiz is one feature windows users wish they had .period compiz is a versatile d desktop environment that increases the apparent size of the </s>
 <s> desktop by placing it on a virtual cube among other configurations )right-paren .dot windows can be flipped around ,comma attached to one another and managed in groups .period multiple workspaces are accessible through keyboard clicks .period various usability features include magnification ,comma color filter ,comma dimming ,comma </s>
 <s> brightness ,comma saturation ,comma negative ,comma opacity ,comma and mouse location .period </s>
-<s> multi -hyphen user according to linux features n .period d .period )right-paren ,comma having multiple users logged in on windows requires a third -hyphen party tool .period this feature is available by default on linux .period </s>
-<s> windows and linux log files managing logs on windows is done through a graphical management which </s>
-<s> some administrators find to be slow to load and cumbersome to work with remotely .period on linux ,comma </s>
-<s> log files are accessed quickly with a text editor or monitored in real time from a terminal using a minimum of resources linux features ,comma n .period d .period )right-paren .dot </s>
-<s> centralized application installation on linux ,comma available applications may be searched ,comma browsed and installed from a central location .period ubuntu software center version will have commercial software available .period </s>
-<s> cron windows lets the user automate certain tasks but it is not as flexible as setting up a cron job which can be done remotely on linux using a terminal .period cron can be used by users and </s>
+<s> multi -hyphen user according to Linux features n .period d .period )right-paren ,comma having multiple users logged in on windows requires a third -hyphen party tool .period this feature is available by default on Linux .period </s>
+<s> windows and Linux log files managing logs on windows is done through a graphical management which </s>
+<s> some administrators find to be slow to load and cumbersome to work with remotely .period on Linux ,comma </s>
+<s> log files are accessed quickly with a text editor or monitored in real time from a terminal using a minimum of resources Linux features ,comma n .period d .period )right-paren .dot </s>
+<s> centralized application installation on Linux ,comma available applications may be searched ,comma browsed and installed from a central location .period ubuntu software center version will have commercial software available .period </s>
+<s> cron windows lets the user automate certain tasks but it is not as flexible as setting up a cron job which can be done remotely on Linux using a terminal .period cron can be used by users and </s>
 <s> administrators alike and is also available from gui tools ,comma if desired .period </s>
-<s> regular release cycle windows does not use a set schedule for updated release .period according to linux features n .period d .period )right-paren ,comma many linux distributions release regularly scheduled updates .period ubuntu ,comma for </s>
+<s> regular release cycle windows does not use a set schedule for updated release .period according to Linux features n .period d .period )right-paren ,comma many Linux distributions release regularly scheduled updates .period ubuntu ,comma for </s>
 <s> example ,comma updates on the fourth and tenth month of the year and versions )right-paren .dot </s>
 <s> gnu core utilities windows could use some of these handy utilities .period for example ,comma grep uses powerful regular expressions to find information in files .period these utilities are available for windows from </s>
-<s> windows and linux third -hyphen party sites .period core utilities are very powerful .period we will use core utilities to produce a list of core utilities to show just how powerful they are .period core utilities can be found on linux by looking </s>
-<s> at the coreutils package provided by the distribution .period for example ,comma if the linux distribution is one that uses rpm packages red hat ,comma fedora )right-paren the contents of a package can be queried with the q option to rpm like this :colon rpm q filesbypkg coreutils "quote but we also want to pipe the output </s>
+<s> windows and Linux third -hyphen party sites .period core utilities are very powerful .period we will use core utilities to produce a list of core utilities to show just how powerful they are .period core utilities can be found on Linux by looking </s>
+<s> at the coreutils package provided by the distribution .period for example ,comma if the Linux distribution is one that uses rpm packages red hat ,comma fedora )right-paren the contents of a package can be queried with the q option to rpm like this :colon rpm q filesbypkg coreutils "quote but we also want to pipe the output </s>
 <s> through grep to produce a list of only the executable utilities :colon </s>
-<s> bin (left-paren )right-paren {left-brace rpm q filesbypkg nodigest nosignature grep bin ;semi-colon for x in bin coreutils |pipe-symbol cut d f `agrave ;semi-colon do whatis x ;semi-colon done the bin (left-paren )right-paren .dot ...ellipsis .period line creates a bin "quote function quich queries a package for files stored in the </s>
+<s> bin (left-paren )right-paren {left-brace rpm q filesbypkg nodigest nosignature grep bin ;semi-colon for x in bin coreutils |pipe-symbol cut d f `agrave ;semi-colon do what is x ;semi-colon done the bin (left-paren )right-paren .dot ...ellipsis .period line creates a bin "quote function quich queries a package for files stored in the </s>
 <s> base 6 4 base 6 4 data encode /slash decode chcon </s>
 <s> comm compares files ,comma sorted csplit </s>
 <s> dir list folder files dircolors </s>
-<s> du estimate used space windows and linux </s>
+<s> du estimate used space windows and Linux </s>
 <s> env expand change the environment programs run in </s>
 <s> hostid id query the user 'single-quote s groups </s>
 <s> join join lines of files on fields logname </s>
 <s> printenv printf check valid ,comma portable file names </s>
-<s> runcon run command under selinux context seq </s>
-<s> sha 1 sum print number sequences compute sha 1 digest </s>
-<s> sha 2 2 4 sum compute sha 2 2 4 digest sha 2 5 6 sum </s>
-<s> sha 5 1 2 sum compute sha 5 1 2 digest shred </s>
+<s> runcon run command under seLinux context seq </s>
+<s> SHA 1 sum print number sequences compute SHA 1 digest </s>
+<s> SHA 2 2 4 sum compute SHA 2 2 4 digest SHA 2 5 6 sum </s>
+<s> SHA 5 1 2 sum compute SHA 5 1 2 digest shred </s>
 <s> split split files into chunks stat </s>
 <s> sum sum blocks in a file tac </s>
 <s> tee direct input and output to more than one place test </s>
 <s> truncate time limit for commands translate or erase characters from a stream </s>
-<s> tty name of terminal unexpand </s>
-<s> uniq spaces become tabs show /slash delete repeated lines </s>
-<s> windows and linux users names of logged -hyphen in users </s>
+<s> terminal command method name of the working status </s>
+<s> unique spaces become tabs show /slash delete repeated lines </s>
+<s> windows and Linux users names of logged -hyphen in users </s>
 <s> creating similar lists without the gnu core utilities is difficult .period </s>
 <s> conclusion advantages for windows windows xp now windows is already installed on most computer systems today and </s>
-<s> is the usual choice for the average home and business user .period those who want something more from their systems may opt to install windows server the latest version of windows server ,comma or linux .period windows server is a server platform designed to function efficiently on </s>
+<s> is the usual choice for the average home and business user .period those who want something more from their systems may opt to install windows server the latest version of windows server ,comma or Linux .period windows server is a server platform designed to function efficiently on </s>
 <s> its own or as part of a server farm or cluster .period </s>
-<s> linux advantages cost :colon linux is cheap and can even be gotten legally free from certain websites where windows can go for as much windows restrict the number of computers that any one </s>
-<s> purchased operating system can run on ,comma but linux once it has been purchased can be used on many computers legally .period </s>
+<s> Linux advantages cost :colon Linux is cheap and can even be gotten legally free from certain websites where windows can go for as much windows restrict the number of computers that any one </s>
+<s> purchased operating system can run on ,comma but Linux once it has been purchased can be used on many computers legally .period </s>
 <s> my name is Henry . </s>
-<s> windows rose to power when their cost stayed significantly lower that mac computer windows and linux software ;semi-colon it looks as if it might soon be linux 'single-quote s turn .period </s>
-<s> linux provides some clear advantages over windows for basic text handling ,comma certain types of servers ,comma as well as writing and debugging programs targeting multiple operating systems and platforms .period </s>
+<s> windows rose to power when their cost stayed significantly lower that mac computer windows and Linux software ;semi-colon it looks as if it might soon be Linux 'single-quote s turn .period </s>
+<s> Linux provides some clear advantages over windows for basic text handling ,comma certain types of servers ,comma as well as writing and debugging programs targeting multiple operating systems and platforms .period </s>
 <s> the variety of distros and freedom of licensing encourage much creativity with gmail .period </s>
-<s> windows and linux references linux features windows should have by default .period gmail .period n .period d .period )right-paren .dot retrieved january </s>
-<s> distrowatch .period com :colon put the fun back into computing .period use linux ,comma bsd .period n .period d .period )right-paren .dot retrieved december from http :colon /slash /slash distrowatch .period com /slash dwres .period php ?question-mark resource =equals-sign major horowitz ,comma michael .period sept )right-paren .dot linux vs .period windows .period retrieved from </s>
-<s> http :colon /slash /slash www .period ...ellipsis com /slash linux .period vs .period windows .period html linux information sheet :colon linux features .period n .period d .period )right-paren .dot retrieved january from http :colon /slash /slash tldp .period org /slash howto /slash info -hyphen sheet -hyphen 2 .dot html @at-symbol </s>
-<s> windows server features .period n .period d .period )right-paren .dot retrieved december from http :colon /slash /slash www .period windowsitpro .period com /slash article /slash windows -hyphen server -hyphen 2 0 0 3 /slash windows -hyphen server -hyphen 2 0 0 3 features instructor policies </s>
-<s> ntc networking and telecommunincation concepts facilitator information </s>
-<s> richard lechner rlechner @at-symbol email .period phoenix .period edu @at-symbol university of phoenix )right-paren </s>
-<s> richard .period lechner @at-symbol ca .period com personal )right-paren  henry @at-symbol gmail .period com </s>
+<s> windows and Linux references Linux features windows should have by default .period gmail .period n .period d .period )right-paren .dot retrieved january </s>
+<s> distrowatch .period com :colon put the fun back into computing .period use Linux ,comma bsd .period n .period d .period )right-paren .dot retrieved december from http :colon /slash /slash distrowatch .period com /slash dwres .period php ?question-mark resource =equals-sign major horowitz ,comma michael .period sept )right-paren .dot Linux vs .period windows .period retrieved from </s>
 <s> my name is Henry ,comma yes it is so now you know that my name could be Henry by Henry and for Henry with a gmail account . </s>
 <s> facilitator availability i am available from a .period m .period -hyphen 9 p .period m .period eastern time on most days ,comma if these times are not convenient for you ,comma please let me know .period i will be happy to accommodate your schedule ,comma if possible .period i provide you with these times to make it </s>
 <s> easier to communicate with me ,comma and not to limit our contact .period </s>
@@ -323,7 +318,7 @@
 <s> to contact me for guidance if you have concerns in this area .period because learning team projects are outcome based ,comma all members of your learning team will generally earn the same grade for learning team projects .period </s>
 <s> however ,comma i reserve the right to report different grades for different learning team members if i see a substantial imbalance in individual contribution .period learning teams should provide a brief summary of any communication held outside the forum .period therefore ,comma if you hold conference calls ,comma work in a real -hyphen time chat room ,comma or get together outside </s>
 <s> the ols online learning system )right-paren environment in another way ,comma please post a log ,comma transcript ,comma or summary in the learning team forum .period further ,comma do not use any of these supplementary communication tools unless everyone on your learning team agrees to the method and to the schedule .period if you have any questions ,comma please contact me .period </s>
-<s> several of the assignments in this class will be completed in learning teams of five to seven students .period i will set up these teams by the end of week if you have any requests for teammates ,comma please let me know by saturday of the first week via your individual forum .period learning team charters and peer evaluation forms are required .period </s>
+<s> several of the assignments in this class will be completed in learning teams of five to seven students .period i will set up these teams by the end of week if you have any requests for teammates ,comma please let me know by Saturday of the first week via your individual forum .period learning team charters and peer evaluation forms are required .period </s>
 <s> please see the instructions in the weekly sections for more information .period </s>
 <s> it is expected that you will actively participate with your learning team and contribute to the team discussions by a )right-paren contributing original work that is accepted and used by the team with proof of originality b )right-paren participating in the project from assignment organizing through meaningful final review of the team project for submission ,comma and c )right-paren </s>
 <s> ensuring to your team that your contributions are your original work and properly quoted ,comma cited ,comma and referenced .period </s>
@@ -341,13 +336,13 @@
 <s> once cost estimates and the scope of design specifications and time -hyphen frame have been approved ,comma </s>
 <s> project planning ,comma including ghantt charts can be used .period the assigned project manager will actively coordinate with clients along each step ,comma from specifications ,comma design ,comma development ,comma testing ,comma </s>
 <s> implementation ,comma support ,comma and performance evaluation .period </s>
-<s> pcs and mainframes Henry Kroll uop </s>
+<s> pcs and mainframes Henry Kroll  UOP </s>
 <s> pos /slash 3 5 5 december pcs and mainframes the personal computer pc )right-paren evolved separately from the mainframe as an economical </s>
-<s> computer the average person could afford .period my memory of the pc goes back to the altair hobby computer that ran assembly code which was entered into the system via a row of binary switches on the front of the unit .period although not very friendly the interface was popular with technicallyminded people who were eager to one -hyphen up each other by making the machine do new things .period one </s>
+<s> computer the average person could afford .period my memory of the pc goes back to the altair hobby computer that ran assembly code which was entered into the system via a row of binary switches on the front of the unit .period although not very friendly the interface was popular with technically minded people who were eager to one -hyphen up each other by making the machine do new things .period one </s>
 <s> person even made the altair play broadcast )right-paren musical notes to a nearby am radio .period he did this by manipulating the radio frequency rf )right-paren interference generated by the altair when doing certain calculations .period </s>
 <s> the altair had a very rudimentary operating system for entering code and seeing the result .period modern pcs have evolved a sophisticated user environment for launching and running several programs at once .period the programs are geared towards users and consist mostly of games ,comma </s>
 <s> internet ,comma utilities ,comma multimedia and office software .period unlike a mainframe ,comma a pc is used directly .period no intermediate operator or administrator is needed to schedule jobs started by the user .period </s>
-<s> pcs usually come with some form of windows operating system pre -hyphen installed .period most people use the installed operating system so as not to void their warrantee .period power users might install a more challenging operating system like linux to get a slightly more mainframe -hyphen like or </s>
+<s> pcs usually come with some form of windows operating system pre -hyphen installed .period most people use the installed operating system so as not to void their warrantee .period power users might install a more challenging operating system like Linux to get a slightly more mainframe -hyphen like or </s>
 <s> server -hyphen oriented experience from their pc .period pretty much all operating systems present users with an interface that is similar to a desktop .period documents may be placed on the desktop ,comma but are usually organized into folders .period </s>
 <s> mainframes according to mainframes summary n .period d .period )right-paren ,comma mainframes used to be synonymous with computers .period a typical mainframe might service some tens of thousands of users processing </s>
 <s> thousands of database queries on terabytes of data .period the architecture is scalable and may consist of processors that individually are similar to those used in a typical pc .period the i /slash o subsystems of mainframes are very robust ,comma servicing high bandwidth reliably to thousands of users </s>
@@ -355,7 +350,7 @@
 <s> ibm ,comma rca ,comma and ncr .period these days the only mainframes in serious use are ibm system /slash 3 6 0 or clones .period physical size and cost reduction has helped the mainframe as well as the pc .period what once took up a large data center can fit in a space the size of a file cabinet .period </s>
 <s> an economical mainframe might contain parallel processors running at mhz ,comma gb of memory ,comma and some terabytes of storage .period </s>
 <s> mainframes specialize in the processing of real -hyphen time transactions .period authorized users can share time and run code on the mainframe and even use it like a more powerful pc to run batch jobs or other processing .period </s>
-<s> components the operating system on the largest mainframes is ibm os /slash 3 9 0 .dot the systems use multiple virtual systems mvs )right-paren and virtual memory vm )right-paren ,comma unix ,comma and vse .period large businesses </s>
+<s> components the operating system on the largest mainframes is ibm os /slash 3 9 0 .dot the systems use multiple virtual systems mvs )right-paren and virtual memory )right-paren ,comma unix ,comma and .period large businesses </s>
 <s> typically use mvs as the only os that can service their requirements .period mvs job control language jcl )right-paren is key for automating and scheduling jobs .period </s>
 <s> the central processing units cpus )right-paren typically have random access memory ram )right-paren </s>
 <s> packaged right in ,comma to speed data transfer .period data is transferred through channels coax or fiber optic cables )right-paren .dot </s>
@@ -366,19 +361,19 @@
 <s> references altair wikipedia ,comma the free encyclopedia .period n .period d .period )right-paren .dot retrieved december from http :colon /slash /slash en .period wikipedia .period org /slash wiki /slash altair 8 8 0 0 </s>
 <s> mainframes summary bookrags .period com .period n .period d .period )right-paren .dot retrieved december from http :colon /slash /slash www .period bookrags .period com /slash research /slash mainframes -hyphen csci -hyphen 0 1 /slash </s>
 <s> environmental issues environmental issues simulation Henry Kroll iii </s>
-<s> sci /slash 3 6 2 tereza marks environmental issues </s>
+<s> sci /slash 3 6 2 Tereza marks environmental issues </s>
 <s> environmental issues simulation according to the simulation ,comma managing environmental issues n .period d .period )right-paren ,comma rainforested countries are of increasing interest to overseas companies for medical uses and timber .period the lure </s>
 <s> of rapid ,comma short -hyphen term economic benefits such as logging ,comma coupled with the conversion of rainforest into usable farm and ranch land ,comma have led to the disappearance of rainforests around the world managing environmental issues ,comma n .period d .period )right-paren .dot </s>
 <s> as project manager for kenya agroforestry research department kard )right-paren ,comma students participate in a simulation wherein they meet with various stakeholders and make intelligent decisions regarding sustainable tree harvests managing environmental issues ,comma n .period d .period )right-paren .dot striking a </s>
 <s> proper balance between environmental ,comma competitive interests ,comma and philosophies can be a daunting task .period the simulation demonstrates that management solutions promoting environmental justice over corporate interests are capable of achieving that aim .period </s>
 <s> stakeholders ,comma priorities ,comma and ethics according to managing environmental issues n .period d .period )right-paren ,comma the simulated company ,comma colney pitts ,comma manufactures herbal remedies and pharmaceuticals for prostate cancer ,comma nycturia ,comma polyuria ,comma </s>
 <s> dysuria ,comma and incontinence .period of males beyond 0 years of age ,comma some percent have diseases related to the prostate ,comma which is a large market force for prunus africana bark managing environmental issues ,comma n .period d .period )right-paren .dot colney pitts caters to patients whose preference is towards herbal </s>
-<s> remedies as opposed to synthesized medication managing environmental issues ,comma n .period d .period )right-paren .dot vice president of colney pitts ,comma sharon cruzon is introduced as someone whose priorities are for profit and future growth of the company managing environmental issues ,comma n .period d .period )right-paren .dot as the </s>
-<s> simulation progresses ,comma sharon 'single-quote s ethical position is revealed to be anthropocentric with only marginal concern for the rainforest ecosystem or its people .period colney and pitts has budgeted to develop the rainforest and they have offered a number of measures they are willing </s>
-<s> to implement managing environmental issues ,comma n .period d .period )right-paren .dot as students choose which of colney and pitts 'single-quote measures to adopt ,comma sharon provides various communications to ensure they do not exceed environmental issues </s>
+<s> remedies as opposed to synthesized medication managing environmental issues ,comma n .period d .period )right-paren .dot vice president of colney pitts ,comma Sharon cruzon is introduced as someone whose priorities are for profit and future growth of the company managing environmental issues ,comma n .period d .period )right-paren .dot as the </s>
+<s> simulation progresses ,comma Sharon 'single-quote s ethical position is revealed to be anthropocentric with only marginal concern for the rainforest ecosystem or its people .period colney and pitts has budgeted to develop the rainforest and they have offered a number of measures they are willing </s>
+<s> to implement managing environmental issues ,comma n .period d .period )right-paren .dot as students choose which of colney and pitts 'single-quote measures to adopt ,comma Sharon provides various communications to ensure they do not exceed environmental issues </s>
 <s> the company 'single-quote s budget constraints managing environmental issues ,comma n .period d .period )right-paren .dot </s>
 <s> perhaps overlooked as a stakeholder is prunus africana ,comma a tree that grows only in kenya ,comma </s>
-<s> the democratic republic of congo ,comma and uganda managing environmental issues ,comma n .period d .period )right-paren .dot key to the manufacture of natural remedies for prostate hypertrophy and hyperplasia ,comma the bark of prunus africana is in high demand in europe ,comma especially france and spain managing environmental </s>
+<s> the democratic republic of congo ,comma and Uganda managing environmental issues ,comma n .period d .period )right-paren .dot key to the manufacture of natural remedies for prostate hypertrophy and hyperplasia ,comma the bark of prunus africana is in high demand in europe ,comma especially france and Spain managing environmental </s>
 <s> issues ,comma n .period d .period )right-paren .dot the convention on trade in endangered species monitors exports of prunus africana to ensure quotas meet sustainable limits managing environmental issues ,comma n .period d .period )right-paren .dot </s>
 <s> embodying the priority of protecting the rainforest ,comma prunus africana and the kikuyu tribe is kasey quintero of ecosmiles managing environmental issues ,comma n .period d .period )right-paren .dot ...ellipsis her priorities and ethics are ecocentric ,comma as deducted from the name ,comma ecosmiles and by her description as an eco -hyphen nazi "quote by </s>
 <s> those who know her managing environmental issues ,comma n .period d .period )right-paren .dot </s>
@@ -388,7 +383,7 @@
 <s> hassenzahl environmental justice is a right of citizens of all races and creeds to a safe environment .period p .period 2 )right-paren .dot according to bullard ,comma r .period d .period the environmental justice movement advocates against unfair decisions ,comma such as dumping toxic waste in poor and black </s>
 <s> following the above line of reasoning ,comma adopting measures in the simulation that would endanger the kikuyu tribe or its resources would go against environmental justice .period choosing environmental issues </s>
 <s> options promoting environmental justice ,comma sustainable harvesting and check poaching ,comma as suggested by ecosmiles ,comma provide compensation ,comma as suggested by icer ,comma and provide health care resulted in a successful outcome managing environmental issues ,comma n .period d .period )right-paren .dot </s>
-<s> the simulated exercise agrees with personal experience having to do with environmental justice and resource management .period as a tsimshian indian and member of the ninilchick tribe ,comma i have personally witnessed local harvesting of trees for wood pulp and chips .period the option of </s>
+<s> the simulated exercise agrees with personal experience having to do with environmental justice and resource management .period as a Tsimshian indian and member of the ninilchick tribe ,comma i have personally witnessed local harvesting of trees for wood pulp and chips .period the option of </s>
 <s> sustainable harvests is the one most often chosen today .period sometimes compensation is provided .period </s>
 <s> health care is already provided to natives through treaty .period i perceive that the forest still suffers greatly from select logging .period due to a proliferation of parasitic beetles and fungus ,comma thousands of additional trees ,comma sometimes miles away ,comma die off in the years following logging activities .period it is my </s>
 <s> contention that the abundance of parasitic species results from nourishment provided by the number of dead trees and stumps left behind by loggers .period </s>
@@ -398,12 +393,12 @@
 <s> sustain harvests are ecocentric or biocentric .period the other two measures are anthropocentric .period </s>
 <s> together ,comma these measures ensure the kikuyu tribe is compensated and does not suffer from resource degradation or disease from contact with outsiders due to the harvest of prunus africana .period </s>
 <s> environmental issues references bullard ,comma r .period d .period july /slash august )right-paren .dot dismantling toxic racism .period crisis ,comma </s>
-<s> managing environmental issues retrieved july from https :colon /slash /slash ecampus .period phoenix .period edu /slash secure /slash /slash vendors /slash tata /slash sims /slash envissuesethics /slash envissues  .dot html </s>
+<s> managing environmental issues retrieved july from https :colon /slash /slash ecampus .period phoenix .period edu /slash secure /slash /slash vendors /slash tata /slash /slash envissuesethics /slash envissues .dot html </s>
 <s> raven ,comma p .period ,comma berg ,comma l .period ,comma hassenzahl ,comma d .period environment .period th ed .period )right-paren .dot hoboken ,comma nj :colon john wiley and sons ,comma inc .period </s>
 <s> huffman networking project huffman trucking company networking systems project jim white </s>
-<s> jeremy tripp Henry Kroll selma joe </s>
-<s> david louchart nathaniel chapman nct /slash 3 6 0 </s>
-<s> september richard lechner huffman networking project </s>
+<s> Jeremy Tripp Henry Kroll Selma Joe </s>
+<s> David Louchart Nathaniel Chapman NCT /slash 3 6 0 </s>
+<s> September Richard Lechner Huffman networking project </s>
 <s> huffman trucking company networking systems project the c consulting team has been contracted by huffman 'single-quote s trucking to redesign the company 'single-quote s technological networking systems .period the project requirements are to review the telephone and </s>
 <s> network systems and recommend improvements to increase the capabilities ,comma efficiency ,comma and features .period an estimate of costs is desired .period in a page executive summary we will review and recommend changes in the categories of </s>
 <s> a microsoft powerpoint presentation will accompany the report .period </s>
@@ -439,12 +434,11 @@
 <s> network port listen mode )right-paren where an external application connects to the tcp or udp port .period the pbx then starts streaming information down to the application .period </s>
 <s> huffman networking project network port server mode )right-paren the pbx connects to another application or buffer .period </s>
 <s> file the pbx generates a file containing the call records from the pbx .period </s>
-<s> the call records from the pbx are called smdr ,comma cdr ,comma or cil .period it is possible to use a voice modem as fxo card .period the call records from the pbx are called smdr ,comma cdr ,comma or cil .period it is possible to use a voice modem as fxo card .period </s>
 <s> protocols topologies switching </s>
 <s> jimmy white /slash team c :colon week network security current security efforts in the california office ,comma missouri plant ,comma new jersey office ,comma new jersey plant ,comma and the </s>
 <s> ohio plant there is the standard encryption options available on windows server and no firewall or antivirus protection .period </s>
 <s> in the mo office ,comma oh office the use of novel provides simplified prepackaged security by providing full ,comma no ,comma or read only rights to the netware files system .period remote access is included to enable access from outside locations ,comma and give the end user the same capabilities as if they were on the intranet .period options are available for a more secure network as well .period the remote access is managed by novell border manager ;semi-colon this package has many built in feature to provide </s>
-<s> a secure vpn operating environment .period also included at these sites is norton anti -hyphen virus protection .period </s>
+<s> a secure VPN operating environment .period also included at these sites is norton anti -hyphen virus protection .period </s>
 <s> identify security needs all of the network security software requires updating to more modern software and huffman networking project </s>
 <s> process operation .period some of these security measures will be available as data and connectivity hardware is updated ,comma as well as the base network operating system update .period the offices and plants without firewall and antivirus protection must corrected and have protection added immediately .period </s>
 <s> explain advantages and disadvantages of various approaches .period </s>
@@ -452,7 +446,7 @@
 <s> first the physical model ,comma which includes all hardware such as servers ,comma cables ,comma and ensuring total control over physical access to network hardware .period then the software which is presented in two models one is a share object )right-paren orientation and the other user orientation .period </s>
 <s> without question physical security protocols in place must be evaluated and system security ensured .period this will include locked rooms for all servers and switches .period limiting access to these items to only those with need is also of the utmost importance ,comma providing escorts for anyone not directly managed by company will also be required .period other security measures are already in place </s>
 <s> to control building and property access will provide an additional layer of overall security .period </s>
-<s> next ,comma the software security should be addressed to ensure all new equipment and software is adequately updated .period user security is focuses on the rights and permissions of the individual user .period this is a part of most modern server programs ,comma when installing the server operating system the user rights will be programed to enable access to any needed programs but only those needed .period by limiting access only are the users limited but any potential security breech at the operation nodes are limited as well .period share orientation is very simple to institute as well ,comma this model limits editing of programs by users by providing read only access to certain data .period windows xsecurity model is an example of this security model .period </s>
+<s> next ,comma the software security should be addressed to ensure all new equipment and software is adequately updated .period user security is focuses on the rights and permissions of the individual user .period this is a part of most modern server programs ,comma when installing the server operating system the user rights will be programed to enable access to any needed programs but only those needed .period by limiting access only are the users limited but any potential security breech at the operation nodes are limited as well .period share orientation is very simple to institute as well ,comma this model limits editing of programs by users by providing read only access to certain data .period windows security model is an example of this security model .period </s>
 <s> huffman networking project references :colon </s>
 <s> at &ampersand t dect cordless phones .period at &ampersand t cordless phones pause .period </s>
 <s> retreived august from http :colon /slash /slash att .period factoryoutletstore .period com tomsho ,comma g .period ,comma tittle ,comma g .period ,comma johnson ,comma g .period guide to networking essentials .period </s>
@@ -460,7 +454,7 @@
 <s> a keyword based interactive speech recognition system for embedded applications </s>
 <s> an francisco castro cer ´ on andrea graciela garc ´ </s>
 <s> ıa badillo june ,comma school of innovation ,comma design and engineering </s>
-<s> aster ˚ as ,comma sweden supervisor :colon patrik ¨ </s>
+<s> aster ˚ as ,comma Sweden supervisor :colon patrik ¨ </s>
 <s> orkman examiner :colon lars asplund abstract </s>
 <s> speech recognition has been an important area of research during the past decades .period </s>
 <s> the usage of automatic speech recognition systems is rapidly increasing among different areas ,comma such as mobile telephony ,comma automotive ,comma healthcare ,comma robotics and more .period however ,comma </s>
@@ -472,7 +466,7 @@
 <s> the tests run show encouraging results and demonstrate that the system is a feasible solution that could be implemented and tested in a real embedded application .period despite the good results ,comma possible improvements can be implemented ,comma such as the creation of a </s>
 <s> different phonetic dictionary to support different languages .period </s>
 <s> keywords :colon automatic speech recognition ,comma pocketsphinx ,comma embedded systems acknowledgements this master 'single-quote s thesis represent the completion of a journey we decided to start two years </s>
-<s> ago .period studying in sweden has been quite an experience and for that ,comma we would like to thank mdh for giving us the opportunity to study here .period we would also like to express our gratitude to our professor lars asplund for his guidance throughout the </s>
+<s> ago .period studying in Sweden has been quite an experience and for that ,comma we would like to thank mdh for giving us the opportunity to study here .period we would also like to express our gratitude to our professor lars asplund for his guidance throughout the </s>
 <s> development of this project .period moreover ,comma we would like to thank the consejo nacional de ciencia y tecnolog ´ ıa conacyt )right-paren at m ´ </s>
 <s> exico for the financial support provided through the scholarships we were both granted .period </s>
 <s> we would also like to thank our families for their immense support and encouragement during all this time we have been away .period finally ,comma we are grateful with life for having had the great opportunity of being able to accomplish one more goal together .period </s>
@@ -514,8 +508,8 @@
 <s> automated test process </s>
 <s> test sentences </s>
 <s> revaluator tool </s>
-<s> textextractor operation mode the amount of text is limited and so is the vocabulary </s>
-<s> textextractor operation mode limited by the imagination </s>
+<s> text extractor operation mode the amount of text is limited and so is the vocabulary </s>
+<s> text extractor operation mode limited by the imagination </s>
 <s> dictgenerator operation modes and generated dictionary files limited </s>
 <s> respgenerator :colon execution messages </s>
 <s> revaluator :colon execution messages for buzzword limited </s>
@@ -523,7 +517,7 @@
 <s> message </s>
 <s> decoding example </s>
 <s> decoding example of the buzzword </s>
-<s> keywords and urls pause resume paused buzzword resume buzzword </s>
+<s> keywords and URLs pause resume paused buzzword resume buzzword </s>
 <s> example of a set of predefined responses responses </s>
 <s> structure to resume or pause look and limited checking . </s>
 <s> ogg files . </s>
@@ -558,24 +552,24 @@
 <s> chapter presents the summary and conclusions of the paper and discusses possibilities of future work .period </s>
 <s> as well as some of the main challenges regarding systems and the current areas of research .period </s>
 <s> history the idea of building machines capable of communicating with humans using speech emerged during the last couple of decades of the th century .period however ,comma these initial </s>
-<s> trials were more focused on building machines able to speak ,comma rather than listening and understanding human commands .period for example ,comma using the existing knowledge about the human vocal tract ,comma wolfgang von kempelen constructed an acoustic -hyphen mechanical </s>
+<s> trials were more focused on building machines able to speak ,comma rather than listening and understanding human commands .period for example ,comma using the existing knowledge about the human vocal tract ,comma Wolfgang von kempelen constructed an acoustic -hyphen mechanical </s>
 <s> speech machine "quote with the intention of replicating speech -hyphen like sounds </s>
 <s> during the first half of the th century ,comma one of the main research fields related to language recognition was the spectral analysis of speech and its perception by a human listener .period some of the most influential documents were published by bell laboratories </s>
 <s> and in they built a system able to identify isolated digits for a single speaker .period </s>
 <s> the system had speaker -hyphen dependent patterns ,comma one associated to each digit ,comma which represented the first two vowel formants for each digit .period although this scheme was rather rudimentary ,comma the accuracy levels achieved were quite remarkable ,comma reaching around to </s>
-<s> the final part of the s saw the introduction of feature extraction algorithms ,comma such as the fast fourier transform fft )right-paren developed by cooley and tukey ,comma the linear predictive coding lpc )right-paren developed by atal and hanauer ,comma and the cepstral processing of speech </s>
-<s> introduced by oppenheim in warping ,comma also known as non -hyphen uniform time scale was another technique presented to handle differences in the speaking rate and segment length of the input signals .period this was accomplished by shrinking and stretching the input </s>
+<s> the final part of the s saw the introduction of feature extraction algorithms ,comma such as the fast fourier transform fft )right-paren developed by Cooley and turkey ,comma the linear predictive coding lpc )right-paren developed by Atal and Hanauer ,comma and the cepstral processing of speech </s>
+<s> introduced by Oppenheim in warping ,comma also known as non -hyphen uniform time scale was another technique presented to handle differences in the speaking rate and segment length of the input signals .period this was accomplished by shrinking and stretching the input </s>
 <s> the introduction of hidden markov models hmms )right-paren brought significant improvements to the existing technology .period based on the work published by baum and others ,comma james baker applied the hmm framework to speech recognition in as part of his graduate </s>
-<s> work at cmu .period in the same year ,comma facebook ,comma bahl and mercer applied hmms to speech recognition while they were working for ibm .period the main difference was the type of decoding used by the two systems ;semi-colon baker 'single-quote s system used viterbi decoding while ibm 'single-quote s </s>
+<s> work at cmu .period in the same year ,comma facebook ,comma Bahl and Mercer applied hmms to speech recognition while they were working for ibm .period the main difference was the type of decoding used by the two systems ;semi-colon baker 'single-quote s system used decoding while ibm 'single-quote s </s>
 <s> system used stack decoding also known as a *asterisk decoding )right-paren </s>
 <s> the use of statistical methods and hmms heavily influenced the design of the next generation of speech recognizers .period in fact ,comma the use of hmms started to spread since the s and has become by far the most common framework used by speech recognizers .period </s>
-<s> during the late s a technology involving neural networks ann )right-paren was introduced into the speech recognition research ,comma the main idea behind this technology was to identify phonemes or even complete words using multilayer perceptrons mlps )right-paren .dot however ,comma program quit </s>
+<s> during the late century a technology involving neural networks ann )right-paren was introduced into the speech recognition research ,comma the main idea behind this technology was to identify phonemes or even complete words using multilayer perceptrons mlps )right-paren .dot however ,comma program quit </s>
 <s> more modern research has tried to apply mlps as a complementary tool for hmms ,comma </s>
 <s> in other words some moderns use hybrid mlp /slash hmms in order to improve their accuracy .period </s>
-<s> the defense advanced research projects agency darpa )right-paren in the us played a major role in the funding ,comma creation and improvement of speech recognition systems during the last two decades of the th century .period the darpa funded and evaluated many systems </s>
+<s> the defense advanced research projects agency darpa )right-paren in the US played a major role in the funding ,comma creation and improvement of speech recognition systems during the last two decades of the th century .period the darpa funded and evaluated many systems </s>
 <s> by measuring their accuracy and ,comma most importantly ,comma their word error rate technology )right-paren ,comma as illustrated by figure </s>
 <s> figure darpa speech recognition benchmark tests .period </s>
-<s> large vocabulary with more than thousand words .period the darpa program also helped to create a number of speech databases used to train and evaluate systems .period some of these databases are the wall street journal ,comma the switchboard and the callhome </s>
+<s> large vocabulary with more than thousand words .period the darpa program also helped to create a number of speech databases used to train and evaluate systems .period some of these databases are the Wall Street Journal ,comma the Switchboard and the Callhome </s>
 <s> databases ;semi-colon all of them are publicly available .period </s>
 <s> driven by the darpa initiatives ,comma the technology evolved and several research programs were created in different parts of the world .period the speech recognition systems eventually become very sophisticated and capable of supporting large vocabularies with </s>
 <s> thousands of words and phonemes .period however ,comma the technology for conversational speech still can be considered high ,comma with a value of near </s>
@@ -636,17 +630,17 @@
 <s> order to obtain these vectors .period figure depicts the series of steps required to get the feature vectors from the input speech signal .period </s>
 <s> figure signal processing to obtain the mfcc vectors due to the nature of human speech ,comma the speech signal is attenuated as the frequencies increase .period also ,comma the speech signal is subject to a falloff of db when passing through </s>
 <s> the vocal tract therefore ,comma the signal needs to be preemphasized ,comma which means that a preemphasis filter ,comma which is a high -hyphen pass filter ,comma is applied to the signal .period this increases the amplitude of the signal for the high frequencies while decreasing the components </s>
-<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new preemphasized sample at time n is given by the difference xn xn a (left-paren xn − 1 </s>
+<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new preemphasized sample at time n is given by the differencexn a (left-paren− 1 </s>
 <s> where a is a factor that is typically set to a value near </s>
 <s> once the signal has been preemphasized ,comma it is partitioned into smaller frames of sizes of about to milliseconds sampled every milliseconds .period the higher the sample rate ,comma the better it is to model fast speech changes the frames are overlapped in </s>
 <s> order to avoid missing information that could have been in between the limits of each frame .period this process is called windowing and it is used in order to minimize the effects of partitioning the signal into small windows .period the most used window function in </s>
-<s> is the hamming window this function is described by wn α α )right-paren cos nπ </s>
-<s> n where w is a window of size n and α has a value of </s>
+<s> is the hamming window this function is described by )right-paren cos n </s>
+<s> n where w is a window of size n and has a value of </s>
 <s> next step is to compute the power spectrum by means of the discrete fourier transform dft )right-paren using the fast fourier transform fft )right-paren algorithm to minimize the required computation .period then ,comma using a mel -hyphen filter bank the power spectrum is mapped onto the </s>
 <s> filters where the center frequencies are equidistant on the mel -hyphen scale .period this scale is linear up to hertz and logarithmic thereafter </s>
 <s> next ,comma a logarithm compression is made to the data obtained from the mel -hyphen filter bank resulting into log -hyphen energy coefficients .period this coefficients are then orthognonalized by a discrete cosine transform dct )right-paren in order to compress the spectral data into a set of </s>
 <s> low order coefficients ,comma also known as the mel -hyphen cepstrum or cepstral vector this is described by the following m </s>
-<s> where ci is the ith mfcc and m is the number of cepstrum coefficients and xk represents the log -hyphen energy coefficients of the kth mel -hyphen filter this vector is later normalized in order to account for the distortions that may have occurred due to the </s>
+<s> where ci is the ith mfcc and m is the number of cepstrum coefficients andrepresents the log -hyphen energy coefficients of the kth mel -hyphen filter this vector is later normalized in order to account for the distortions that may have occurred due to the </s>
 <s> additionally ,comma it is common to get the first and second order differentials of the cepstrum sequence to obtain the delta -hyphen cepstrum and the delta -hyphen delta cepstrum .period furthermore ,comma the delta -hyphen energy and delta -hyphen delta energy parameters ,comma which are the first and second order </s>
 <s> differentials of the power spectrum are also added to the feature vector this is how ,comma </s>
 <s> an feature vector typically consists of cepstral coefficients ,comma delta values and delta -hyphen delta values ,comma which gives a total of features per vector </s>
@@ -657,11 +651,11 @@
 <s> most systems use a probabilistic framework in order to find out how words are related to each other .period in a very general sense ,comma the system tries to determine what word is the latest one received based on a group of words previously received .period for instance ,comma </s>
 <s> what would be the next word in the following sentence ?question-mark i would like to make a collect .period </s>
 <s> some of the possible words would be call "quote ,comma phone -hyphen call "quote or international "quote among others .period in order to determine the most probable word in the sentence ,comma the needs to use probability density functions ,comma p w where w represents a sequence of words </s>
-<s> w 1 w 2 wn the density function assigns a probability value to a word sequence depending on how likely it appears in a speech corpus using the same example as before ,comma the probability of the word call "quote occurring after i would like to make a collect "quote ,comma </s>
+<s> w 1 w 2 the density function assigns a probability value to a word sequence depending on how likely it appears in a speech corpus using the same example as before ,comma the probability of the word call "quote occurring after i would like to make a collect "quote ,comma </s>
 <s> p w p i "quote ,comma would "quote ,comma like "quote ,comma to "quote ,comma make "quote ,comma a "quote ,comma collect "quote ,comma call "quote )right-paren </s>
 <s> if we substitute the words by mathematical expressions we have :colon </s>
-<s> p w p w 1 w 2 w 3 wn wn </s>
-<s> p w p w 1 p w 2 w 1 p w 3 w 2 w 1 p wn wn w 1 </s>
+<s> p w p w 1 w 2 w 3 </s>
+<s> p w p w 1 p w 2 w 1 p w 3 w 2 w 1 p w 1 </s>
 <s> as it can be seen ,comma the probability function requires using all of the words in a given sentence .period this might represent a big problem when using large vocabularies ,comma especially when dealing with very long sentences .period a large speech corpus would be required in </s>
 <s> order to compute the probability of each word occurring after any combination of other words .period in order to minimize the need of a large corpus ,comma the n -hyphen gram model is used .period </s>
 <s> this can be achieved by approximating the probability function of a given word by using a predefined number of previous words n )right-paren .dot for example ,comma using a bigram model ,comma </s>
@@ -680,7 +674,7 @@
 <s> a triphone can be seen at figure </s>
 <s> figure a typical triphone structure .period </s>
 <s> the purpose of the hidden markov model is to estimate the probability that an acoustic feature vector corresponds to a certain triphone .period the computation of this probability can be obtained by using what is called the evaluation problem of hmms .period there is more </s>
-<s> than one way to solve the evaluation problem ;semi-colon however the most used algorithms are the forward -hyphen backward algorithm ,comma the viterbi algorithm and the stack decoding algorithm dictionary </s>
+<s> than one way to solve the evaluation problem ;semi-colon however the most used algorithms are the forward -hyphen backward algorithm ,comma the algorithm and the stack decoding algorithm dictionary </s>
 <s> the dictionary complements the language model and the acoustic model by mapping written words into phoneme sequences .period it is important to notice that the size of the dictionary should correspond to the size of the vocabulary used by the system .period in </s>
 <s> other words ,comma it should contain every single word and its phonetic representation used by the system ,comma as it can be seen at table </s>
 <s> aardvark phoneme representationn table example of the first words in an dictionary </s>
@@ -693,36 +687,28 @@
 <s> in a markov model ,comma the probability or likelihood of being in a given state depends only on the immediate prior state ,comma leaving earlier states out of consideration .period unlike a markov model ,comma in where each state corresponds to an observable event ,comma in an hmm the state is </s>
 <s> hidden ,comma only the output is visible .period </s>
 <s> then ,comma an hmm can be described as having states ,comma observations and probabilities </s>
-<s> n hidden interconnected states and state qt at time t ,comma </s>
-<s> s s 1 s 2 ,comma sn observations .period </s>
-<s> symbols .period m observation symbols per state ,comma </s>
-<s> v v 1 v vm sequences .period t observations in the sequence ,comma </s>
-<s> o o 1 o 2 ot probabilities .period </s>
-<s> state transition probability distribution a where ,comma </s>
-<s> aij p q (left-paren t sj qt si </s>
-<s> bj k )right-paren p vk at t |pipe-symbol qt sj </s>
 <s> an example of an hmm is depicted at figure the model has three states having self and forward transitions between them .period state q 1 has two observation symbols ,comma state q 2 has three observation symbols and state q 3 has four observation symbols .period each symbol </s>
 <s> has its own observation probability distribution per state .period </s>
 <s> figure three state hmm an hmm shall address three basic problems in order to be useful in real -hyphen world applications such as in an system the first problem is selecting a proper method to </s>
-<s> determine the probability p o |pipe-symbol λ )right-paren that the observation sequence o o 1 o 2 ot is produced by the model λ a ,comma b ,comma π )right-paren .dot the typical approach used to solve this problem is the forward -hyphen backward procedure ,comma being the forward step the most important at this </s>
-<s> stage .period this algorithm is presented at section the second problem is finding the best state sequence q q 1 q 2 ,comma qt that produced the observation sequence o o 1 o 2 ot for this ,comma it is necessary to use an optimality </s>
+<s> determine the probability that the observation sequence o is produced by the model a ,comma b ,comma )right-paren .dot the typical approach used to solve this problem is the forward -hyphen backward procedure ,comma being the forward step the most important at this </s>
+<s> stage .period this algorithm is presented at section the second problem is finding the best state sequence that produced the observation sequence for this ,comma it is necessary to use an optimality </s>
 <s> criterion and learn about the model 'single-quote s structure .period one possibility is to select the states qt that are individually most likely for each t .period however ,comma this approach is not efficient as it is only providing individual results ,comma that is why the common approach to finding the </s>
-<s> best state sequence is to use the viterbi algorithm .period this algorithm is later presented at this section .period </s>
-<s> finally ,comma the third problem deals with the adjustment of the model parameters λ a ,comma b ,comma π )right-paren in order to maximize the probability p o |pipe-symbol λ )right-paren to better determine the origin of the observation o o 1 o 2 ot this is considered to be an optimization problem </s>
+<s> best state sequence is to use the algorithm .period this algorithm is later presented at this section .period </s>
+<s> finally ,comma the third problem deals with the adjustment of the model parameters a ,comma b ,comma )right-paren in order to maximize the probability p o |pipe-symbol )right-paren to better determine the origin of the observation this is considered to be an optimization problem </s>
 <s> where the output results to be the decision criterion .period in addition ,comma this is the point where training takes an important role in as it allows adapting the model parameters to observed training data .period therefore ,comma a common approach to solve this is by means of </s>
-<s> the maximum likelihood optimization procedure .period this procedure uses separate training observation sequences ov to obtain model parameters for each model λv pv </s>
-<s> λv typical usage of hidden markov models in ,comma various models can be made based on hmm ,comma being the most common models the </s>
+<s> the maximum likelihood optimization procedure .period this procedure uses separate training observation sequences ov to obtain model parameters for each modelpv </s>
+<s>typical usage of hidden markov models in ,comma various models can be made based on hmm ,comma being the most common models the </s>
 <s> ones for phonemes and words .period an example of these type of models is depicted in figure where various phone hmm models are used to construct the phonetic representation of the word one and the concatenation of these models are used to construct word hmm </s>
 <s> phoneme models are constrained by pronunciations from a dictionary ,comma while word models are constrained by a grammar .period phone or phoneme models are usually made up using one or more state hmm .period on the other hand ,comma word models are made up of the concatenation </s>
 <s> of phoneme models ,comma that at the same time help on the construction of sentence models figure example of phone and word hmms representation acoustic probabilities and neural networks mlps </s>
 <s> the front end phase of any speech recognition system is in charge of converting the input sound waves into feature vectors .period nonetheless ,comma these vectors need to be converted into observation probabilities in order to decode the most probable sequence of phonemes and </s>
 <s> words in the input speech .period two of the most common methods to find the observation probabilities are :colon the gaussian probability -hyphen density functions pdfs )right-paren and most recently ,comma </s>
 <s> the use of neural networks also called multi -hyphen layer perceptrons ,comma mlps )right-paren .dot </s>
-<s> the gaussian observation -hyphen probability method converts an observation feature vector ot into a probability function ot using a gaussian curve with a mean value µ and a covariance matrix Σ .dot in the simpler version of this method ,comma each state in the hidden </s>
+<s> the gaussian observation -hyphen probability method converts an observation feature vector ot into a probability function ot using a gaussian curve with a mean value µ and a covariance matrix .dot in the simpler version of this method ,comma each state in the hidden </s>
 <s> markov framework has one pdf .period however ,comma most systems use multiple pdfs per state ,comma for this reason ,comma the overall probability function ot is computed using gaussian mixtures .period the forward -hyphen backward algorithm is commonly used to compute </s>
 <s> these probability functions and is also used to train the whole hidden markov model framework </s>
 <s> having the mean value and the covariance matrix ,comma the probability function can be computed using the following equation :colon </s>
-<s> e [left-bracket (left-paren ot µj Σj ot µj artificial neural networks are one of the main alternatives to the gaussian estimator in </s>
+<s> e [left-bracket (left-paren artificial neural networks are one of the main alternatives to the gaussian estimator in </s>
 <s> order to compute observation probabilities .period the key characteristic of neural networks is that they can arbitrarily map inputs to outputs as long as they have enough hidden layers .period for example ,comma having the feature vectors as inputs ot and the corresponding </s>
 <s> typically ,comma the systems that use hidden markov models and mlps are classified as hybrid hmm -hyphen mlp )right-paren speech recognition systems .period the inputs to the neural network are various frames containing spectral features and the network has one output for each </s>
 <s> phone in the language .period in this case ,comma the most common method to train the neural network is the back -hyphen propagation algorithm </s>
@@ -731,24 +717,22 @@
 <s> figure a detailed representation of a multi -hyphen layer perceptron .period </s>
 <s> the two methods to calculate the acoustic probabilities gaussian and mlps )right-paren have roughly the same performance .period however ,comma mlps take longer time to train and they use less parameters .period for this reason ,comma the neural networks method seems to be more </s>
 <s> suited to applications where amount of processing power and memory are major concerns .period </s>
-<s> to identify the place where one word ends and the next one starts .period this is called the segmentation problem of speech and it is typically solved using n -hyphen gram models and the viterbi algorithm .period given a set of observed phones o o 1 o 2 ot the purpose of the </s>
-<s> decoding algorithm is to find the most probable sequence of states q ∗ q 1 q 2 qn </s>
+<s> to identify the place where one word ends and the next one starts .period this is called the segmentation problem of speech and it is typically solved using n -hyphen gram models and the algorithm .period given a set of observed phones the purpose of the </s>
+<s> decoding algorithm is to find the most probable sequence of states </s>
 <s> and subsequently ,comma the most probable sequence of words in a speech </s>
-<s> the viterbi search is implemented using a matrix where each cell contains the best path after the first t observations .period additionally ,comma each cell contains a pointer to the last state i in the path .period for example :colon </s>
-<s> viterbi [left-bracket t ,comma i ]right-bracket max q 1 q 2 qt − 1 </s>
-<s> p q 1 q 2 qt − 1 qt i ,comma o 1 o 2 ot </s>
-<s> in order to compute each cell in the matrix ,comma the viterbi algorithm uses what is called the dynamic programming invariant in other words ,comma the algorithm assumes that the overall best path for the entire observation goes through state i ,comma but sometimes </s>
+<s> the search is implemented using a matrix where each cell contains the best path after the first t observations .period additionally ,comma each cell contains a pointer to the last state i in the path .period for example :colon </s>
+<s> in order to compute each cell in the matrix ,comma the algorithm uses what is called the dynamic programming invariant in other words ,comma the algorithm assumes that the overall best path for the entire observation goes through state i ,comma but sometimes </s>
 <s> that assumption might lead to incorrect results .period for example ,comma if the best path looks bad initially ,comma the algorithm would discard it and select a different path with a better probability up to state i .period however ,comma the dynamic programming invariant is often used in </s>
-<s> order to simplify the decoding process using a recurrence rule in which each cell in the viterbi matrix can be computed using information related to the previous cell </s>
-<s> viterbi [left-bracket t ,comma j ]right-bracket max (left-paren viterbi [left-bracket t i ]right-bracket ot </s>
+<s> order to simplify the decoding process using a recurrence rule in which each cell in the matrix can be computed using information related to the previous cell </s>
+<s> [left-bracket t ,comma j ]right-bracket max (left-paren [left-bracket t i ]right-bracket ot </s>
 <s> i as it can be seen ,comma the cell t ,comma j ]right-bracket is computed using the previous cell t i ]right-bracket ,comma one emission probability and one transition probability it is important to emphasize that this </s>
-<s> is a simplified model for the viterbi algorithm ,comma for example a real speech recognizer that uses hmms would receive feature acoustical vectors instead of phones .period furthermore ,comma the likelihood probabilities ot would be calculated using gaussian probability functions or </s>
+<s> is a simplified model for the algorithm ,comma for example a real speech recognizer that uses hmms would receive feature acoustical vectors instead of phones .period furthermore ,comma the likelihood probabilities ot would be calculated using gaussian probability functions or </s>
 <s> multi -hyphen layer perceptrons mlps )right-paren .dot additionally ,comma the hidden markov models are typically divided in triphones rather than single phones .period this characteristic of hmms provides a direct segmentation of the speech utterance </s>
 <s> the large amount of possible triphones and the use of a large vocabulary make the speech decoding a computationally expensive task .period for this reason ,comma it is necessary to implement a method to discard low probability paths and focus on the best ones .period this </s>
 <s> process is called pruning and is usually implemented using a beam search algorithm .period </s>
 <s> the main purpose of this algorithm is to speed up the execution of the search algorithm and the use of a lower amount of computational resources .period however ,comma the main drawback of the algorithm is the degradation of the decoding performance </s>
-<s> the use of the dynamic programming invariant ,comma therefore it cannot be used with some language models ,comma such as tri -hyphen grams the stack decoding algorithm solves the same problem as the viterbi algorithm ,comma which is finding the most likely word sequence w </s>
-<s> given a sequence of observations o ,comma for this reason it is often used as the best alternative to substitute viterbi 'single-quote s method .period </s>
+<s> the use of the dynamic programming invariant ,comma therefore it cannot be used with some language models ,comma such as tri -hyphen grams the stack decoding algorithm solves the same problem as the algorithm ,comma which is finding the most likely word sequence w </s>
+<s> given a sequence of observations o ,comma for this reason it is often used as the best alternative to substitute Viterbi's method .period </s>
 <s> in this case ,comma the speech recognition problem can be seen as a tree network search problem in which the branches leaving each junction represent words .period as the tree network is processed ,comma more words are appended to the current string of words in order to form the </s>
 <s> most likely path an example of this tree is illustrated by figure </s>
 <s> figure tree search nerwork using the a *asterisk algorithm .period </s>
@@ -767,7 +751,7 @@
 <s> gradient ,comma also known as hill -hyphen climbing ,comma method .period this means that the convergence of the algorithm is determined by local optimality </s>
 <s> forward -hyphen backward algorithm due to the large number of parameters involved in the training of hmms ,comma it is preferable to use simple methods .period some of these methods can feature adaptation in order to add </s>
 <s> robustness to the system by using noisy or contaminated training data .period in fact ,comma this has been a major research area in the field of speech recognition during the last couple of decades </s>
-<s> two of the most popular algorithms used to train hmms are the viterbi algorithm ,comma and the forward -hyphen backward fb )right-paren algorithm ,comma also known as the baum -hyphen welch algorithm .period this last algorithm computes two main parameters in order to train hmms ,comma the maximum </s>
+<s> two of the most popular algorithms used to train hmms are the algorithm ,comma and the forward -hyphen backward fb )right-paren algorithm ,comma also known as the baum -hyphen Welch algorithm .period this last algorithm computes two main parameters in order to train hmms ,comma the maximum </s>
 <s> likelihood estimates and the posterior modes transition and emission probabilities )right-paren using emission observations as training data .period the approximation of hmm probabilities can be achieved combining two parameters named :colon the forward probability alpha )right-paren and </s>
 <s> backward probability beta )right-paren </s>
 <s> the forward probability is defined as the probability of being in state i after the first t observations </s>
@@ -780,7 +764,7 @@
 <s> a similar approach is used to calculate the backward probabilities using an iterative formula :colon </s>
 <s> i =equals-sign 2 once that the forward and backward probabilities have been calculated ,comma both the alpha and beta factors are normalized and combined in order to approximate the new values </s>
 <s> for the emission and transition probabilities .period </s>
-<s> although the baum -hyphen welch algorithm has proven to be an efficient way to train hmms ,comma </s>
+<s> although the baum -hyphen Welch algorithm has proven to be an efficient way to train hmms ,comma </s>
 <s> the training data needs to be sufficient to avoid having parameters with probabilities equal to zero .period furthermore ,comma using the forward -hyphen backward algorithm helps to train parameters for an existing hmm ,comma but the structure of the hmm needs to be generated manually .period </s>
 <s> this could represent a major concern as finding a good method to generate the structure for an hmm could be a difficult task </s>
 <s> an example of a training procedure is depicted in figure in which the forward -hyphen backward algorithm is used by sphinx .period </s>
@@ -813,10 +797,10 @@
 <s> one of the main advantages of pocketsphinx over other systems is that it has been ported and executed successfully on different types of processors ,comma most notably the x 8 6 family and several arm processors similarly ,comma this has been used on different </s>
 <s> operating systems such as microsoft 'single-quote s windows ce ,comma apple 'single-quote s ios and google 'single-quote s android additionally ,comma the source code of pocketsphinx has been published by the carnegie melon university under a bsd style license .period the latest code can be retrieved from </s>
 <s> in order to execute pocketsphinx ,comma typically three input files need to be specified :colon the language model ,comma the acoustic model and the dictionary .period for more information about these three components please refer to section by default ,comma the pocketsphinx </s>
-<s> toolkit includes at least one language model wsj 0 vp .period 5 0 0 0 )right-paren ,comma one acoustic model hub 4 wsj sc k )right-paren </s>
+<s> toolkit includes at least one language model 0 .period 5 0 0 0 )right-paren ,comma one acoustic model hub 4 k )right-paren </s>
 <s> and one dictionary cmu 0 7 a .period dic )right-paren .dot nonetheless ,comma these files are intended to support very large vocabularies ,comma for example ,comma the dictionary 2 includes around words .period </s>
 <s> although there are not many scientific publications to describe how the pocketsphinx library works ,comma the official web page 3 contains documentation that describes how to download and compile the source code ,comma as well as how to create example applications .period </s>
-<s> cmu sphinx repository :colon http :colon /slash /slash sourceforge .period net /slash projects /slash cmusphinx cmu dictionary :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash cgi -hyphen bin /slash cmudict pocketsphinx :colon http :colon /slash /slash www .period pocketsphinx .period org </s>
+<s> cmu sphinx repository :colon http :colon /slash /slash SourceForge .period net /slash projects /slash cmusphinx cmu dictionary :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash cgi -hyphen bin /slash cmudict pocketsphinx :colon http :colon /slash /slash www .period pocketsphinx .period org </s>
 <s> can be cumbersome to navigate through the web page as some documentation applies to both pocketsphinx and sphinx while some other parts apply just to sphinx </s>
 <s> at the end of the day ,comma we chose to use pocketsphinx because it provides a development framework that can be adapted to fit our requirements .period for example ,comma pocketsphinx has been tested in several embedded devices running different operating systems .period for this </s>
 <s> reason ,comma we consider that is more feasible to adapt it instead of creating an from scratch .period </s>
@@ -824,12 +808,11 @@
 <s> speech ;semi-colon in the following section we will describe this application in more detail .period </s>
 <s> system description the development of this project was done considering that the system can be used by a robot that is located at a museum and that can interact with people .period the robot shall be </s>
 <s> able to listen and talk to a person based on identified keywords that were pronounced by the speaker .period however ,comma the robot shall never remain quiet .period this means that if no keyword is identified ,comma it shall be able to play additional information about the museum .period for this </s>
-<s> project ,comma the robot was assumed to be located at the swedish tekniska museet </s>
+<s> project ,comma the robot was assumed to be located at the Swedish Tekniska Museet </s>
 <s> therefore ,comma the system needs to be able to identify previously defined keywords from a spoken sentence and it should be speaker independent .period moreover ,comma the system needs to be an interactive speech recognition system ,comma in the sense that it shall be able to react </s>
 <s> based on an identified keyword .period in this case ,comma an audio file with information related to the keyword is played in response .period otherwise ,comma if the system does not identify any keyword from the decoded speech ,comma the system shall play any other default audio file .period </s>
 <s> furthermore ,comma the system needs to be portable ,comma as it has as main goal to be used by an embedded application .period therefore ,comma as explained at section pocketsphinx was selected from the cmu sphinx family of decoders as it provides the required technology </s>
 <s> to develop this type of systems .period </s>
-<s> tekniska museet :colon http :colon /slash /slash www .period tekniskamuseet .period se keyword list the keyword list comprises the words of relevance and that are selected to be identified </s>
 <s> by the system .period this list mostly likely shall have the words that could be pronounced more often by a speaker .period therefore ,comma they shall be selected according to the area of interest .period </s>
 <s> for this project the keywords were selected according to the current exhibitions at the museum .period </s>
 <s> for the definition of the keywords a keyword file was created .period this file contains the list of all the words that shall be identified from the incoming speech signal .period each line of the file shall contain the keyword ,comma followed by the number of audio files available for playing </s>
@@ -840,12 +823,12 @@
 <s> the information that is played whenever a keyword is identified by the system ,comma comes from selected sentences converted from text to speech .period thus ,comma to convert the sentences into speech ,comma a text to speech tts )right-paren system is required .period there are different tts systems </s>
 <s> available such as espeak [left-bracket 4 ]right-bracket or freetts [left-bracket 5 ]right-bracket .dot however ,comma for this project we have selected google 'single-quote s tts ,comma which is accessed via google 'single-quote s translate [left-bracket 2 2 ]right-bracket service ,comma as it is easy to use and more importantly ,comma due to its audio quality .period </s>
 <s> written within a text file .period the file should first contain a line with the keyword preceded by a hash symbol and then the lines with its associated sentences .period an example of the format of this file containing keywords to n and their sentences can be seen at figure </s>
-<s> figure sentences for audio files example once the file containing the sentences is ready ,comma the tool reads them from the file ,comma connects to google 'single-quote s tts and retrieves the generated audio files ,comma all this by using the gnu wget 5 </s>
+<s> figure sentences for audio files example once the file containing the sentences is ready ,comma the tool reads them from the file ,comma connects to google 'single-quote s tts and retrieves the generated audio files ,comma all this by using the gnu get 5 </s>
 <s> free software package .period the generated audio files are placed under a folder with the name of the keyword that they belong to and they are numerically named from to n ,comma where n is the number of available audio files per keyword .period figure illustrates the process </s>
 <s> of the conversion of the sentences into audio files .period </s>
-<s> gnu wget :colon http :colon /slash /slash www .period gnu .period org /slash software /slash wget /slash </s>
+<s> gnu get :colon http :colon /slash /slash www .period gnu .period org /slash software /slash get /slash </s>
 <s> additionally ,comma the user must specify the desired path for the output audio files .period </s>
-<s> regarding the wget tool ,comma it needs to be placed in the same folder as the respgenerator tool in order generate the audio files correctly .period for linux operating systems ,comma the wget tool is installed by default ,comma nonetheless ,comma for windows operating systems ,comma the user needs </s>
+<s> regarding the get tool ,comma it needs to be placed in the same folder as the respgenerator tool in order generate the audio files correctly .period for Linux operating systems ,comma the get tool is installed by default ,comma nonetheless ,comma for windows operating systems ,comma the user needs </s>
 <s> to download the executable and place it in the appropriate folder .period </s>
 <s> the following command provides an example about how to execute the respgenerator tool :colon </s>
 <s> java jar respgenerator .period jar sentencesfile .period txt outputpath \backslash as it can be seen ,comma the first parameter corresponds to the path and name of the file containing the sentences and the second parameter is the path for the output audio files .period </s>
@@ -864,8 +847,8 @@
 <s> decode the input sentences as the search space of the algorithms used by pocketsphinx gets smaller .period similarly the accuracy of the becomes higher when the vocabulary is small .period for example ,comma there is an example application included with pocketsphinx that </s>
 <s> uses a vocabulary containing only the numbers from to in this case ,comma the overall accuracy is in the range of to </s>
 <s> on the other hand ,comma it is recommended to use one of the default acoustic models included with pocketsphinx .period the main reason is that the default acoustic models have been created using huge amounts of acoustic data containing speech from several persons .period </s>
-<s> in other words ,comma the default acoustic models have been carefully tuned to be speaker ogg :colon http :colon /slash /slash www .period vorbis .period com /slash </s>
-<s> bass audio library :colon http :colon /slash /slash www .period un 4 seen .period com /slash bass .period html independent .period if for some reason the user creates a new acoustic model ,comma or adapts an existing one ,comma the acoustic training data needs to be carefully selected in order to avoid </s>
+<s> in other words ,comma the default acoustic models have been carefully tuned to be speaker ogg :colon http :colon /slash /slash www .period Vorbis .period com /slash </s>
+<s> bass audio library :colon http :colon /slash /slash www .period UN 4 seen .period com /slash bass .period html independent .period if for some reason the user creates a new acoustic model ,comma or adapts an existing one ,comma the acoustic training data needs to be carefully selected in order to avoid </s>
 <s> the cmusphinx toolkit provides methods to adapt an existing acoustic model or even create a new one from scratch .period however ,comma in order to create a new language model ,comma </s>
 <s> it is required to have large quantities of speech data from different speakers and the corresponding transcript for each training sentence .period for dictation applications it is recommended to have at least hours of recordings of speakers 8 </s>
 <s> keyword -hyphen based language model generation the cmusphinx toolkit provides a set of applications aimed to help the developer during the creation of new language models ,comma this group of applications is called the </s>
@@ -874,34 +857,34 @@
 <s> figure statistical language model toolkit alternatively ,comma there is an online version of the cmuclmtk toolkit ,comma called lmtool .period in order to execute this tool ,comma the user needs to upload a text corpus into a server using a </s>
 <s> web browser and the tool generates a language model .period however ,comma this tool is intended to be used with small text corpora containing a couple of hundreds of sentences at the most .period this limitation became a problem for us ,comma as most of the times our web browser </s>
 <s> timed -hyphen out before the tool was able to generate a language model .period for this reason we decided to use the cmuclmtk toolkit instead .period </s>
-<s> besides generating a language model from a text corpus ,comma the cmuclmtk toolkit generates several other useful files ,comma such as ,comma the vocab file that lists all the words found in the vocabulary .period similarly ,comma the wfreq file lists all the words in the vocabulary and </s>
-<s> the number of times they appear in the text corpus .period finally ,comma the toolkit generates the laguage model in two possible formats ,comma the arpa format arpa )right-paren ,comma which is a text file or cmuclmtk toolkit :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash slm /slash toolkit _underscore documentation .period html </s>
+<s> besides generating a language model from a text corpus ,comma the cmuclmtk toolkit generates several other useful files ,comma such as ,comma the vocab file that lists all the words found in the vocabulary .period similarly ,comma the file lists all the words in the vocabulary and </s>
+<s> the number of times they appear in the text corpus .period finally ,comma the toolkit generates the laguage model in two possible formats ,comma the arpa format arpa )right-paren ,comma which is a text file or cmuclmtk toolkit :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash /slash toolkit _underscore documentation .period html </s>
 <s> there are many ways to generate the input text corpus for the cmuclmtk toolkit .period </s>
 <s> probably the simplest way of generating the text corpus is to write a number of sentences by hand .period nevertheless ,comma this method can become unfeasible very easily ,comma especially when the language model generation requires a fairly high amount of input sentences .period for </s>
 <s> this reason ,comma it is preferred to use a different method in order to generate the text corpus automatically .period </s>
-<s> in order to optimize the generation of the language models we created a tool called textextractor this tool creates a text corpus based on web texts from the internet .period </s>
-<s> more specifically ,comma this tool downloads text from web pages based on a set of input uniform resource locators urls )right-paren .dot additionally ,comma the textextractor filters the raw text ,comma </s>
+<s> in order to optimize the generation of the language models we created a tool called text extractor this tool creates a text corpus based on web texts from the internet .period </s>
+<s> more specifically ,comma this tool downloads text from web pages based on a set of input uniform resource locators URLs )right-paren .dot additionally ,comma the text extractor filters the raw text ,comma </s>
 <s> expands abbreviations and acronyms ,comma converts numbers to their word representation and removes special characters ,comma among other things .period </s>
-<s> furthermore ,comma as illustrated at figure the textextractor can receive a list of keywords in order to insert into the text corpus only the sentences containing keywords .period this is particularly helpful to keep the language model compact even when the number of </s>
+<s> furthermore ,comma as illustrated at figure the text extractor can receive a list of keywords in order to insert into the text corpus only the sentences containing keywords .period this is particularly helpful to keep the language model compact even when the number of </s>
 <s> sentences in the selected web pages is large .period </s>
-<s> figure textextractor and cmuclmtk in general ,comma the textextractor tool has two modes of operation .period the simplest way to use the tool is by providing two arguments ,comma the list of urls to be used to generate the </s>
+<s> figure text extractor and cmuclmtk in general ,comma the text extractor tool has two modes of operation .period the simplest way to use the tool is by providing two arguments ,comma the list of URLs to be used to generate the </s>
 <s> text corpus and the name of the output file ,comma for example :colon </s>
-<s> java jar textextractor .period jar url _underscore list .period txt tcorpus .period txt in this case ,comma the result of executing the tool will be a text corpus called tcorpus .period txt .period </s>
-<s> this file will include a list of sentences downloaded from the list of urls .period addtionally ,comma </s>
+<s> java jar text extractor .period jar url _underscore list .period txt corpus .period txt in this case ,comma the result of executing the tool will be a text corpus called corpus .period txt .period </s>
+<s> this file will include a list of sentences downloaded from the list of URLs .period addtionally ,comma </s>
 <s> the sentences will not contain punctuation symbols ,comma such as commas and colons ,comma and all of the numbers will be replaced by its word representation .period </s>
 <s> include sentences that contain one or more keywords .period for example :colon </s>
-<s> java jar textextractor .period jar url _underscore list .period txt tcorpus .period txt keyword _underscore list .period txt in both operation modes ,comma the tool will display an error message if it finds a problem </s>
+<s> java jar text extractor .period jar url _underscore list .period txt corpus .period txt keyword _underscore list .period txt in both operation modes ,comma the tool will display an error message if it finds a problem </s>
 <s> during its execution .period otherwise ,comma a success message will be displayed when the tool has completed its execution succesfully .period for example :colon </s>
-<s> output text file (left-paren s )right-paren created using both the textextractor and the cmuclmtk tools allows generating language models in a quick and easy way .period these characteristics gave us the opportunity to evaluate </s>
+<s> output text file (left-paren s )right-paren created using both the text extractor and the cmuclmtk tools allows generating language models in a quick and easy way .period these characteristics gave us the opportunity to evaluate </s>
 <s> the performance of several language models in order to choose the most appropriate one given the requirements of our application .period please refer to chapter in order to find out more about the evaluation of different language models .period </s>
-<s> the textextractor tool was entirely written in java in order to be used in different platforms ,comma while the cmuclmtk toolkit is written in c .period the cmuclmtk toolkit can be compiled for different platforms ,comma most notably windows ,comma sunos and linux .period for </s>
+<s> the text extractor tool was entirely written in java in order to be used in different platforms ,comma while the cmuclmtk toolkit is written in c .period the cmuclmtk toolkit can be compiled for different platforms ,comma most notably windows ,comma SunOS and Linux .period for </s>
 <s> this reason ,comma it is important to choose the correct version of the tool before downloading it from the repository .period currently ,comma there is an online document 9 describing the main characteristics of the toolkit .period however ,comma it is not very detailed and the procedure to use </s>
 <s> the tools is inconsistently described in several parts .period </s>
-<s> the textextractor tool uses a public library called boilerpipe in order to download text from web pages .period this library is publicly available and can be downloaded from the repository for google code projects 1 0 </s>
+<s> the text extractor tool uses a public library called boilerpipe in order to download text from web pages .period this library is publicly available and can be downloaded from the repository for google code projects 1 0 </s>
 <s> custom dictionary generation although the default dictionary file cmu 0 7 a .period dic )right-paren integrated with pocketsphinx includes more than words ,comma it is not feasible to use it in a small vocabulary application .period </s>
 <s> for this reason we generated a custom dictionary with only the subset of words used by our language model .period the size of the custom dictionary is around th the size of the original dictionary .period this allows the application to handle the dictionary file much </s>
 <s> easier and perform the speech decoding faster .period </s>
-<s> cmuclmtk toolkit :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash slm /slash toolkit _underscore documentation .period html boilerpipe :colon http :colon /slash /slash code .period google .period com /slash p /slash boilerpipe the dictionary generator tool dictgenerator )right-paren takes a custom language model and </s>
+<s> cmuclmtk toolkit :colon http :colon /slash /slash www .period speech .period cs .period cmu .period edu /slash /slash toolkit _underscore documentation .period html boilerpipe :colon http :colon /slash /slash code .period google .period com /slash p /slash boilerpipe the dictionary generator tool dictgenerator )right-paren takes a custom language model and </s>
 <s> the cmu 0 7 a dictionary from pocketsphinx as inputs .period similarly ,comma the tool generates a custom dictionary containing just the subset of words supported by the language model .period </s>
 <s> this process can be seen at figure </s>
 <s> figure dictionary generator tool besides the custom dictionary file ,comma the dictgenerator tool generates a text file containing a list of words not found in the cmu 0 7 a dictionary .period when one word is not found in the </s>
@@ -914,19 +897,19 @@
 <s> table dictionary words not found :colon causes and solutions most of the times ,comma the words in the language model that are not found in the cmu 0 7 a dictionary contain typos .period for this reason ,comma there is no need to edit the custom dictionary </s>
 <s> the dictgenerator has two main operation modes .period in the first operation mode ,comma it receives at least two arguments ,comma one indicating the name and path of the input dictionary file cmudict 0 7 .dot dic )right-paren and the second indicating the name and path of a file containing all </s>
 <s> the words in the custom vocabulary .period for example :colon </s>
-<s> java jar dictgenerator .period jar cmu 0 7 a .period dic tcorpus .period vocab in this operation mode ,comma the tool will generate a custom dictionary using a default name outputdict .period dic )right-paren and a file containing words not found in the input dictionary </s>
+<s> java jar dictgenerator .period jar cmu 0 7 a .period dic corpus .period vocab in this operation mode ,comma the tool will generate a custom dictionary using a default name outputdict .period dic )right-paren and a file containing words not found in the input dictionary </s>
 <s> in the second operation mode ,comma the tool receives a third parameter .period this allows the user to specify a name and path for the custom dictionary :colon </s>
-<s> java jar dictgenerator .period jar cmu 0 7 a .period dic tcorpus .period vocab tcorpus .period dic the main difference with respect to mode operation one is that the output file will be called tcorpus .period dic and it will be stored in the path specified by the user .period the other </s>
+<s> java jar dictgenerator .period jar cmu 0 7 a .period dic corpus .period vocab corpus .period dic the main difference with respect to mode operation one is that the output file will be called corpus .period dic and it will be stored in the path specified by the user .period the other </s>
 <s> output file will have the same name ,comma but it will be stored in the same location as the custom output dictionary .period for both operation modes ,comma the tool will display a message when it finished its execution .period for example :colon </s>
 <s> custom dictionary was created succesfully !exclamation-point </s>
 <s> the dictgenerator tool was written in java in order to allow the user to execute it in different platforms .period this is consistent with other tools developed during the development of this project .period </s>
 <s> support for other languages english is the default language used during the development of this project .period however ,comma </s>
 <s> there are language models ,comma acoustic models and dictionaries available for other popular languages ,comma such as ,comma german ,comma french and mandarin .period all this models and dictionaries are publicly available and can be downloaded from the pocketsphinx repository 1 1 </s>
-<s> in order to support some other languages ,comma a new language model ,comma a new acoustic model and a new dictionary need to be created .period the language model can be created in the same way as it was described previously using the textextractor and cmuclmtk </s>
+<s> in order to support some other languages ,comma a new language model ,comma a new acoustic model and a new dictionary need to be created .period the language model can be created in the same way as it was described previously using the text extractor and cmuclmtk </s>
 <s> tools .period the only difference is that the web pages used as input need to be written in the desired language .period </s>
 <s> the generation of a new phonetic dictionary might be much more complex as every word supported by the language model needs to be included in the dictionary .period it is important to mention that every word needs to be translated into its corresponding arpabet </s>
-<s> representation in order to be used by pocketsphinx .period for example ,comma table illustrates the first five words in a phonetic dictionary for spanish .period </s>
-<s> http :colon /slash /slash sourceforge .period net /slash projects /slash cmusphinx /slash files /slash acoustic %percent 2 0 and %percent 2 0 language %percent 2 0 models /slash </s>
+<s> representation in order to be used by pocketsphinx .period for example ,comma table illustrates the first five words in a phonetic dictionary for Spanish .period </s>
+<s> http :colon /slash /slash SourceForge .period net /slash projects /slash cmusphinx /slash files /slash acoustic %percent 2 0 and %percent 2 0 language %percent 2 0 models /slash </s>
 <s> arpabet representation abrego afrika </s>
 <s> table phonetical dictionary building a detailed phonetic dictionary for a language can be a very time -hyphen consuming and challenging task as the developer needs to demonstrate a very good understanding of the </s>
 <s> language and its pronunciation .period in fact ,comma it is recommended to get help from a group of linguists in order to aid the developers during the generation of the dictionary .period </s>
@@ -942,11 +925,11 @@
 <s> for this project ,comma the default acoustic model included with pocketsphinx is the one used by the system .period on the other hand ,comma a new language model as well as a new dictionary were created from scratch following the steps specified at sections and </s>
 <s> outputs the system outputs the decoded incoming speech signal by providing a hypothesis that best describes the speaker 'single-quote s utterance .period however ,comma since it is a keyword -hyphen based system ,comma </s>
 <s> it also outputs the identified keyword .period in addition ,comma a file containing the obtained results during the system execution is created .period the file contains information from the obtained hypothesis and keywords for every speech signal that was decoded .period </s>
-<s> begin tool :colon http :colon /slash /slash cmusphinx .period sourceforge .period net /slash wiki /slash tutorialam algorithm the following describes the decoding process of the system which comprises four </s>
+<s> begin tool :colon http :colon /slash /slash cmusphinx .period SourceForge .period net /slash wiki /slash tutorial algorithm the following describes the decoding process of the system which comprises four </s>
 <s> main states :colon ready ,comma listening ,comma decoding and scanning the states represent the steps needed to transform the live speech signal into a word sequence and properly identify a keyword .period </s>
 <s> a state shall only start after the completion of the previous state .period after the final state has been reached ,comma the system will return to the first state without the need of restarting the system .period this process is described by the following and is illustrated at figure </s>
 <s> signal .period at this state the available keywords and their number of available audio files are also loaded into the system .period </s>
-<s> once the startup has finished the system will play the message :colon i 'single-quote m listening "quote and it will indicate that is ready to start listening to the speaker .period this message is only played during the system 'single-quote s startup ,comma the following times only the word ready </s>
+<s> once the startup has finished the system will play the message :colon I'm listening "quote and it will indicate that is ready to start listening to the speaker .period this message is only played during the system 'single-quote s startup ,comma the following times only the word ready </s>
 <s> determined by verifying if one second has elapsed since the last spoken utterance .period </s>
 <s> once a long silence has been determined ,comma the system will stop listening and the decoding process will then take place .period otherwise ,comma the system will continue listening until the end of the speaker 'single-quote s utterance is determined .period the system will indicate </s>
 <s> when it stops listening by printing stopped listening on screen .period </s>
@@ -959,7 +942,7 @@
 <s> tools ,comma a component diagram is depicted at figure as it can be seen in this diagram ,comma </s>
 <s> the entire system comprises several files ,comma four tools and the decoder in order to properly operate .period some of the files are generated by the user and others are the result of the execution of some of the tools .period </s>
 <s> figure component diagram the decoder ,comma which is the main system ,comma uses the language model ,comma the custom dictionary and the acoustic responses to operate .period this outputs are result of the execution </s>
-<s> of three tools :colon the textextractor ,comma the dictgenerator and the respgenerator .period however ,comma </s>
+<s> of three tools :colon the text extractor ,comma the dictgenerator and the respgenerator .period however ,comma </s>
 <s> at the same time ,comma this tools require that the user properly generates the following files :colon </s>
 <s> the keyword file ,comma the url list ,comma the master dictionary and the file with the response sentences .period </s>
 <s> on the other hand ,comma the revaluator tool uses the output of the main system ,comma the logfile ,comma </s>
@@ -978,15 +961,15 @@
 <s> card .period this also allowed automating the process of measuring the kda for several language models without the need of having a person speaking to the microphone each time .period another advantage of this approach is that the application does not need </s>
 <s> to be modified to alternate between the microphone and the line -hyphen in device .period figure illustrates the automation of the evaluation process .period </s>
 <s> test environment and setup the first step in the testing process was selecting a list of keywords to generate a language model and the dictionary to be used by the application .period this was achieved </s>
-<s> by selecting keywords from the swedish tekniska museet museum of science and technology )right-paren web page .period it is important to mention that some keywords are actually composed by two words in order to test the application using more complex phrases .period </s>
+<s> by selecting keywords from the Swedish tekniska museet museum of science and technology )right-paren web page .period it is important to mention that some keywords are actually composed by two words in order to test the application using more complex phrases .period </s>
 <s> table comprises the list of keywords .period </s>
 <s> mechanical workshop steam engine mechanical alphabet </s>
 <s> industrial revolution radio station interactive </s>
 <s> telephone technology table keyword list </s>
 <s> the second step in the testing process was defining a set of test sentences to measure the kda for the application .period in this case we recorded sentences per keyword ,comma which resulted in a total of test sentences .period the same set of sentences was recorded by </s>
 <s> two persons in order to evaluate the application 'single-quote s speaker independence .period each of the sentences was used later on as input to the application in order to evaluate its accuracy .period figure shows some of the test sentences used to measure the kda .period </s>
-<s> figure test sentences after generating the set of test sentences ,comma the next phase consisted in generating a language model and a dictionary using a list of web pages urls )right-paren .dot during the first set </s>
-<s> of tests we only used web pages from the tekniska museet in order to build a very simple language model .period after evaluating the accuracy of the first set of tests ,comma we proceeded to add more urls into the list in order to generate more elaborated language models .period </s>
+<s> figure test sentences after generating the set of test sentences ,comma the next phase consisted in generating a language model and a dictionary using a list of web pages URLs )right-paren .dot during the first set </s>
+<s> of tests we only used web pages from the tekniska museet in order to build a very simple language model .period after evaluating the accuracy of the first set of tests ,comma we proceeded to add more URLs into the list in order to generate more elaborated language models .period </s>
 <s> in this case ,comma several articles from wikipedia were used as most articles contain large quantities of well -hyphen written sentences .period </s>
 <s> for the sake of automating the measurement of the kda we developed a tool called revaluator this tool is written in java and it receives a log file from the application and the list of keywords included in the test sentences .period the tool generates </s>
 <s> a comma separated file report in which the kda metric can be identified for each keyword and for the overall set of test sentences .period the comma -hyphen separated report can be easily imported into excel in order to visualize and compare the kda metrics .period figure </s>
@@ -996,23 +979,23 @@
 <s> overall metrics matches sentences </s>
 <s> table kda report format kda (left-paren %percent )right-paren </s>
 <s> table overall test results note .period for test number the input text corpus was not filtered .period in other words ,comma it included some sentences that did not contain keywords .period this is why the vocabulary size </s>
-<s> in test number is smaller but the number of urls remained the same .period </s>
-<s> as it can be seen from the results table ,comma the overall kda increased as the number of urls and vocabulary size )right-paren increased .period however ,comma as the vocabulary size increased ,comma the execution time of the application increased as well .period for this reason ,comma we decided to </s>
+<s> in test number is smaller but the number of URLs remained the same .period </s>
+<s> as it can be seen from the results table ,comma the overall kda increased as the number of URLs and vocabulary size )right-paren increased .period however ,comma as the vocabulary size increased ,comma the execution time of the application increased as well .period for this reason ,comma we decided to </s>
 <s> keep the vocabulary size around words in order to maintain the execution time low .period </s>
 <s> during the final round of tests ,comma the application managed to get a keyword decoding accuracy of in other words ,comma around of the keywords in the test sentences were decoded correctly while maintaining an average execution time of around </s>
 <s> seconds per sentence .period regarding the maximum kda achieved ,comma it must be clarified that none of the persons participating in the tests speak english as their first language .period </s>
 <s> as it was explained previously ,comma this could affect the overall performance of the application adversely .period </s>
 <s> finally ,comma the system was executed and tested using two workstations ;semi-colon table illustrates the main characteristics of the systems and their architecture .period </s>
-<s> system dell studio dell xps </s>
+<s> system dell studio dell</s>
 <s> processor intel core duo t 6 5 0 0 intel core duo p 8 6 0 0 </s>
-<s> table computer specifications alternatively ,comma during the preliminary stages of development ,comma the application was also compiled and run on linux using opensuse and the same dell xps workstation </s>
+<s> table computer specifications alternatively ,comma during the preliminary stages of development ,comma the application was also compiled and run on Linux using opensuse and the same dellworkstation </s>
 <s> with an external hard drive .period however ,comma during the latter stages we continued the development of the application using windows vista and visual studio </s>
-<s> auxiliary java tools in order to verify the correct operation of tools such as the textextractor ,comma respgenerator and dictgenerator ,comma a list of tests was designed .period this verification phase involved testing </s>
+<s> auxiliary java tools in order to verify the correct operation of tools such as the text extractor ,comma respgenerator and dictgenerator ,comma a list of tests was designed .period this verification phase involved testing </s>
 <s> all of the different operation modes for each tool as well as verifying their output files .period </s>
 <s> the following sections describe the different tests performed for each tool .period </s>
-<s> textextractor tool for the textextractor tool ,comma two operation modes were tested .period for the first operation mode it was verified that the tool was able to generate a text corpus from a list of urls .period </s>
+<s> text extractor tool for the text extractor tool ,comma two operation modes were tested .period for the first operation mode it was verified that the tool was able to generate a text corpus from a list of URLs .period </s>
 <s> furthermore it was verified that the list of sentences included in the corpus was not filtered based on a list of keywords .period figure shows the list of messages displayed in the command line after executing the tool :colon </s>
-<s> figure textextractor operation mode similarly ,comma the second operation mode was tested .period in this case ,comma it was verified that the list of sentences included in the text corpus was filtered based on a list of given keywords .period </s>
+<s> figure text extractor operation mode similarly ,comma the second operation mode was tested .period in this case ,comma it was verified that the list of sentences included in the text corpus was filtered based on a list of given keywords .period </s>
 <s> figure shows the list of messages displayed in the command line after executing the tool :colon </s>
 <s> difference between the operation modes .period in the first mode ,comma the user does not define a name for the generated dictionary ,comma while in the second mode the user specifies a path and a name for the custom dictionary .period in both cases the set of messages shown in the </s>
 <s> command line is the same .period this can be visualized in figure similarly ,comma figure shows the custom dictionary generated using each operation mode .period as it can be seen ,comma </s>
@@ -1032,13 +1015,13 @@
 <s> however ,comma the day when a machine is able to understand continuous and spontaneous speech still seems to be far away in the future .period </s>
 <s> the accuracy and performance of modern systems is strictly related to the size of its vocabulary ,comma the complexity of the algorithms used to decode the input speech and finally ,comma the size of the speech corpus utilized to train the system .period for these reasons ,comma the </s>
 <s> most accurate systems are also the ones that require more computational power in order to work correctly .period one important research area is related to the development of fast and efficient algorithms that decrease the processing power needed to execute </s>
-<s> large -hyphen vocabularys .period for example ,comma the implementation of hybrid systems that use neural networks and hidden markov models mlp -hyphen hmm )right-paren .dot another example is the utilization of a *asterisk algorithms stack decoding )right-paren instead of the well -hyphen known viterbi and </s>
+<s> large -hyphen vocabularies .period for example ,comma the implementation of hybrid systems that use neural networks and hidden markov models mlp -hyphen hmm )right-paren .dot another example is the utilization of a *asterisk algorithms stack decoding )right-paren instead of the well -hyphen known and </s>
 <s> beam -hyphen search algorithms to decode speech .period </s>
 <s> although the task of recognizing and understanding speech is linked to several different research areas such as language modeling and digital signal processing ,comma the main building blocks of an system are now well defined .period thus ,comma a research group can focus on </s>
 <s> improving one or more particular areas ,comma such as the front end or the speech decoder .period </s>
 <s> there is a small amount of open -hyphen source systems used by the research community to implement and compare new solutions in the domain against established benchmarks .period </s>
 <s> using available tools such as pocketsphinx ,comma proved to be a good strategy as it simplified the process of creating an interactive application .period in this regard ,comma even though pocketsphinx is a free open -hyphen source library ,comma its documentation is still somehow incomplete </s>
-<s> compared to other sphinx decoders ,comma most notably sphinx nonetheless ,comma one of the main advantages of pocketsphinx is that it can be compiled for different platforms ,comma such as windows ,comma linux ,comma ios and android .period </s>
+<s> compared to other sphinx decoders ,comma most notably sphinx nonetheless ,comma one of the main advantages of pocketsphinx is that it can be compiled for different platforms ,comma such as windows ,comma Linux ,comma ios and android .period </s>
 <s> furthermore ,comma pocketsphinx was designed to handle live audio applications such as dictation .period for this reason ,comma it is the fastest decoder of the cmu sphinx family .period nevertheless ,comma </s>
 <s> it is also one of the least flexible compared to sphinx which is written in java .period </s>
 <s> consequently ,comma trying to change or improve the algorithms used by pocketsphinx can be a troublesome and complex task .period in fact ,comma in most applications ,comma the library is used without any changes made by the developers .period </s>
@@ -1054,24 +1037,23 @@
 <s> unfortunately ,comma this can become an extensive task ,comma as it requires a deep understanding of the given language .period </s>
 <s> even though the overall accuracy of the speech recognizer application is fairly high ,comma it still can be improved .period for this reason ,comma more testing is needed in order to identify areas of improvement .period for example ,comma it would be beneficial to quantify the effect of speech </s>
 <s> variability ,comma such as the speaker 'single-quote s accent ,comma on the overall accuracy of the system .period </s>
-<s> finally ,comma it would be recommended to cross -hyphen compile the project in order to be run on an embedded system .period during the development of the project we were able to execute the speech recognition application using windows and linux ,comma however it would be interesting </s>
+<s> finally ,comma it would be recommended to cross -hyphen compile the project in order to be run on an embedded system .period during the development of the project we were able to execute the speech recognition application using windows and Linux ,comma however it would be interesting </s>
 <s> to evaluate the application 'single-quote s performance using other operating systems and different hardware .period </s>
 <s> p .period laface ,comma a .period mertins ,comma c .period ris ,comma et al .period automatic speech recognition and speech variability :colon a review .period speech communication ,comma </s>
-<s> phd thesis ,comma virginia polytechnic institute and state university ,comma </s>
+<s> phd thesis ,comma Virginia Polytechnic institute and state university ,comma </s>
 <s> rudnicky .period pocketsphinx :colon a free ,comma real -hyphen time continuous speech recognition system for hand -hyphen held devices .period in acoustics ,comma speech and signal processing ,comma icassp proceedings .period ieee international conference on ,comma volume pages i -hyphen-hyphendash i .period ieee ,comma </s>
 <s> computer speech language ,comma </s>
-<s> on design and implementation of an embedded automatic speech recognition system .period in vlsi design ,comma proceedings .period th international conference on ,comma pages ieee ,comma </s>
-<s> r .period rosenfeld ,comma k .period seymore ,comma m .period siegler ,comma et al .period the hub -hyphen 4 sphinx -hyphen 3 system .period in proc .period darpa speech recognition workshop ,comma pages citeseer ,comma </s>
+<s> on design and implementation of an embedded automatic speech recognition system .period in design ,comma proceedings .period th international conference on ,comma pages ieee ,comma </s>
+<s> r .period rosenfeld ,comma k .period seymore ,comma m .period Siegler ,comma et al .period the hub -hyphen 4 sphinx -hyphen 3 system .period in proc .period darpa speech recognition workshop ,comma pages citeseer ,comma </s>
 <s> efficient algorithms for speech recognition .period </s>
-<s> sun microsystems ,comma inc .period mountain view ,comma ca ,comma usa ,comma page </s>
+<s> Sun Microsystems ,comma inc .period Mountain View ,comma CA ,comma USA ,comma page </s>
 <s> developed during the speech recognition project .period similarly they describe how to install the pocketsphinx project and how to generate files to run the main application .period it is strongly recommended to follow the instructions section by section in order to take </s>
 <s> advantage of the given examples and the main program .period </s>
 <s> a .period 1 installation of the speech recognizer project in order to install pocketsphinx and the recognizer application ,comma the user must </s>
 <s> seven new folders will be created as seen at figure a .period 1 .dot </s>
-<s> figure a .period 1 :colon project folder structure go to the folder sphinxbase inside theproject folder and then open the sphinxbase .period sln file using visual studio .period </s>
+<s> figure a .period 1 :colon project folder structure go to the folder sphinxbase inside the project folder and then open the sphinxbase .period file using visual studio .period </s>
 <s> a .period 2 running the speech recognition application once that pocketsphinx has been installed correctly ,comma the user can execute the recognizer </s>
 <s> by specifying an acoustic model ,comma a language model and a dictionary .period the following set of steps must be performed in order to execute the application :colon </s>
-<s> recognizer hmm model /slash hmm /slash en _underscore us /slash hub 4 wsj _underscore sc _underscore 8 k /slash </s>
 <s> systems in order to solve a problem "quote .dot at the same time ,comma as seen at figure a .period 3 ,comma </s>
 <s> some diagnostic messages will be displayed .period </s>
 <s> figure a .period 3 :colon decoding example after the computer completes playing the response message ,comma it will show ready .period in the command window again .period then the user is supposed to say another phrase .period </s>
@@ -1080,14 +1062,14 @@
 <s> in order to generate a new language model the user should create two text files :colon </s>
 <s> for example ,comma the word nasa can be found many times in the url :colon </s>
 <s> seen at figure a .period 5 ,comma where each keyword has an associated url .period </s>
-<s> figure a .period 5 :colon keywords and urls for simplification purposes ,comma the files keyword list .period txt and url list .period txt can be edited in order to specify keywords and urls .period these two files are located in the root folder </s>
-<s> for the project .period the next step is performed using the textextractor tool and the cmuclmtk tool to generate a new language model .period this can be achieved using the following procedure :colon </s>
-<s> java jar textextractor .period jar url _underscore list .period txt generatedfiles \backslash language models \backslash tcorpus .period txt keyword _underscore list .period txt </s>
-<s> generatelm .period bat generatedfiles \backslash language models \backslash tcorpusfiltered .period txt generatedfiles \backslash language models \backslash tcorpus .period ccs where :colon </s>
+<s> figure a .period 5 :colon keywords and URLs for simplification purposes ,comma the files keyword list .period txt and url list .period txt can be edited in order to specify keywords and URLs .period these two files are located in the root folder </s>
+<s> for the project .period the next step is performed using the text extractor tool and the cmuclmtk tool to generate a new language model .period this can be achieved using the following procedure :colon </s>
+<s> java jar text extractor .period jar url _underscore list .period txt generatedfiles \backslash language models \backslash corpus .period txt keyword _underscore list .period txt </s>
+<s> generatelm .period bat generatedfiles \backslash language models \backslash filtered .period txt generatedfiles \backslash language models \backslash corpus .period ccs where :colon </s>
 <s> a .period 4 generating a new dictionary the process of generating a new dictionary is very straightforward as only one command </s>
-<s> needs to be executed .period assuming that the user has one command window open ,comma the following command has to be executed in theproject \backslash tools folder :colon </s>
-<s> java jar dictgenerator .period jar pocketsphinx \backslash model \backslash lm \backslash en _underscore us \backslash cmu 0 7 a .period dic generatedfiles \backslash language models \backslash tcorpusfiltered .period vocab generatedfiles \backslash language models \backslash tcorpusfiltered .period dic </s>
-<s> it is important to clarify that the cmu 0 7 a .period dic is a file included in the pocketsphinx package ,comma while the tcorpusfiltered .period vocab is a file created when the cmuclmtk tool generates a language model .period </s>
+<s> needs to be executed .period assuming that the user has one command window open ,comma the following command has to be executed in the project \backslash tools folder :colon </s>
+<s> java jar dictgenerator .period jar pocketsphinx \backslash model \backslash lm \backslash en _underscore us \backslash cmu 0 7 a .period dic generatedfiles \backslash language models \backslash filtered .period vocab generatedfiles \backslash language models \backslash filtered .period dic </s>
+<s> it is important to clarify that the cmu 0 7 a .period dic is a file included in the pocketsphinx package ,comma while the filtered .period vocab is a file created when the cmuclmtk tool generates a language model .period </s>
 <s> a .period 5 generating a new set of predefined responses a new set of predefined responses audio files )right-paren can be created using the respgenerator </s>
 <s> tool when the set of keywords is changed .period the tool receives a text file containing a variable number of predefined responses for each keyword .period an example of this file is presented at figure a .period 6 .dot </s>
 <s> as it can be seen ,comma each keyword is preceded by a hash character and succeeded by a number of sentences .period it is important to mention that a list of default sentences is included although default is not a keyword .period these sentences are used as responses </s>
@@ -1099,10 +1081,9 @@
 <s> figure a .period 8 :colon ogg files a .period 6 running the speech recognizer using the newly created </s>
 <s> files after generating a new language model and a new dictionary ,comma the files created in the language models folder need to be copied to the pocketsphinx folder .period similarly ,comma the </s>
 <s> acoustic responses need to be incorporated into pocketsphinx in order to be used by the recognizer application .period this can be done using the command line .period assuming that the current folder isproject \backslash tools ,comma the user should execute the following </s>
-<s> copy generatedfiles \backslash language models \backslash tcorpusfiltered .period dic pocketsphinx \backslash model \backslash lm \backslash en \backslash tekniska \backslash copy generatedfiles \backslash language models \backslash tcorpusfiltered .period lm .period dmp </s>
-<s> xcopy generatedfiles \backslash acousticresponses \backslash *asterisk pocketsphinx \backslash bin \backslash debug \backslash responses s i after the files have been placed in the corresponding pocketsphinx folder ,comma the recognizer </s>
-<s> application can be run using the newly created files .period first the user should go to theproject \backslash pocketsphinx \backslash bin \backslash debug folder and then execute the recognizer :colon </s>
-<s> recognizer hmm model /slash hmm /slash en _underscore us /slash hub 4 wsj _underscore sc _underscore 8 k /slash </s>
+<s> copy generatedfiles \backslash language models \backslash filtered .period dic pocketsphinx \backslash model \backslash lm \backslash en \backslash tekniska \backslash copy generatedfiles \backslash language models \backslash filtered .period lm .period dmp </s>
+<s> copy generatedfiles \backslash acousticresponses \backslash *asterisk pocketsphinx \backslash bin \backslash debug \backslash responsei after the files have been placed in the corresponding pocketsphinx folder ,comma the recognizer </s>
+<s> application can be run using the newly created files .period first the user should go to the project \backslash pocketsphinx \backslash bin \backslash debug folder and then execute the recognizer :colon </s>
 <s> evaluating the performance and measuring the kda each time that the speech recognizer application has been run and closed ,comma a log file is created .period this file contains each decoded sentence as well as the keyword identified for </s>
 <s> each utterance .period using the revaluator tool this file can be used to measure the accuracy kda )right-paren for the complete set of utterances .period </s>
 <s> first the user needs to create a verification file containing the list of keywords used in each utterance that the recognizer tool had to decode .period for example ,comma let 'single-quote s suppose that just utterances were used the last time the recognizer tool was run .period the verification </s>
@@ -1120,6 +1101,19 @@
 <s> program quit and ping scanner 65 bytes from start to finish . </s>
 <s> this voice recognition software is useful for taking dictation . </s>
 <s> i would like to say that it is time to update my status ,comma so let's do it !exclamation-point </s>
+<s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
+<s> work as follows :colon </s>
+<s> 1 .dot read the file </s>
+<s> 2 .dot decode it into Unicode assuming a fixed per -hyphen file encoding </s>
+<s> 3 .dot convert it into a UTF -hyphen 8 byte string </s>
+<s> 4 .dot tokenize the UTF -hyphen 8 content </s>
+<s> 5 .dot compile it ,comma creating Unicode objects from the given Unicode data </s>
+<s> and creating string objects from the Unicode literal data </s>
+<s> by first reencoding the UTF -hyphen 8 data into 8 -hyphen bit string data </s>
+<s> using the given file encoding </s>
+<s> note that Python identifiers are restricted to the ASCII </s>
+<s> subset of the encoding ,comma and thus need no further conversion </s>
+<s> after step 4 .period </s>
 
 <s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
 <s> work as follows :colon </s>
@@ -1134,21 +1128,7 @@
 <s> note that Python identifiers are restricted to the ASCII </s>
 <s> subset of the encoding ,comma and thus need no further conversion </s>
 <s> after step 4 .period </s>
-<s>  </s>
-<s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
-<s> work as follows :colon </s>
-<s> 1 .dot read the file </s>
-<s> 2 .dot decode it into Unicode assuming a fixed per -hyphen file encoding </s>
-<s> 3 .dot convert it into a UTF -hyphen 8 byte string </s>
-<s> 4 .dot tokenize the UTF -hyphen 8 content </s>
-<s> 5 .dot compile it ,comma creating Unicode objects from the given Unicode data </s>
-<s> and creating string objects from the Unicode literal data </s>
-<s> by first reencoding the UTF -hyphen 8 data into 8 -hyphen bit string data </s>
-<s> using the given file encoding </s>
-<s> note that Python identifiers are restricted to the ASCII </s>
-<s> subset of the encoding ,comma and thus need no further conversion </s>
-<s> after step 4 .period </s>
-<s>  </s>
+
 <s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
 <s> work as follows :colon </s>
 <s> 1 .dot read the file </s>
@@ -1165,7 +1145,7 @@
 <s> the set _underscore attributes (left-paren )right-paren method applies a pango .dot AttrList list of attributes to the label text .period </s>
 <s> the attributes set with this function will be ignored if either the "quote use -hyphen underline "quote or "quote use -hyphen markup "quote attributes is True .period </s>
 <s> the arguments shown above are merely the most common ones ,comma described below in Frequently Used Arguments (left-paren hence the slightly odd notation in the abbreviated signature )right-paren .dot The full function signature is the same as that of the Popen constructor -hyphen this functions passes all supplied arguments directly through to that interface .period </s>
-<s>  </s>
+
 <s> please note that historical charts are available on Kitcosilver .dot com in the Charts and Data section .period </s>
 <s> kitcosilver is a big step forward in silver coverage by Kitco .period </s>
 <s> besides charts ,comma there is silver news ,comma commentaries ,comma press releases ,comma silver equities performance and much more .period </s>
@@ -1204,7 +1184,7 @@
 <s> the martingale strategy has been applied to roulette as well ,comma as the probability of hitting either red or black is close to 50 %percent .period </s>
 <s> since a gambler with infinite wealth will ,comma almost surely ,comma eventually flip heads ,comma the martingale betting strategy was seen as a sure thing by those who advocated it .period </s>
 <s> of course ,comma none of the gamblers in fact possessed infinite wealth ,comma and the exponential growth of the bets would eventually bankrupt "quote unlucky "quote gamblers who chose to use the martingale .period </s>
-<s> it is therefore a good example of a Taleb distribution � � � the gambler usually wins a small net reward ,comma thus appearing to have a sound strategy .period </s>
+<s> it is therefore a good example of a Taleb distribution the gambler usually wins a small net reward ,comma thus appearing to have a sound strategy .period </s>
 <s> however ,comma the gambler's expected value does indeed remain zero because the small probability that he will suffer a catastrophic loss exactly balances with his expected gain .period </s>
 <s> the likelihood of catastrophic loss may not even be very small .period </s>
 <s> the bet size rises exponentially .period </s>
@@ -1215,7 +1195,7 @@
 <s> did you have a nice day ?question-mark I hope so .period </s>
 <s> if not ,comma this program will try to recognize better ,comma so you can have one .period </s>
 <s> A nice day starts with good weather and a hot cup of coffee .period </s>
-<s> brewing coffee only takes a few minutes and it is wel worth it .period </s>
+<s> brewing coffee only takes a few minutes and it is well worth it .period </s>
 <s> anti -hyphen martingale </s>
 <s> this is also known as the reverse martingale .period </s>
 <s> in a classic martingale betting style ,comma gamblers increase bets after each loss in hopes that an eventual win will recover all previous losses .period </s>
@@ -1230,3 +1210,21 @@
 <s> you may try making a recording with audacity and checking the noise levels to make sure it sounds like intelligible speech when played back .period </s>
 <s> essentially ,comma FreeSpeech is a "quote front -hyphen end "quote for pocketsphinx with additional learning ability .period </s>
 <s> it automatically manages the difficult process of creating language models .period </s>
+<s> file quit </s>
+<s> file preferences </s>
+<s> select all </s>
+<s> selection clear </s>
+<s> undo that </s>
+<s> scratch that </s>
+<s> good morning .period </s>
+<s> the insert method inserts the text into the text buffer at the specified position .period </s>
+<s> new paragraph .period </s>
+<s> good morning .period </s>
+<s> the method replaces the current contents of the text buffer with the contents of the defaut selection .period </s>
+<s> you know that I thought so .period </s>
+<s> I was sure that I thought it was .period </s>
+<s> yeah ,comma I knew it was open to question .period </s>
+<s> yeah ,comma whatever .period </s>
+<s> this is silly .period </s>
+<s> are you listening ?question-mark Where are you going with this ?question-mark What's happening ?question-mark What's up ?question-mark </s>
+<s>  </s>
