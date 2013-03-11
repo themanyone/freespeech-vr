@@ -47,9 +47,10 @@ manually edit the text in the box until it says what you intended to
 say. Then hit the "Learn" button. It will try to do better at 
 understanding you next time!
 
-Don't worry if you inadvertently teach it bad grammar. The file  
-"freespeech.ref.txt" may be manually corrected. Changes will appear 
-next time you hit the "Learn" button.
+Don't worry if you inadvertently teach it bad grammar. It's not 
+strictly necessary, but the file, "freespeech.ref.txt" may be 
+manually corrected if it develops bad speech habits. Changes will 
+apply next time you hit the "Learn" button. 
 
 The language model may be further 
 [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm 
