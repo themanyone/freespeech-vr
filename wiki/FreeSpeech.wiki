@@ -46,3 +46,7 @@ If there is a word that it stubbornly refuses to recognize, even after using it 
 
 Adapt PocketSphinx to your voice for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
+
+== Security and privacy ==
+
+Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC. That said, it is very handy to use voice passwords on non-secure sites, and such. Not recommended for banking and payroll.
