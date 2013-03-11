@@ -19,6 +19,14 @@ There is no desktop icon yet. Right-click on the desktop to create one.
 Launching the program may be done via the Python interpreter.
 
     python freespeech.py
+
+Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
+
+Voice commands are included. For the most updated information about this, take a look at the source. Some voice commands at the time of this writing include:
+
+  * file quit - quits the program
+  * file preferences - pops up a dialog (not very useful yet)
+  * editor clear - clears all text in the editor and starts over
     
 == Troubleshooting ==
 
