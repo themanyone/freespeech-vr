@@ -1,7 +1,7 @@
 #labels Featured,Phase-Requirements,Phase-Design
 == About ==
 
-FreeSpeech is a real-time voice recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability. 
+FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ pocketsphinx] back-end.
 
 == Requirements ==
 
@@ -12,6 +12,17 @@ The following packages should be installed.
   * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
   * [http://cmusphinx.sourceforge.net/ pocketsphinx]
   * [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html CMU-Cambridge Statistical Language Modeling Toolkit v2]
+
+== Using FreeSpeech ==
+
+There is no desktop icon yet. Right-click on the desktop to create one.
+Launching the program may be done via the Python interpreter.
+
+    python freespeech.py
+    
+== Troubleshooting ==
+
+Make sure the various requirements work. For example, "pocketsphinx" itself, which may be run from the command line.
 
 == Improving accuracy  ==
 
