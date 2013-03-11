@@ -5,7 +5,7 @@ FreeSpeech is a realtime speech recognition application for the desktop (Android
 
 == Requirements ==
 
-The following packages should be installed.
+The following development packages should be installed.
 
   * [http://www.python.org/ Python 2.7]
   * [http://www.pygtk.org/ pygtk2]
