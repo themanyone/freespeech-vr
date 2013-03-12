@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 # FreeSpeech
 # Continuous realtime speech recognition and control via pocketsphinx
 # Copyright (c) Henry Kroll III, http://www.TheNerdShow.com
@@ -20,96 +20,21 @@
 import pygtk
 pygtk.require('2.0')
 import gtk
-
-import gobject
 import pygst
 pygst.require('0.10')
+
+import gobject
 gobject.threads_init()
 import gst
 import subprocess
-import os
+import os, sys, codecs
 import re
 
-lang_ref= 'lm/freespeech.ref.txt'
-vocab   = 'lm/freespeech.vocab'
-idngram = 'lm/freespeech.idngram'
-arpa    = 'lm/freespeech.arpa'
-dmp     = 'lm/freespeech.dmp'
-
-def expand_punctuation(corpus):
-    # tweak punctuation to match dictionary utterances
-    for ind,line in enumerate(corpus):
-        line = re.sub(r'--',          r'--dash',               line)
-        line = re.sub(r'- ',          r'-hyphen ',             line)
-        line = re.sub(r'`',           r'`agrave',              line)
-        line = re.sub(r'=',           r'=equals-sign',         line)
-        line = re.sub(r'>',           r'>greater-than-symbol', line)
-        line = re.sub(r'<',           r'<less-than-symbol',    line)
-        line = re.sub(r'\|',          r'\|pipe-symbol',        line)
-        line = re.sub(r'\. \. \.',    r'...ellipsis',          line)
-        line = re.sub(r' \. ',        r' .dot ',               line)
-        line = re.sub(r'\.$',         r'.period',              line)
-        line = re.sub(r',',           r',comma',               line)
-        line = re.sub(r':',           r':colon',               line)
-        line = re.sub(r'\?',          r'?question-mark',       line)
-        line = re.sub(r'"',           r'"quote',               line)
-        line = re.sub(r'([\w]) \' s', r"\1's",                 line)
-        line = re.sub(r' \'',         r' \'single-quote',      line)
-        line = re.sub(r'\(',          r'(left-paren',          line)
-        line = re.sub(r'\)',          r')right-paren',         line)
-        line = re.sub(r'\[',          r'[left-bracket',        line)
-        line = re.sub(r'\]',          r']right-bracket',       line)
-        line = re.sub(r'{',           r'{left-brace',          line)
-        line = re.sub(r'}',           r'}right-brace',         line)
-        line = re.sub(r'!',           r'!exclamation-point',   line)
-        line = re.sub(r';',           r';semi-colon',          line)
-        line = re.sub(r'/',           r'/slash',               line)
-        line = re.sub(r'%',           r'%percent',             line)
-        line = re.sub(r'#',           r'#sharp-sign',          line)
-        line = re.sub(r'@',           r'@at-symbol',           line)
-        line = re.sub(r'\*',          r'*asterisk',            line)
-        line = re.sub(r'\^',          r'^carrat',              line)
-        line = re.sub(r'&',           r'&ampersand',           line)
-        line = re.sub(r'\$',          r'$dollar-sign',         line)
-        line = re.sub(r'\+',          r'+plus-symbol',         line)
-        line = re.sub(r'®',           r'®registered-symbol',   line)
-        line = re.sub(r'_',           r'_underscore',          line)
-        line = re.sub(r'\\',          r'\backslash',           line)
-        line = re.sub(r'^',           r'<s> ',                 line)
-        line = re.sub(r'$',           r' </s>',                line)
-        if line.strip():
-            corpus[ind] = line
-    return corpus
-
-def prepare_corpus(txt):
-    txt.begin_user_action()
-    txt_bounds = txt.get_bounds()
-    text = txt.get_text(txt_bounds[0],txt_bounds[1])
-    # break on end of sentence
-    text = re.sub(r'(\w[.:;!])\s+(\w)',r'\1\n\2',text)
-    text = re.sub(r'\n+',r'\n',text)
-    corpus= re.split(r'\n', text)       
-    for ind,tex in enumerate(corpus):
-        # try to remove blank lines
-        tex = tex.strip()
-        if len(tex) == 0:
-            try:
-                corpus.remove(ind)
-            except:
-                pass
-            continue;
-        # lower case maybe
-        if len(tex) > 1 and tex[1] > 'Z':
-            tex = tex[0].lower() + tex[1:]
-        # separate punctuation marks into 'words'
-        # by adding spaces between them
-        tex = re.sub(r'\s*([^\w\s]|[_])\s*', r' \1 ',tex)
-        tex = re.sub(r'\s+',' ',tex)
-        # fixme: needs more unicode -> dictionary replacements
-        tex = tex.replace("’","'apostrophe")
-        tex = tex.strip()
-        corpus[ind] = tex
-    return expand_punctuation(corpus)
+lang_ref= os.path.join('lm','freespeech.ref.txt')
+vocab   = os.path.join('lm','freespeech.vocab')
+idngram = os.path.join('lm','freespeech.idngram')
+arpa    = os.path.join('lm','freespeech.arpa')
+dmp     = os.path.join('lm','freespeech.dmp')
 
 class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
@@ -125,6 +50,9 @@ class freespeech(object):
         self.undo = [] # Say "Scratch that" or "Undo that"
         """Initialize the GUI components"""
         self.window = gtk.Window()
+        # Change to executable's dir
+        if os.path.dirname(sys.argv[0]):
+            os.chdir(os.path.dirname(sys.argv[0]))     
         self.icon = gtk.gdk.pixbuf_new_from_file("icon.png")
         self.window.connect("delete-event", gtk.main_quit)
         self.window.set_default_size(400,200)
@@ -150,18 +78,6 @@ class freespeech(object):
 
     def init_prefs(self):
         """Initialize new GUI components"""
-        # self.prefswindow = gtk.Window()
-        # self.prefswindow.connect("delete-event", gtk.Widget.hide_on_delete)
-        # self.prefswindow.set_default_size(400,200)
-        # self.prefswindow.set_border_width(10)
-        # vbox = gtk.VBox()
-        # self.textbuf2 = gtk.TextBuffer()
-        # self.text2 = gtk.TextView(self.textbuf2)
-        # self.text2.set_wrap_mode(gtk.WRAP_WORD)
-        # vbox.pack_start(self.text2)
-        # self.textbuf2.begin_user_action()
-        # self.textbuf2.insert_at_cursor(str(dir(self.prefswindow)))
-        # self.prefswindow.add(vbox)
         me = self.prefsdialog = gtk.Dialog("Preferences", None,
             gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
@@ -196,14 +112,14 @@ class freespeech(object):
         
         # The language model dmp that came with pocketsphinx works OK...
         # asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP')
-        # but it is too large and lacks accuracy so we use our own
-        asr.set_property('lm', os.getcwd() + '/' + dmp)
+        # but it is too large and can't be modified, so we use our own
+        asr.set_property('lm', dmp)
         
         # Adapt pocketsphinx to your voice for better accuracy.
         # See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
-        
         # The tutorial contains broken download links!
         # Hit me up for the missing files
+        
         # asr.set_property('hmm', '../sphinx/hub4wsj_sc_8kadapt')
         
         asr.connect('partial_result', self.asr_partial_result)
@@ -278,12 +194,13 @@ class freespeech(object):
           3. Click the "Learn" button. """
         
         # prepare a text corpus from the textbox
-        corpus = prepare_corpus(self.textbuf)
+        corpus = self.prepare_corpus(self.textbuf)
         
         # append it to the language reference
-        with open(lang_ref,'a+') as f:
+        with codecs.open(lang_ref, encoding='utf-8', mode='a+') as f:
             for line in corpus:
-                f.write(line + '\n')
+                if line:
+                    f.write(line + '\n')
         
         # compile a vocabulary
         if subprocess.call('text2wfreq -verbosity 2 -hash 1000000 < ' \
@@ -311,7 +228,7 @@ class freespeech(object):
         asr = self.pipeline.get_by_name('asr')
         self.pipeline.set_state(gst.STATE_PAUSED)
         asr.set_property('configured', False)
-        asr.set_property('lm', os.getcwd() + '/' + dmp)
+        asr.set_property('lm', dmp)
         asr.set_property('configured', True)
         self.pipeline.set_state(gst.STATE_PLAYING)
         
@@ -331,16 +248,6 @@ class freespeech(object):
         self.errmsg.run()
         self.errmsg.hide()
     
-    def do_command(self, hyp):
-        # todo: load command list from file?
-        commands = {'file quit': gtk.main_quit, \
-                    'file preferences': self.launch_preferences, \
-                    'editor clear': self.clear_edits}
-        if commands.has_key(hyp):
-            commands[hyp]()
-            return True
-        return False
-
     def launch_preferences(self):
         self.prefsdialog.run()
         self.prefsdialog.hide()
@@ -373,6 +280,107 @@ class freespeech(object):
         else:
             space = ""
         return space + hyp
+        
+    def expand_punctuation(self,corpus):
+        # tweak punctuation to match dictionary utterances
+        for ind,line in enumerate(corpus):
+            line = re.sub(r'--',          r'--dash',                  line)
+            line = re.sub(r'- ',          r'-hyphen ',                line)
+            line = re.sub(r'`',           r'`agrave',                 line)
+            line = re.sub(r'=',           r'=equals-sign',            line)
+            line = re.sub(r'>',           r'>greater-than-symbol',    line)
+            line = re.sub(r'<',           r'<less-than-symbol',       line)
+            line = re.sub(r'\|',          r'\|pipe-symbol',           line)
+            line = re.sub(r'\. \. \.',    r'...ellipsis',             line)
+            line = re.sub(r' \. ',        r' .dot ',                  line)
+            line = re.sub(r'\.$',         r'.period',                 line)
+            line = re.sub(r',',           r',comma',                  line)
+            line = re.sub(r':',           r':colon',                  line)
+            line = re.sub(r'\?',          r'?question-mark',          line)
+            line = re.sub(r'"',           r'"quote',                  line)
+            line = re.sub(r'([\w]) \' s', r"\1's",                    line)
+            line = re.sub(r" '",          r" 'single-quote",          line)
+            line = re.sub(r'\(',          r'(left-paren',             line)
+            line = re.sub(r'\)',          r')right-paren',            line)
+            line = re.sub(r'\[',          r'[left-bracket',           line)
+            line = re.sub(r'\]',          r']right-bracket',          line)
+            line = re.sub(r'{',           r'{left-brace',             line)
+            line = re.sub(r'}',           r'}right-brace',            line)
+            line = re.sub(r'!',           r'!exclamation-point',      line)
+            line = re.sub(r';',           r';semi-colon',             line)
+            line = re.sub(r'/',           r'/slash',                  line)
+            line = re.sub(r'%',           r'%percent',                line)
+            line = re.sub(r'#',           r'#sharp-sign',             line)
+            line = re.sub(r'@',           r'@at-symbol',              line)
+            line = re.sub(r'\*',          r'*asterisk',               line)
+            line = re.sub(r'\^',          r'^circumflex',             line)
+            line = re.sub(r'&',           r'&ampersand',              line)
+            line = re.sub(r'\$',          r'$dollar-sign',            line)
+            line = re.sub(r'\+',          r'+plus-symbol',            line)
+            line = re.sub(u'§',           u'§section-sign',           line)
+            line = re.sub(u'¶',           u'¶paragraph-sign',         line)
+            line = re.sub(u'¼',           u'¼and-a-quarter',          line)
+            line = re.sub(u'½',           u'½and-a-half',             line)
+            line = re.sub(u'¾',           u'¾and-three-quarters',     line)
+            line = re.sub(u'¿',           u'¿inverted-question-mark', line)
+            line = re.sub(u'×',           u'×multiplication-sign',    line)
+            line = re.sub(u'÷',           u'÷division-sign',          line)
+            line = re.sub(u'° ',          u'°degree-sign ',           line)
+            line = re.sub(u'©',           u'©copyright-sign',         line)
+            line = re.sub(u'™',           u'™trademark-sign',         line)            
+            line = re.sub(u'®',           u'®registered-symbol',      line)
+            line = re.sub(r'_',           r'_underscore',             line)
+            line = re.sub(r'\\',          r'\backslash',              line)
+            line = re.sub(r'^(.)',          r'<s> \1',                line)
+            line = re.sub(r'(.)$',           r'\1 </s>',              line)
+            corpus[ind] = line
+        return corpus
+
+    def prepare_corpus(self,txt):
+        txt.begin_user_action()
+        txt_bounds = txt.get_bounds()
+        text = txt.get_text(txt_bounds[0],txt_bounds[1])
+        # break on end of sentence
+        text = re.sub(r'(\w[.:;!])\s+(\w)',r'\1\n\2',text)
+        text = re.sub(r'\n+',r'\n',text)
+        corpus= re.split(r'\n', text)       
+        for ind,tex in enumerate(corpus):
+            # try to remove blank lines
+            tex = tex.strip()
+            if len(tex) == 0:
+                try:
+                    corpus.remove(ind)
+                except:
+                    pass
+                continue;
+            # lower case maybe
+            if len(tex) > 1 and tex[1] > 'Z':
+                tex = tex[0].lower() + tex[1:]
+            # separate punctuation marks into 'words'
+            # by adding spaces between them
+            tex = re.sub(r'\s*([^\w\s]|[_])\s*', r' \1 ', tex)
+            # except apostrophe smldv
+            tex = re.sub(r"(\w) ' ([smldv])", r"\1'\2", tex)
+            tex = re.sub(r'\s+',' ',tex)
+            # fixme: needs more unicode -> dictionary replacements
+            # or we could convert the rest of the dictionary to utf-8
+            # and use the ʼunicode charactersʼ
+            tex = tex.replace(u"ʼ","'apostrophe")
+            tex = tex.strip()
+            corpus[ind] = tex
+        return self.expand_punctuation(corpus)
+
+    def do_command(self, hyp):
+        # todo: load command list from file?
+        commands = {'file quit': gtk.main_quit, \
+                    'file preferences': self.launch_preferences, \
+                    'editor clear': self.clear_edits}
+        if commands.has_key(hyp):
+            commands[hyp]()
+            return True
+        return False
+
+
 
 app = freespeech()
 gtk.main()

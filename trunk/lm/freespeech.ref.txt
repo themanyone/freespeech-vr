@@ -15,11 +15,11 @@
 <s> by hiding the code within the object protects it from being accessed outside the class ...ellipsis the code can still be modified or accessed even when the user is accessing it by the book or buying the book from the bookstore ...ellipsis </s>
 <s> polymorphism -hyphen polymorphism generally means one name ,comma many forms ...ellipsis in OOP ,comma it gives allows a response from spaghetti that belong to different types to methods ,comma fields ,comma or properties of the same name ...ellipsis the exact type of the object does not need to be known before hand ,comma and is determined at run -hyphen time ...ellipsis the objects start to proliferate wildly . </s>
 <s> only need to present compatible interfaces ...ellipsis </s>
-<s> assignment basic checkbook organizer for this Turing test . </s>
+<s> this assignment is a basic checkbook organizer for this Turing test at turing .dot com . </s>
 <s> this assignment requires a bit more thought on design ,comma so be sure to check it ...ellipsis </s>
 <s> it must be extendable from the start ...ellipsis </s>
 <s> i am wrapping spaghetti around a pencil ,comma so check this out . </s>
-<s> for Henry ,comma and Henry ,comma and to Henry is Henry here ?question-mark </s>
+<s> for Henry .dot com ,comma and to Henry is Henry here ?question-mark </s>
 <s> i am going to put this in my Facebook status and twitter status today . </s>
 <s> the use of pencils and spaghetti dates back to ancient times . </s>
 <s> it has been a while since i used MySpace . </s>
@@ -146,9 +146,8 @@
 <s> testing of round trip performance is done by placing monitors in the program that write to a log or database record when an action is performed that can be used to determine the time the system took for each action as well as the total time for the group of tasks .period once baseline </s>
 <s> response times are established by testing under no -hyphen load conditions ,comma the same tests are run under increasing workloads to determine how well the performance of the system scales ,comma and if it 'single-quote s performance is sufficient to meet the requirements of the project .period </s>
 <s> Everett ,comma g .period d .period ,comma McLeod ,comma r .period software testing :colon testing across the entire software development life cycle .period Hoboken ,comma NJ :colon john Wiley sons inc .period </s>
-<s> source code security analyzers .period n .period d .period )right-paren .dot retrieved February from http :colon /slash /slash seatmate .period fist .period gov /slash index .period PHP /slash .dot HTML ethical development </s>
+<s> source code security analyzers ...ellipsis )right-paren .dot retrieved February from http :colon /slash /slash seatmate .dot fist .dot gov /slash index .period PHP /slash .dot HTML ethical development </s>
 <s> running head :colon ethical development ethical development Henry Kroll iii </s>
-<s> phl /slash 3 2 3 Lorin Loverde ethical development </s>
 <s> ethical development :colon personal discovery introduction there is little i can think of as more important today than the subject of ethics .period consider </s>
 <s> the cynicism expressed towards ethics in response to widespread media coverage of unethical business practices Trevino Nelson ,comma p .period this creates a demand for companies and individuals to distance themselves from apparent unethical norms and improve their image .period </s>
 <s> organizations use published ethics and ethical business behavior to convey a sense of stability and integrity to stakeholders and prospective customers .period job seekers want potential employers to recognize their reliability and sincerity .period </s>
@@ -421,50 +420,14 @@
 <s> are you feeling pretty ?question-mark </s>
 <s> this is pretty bad for an example . </s>
 <s> the privacy is pretty decent . </s>
-<s> bibliography a guidelines a .period 1 installation of the speech recognizer project </s>
-<s> a .period 2 running the speech recognition application </s>
-<s> a .period 3 generating a new language model </s>
-<s> a .period 4 generating a new dictionary </s>
-<s> a .period 5 generating a new set of predefined responses stop </s>
-<s> b source code b .period 1 recognizer </s>
-<s> ii files b .period 5 revaluator </s>
-<s> iii list of figures Darpa speech recognition benchmark tests .period </s>
-<s> milestones and evolution of the technology .period </s>
-<s> signal processing to obtain the mfcc vectors </s>
-<s> a typical triphone structure .period </s>
-<s> three state hmm </s>
-<s> tree search nerwork using the a *asterisk algorithm .period </s>
-<s> sphinx training procedure </s>
-<s> keyword file example </s>
-<s> sentences for audio files example conversion of sentences into audio statistical language model toolkit </s>
-<s> dictionary generator tool </s>
-<s> begin tool </s>
-<s> decoding algorithm </s>
-<s> component diagram </s>
-<s> typical test setup </s>
-<s> automated test process </s>
-<s> test sentences </s>
-<s> revaluator tool </s>
 <s> text extractor operation mode the amount of text is limited and so is the vocabulary </s>
 <s> text extractor operation mode limited by the imagination </s>
 <s> dict-generator operation modes and generated dictionary files limited </s>
-<s> resp-generator :colon execution messages </s>
-<s> revaluator :colon execution messages for buzzword limited </s>
-<s> a .period 8 a .period 9 project folder structure </s>
-<s> message </s>
-<s> decoding example </s>
-<s> decoding example of the buzzword </s>
-<s> keywords and URLs pause resume paused buzzword resume buzzword </s>
-<s> example of a set of predefined responses responses </s>
-<s> structure to resume or pause look and limited checking . </s>
-<s> ogg files . </s>
-<s> verification file </s>
-<s> a list of tables examples of the first words in a limited dictionary </s>
-<s> dictionary words not found :colon causes and solutions phonetical dictionary keyword list </s>
-<s> the raise of robust speech recognition systems during the last two decades has triggered a number of potential applications for the technology .period existing human -hyphen machine interfaces ,comma </s>
-<s> such as keyboards ,comma can be enhanced or even replaced by speech recognizers that interpret voice commands to complete a task .period this kind of applications is particularly important as speech is the main form of communication among humans ,comma for this reason ,comma it is much </s>
-<s> simpler and faster to complete a task by providing vocal instructions to a machine rather than typing commands using a keyboard </s>
-<s> the convergence of several research disciplines such as digital signal processing ,comma machine learning and language modeling have allowed the technology to mature and currently be used in commercial applications .period the current speech recognition systems are capable </s>
+<s> the rise of robust speech recognition systems during the last two decades has triggered a number of potential applications for the technology .period </s>
+<s> existing human -hyphen machine interfaces ,comma such as keyboards ,comma can be enhanced or even replaced by speech recognizers that interpret voice commands to complete a task .period </s>
+this kind of applications is particularly important as speech is the main form of communication among humans ,comma for this reason ,comma it is much simpler and faster to complete a task by providing vocal instructions to a machine rather than typing commands using a keyboard .period </s>
+<s> the convergence of several research disciplines such as digital signal processing ,comma machine learning and language modeling have allowed the technology to mature and currently be used in commercial applications .period </s>
+<s> the current speech recognition systems are capable </s>
 <s> of identifying and processing commands with many words .period however ,comma they are still unable to fully handle and understand a typical human conversation </s>
 <s> the performance and accuracy of existing systems allows them to be used in simple tasks like telephone -hyphen based applications call -hyphen centers ,comma user authentication ,comma etc )right-paren .dot nevertheless ,comma as the accuracy and the vocabulary size are increased ,comma the computational resources needed </s>
 <s> to implement a typical system grow as well .period the amount of computational power required to execute a fully -hyphen functional speech recognizer system can be easily supplied by a general -hyphen purpose personal computer ,comma but it might be difficult to execute the same </s>
@@ -553,7 +516,7 @@
 <s> order to obtain these vectors .period figure depicts the series of steps required to get the feature vectors from the input speech signal .period </s>
 <s> figure signal processing to obtain the mfcc vectors due to the nature of human speech ,comma the speech signal is attenuated as the frequencies increase .period also ,comma the speech signal is subject to a falloff of db when passing through </s>
 <s> the vocal tract therefore ,comma the signal needs to be pre-emphasized ,comma which means that a pre-emphasis filter ,comma which is a high -hyphen pass filter ,comma is applied to the signal .period this increases the amplitude of the signal for the high frequencies while decreasing the components </s>
-<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new pre-emphasized sample at time n is given by the difference a (left-paren− 1 </s>
+<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new pre-emphasized sample at time n is given by the difference a (left-parenâ 1 </s>
 <s> where a is a factor that is typically set to a value near </s>
 <s> once the signal has been pre-emphasized ,comma it is partitioned into smaller frames of sizes of about to milliseconds sampled every milliseconds .period the higher the sample rate ,comma the better it is to model fast speech changes the frames are overlapped in </s>
 <s> order to avoid missing information that could have been in between the limits of each frame .period this process is called windowing and it is used in order to minimize the effects of partitioning the signal into small windows .period the most used window function in </s>
@@ -586,7 +549,7 @@
 <s> the trigram model looks slightly more complicated as it uses the two words to compute each conditional probability :colon </s>
 <s> p w p call "quote |pipe-symbol "quote collect "quote ,comma a "quote )right-paren p collect "quote |pipe-symbol "quote a "quote ,comma make "quote )right-paren .dot p like "quote |pipe-symbol "quote would "quote ,comma i "quote )right-paren </s>
 <s> the n -hyphen gram model can be generalized using the following form </s>
-<s> n p wk wk wk wk − n </s>
+<s> n p wk wk wk wk â n </s>
 <s> p w k =equals-sign 1 in general ,comma as n increases ,comma the n gram approximation becomes more effective ,comma however ,comma </s>
 <s> most systems use a bigram ,comma or trigram model .period </s>
 <s> of every phoneme in a language .period the English language is composed by around different phonemes however ,comma due to the co -hyphen articulation effects ,comma one phoneme is affected by the preceding and succeeding phonemes depending on the context .period the most common </s>
@@ -643,7 +606,7 @@
 <s> i .period if the end -hyphen of -hyphen sentence is not reached ,comma insert candidate into the stack ii .period if the end -hyphen of sentence is reached ,comma insert it into the stack with end -hyphen of sentence flag .period </s>
 <s> probabilities of previous words GI t )right-paren and an heuristic function to predict the remaining words in the sentence .period for example :colon </s>
 <s> alternatively ,comma these functions can be expressed in terms of a partial path p ,comma instead of time t .period in this case f p )right-paren is the score of the best complete path which starts at path p .period similarly GI p )right-paren represents the score from the beginning of the utterance towards </s>
-<s> the partial path p .period lastly ,comma h ∗ p )right-paren estimated the best extension from the partial path p towards the end of the sentence </s>
+<s> the partial path p .period lastly ,comma h â p )right-paren estimated the best extension from the partial path p towards the end of the sentence </s>
 <s> finding an efficient and accurate heuristic function might represent a complex task .period fast matches are heuristic functions that are computationally cheap and are used to reduce the number of next possible word candidates .period nonetheless ,comma these fast match functions </s>
 <s> must be checked by more accurate detailed match functions </s>
 <s> training for hidden Markov models one of the most challenging phases of developing an automatic speech recognizer system is finding a suitable method to train and evaluate its hidden Markov models .period this </s>
@@ -1061,14 +1024,18 @@
 <s> good morning .period </s>
 <s> the insert method inserts the text into the text buffer at the specified position .period </s>
 <s> new paragraph .period </s>
-<s> good morning .period </s>
+<s> good afternoon .period </s>
+<s> good evening .period </s>
 <s> the method replaces the current contents of the text buffer with the contents of the default selection .period </s>
 <s> you know that I thought so .period </s>
 <s> I was sure that I thought it was .period </s>
 <s> yeah ,comma I knew it was open to question .period </s>
 <s> yeah ,comma whatever .period </s>
 <s> this is silly .period </s>
-<s> are you listening ?question-mark Where are you going with this ?question-mark What's happening ?question-mark What's up ?question-mark </s>
+<s> are you listening ?question-mark </s>
+<s> where are you going with this ?question-mark </s>
+<s> what's happening ?question-mark </s>
+<s> what's up ?question-mark </s>
 <s> I am watching the premier of army wives .period </s>
 <s> the city attorney hasn't written me a check yet .period </s>
 <s> we must do what we can to protect the wildlife .period </s>
@@ -1081,6 +1048,30 @@
 <s> it only takes a minute if you already have a Bitcoin account .period </s>
 <s> you may send us a contribution using the Bitcoin client .period </s>
 <s> it's fast and easy to send money around the world with very low fees .period </s>
-<s>  </s>
 <s> position the microphone somewhere near your face and begin talking .period </s>
 <s> to end of the sentence ,comma say "quote period "quote (left-paren or "quote colon "quote ,comma "quote question -hyphen mark "quote ,comma "quote exclamation -hyphen point "quote )right-paren Look at the dictionary ,comma "quote custom .dot dic "quote for ideas .period </s>
+<s> make sure nobody sells him a weapon because nobody knows who he is .period </s>
+<s> i'm glad you are my friend .period </s>
+<s> it's a little bit of a test .period </s>
+<s> I'm sure that this will work .period </s>
+<s> nobody knows the trouble I've seen .period </s>
+<s> marine debris is everyone's problem .period </s>
+<s> it threatens oceans ,comma coasts ,comma wildlife ,comma human health ,comma safety ,comma and navigation .period </s>
+<s> we can all help prevent marine debris by participating in cleanups and reducing ,comma reducing ,comma and recycling .period </s>
+<s> this is a test of Microsoft ®registered-sign Windows ™trademark-sign .period </s>
+<s> it is 40 °F outside .period </s>
+<s> the temperature is 35 °F at least .period </s>
+<s> that's 1 .point 667 °C .period </s>
+<s> heat the oven to 450 °F (left-paren 232.2 °C )right-paren .period </s>
+<s> the Microsoft ®registered-sign Windows ™trademark-sign operating system (left-paren OS )right-paren has been very popular over the years .period </s>
+<s> I'm extracting files from email messages in a python program and am running across issues with files named as such :colon </s>
+<s> thanks for the correction ;semi-colon </s>
+<s> I forgot to edit that into the post .period </s>
+<s> please understand that without detailed descriptoin it's hard to help you since there are too many unknowns .period </s>
+<s> like you might have done minor mistake somewhere and that minor type can break the whole system .period </s>
+<s> in case you are adapting to a single speaker you can record the adaptation data yourself .period </s>
+<s> the degree sign (left-paren °degree-sign )right-paren is useful for other things as wel. </s>
+<s> oops ,comma I really screwed things up !exclamation-point </s>
+<s> I really did it !exclamation-point </s>
+<s> I am ready to try it out .period </s>
+<s> let's begin now .period </s>

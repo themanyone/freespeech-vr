@@ -1,8 +1,8 @@
-`agrave AH G R EY V
-=equals-sign	 IY K W AH L Z S AY N
->greater-than-symbol G R EY T ER TH AH N S IH M B AH Lol
-<less-than-symbol L EH S TH AH N S IH M B AH L
-|pipe-symbol	  P AY P S IH M B AH L
+`agrave	AH G R EY V
+=equals-sign	IY K W AH L Z S AY N
+>greater-than-symbol	G R EY T ER TH AH N S IH M B AH Lol
+<less-than-symbol	L EH S TH AH N S IH M B AH L
+|pipe-symbol	P AY P S IH M B AH L
 !exclamation-point	EH K S K L AH M EY SH AH N P OY N T
 "close-quote	K L OW Z K W OW T
 "begin-quote	B IH G IH N K W OW T
@@ -18,7 +18,7 @@
 [left-bracket	L EH F T B R AE K IH T
 ]right-bracket	R AY T B R AE K IH T
 \backslash	B AE K S L AE SH
-^carrat	K AE R AH T
+^circumflex	S ER K AH M F L EH K S
 _underscore	AH N D ER S K AO R
 'bout	B AW T
 'cause	K AH Z
@@ -33,7 +33,6 @@ _underscore	AH N D ER S K AO R
 'kay	K EY
 'm	AH M
 'n	AH N
-'quote	K W OW T
 'round	R AW N D
 's	EH S
 'single-quote	S IH NG G AH L K W OW T
@@ -79,8 +78,23 @@ _underscore	AH N D ER S K AO R
 @at-symbol	AE T S IH M B AH L
 $dollar-sign	 D AA L ER S AY N
 *asterisk	AE S T ER IH S K
-+plus-symbol	  P L AH S S IH M B AH L
-�registered-symbol  R EH JH IH S T ER D S IH M B AH L
++plus-symbol	P L AH S S IH M B AH L
+±plus-or-minus	P L AH S AO R M AY N AH S
+µmicro-sign	M AY K R OW S IH N
+§section-sign	S EH K SH AH N S IH N
+¶paragraph-sign	P AE R AH G R AE F S IH N
+¼and-a-quarter	AE N D AH K W AO R T ER
+½and-a-half	AE N D AH HH AE L F
+¾and-three-quarters	AE N D TH R IY K W AO R T ER Z
+¿inverted-question-mark	IH N V ER T EH D K W EH S CH AH N M AA R K
+×multiplication-sign	M AH L T AH P L AH K EY SH AH N S IH N
+÷division-sign	D IH V IH ZH AH N S IH N
+°degree-sign	D IH G R IY S IH N
+°C	D IH G R IY S S EH L S IY AH S
+°F	D IH G R IY S F EH R EH N H IY T
+©copyright-sign	K AA P IY R AY T S IH N
+™trademark-sign	T R EY D M AA R K S IH N
+®registered-sign	R EH JH IH S T ER D S IH N
 0	Z IH R OW
 1	W AH N
 2	T UW
@@ -19485,6 +19499,7 @@ celanese	S EH L AH N IY Z
 celani	CH EH L AA N IY
 celano	CH EH L AA N OW
 celaya	S EY L EY AH
+Celcius	S EY L S IY AH S
 cele	S IY L
 celeb	S AH L EH B
 celebate	S EH L AH B AH T
@@ -21072,7 +21087,7 @@ chosen	CH OW Z AH N
 chosun	CH OW Z AH N
 chotilla	CH AH T IH L AH
 chou	CH UW
-chouinard	SH W IY N AA R D
+Chouinard	SH W IY N AA R D
 chovan	CH OW V AH N
 chovanec	CH AH V AE N IH K
 chow	CH AW
@@ -21140,41 +21155,41 @@ christiansen	K R IH S CH AH N S AH N
 christianson	K R IH S CH AH N S AH N
 christiansted	K R IH S CH AH N S T EH D
 christic	K R IH S T IH K
-christie	K R IH S T IY
-christie's	K R IH S T IY Z
-christies	K R IH S T IY Z
-christina	K R IH S T IY N AH
-christine	K R IH S T IY N
-christine's	K R IH S T IY N Z
-christison	K R IH S T IH S AH N
-christlieb	K R IH S T L IY B
-christman	K R IH S T M AH N
-christman's	K R IH S T M AH N Z
-christmann	K R IH S T M AH N
-christmas	K R IH S M AH S
-christmas'	K R IH S M AH S
-christmases	K R IH S M AH S IH Z
+Christie	K R IH S T IY
+Christie's	K R IH S T IY Z
+Christies	K R IH S T IY Z
+Christina	K R IH S T IY N AH
+Christine	K R IH S T IY N
+Christine's	K R IH S T IY N Z
+Christison	K R IH S T IH S AH N
+Christlieb	K R IH S T L IY B
+Christman	K R IH S T M AH N
+Christman's	K R IH S T M AH N Z
+Christmann	K R IH S T M AH N
+Christmas	K R IH S M AH S
+Christmas'	K R IH S M AH S
+Christmases	K R IH S M AH S IH Z
 christmastime	K R IH S T M AH S T AY M
-christner	K R IH S T N ER
-christo	K R IH S T OW
-christoff	K R IH S T AO F
-christoffel	K R IH S T AH F EH L
-christoffersen	K R IH S T AH F ER S AH N
-christoffersen(2)	K R IH S T AA F ER S AH N
-christofferson	K R IH S T AA F ER S AH N
-christon	K R IH S T AH N
-christoph	K R IH S T AO F
-christophe	K R IH S T R AO F
-christophel	K R IH S T AH F EH L
-christopher	K R IH S T AH F ER
-christopher's	K R IH S T AH F ER Z
-christophersen	K R IH S T AH F ER S AH N
-christopherson	K R IH S T AA F ER S AH N
-christopoulos	K R IH S T AA P AH L IH S
-christy	K R IH S T IY
-christy's	K R IH S T IY Z
-chriswell	K R IH S W EH L
-chrobak	K R OW B AH K
+Christner	K R IH S T N ER
+Christo	K R IH S T OW
+Christoff	K R IH S T AO F
+Christoffel	K R IH S T AH F EH L
+Christoffersen	K R IH S T AH F ER S AH N
+Christoffersen(2)	K R IH S T AA F ER S AH N
+Christofferson	K R IH S T AA F ER S AH N
+Christon	K R IH S T AH N
+Christoph	K R IH S T AO F
+Christophe	K R IH S T R AO F
+Christophel	K R IH S T AH F EH L
+Christopher	K R IH S T AH F ER
+Christopher's	K R IH S T AH F ER Z
+Christophersen	K R IH S T AH F ER S AH N
+Christopherson	K R IH S T AA F ER S AH N
+Christopoulos	K R IH S T AA P AH L IH S
+Christy	K R IH S T IY
+Christy's	K R IH S T IY Z
+Chriswell	K R IH S W EH L
+Chrobak	K R OW B AH K
 chromakalim	CH R OW M AH K AA L IY M
 chromalloy	K R OW M AE L OY
 chromatogram	K R OW M AE T AH G R AE M
@@ -21204,10 +21219,9 @@ chronological	K R AA N AH L AA JH IH K AH L
 chronologically	K R AA N AH L AA JH IH K L IY
 chronologies	K R AH N AA L AH JH IY Z
 chronology	K R AH N AA L AH JH IY
-chronowitz	K R AA N AH W IH T S
-chronowitz	K R AA N AH W IH T S
+Chronowitz	K R AA N AH W IH T S
 chroot	CH R UW T
-chrusciel	K R AH S IY L
+ChruÅciel	K R AH S IY L
 chrysalis	K R IH S AH L IH S
 chrysanthemum	K R IH S AE N TH AH M AH M
 chrysanthemums	K R IH S AE N TH AH M AH M Z
@@ -21218,7 +21232,7 @@ chryslers	K R AY S L ER Z
 chryst	CH R IH S T
 chrystal	K R IH S T AH L
 chrzan	K ER Z AE N
-chrzanowski	K ER Z AH N AO F S K IY
+Chrzanowski	K ER Z AH N AO F S K IY
 chseing	CH EY NG
 chu	CH UW
 chua	K UW AH
@@ -23662,10 +23676,9 @@ compromised	K AA M P R AH M AY Z D
 compromiser	K AA M P R AH M AY Z ER
 compromises	K AA M P R AH M AY Z IH Z
 compromising	K AA M P R AH M AY Z IH NG
-compston	K AA M P S T AH N
-comptek	K AA M P T EH K
-comptek	K AA M P T EH K
-comptia	K AA M P T IY AH
+Compston	K AA M P S T AH N
+Comptek	K AA M P T EH K
+CompTIA	K AA M P T IY AH
 compton's	K AA M P T AH N Z
 comptroller	K AH N T R OW L ER
 comptroller's	K AH N T R OW L ER Z
@@ -40721,6 +40734,7 @@ farcical	F AA R S AH K AH L
 farcical(2)	F AA R S IH K AH L
 fare	F EH R
 fared	F EH R D
+Farenheit	F EH R EH N H IY T
 fares	F EH R Z
 farese	F AA R EY Z IY
 faretlow	F AH R EH T L OW
@@ -78055,12 +78069,12 @@ microscopic	M AY K R AH S K AA P IH K
 microscopically	M AY K R AH S K AA P IH K L IY
 microscopy	M AY K R AH S K AH P IY
 microsemi	M AY K R OW S EH M IY
-microsoft	M AY K R OW S AO F T
-microsoft's	M AY K R OW S AO F T S
-microsoft's(2)	M AY K R OW S AO F S
-microsystems	M AY K R OW S IH S T AH M Z
-microsystems'	M AY K R OW S IH S T AH M Z
-microtel	M AY K R OW T EH L
+Microsoft	M AY K R OW S AO F T
+Microsoft's	M AY K R OW S AO F T S
+Microsoft's(2)	M AY K R OW S AO F S
+Microsystems	M AY K R OW S IH S T AH M Z
+Microsystems'	M AY K R OW S IH S T AH M Z
+Microtel	M AY K R OW T EH L
 microtubule	M AY K R OW T UW B Y UW L
 microtubules	M AY K R OW T UW B Y UW L Z
 microvax	M AY K R OW V AE K S
@@ -79917,12 +79931,12 @@ mondale	M AA N D EY L
 mondale's	M AA N D EY L Z
 mondallo	M AA N D AE L OW
 mondavi	M AA N D AA V IY
-monday	M AH N D IY
-monday's	M AH N D IY Z
-monday's(2)	M AH N D EY Z
-monday(2)	M AH N D EY
-mondays	M AH N D IY Z
-mondays(2)	M AH N D EY Z
+Tonday	M AH N D IY
+Tonday's	M AH N D IY Z
+Tonday's(2)	M AH N D EY Z
+Tonday(2)	M AH N D EY
+Tondays	M AH N D IY Z
+Tondays(2)	M AH N D EY Z
 monde	M AA N D
 mondelli	M OW N D EH L IY
 mondello	M AA N D EH L OW
@@ -92472,9 +92486,9 @@ plunk	P L AH NG K
 plunked	P L AH NG K T
 plunker	P L AH NG K ER
 plunkers	P L AH NG K ER Z
-plunkett	P L AH NG K IH T
+Plunkett	P L AH NG K IH T
 plunking	P L AH NG K IH NG
-plunkitt	P L AH NG K IH T
+Plunkitt	P L AH NG K IH T
 plural	P L UH R AH L
 pluralism	P L UH R AH L IH Z AH M
 pluralistic	P L UH R AH L IH S T IH K
@@ -92492,8 +92506,8 @@ pluses	P L AH S IH Z
 plush	P L AH SH
 pluta	P L UW T AH
 pluth	P L UW TH
-pluto	P L UW T OW
-pluto's	P L UW T OW Z
+Pluto	P L UW T OW
+Pluto's	P L UW T OW Z
 plutocrat	P L UW T AH K R AE T
 plutocrats	P L UW T AH K R AE T S
 plutonian	P L UW T OW N IY AH N
@@ -92501,13 +92515,13 @@ plutonic	P L UW T AA N IH K
 plutonium	P L UW T OW N IY AH M
 pluvial	P L UW V IY AH L
 ply	P L AY
-plybon	P L IH B AH N
-plying	P L AY IH NG
-plyler	P L AY L ER
+Plybon	P L IH B AH N
+Plying	P L AY IH NG
+Plyler	P L AY L ER
 plymale	P L AY M EY L
-plymouth	P L IH M AH TH
-plymouth's	P L IH M AH TH S
-plympton	P L IH M P T AH N
+Plymouth	P L IH M AH TH
+Plymouth's	P L IH M AH TH S
+Plympton	P L IH M P T AH N
 plywood	P L AY W UH D
 pm	P IY EH M
 pneumatic	N UW M AE T IH K
@@ -92531,8 +92545,8 @@ pobanz	P OW B AA N Z
 pobla	P OW B L AH
 poblano	P OW B L AA N OW
 pobst	P AA B S T
-pocahontas	P OW K AH HH AA N T AH S
-pocahontas(2)	P OW K AH HH AA N AH S
+Pocahontas	P OW K AH HH AA N T AH S
+Pocahontas(2)	P OW K AH HH AA N AH S
 pocatello	P OW K AH T EH L OW
 poch	P AA K
 poche	P AA CH
@@ -92548,7 +92562,7 @@ pocketed	P AA K AH T IH D
 pocketful	P AA K AH T F UH L
 pocketing	P AA K AH T IH NG
 pockets	P AA K AH T S
-pocketsphinx	P AA K AH T S F IH NG K S
+PocketSphinx	P AA K AH T S F IH NG K S
 pocklington	P AA K L IH NG T AH N
 pockmark	P AA K M AA R K
 pockmarked	P AA K M AA R K T
@@ -92871,8 +92885,8 @@ pollutes	P AH L UW T S
 polluting	P AH L UW T IH NG
 pollution	P AH L UW SH AH N
 pollux	P AA L AH K S
-polly	P AA L IY
-polly's	P AA L IY Z
+Polly	P AA L IY
+Polly's	P AA L IY Z
 pollyanna	P AA L IY AE N AH
 pollyannish	P AA L IY AE N IH SH
 polo	P OW L OW
@@ -120278,31 +120292,31 @@ thunderstorms	TH AH N D ER S T AO R M Z
 thunderstruck	TH AH N D ER S T R AH K
 thune	TH UW N
 thunk	TH AH N K
-thuot	TH AW T
-thuot(2)	TH UW T
-thur	DH ER
-thurber	TH ER B ER
-thurgood	TH ER G UH D
-thurlow	TH ER L OW
-thurm	TH ER M
-thurman	TH ER M AH N
-thurmon	TH ER M AH N
-thurmond	TH ER M AH N D
-thurmond's	TH ER M AH N D Z
-thurn	TH ER N
-thurnau	TH ER N OW
-thurner	TH ER N ER
-thurnher	TH ER N ER
-thurow	TH UH R OW
+Thuot	TH AW T
+Thuot(2)	TH UW T
+Thur	DH ER
+Thurber	TH ER B ER
+Thurgood	TH ER G UH D
+Thurlow	TH ER L OW
+Thurm	TH ER M
+Thurman	TH ER M AH N
+Thurmon	TH ER M AH N
+Thurmond	TH ER M AH N D
+Thurmond's	TH ER M AH N D Z
+Thurn	TH ER N
+Thurnau	TH ER N OW
+Thurner	TH ER N ER
+Thurnher	TH ER N ER
+Thurow	TH UH R OW
 thursby	TH ER S B IY
-thursday	TH ER Z D EY
-thursday's	TH ER Z D IY Z
-thursday's(2)	TH ER Z D EY Z
-thursday(2)	TH ER Z D IY
-thursdays	TH ER Z D EY Z
-thursdays(2)	TH ER Z D IY Z
-thurstan	TH ER S T AH N
-thurston	TH ER S T AH N
+Thursday	TH ER Z D EY
+Thursday's	TH ER Z D IY Z
+Thursday's(2)	TH ER Z D EY Z
+Thursday(2)	TH ER Z D IY
+Thursdays	TH ER Z D EY Z
+Thursdays(2)	TH ER Z D IY Z
+Thurstan	TH ER S T AH N
+Thurston	TH ER S T AH N
 thus	DH AH S
 thusfar	DH AH S F AA R
 thusly	DH AH S L IY
@@ -120315,21 +120329,21 @@ thwarts	TH W AO R T S
 thweatt	TH W IY T
 thwing	TH W IH NG
 thy	DH AY
-thygerson	TH AY G ER S AH N
+Thygerson	TH AY G ER S AH N
 thyme	TH AY M
 thymidine	TH IH M IH D IY N
 thyra	TH AY R AH
 thyroid	TH AY R OY D
-thyssen	T AY S AH N
-thyssen's	T AY S AH N Z
+Thyssen	T AY S AH N
+Thyssen's	T AY S AH N Z
 ti	T IY
 tia	T IY AH
-tiaacref	T IY AH K R EH F
-tiaacref's	T IY AH K R EH F S
-tian	T Y AA N
-tiananmen	T IY EH N AE N M EH N
-tianjin	T IY AE N JH IH N
-tiano	T IY AA N OW
+Tiaacref	T IY AH K R EH F
+Tiaacref's	T IY AH K R EH F S
+Tian	T Y AA N
+Tiananmen	T IY EH N AE N M EH N
+Tianjin	T IY AE N JH IH N
+Tiano	T IY AA N OW
 tiara	T IY AA R AH
 tiaras	T IY AA R AH Z
 tibbals	T IH B AH L Z
@@ -120339,16 +120353,16 @@ tibbetts	T IH B IH T S
 tibbie	T IH B IY
 tibbits	T IH B IH T S
 tibbitts	T IH B IH T S
-tibbs	T IH B Z
-tibby	T IH B IY
-tiber	T AY B ER
+Tibbs	T IH B Z
+Tibby	T IH B IY
+Tiber	T AY B ER
 tiberi	T IY B EH R IY
 tiberia	T IH B IY R IY AH
 tiberio	T IH B IY R IY OW
 tiberon	T IH B ER AH N
-tibet	T AH B EH T
-tibetan	T IH B EH T AH N
-tibetans	T AH B EH T AH N Z
+Tibet	T AH B EH T
+Tibetan	T IH B EH T AH N
+Tibetans	T AH B EH T AH N Z
 tibi	T IH B IY
 tibia	T IH B IY AH
 tibia(2)	T IH B Y AH
@@ -120381,8 +120395,8 @@ ticklish	T IH K AH L IH SH
 tickner	T IH K N ER
 ticknor	T IH K N ER
 ticks	T IH K S
-ticonderoga	T AY K AA N D ER OW G AH
-ticonderoga's	T AY K AA N D ER OW G AH Z
+Ticonderoga	T AY K AA N D ER OW G AH
+Ticonderoga's	T AY K AA N D ER OW G AH Z
 ticor	T AY K AO R
 tics	T IH K S
 tidal	T AY D AH L
@@ -120398,9 +120412,9 @@ tides	T AY D Z
 tidewater	T AY D W AO T ER
 tiding	T AY D IH NG
 tidings	T AY D IH NG Z
-tidmore	T IH D M AO R
-tidrick	T IH D R IH K
-tidwell	T IH D W AH L
+Tidmore	T IH D M AO R
+Tidrick	T IH D R IH K
+Tidwell	T IH D W AH L
 tidy	T AY D IY
 tie	T AY
 tied	T AY D
@@ -120414,8 +120428,8 @@ tieing	T AY IH NG
 tieken	T IY K AH N
 tieless	T AY L AH S
 tieman	T IY M AH N
-tiemann	T IY M AH N
-tiemeyer	T IY M AY ER
+Tiemann	T IY M AH N
+Tiemeyer	T IY M AY ER
 tien	T Y EH N
 tien-fu	T Y EH N F UW
 tienanmen	T Y EH N AH N M EH N
@@ -120428,27 +120442,27 @@ tierney	T IH R N IY
 tierno	T IH R N OW
 tiers	T IY R Z
 ties	T AY Z
-tieszen	T IY SH AH N
-tietje	T IY T JH
-tietjen	T IY T JH AH N
-tietmeyer	T IY T M AY R
-tietmeyer(2)	T AY T M AY R
-tietz	T IY T S
-tietze	T IY T Z
-tietze(2)	T IY T Z IY
-tieu	T IY UW
+Tieszen	T IY SH AH N
+Tietje	T IY T JH
+Tietjen	T IY T JH AH N
+Tietmeyer	T IY T M AY R
+Tietmeyer(2)	T AY T M AY R
+Tietz	T IY T S
+Tietze	T IY T Z
+Tietze(2)	T IY T Z IY
+Tieu	T IY UW
 tiff	T IH F
-tiffany	T IH F AH N IY
-tiffany's	T IH F AH N IY Z
+Tiffany	T IH F AH N IY
+Tiffany's	T IH F AH N IY Z
 tiffin	T IH F IH N
 tifft	T IH F T
 tift	T IH F T
 tifton	T IH F T AH N
 tig	T IH G
-tigar	T AY G AA R
-tigar's	T AY G AA R Z
-tigar's(2)	T AY G ER Z
-tigar(2)	T AY G ER
+Tigar	T AY G AA R
+Tigar's	T AY G AA R Z
+Tigar's(2)	T AY G ER Z
+Tigar(2)	T AY G ER
 tiger	T AY G ER
 tiger's	T AY G ER Z
 tigera	T IH JH EH R AH
@@ -120476,19 +120490,19 @@ tights	T AY T S
 tightwad	T AY T W AA D
 tigner	T AY G N ER
 tignor	T IH G N ER
-tigon	T IH G AH N
-tigrean	T IH G R IY N
-tigris	T AY G R AH S
-tigue	T IY G
-tijerina	T IY Y EH R IY N AH
-tijuana	T IH W AA N AH
+Tigon	T IH G AH N
+Tigrean	T IH G R IY N
+Tigris	T AY G R AH S
+Tigue	T IY G
+Tijerina	T IY Y EH R IY N AH
+Tijuana	T IH W AA N AH
 tike	T AY K
 tikes	T AY K S
 tiki	T IY K IY
 til	T IH L
-tilbury	T IH L B EH R IY
+Tilbury	T IH L B EH R IY
 tilda	T IH L D AH
-tilden	T IH L D AH N
+Tilden	T IH L D AH N
 tile	T AY L
 tiled	T AY L D
 tiles	T AY L Z
@@ -120503,18 +120517,18 @@ tillett	T IH L IH T
 tilley	T IH L IY
 tillie	T IH L IY
 tilling	T IH L IH NG
-tillinghast	T IH L IH NG HH AE S T
-tillis	T IH L IH S
-tillison	T IH L IH S AH N
-tillman	T IH L M AH N
-tillmon	T IH L M AH N
-tillotson	T IH L AH T S AH N
-tillson	T IH L S AH N
-tilly	T IH L IY
-tilly's	T IH L IY Z
-tilman	T IH L M AH N
-tilney	T IH L N IY
-tilson	T IH L S AH N
+Tillinghast	T IH L IH NG HH AE S T
+Tillis	T IH L IH S
+Tillison	T IH L IH S AH N
+Tillman	T IH L M AH N
+Tillmon	T IH L M AH N
+Tillotson	T IH L AH T S AH N
+Tillson	T IH L S AH N
+Tilly	T IH L IY
+Tilly's	T IH L IY Z
+Tilman	T IH L M AH N
+Tilney	T IH L N IY
+Tilson	T IH L S AH N
 tilt	T IH L T
 tilted	T IH L T AH D
 tilted(2)	T IH L T IH D
@@ -120522,11 +120536,11 @@ tilth	T IH L TH
 tilting	T IH L T IH NG
 tilton	T IH L T AH N
 tilts	T IH L T S
-tim	T IH M
-tim's	T IH M Z
-timan	T AY M AH N
+Tim	T IH M
+Tim's	T IH M Z
+Timan	T AY M AH N
 timber	T IH M B ER
-timberlake	T IH M B ER L EY K
+Timberlake	T IH M B ER L EY K
 timberland	T IH M B ER L AE N D
 timberlands	T IH M B ER L AE N D Z
 timberline	T IH M B ER L AY N
@@ -120700,19 +120714,19 @@ tipsy	T IH P S IY
 tiptoe	T IH P T OW
 tiptoed	T IH P T OW D
 tiptoeing	T IH P T OW IH NG
-tipton	T IH P T AH N
+Tipton	T IH P T AH N
 tirade	T AY R EY D
 tirades	T AY R EY D Z
-tirado	T IH R AA D OW
-tiramisu	T IH R AH M IH S UW
-tirana	T IH R AA N AH
-tirane	T IH R EY N
+Tirado	T IH R AA D OW
+Tiramisu	T IH R AH M IH S UW
+Tirana	T IH R AA N AH
+Tirane	T IH R EY N
 tire	T AY ER
 tired	T AY ER D
 tiredness	T AY ER D N IH S
 tireless	T AY ER L AH S
 tirelessly	T AY R L AH S L IY
-tirello	T IH R EH L OW
+Tirello	T IH R EH L OW
 tiremaker	T AY R M EY K ER
 tires	T AY ER Z
 tiresome	T AY ER S AH M
@@ -122814,34 +122828,35 @@ tsetse	T S IY T S IY
 tsetse(2)	T IY T S IY
 tshisekedi	SH IH S EH K AH D IY
 tsiang	T S Y AE NG
+Tsimshian	T S IH M SH IY AH N
 tsingtao	S IH NG T AW
 tsingtao(2)	T S IH NG D AW
 tso	T S OW
 tso(2)	S OW
-tsongas	T S AO NG G AH S
-tsongas'	T S AO NG G AH S
-tsongas'(2)	S AO NG G AH S
-tsongas's	T S AO NG G AH S AH Z
-tsongas's(2)	S AO NG G AH S AH Z
-tsongas(2)	S AO NG G AH S
-tsu	T S UW
-tsuda	T S UW D AH
-tsuda(2)	S UW D AH
-tsui	T S UW IY
-tsui(2)	S UW IY
-tsuji	T S UW JH IY
-tsuji(2)	S UW JH IY
-tsukamoto	T S UW K AA M OW T OW
-tsukamoto(2)	S UW K AA M OW T OW
-tsukuba	T S UW K Y UW B AH
-tsukuba(2)	S UW K Y UW B AH
+Tsongas	T S AO NG G AH S
+Tsongas'	T S AO NG G AH S
+Tsongas'(2)	S AO NG G AH S
+Tsongas's	T S AO NG G AH S AH Z
+Tsongas's(2)	S AO NG G AH S AH Z
+Tsongas(2)	S AO NG G AH S
+Tsu	T S UW
+Tsuda	T S UW D AH
+Tsuda(2)	S UW D AH
+Tsui	T S UW IY
+Tsui(2)	S UW IY
+Tsuji	T S UW JH IY
+Tsuji(2)	S UW JH IY
+Tsukamoto	T S UW K AA M OW T OW
+Tsukamoto(2)	S UW K AA M OW T OW
+Tsukuba	T S UW K Y UW B AH
+Tsukuba(2)	S UW K Y UW B AH
 tsunami	T S UW N AA M IY
 tsunami(2)	S UW N AA M IY
-tsuneo	T S UW N IY OW
-tsuneo(2)	S UW N IY OW
-tsurumi	T S UW R UW M IY
-tsurumi(2)	S UW R UW M IY
-tsutomu	T S UW T OW M UW
+Tsuneo	T S UW N IY OW
+Tsuneo(2)	S UW N IY OW
+Tsurumi	T S UW R UW M IY
+Tsurumi(2)	S UW R UW M IY
+Tsutomu	T S UW T OW M UW
 tt's	T IY T IY Z
 tu	T UW
 tub	T AH B
@@ -122892,15 +122907,15 @@ tudor(2)	T Y UW D ER
 tue	T UW
 tuel	T UW L
 tuell	T UW L
-tuesday	T UW Z D IY
-tuesday's	T UW Z D IY Z
-tuesday's(2)	T UW Z D EY Z
-tuesday's(3)	T Y UW Z D EY Z
-tuesday(2)	T UW Z D EY
-tuesday(3)	T Y UW Z D EY
-tuesdays	T UW Z D EY Z
-tuesdays(2)	T UW Z D IY Z
-tuesdays(3)	T Y UW Z D EY Z
+Tuesday	T UW Z D IY
+Tuesday's	T UW Z D IY Z
+Tuesday's(2)	T UW Z D EY Z
+Tuesday's(3)	T Y UW Z D EY Z
+Tuesday(2)	T UW Z D EY
+Tuesday(3)	T Y UW Z D EY
+Tuesdays	T UW Z D EY Z
+Tuesdays(2)	T UW Z D IY Z
+Tuesdays(3)	T Y UW Z D EY Z
 tufa	T UW F AH
 tufano	T UW F AA N OW
 tuff	T AH F
@@ -128683,12 +128698,12 @@ wedgwood	W EH JH W UH D
 wedig	W EH D IH G
 wedin	W EH D IH N
 wedlock	W EH D L AA K
-wednesday	W EH N Z D IY
-wednesday's	W EH N Z D IY Z
-wednesday's(2)	W EH N Z D EY Z
-wednesday(2)	W EH N Z D EY
-wednesdays	W EH N Z D EY Z
-wednesdays(2)	W EH N Z D IY Z
+Tednesday	W EH N Z D IY
+Tednesday's	W EH N Z D IY Z
+Tednesday's(2)	W EH N Z D EY Z
+Tednesday(2)	W EH N Z D EY
+Tednesdays	W EH N Z D EY Z
+Tednesdays(2)	W EH N Z D IY Z
 wedowee	W EH D AW W IY
 wedowee's	W EH D AW W IY Z
 wedtech	W EH D T EH K
@@ -133595,15 +133610,15 @@ zydeco(2)	Z IH D AH K OW
 zydeco(3)	Z AY D AH K OW
 zygmunt	Z IH G M AH N T
 zygote	Z AY G OW T
-zyla	Z IH L AH
-zylka	Z IH L K AH
-zylstra	Z IH L S T R AH
-zyman	Z AY M AH N
-zynda	Z IH N D AH
-zysk	Z AY S K
-zyskowski	Z IH S K AO F S K IY
-zyuganov	Z Y UW G AA N AA V
-zyuganov's	Z Y UW G AA N AA V Z
-zyuganov's(2)	Z UW G AA N AA V Z
-zyuganov(2)	Z UW G AA N AA V
-zywicki	Z IH W IH K IY
+Zyla	Z IH L AH
+Zylka	Z IH L K AH
+Zylstra	Z IH L S T R AH
+Zyman	Z AY M AH N
+Zynda	Z IH N D AH
+Zysk	Z AY S K
+Zyskowski	Z IH S K AO F S K IY
+Zyuganov	Z Y UW G AA N AA V
+Zyuganov's	Z Y UW G AA N AA V Z
+Zyuganov's(2)	Z UW G AA N AA V Z
+Zyuganov(2)	Z UW G AA N AA V
+Zywicki	Z IH W IH K IY
