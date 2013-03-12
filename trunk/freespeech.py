@@ -331,8 +331,8 @@ class freespeech(object):
             line = re.sub(u'®',           u'®registered-symbol',      line)
             line = re.sub(r'_',           r'_underscore',             line)
             line = re.sub(r'\\',          r'\backslash',              line)
-            line = re.sub(r'^(.)',          r'<s> \1',                line)
-            line = re.sub(r'(.)$',           r'\1 </s>',              line)
+            line = re.sub(r'^(.)',        r'<s> \1',                  line)
+            line = re.sub(r'(.)$',        r'\1 </s>',                 line)
             corpus[ind] = line
         return corpus
 
