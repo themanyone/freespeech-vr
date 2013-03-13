@@ -18,7 +18,7 @@ The following development packages should be installed.
   pygtk2] * [http://gstreamer.freedesktop.org/ gstreamer, including 
   gstreamer-python] * [http://cmusphinx.sourceforge.net/ 
   pocketsphinx] * 
-  [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html 
+  [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz 
   CMU-Cambridge Statistical Language Modeling Toolkit v2]
 
 == Using FreeSpeech ==
