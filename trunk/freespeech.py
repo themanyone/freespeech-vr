@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # FreeSpeech
 # Continuous realtime speech recognition and control via pocketsphinx
-# Copyright (c) Henry Kroll III, http://www.TheNerdShow.com
+# Copyright (c) 2013 Henry Kroll III, http://www.TheNerdShow.com
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
