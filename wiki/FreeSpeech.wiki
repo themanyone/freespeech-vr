@@ -41,7 +41,11 @@ Don't worry if you inadvertently teach it bad grammar. It's not strictly necessa
 
 The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
-If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, you may need to edit the dictionary: "freespeech.dic" This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say "period"?) and some capitalized words. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer. I noticed many of the words need to be capitalized in the dictionary. I'll keep updating them as I find them.
+If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, you may need to edit the dictionary: "freespeech.dic"
+
+Sometimes the dictionary pronunciation can be little bit off. You will notice that some other words have alternate pronunciations denoted with (2). Go ahead and add an alternate and see if it doesn't improve immediately the next time the program starts.
+
+This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say "period"?) and some capitalized words. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer. I noticed many of the words need to be capitalized in the dictionary. I'll keep updating them as I find them.
 
 Adapt PocketSphinx to your voice for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
