@@ -1,6 +1,6 @@
 `agrave	AH G R EY V
 =equals-sign	IY K W AH L Z S AY N
->greater-than-symbol	G R EY T ER TH AH N S IH M B AH Lol
+>greater-than-symbol	G R EY T ER TH AH N S IH M B AH L
 <less-than-symbol	L EH S TH AH N S IH M B AH L
 |pipe-symbol	P AY P S IH M B AH L
 !exclamation-point	EH K S K L AH M EY SH AH N P OY N T
@@ -63,8 +63,8 @@ _underscore	AH N D ER S K AO R
 ...ellipsis	IH L IH P S IH S
 .decimal	D EH S AH M AH L
 .dot	D AA T
-.full-stop	F UH L S T AA P
 .period	P IH R IY AH D
+.period(2)	F UH L S T AA P
 .point	P OY N T
 /slash	S L AE SH
 :colon	K OW L AH N
@@ -91,7 +91,7 @@ $dollar-sign	 D AA L ER S AY N
 ÷division-sign	D IH V IH ZH AH N S IH N
 °degree-sign	D IH G R IY S IH N
 °C	D IH G R IY S S EH L S IY AH S
-°F	D IH G R IY S F EH R EH N H IY T
+°F	D IH G R IY S F EH R EH N HH IY T
 ©copyright-sign	K AA P IY R AY T S IH N
 ™trademark-sign	T R EY D M AA R K S IH N
 ®registered-sign	R EH JH IH S T ER D S IH N
@@ -2680,9 +2680,9 @@ Alex's	AE L AH K S IH Z
 Alexa	AH L EH K S AH
 Alexander	AE L AH G Z AE N D ER
 Alexander's	AE L AH G Z AE N D ER Z
-alexander's(2)	AE L IH G Z AE N D ER Z
+Alexander's(2)	AE L IH G Z AE N D ER Z
 Alexander(2)	AE L IH G Z AE N D ER
-alexanders	AE L IH G Z AE N D ER Z
+Alexanders	AE L IH G Z AE N D ER Z
 Alexandra	AE L EH G Z AE N D R AH
 Alexandra(2)	AE L IH G Z AE N D R AH
 alexandre	AE L IH K S AA N D ER
@@ -3638,26 +3638,26 @@ amerada(2)	AE M ER AA D AH
 amerco	AH M EH R K OW
 amerford	EY M ER F ER D
 ameri	AH M EH R IY
-ameribanc	AH M EH R IH B AE NG K
-america	AH M EH R AH K AH
-america's	AH M EH R AH K AH Z
-america's(2)	AH M EH R IH K AH Z
-america(2)	AH M EH R IH K AH
-american	AH M EH R AH K AH N
-american's	AH M EH R IH K AH N Z
-american(2)	AH M EH R IH K AH N
-americana	AH M EH R AH K AE N AH
-americana's	AH M EH R AH K AE N AH Z
-americanas	AH M EH R AH K AE N AH Z
-americanism	AH M EH R IH K AH N IH Z AH M
-americanization	AH M EH R AH K AH N AH Z EY SH AH N
-americanize	AH M EH R AH K AH N AY Z
-americanized	AH M EH R IH K AH N AY Z D
-americano	AH M EH R IH K AA N OW
-americanos	AH M EH R IH K AA N OW Z
-americans	AH M EH R AH K AH N Z
-americans'	AH M EH R IH K AH N Z
-americans(2)	AH M EH R IH K AH N Z
+Ameribanc	AH M EH R IH B AE NG K
+America	AH M EH R AH K AH
+America's	AH M EH R AH K AH Z
+America's(2)	AH M EH R IH K AH Z
+America(2)	AH M EH R IH K AH
+American	AH M EH R AH K AH N
+American's	AH M EH R IH K AH N Z
+American(2)	AH M EH R IH K AH N
+Americana	AH M EH R AH K AE N AH
+Americana's	AH M EH R AH K AE N AH Z
+Americanas	AH M EH R AH K AE N AH Z
+Americanism	AH M EH R IH K AH N IH Z AH M
+Americanization	AH M EH R AH K AH N AH Z EY SH AH N
+Americanize	AH M EH R AH K AH N AY Z
+Americanized	AH M EH R IH K AH N AY Z D
+Americano	AH M EH R IH K AA N OW
+Americanos	AH M EH R IH K AA N OW Z
+Americans	AH M EH R AH K AH N Z
+Americans'	AH M EH R IH K AH N Z
+Americans(2)	AH M EH R IH K AH N Z
 americar	AH M EH R IH K AA R
 americare	AH M EH R IH K EH R
 americares	AH M EH R IH K EH R Z
@@ -4098,7 +4098,7 @@ andras	AA N D R AH S
 andre	AA N D R EY
 Andrea	AE N D R IY AH
 Andrea's	AE N D R IY AH Z
-andrea's(2)	AA N D R EY AH Z
+Andrea's(2)	AA N D R EY AH Z
 Andrea(2)	AA N D R EY AH
 andreae	AA N D R EY AA
 andreana	AE N D R IY N AH
@@ -4739,6 +4739,7 @@ antitoxins	AE N T IY T AA K S AH N Z
 antitrust	AE N T AY T R AH S T
 antiviral	AE N T IY V AY R AH L
 antivirus	AE N T IY V AY R AH S
+antivirus(2)	AE N T AY V AY R AH S
 antiwar	AE N T AY W AO R
 antiwar(2)	AE N T IY W AO R
 antkowiak	AH N T K AW IY AE K
@@ -5139,9 +5140,9 @@ apra	EY P R AH
 aprea	AA P R IY AH
 apricot	EY P R AH K AA T
 apricots	AE P R AH K AA T S
-april	EY P R AH L
-april's	EY P R AH L Z
-aprile	AA P R AH L
+April	EY P R AH L
+April's	EY P R AH L Z
+Aprile	AA P R AH L
 apriori	AH P R IY AO R IY
 aprodiva	AE P R AO D IY V AH
 apron	EY P R AH N
@@ -5185,39 +5186,39 @@ aquila	AE K W AH L AH
 aquilar	AA K W IY L AA R
 aquilina	AA K W IY L IY N AH
 aquilino	AA K W IY L IY N OW
-aquinas	AH K W AY N AH S
-aquino	AH K IY N OW
-aquino's	AH K IY N OW Z
+Aquinas	AH K W AY N AH S
+Aquino	AH K IY N OW
+Aquino's	AH K IY N OW Z
 aquirre	AE K W ER
 aquitaine	AE K W IH T EY N
 ar	AA R
 ara	AE R AH
-arab	AE R AH B
-arab(2)	EH R AH B
+Arab	AE R AH B
+Arab(2)	EH R AH B
 arabe	AA R AA B EY
 arabella	AE R AH B EH L AH
-arabia	ER EY B IY AH
-arabia's	ER EY B IY AH Z
-arabian	ER EY B IY AH N
-arabians	ER EY B IY AH N Z
-arabic	AE R AH B IH K
-arabic(2)	EH R AH B IH K
+Arabia	ER EY B IY AH
+Arabia's	ER EY B IY AH Z
+Arabian	ER EY B IY AH N
+Arabians	ER EY B IY AH N Z
+Arabic	AE R AH B IH K
+Arabic(2)	EH R AH B IH K
 arabica	ER AE B IH K AH
 arabichon	AH R AE B IH SH AO N
 arabichon's	AH R AE B IH SH AO N Z
 arabicon	AH R AE B AH K AO N
 arabie	ER AE B IY
 arable	EH R AH B AH L
-arabs	AE R AH B Z
-arabs'	EH R AH B Z
-arabs(2)	EH R AH B Z
+Arabs	AE R AH B Z
+Arabs'	EH R AH B Z
+Arabs(2)	EH R AH B Z
 arachnid	ER AE K N AH D
 arachnid(2)	ER AE K N IH D
 arachnids	ER AE K N AH D Z
 arachnids(2)	ER AE K N IH D Z
-arafat	EH R AH F AE T
-arafat's	AA R AH F AA T S
-arafat's(2)	EH R AH F AE T S
+Arafat	EH R AH F AE T
+Arafat's	AA R AH F AA T S
+Arafat's(2)	EH R AH F AE T S
 aragon	EH R AH G AA N
 aragona	AA R AA G OW N AH
 arai	AA R AA IY
@@ -6512,39 +6513,39 @@ atico	AE T IH K OW
 atienza	AA T IY N Z AH
 atilano	AA T IY L AA N OW
 atither	AH T IH DH ER
-atkerson	AE T K ER S AH N
-atkin	AH T K IH N
-atkins	AE T K IH N Z
-atkins's	AE T K IH N Z IH Z
-atkinson	AE T K AH N S AH N
-atkinson's	AE T K AH N S AH N Z
-atkinson's(2)	AE T K IH N S AH N Z
-atkinson(2)	AE T K IH N S AH N
-atkison	AE T K IH S AH N
-atkisson	AE T K IH S AH N
+Atkerson	AE T K ER S AH N
+Atkin	AH T K IH N
+Atkins	AE T K IH N Z
+Atkins's	AE T K IH N Z IH Z
+Atkinson	AE T K AH N S AH N
+Atkinson's	AE T K AH N S AH N Z
+Atkinson's(2)	AE T K IH N S AH N Z
+Atkinson(2)	AE T K IH N S AH N
+Atkison	AE T K IH S AH N
+Atkisson	AE T K IH S AH N
 atla	AE T L AH
 atlan	AE T L AH N
 Atlanta	AE T L AE N T AH
 Atlanta's	AE T L AE N T AH Z
-atlanta's(2)	AE T L AE N AH Z
+Atlanta's(2)	AE T L AE N AH Z
 Atlanta(2)	AH T L AE N T AH
-atlanta(3)	AE T L AE N AH
-atlanta(4)	AH T L AE N AH
-atlantan	AE T L AE N T AH N
-atlantan(2)	AE T L AE N AH N
-atlantans	AE T L AE N T AH N Z
-atlantans(2)	AE T L AE N AH N Z
-atlantic	AH T L AE N T IH K
-atlantic's	AH T L AE N T IH K S
-atlantic's(2)	AH T L AE N IH K S
-atlantic(2)	AH T L AE N IH K
-atlantica	AE T L AE N T IH K AH
-atlantico	AE T L AE N T IH K OW
-atlantis	AE T L AE N T IH S
-atlantis'	AE T L AE N T IH S
-atlantis'(2)	AE T L AE N T IH S IH Z
-atlantis's	AE T L AE N T IH S IH Z
-atlantis(2)	AE T L AE N IH S
+Atlanta(3)	AE T L AE N AH
+Atlanta(4)	AH T L AE N AH
+Atlantan	AE T L AE N T AH N
+Atlantan(2)	AE T L AE N AH N
+Atlantans	AE T L AE N T AH N Z
+Atlantans(2)	AE T L AE N AH N Z
+Atlantic	AH T L AE N T IH K
+Atlantic's	AH T L AE N T IH K S
+Atlantic's(2)	AH T L AE N IH K S
+Atlantic(2)	AH T L AE N IH K
+Atlantica	AE T L AE N T IH K AH
+Atlantico	AE T L AE N T IH K OW
+Atlantis	AE T L AE N T IH S
+Atlantis'	AE T L AE N T IH S
+Atlantis'(2)	AE T L AE N T IH S IH Z
+Atlantis's	AE T L AE N T IH S IH Z
+Atlantis(2)	AE T L AE N IH S
 atlas	AE T L AH S
 atlas's	AE T L AH S IH Z
 atlases	AE T L EY S IH Z
@@ -6816,24 +6817,24 @@ augspurger(2)	AO G S P ER G ER
 augur	AO G ER
 auguring	AO G ER IH NG
 augurs	AO G ER Z
-august	AA G AH S T
-august's	AO G AH S T S
-august(2)	AO G AH S T
+August	AA G AH S T
+August's	AO G AH S T S
+August(2)	AO G AH S T
 Augusta	AH G AH S T AH
 Augusta's	AH G AH S T AH Z
-auguste	AO G AH S T
-augustin	AW G UW S T IY N
-augustine	AA G AH S T IY N
-augustine(2)	AO G AH S T IY N
-augustinian	AA G AH S T IH N IY AH N
-augustinians	AA G AH S T IH N IY AH N Z
-augusto	AO G AH S T OW
-augustson	AO G AH S T S AH N
-augustson(2)	AO G AH S AH N
-augustus	AA G AH S T AH S
-augustus(2)	AH G AH S T AH S
-augustyn	AW G AH S T IH N
-augustyniak	AW G AH S T IH N IY AE K
+Auguste	AO G AH S T
+Augustin	AW G UW S T IY N
+Augustine	AA G AH S T IY N
+Augustine(2)	AO G AH S T IY N
+Augustinian	AA G AH S T IH N IY AH N
+Augustinians	AA G AH S T IH N IY AH N Z
+Augusto	AO G AH S T OW
+Augustson	AO G AH S T S AH N
+Augustson(2)	AO G AH S AH N
+Augustus	AA G AH S T AH S
+Augustus(2)	AH G AH S T AH S
+Augustyn	AW G AH S T IH N
+Augustyniak	AW G AH S T IH N IY AE K
 aujourd'hui	OW ZH AO R D W IY
 aujourd'hui's	OW ZH AO R D W IY Z
 auker	AO K ER
@@ -8321,14 +8322,14 @@ banjo	B AE N JH OW
 bank	B AE NG K
 bank's	B AE NG K S
 bankable	B AE NG K AH B AH L
-bankamerica	B AE NG K AH M EH R IH K AH
-bankamerica's	B AE NG K AH M EH R IH K AH Z
-bankatlantic	B AE NG K AH T L AE N T IH K
+Bankamerica	B AE NG K AH M EH R IH K AH
+Bankamerica's	B AE NG K AH M EH R IH K AH Z
+Bankatlantic	B AE NG K AH T L AE N T IH K
 bankcard	B AE NG K AA R D
 bankcards	B AE NG K AA R D Z
-bankcorp	B AE NG K AO R P
+Bankcorp	B AE NG K AO R P
 banke	B AE NG K
-bankeast	B AE NG K IY S T
+BankEast	B AE NG K IY S T
 banked	B AE NG K T
 banken	B AE NG K AH N
 banker	B AE NG K ER
@@ -11634,7 +11635,7 @@ bintz	B IH N T S
 binz	B IH N Z
 bio	B AY OW
 bio's	B AY OW Z
-biocentric	B AY OW S EH N T R IH C
+biocentric	B AY OW S EH N T R IH K
 biochem	B AY AH CH AH M
 biochemical	B AY OW K EH M AH K AH L
 biochemical(2)	B AY OW K EH M IH K AH L
@@ -13030,7 +13031,7 @@ bois	B W AA
 boisclair	B W AA K L EH R
 Boise	B OY Z IY
 Boise's	B OY Z IY Z
-boise's(2)	B OY S IY Z
+Boise's(2)	B OY S IY Z
 Boise(2)	B OY S IY
 boisen	B OY S AH N
 boisi	B OY S IY
@@ -14875,10 +14876,10 @@ Brian	B R AY AH N
 Brian's	B R AY AH N Z
 Briana	B R IY AE N AH
 Briana's	B R IY AE N AH Z
-briana's(2)	B R IY AA N AH Z
+Briana's(2)	B R IY AA N AH Z
 Briana(2)	B R IY AA N AH
-briancon	B R AY AH N S AH N
-briand	B R AY AH N D
+Briancon	B R AY AH N S AH N
+Briand	B R AY AH N D
 Brianna	B R IY AE N AH
 Brianna's	B R IY AE N AH Z
 briant	B R AY AH N T
@@ -15403,22 +15404,22 @@ brookins	B R UW K IH N Z
 brookline	B R UH K L AY N
 Brooklyn	B R UH K L AH N
 Brooklyn's	B R UH K L AH N Z
-brooklyn's(2)	B R UH K L IH N Z
+Brooklyn's(2)	B R UH K L IH N Z
 Brooklyn(2)	B R UH K L IH N
-brookman	B R UH K M AH N
-brookner	B R UH K N ER
-brookner's	B R UH K N ER Z
-brookover	B R UH K OW V ER
-brooks	B R UH K S
-brooks'	B R UH K S
-brooks's	B R UH K S IH Z
-brooks's(2)	B R UH K S
-brookshier	B R UW K SH IY ER
-brookshire	B R UW K SH AY R
-brookside	B R UH K S AY D
-brookstone	B R UH K S T OW N
-brooksville	B R UH K S V IH L
-brooksville's	B R UH K S V IH L Z
+Brookman	B R UH K M AH N
+Brookner	B R UH K N ER
+Brookner's	B R UH K N ER Z
+Brookover	B R UH K OW V ER
+Brooks	B R UH K S
+Brooks'	B R UH K S
+Brooks's	B R UH K S IH Z
+Brooks's(2)	B R UH K S
+Brookshier	B R UW K SH IY ER
+Brookshire	B R UW K SH AY R
+Brookside	B R UH K S AY D
+Brookstone	B R UH K S T OW N
+Brooksville	B R UH K S V IH L
+Brooksville's	B R UH K S V IH L Z
 broom	B R UW M
 broomall	B R UW M AH L
 broome	B R UW M
@@ -17195,13 +17196,13 @@ caen	K AE N
 caen's	K AE N Z
 caen's(2)	K AA N Z
 caen(2)	K AA N
-caesar	S IY Z ER
-caesar's	S IY Z ER Z
-caesarea	K EY S ER IY AH
-caesarean	K EY S ER IY N
-caesareans	K EY S ER IY N Z
-caesars	S IY Z ER Z
-caesars'	S IY Z ER Z
+Caesar	S IY Z ER
+Caesar's	S IY Z ER Z
+Caesarea	K EY S ER IY AH
+Caesarean	K EY S ER IY N
+Caesareans	K EY S ER IY N Z
+Caesars	S IY Z ER Z
+Caesars'	S IY Z ER Z
 caetano	K AH T AA N OW
 cafarella	K AA F AA R EH L AH
 cafarelli	K AA F AA R EH L IY
@@ -19180,18 +19181,18 @@ cathay	K AE TH EY
 cathcart	K AE TH K AA R T
 cathedral	K AH TH IY D R AH L
 cathedrals	K AH TH IY D R AH L Z
-cathell	K AE TH AH L
-cather	K AE DH ER
-cather's	K AE DH ER Z
-catherina	K AA TH ER IY N AH
+Cathell	K AE TH AH L
+Cather	K AE DH ER
+Cather's	K AE DH ER Z
+Catherina	K AA TH ER IY N AH
 Catherine	K AE TH ER AH N
 Catherine's	K AE TH R IH N Z
 Catherine(2)	K AE TH ER IH N
-catherine(3)	K AE TH R IH N
-catherines	K AE TH R IH N Z
-catherman	K AE DH ER M AH N
-cathers	K AE DH ER Z
-catherwood	K AE DH ER W UH D
+Catherine(3)	K AE TH R IH N
+Catherines	K AE TH R IH N Z
+Catherman	K AE DH ER M AH N
+Cathers	K AE DH ER Z
+Catherwood	K AE DH ER W UH D
 catheter	K AE TH AH T ER
 catheters	K AE TH AH T ER Z
 cathey	K AE DH IY
@@ -19200,15 +19201,15 @@ cathleen	K AE TH L IY N
 cathmor	K AE TH AH M ER
 cathode	K AE TH OW D
 cathodes	K AE TH OW D Z
-catholic	K AE TH L IH K
-catholicism	K AH TH AO L AH S IH Z AH M
-catholics	K AE TH L IH K S
-cathy	K AE TH IY
-cathy's	K AE TH IY Z
-catija	K AH T IY JH AH
-catino	K AA T IY N OW
-catkins	K AE T K AH N Z
-catledge	K AE T L IH JH
+Catholic	K AE TH L IH K
+Catholicism	K AH TH AO L AH S IH Z AH M
+Catholics	K AE TH L IH K S
+Cathy	K AE TH IY
+Cathy's	K AE TH IY Z
+Catija	K AH T IY JH AH
+Catino	K AA T IY N OW
+Catkins	K AE T K AH N Z
+Catledge	K AE T L IH JH
 catlett	K AE T L IH T
 catlike	K AE T L AY K
 catlin	K AE T L IH N
@@ -20174,40 +20175,40 @@ charlatan	SH AA R L AH T AH N
 charlatans	SH AA R L AH T AH N Z
 charlayne	SH AA R L EY N
 charle	CH AA R L
-charlebois	SH AA R L IH B W AA
-charleen	CH AA R L IY N
-charlemagne	SH AA R L AH M EY N
-charlene	SH AA R L IY N
+Charlebois	SH AA R L IH B W AA
+Charleen	CH AA R L IY N
+Charlemagne	SH AA R L AH M EY N
+Charlene	SH AA R L IY N
 Charles	CH AA R L Z
-charles'	CH AA R L Z
-charles'(2)	CH AA R AH L Z
+Charles'	CH AA R L Z
+Charles'(2)	CH AA R AH L Z
 Charles's	CH AA R L Z IH Z
 Charles(2)	CH AA R AH L Z
 Charleston	CH AA R L S T AH N
 Charleston's	CH AA R L S T AH N Z
-charleston's(2)	CH AA R AH L S T AH N Z
+Charleston's(2)	CH AA R AH L S T AH N Z
 Charleston(2)	CH AA R AH L S T AH N
-charlestown	CH AA R L S T AW N
-charlestown(2)	CH AA R AH L S T AW N
-charlesworth	CH AA R AH L S W ER TH
-charlesworth(2)	CH AA R AH L Z W ER TH
-charlet	CH AA R L IH T
+Charlestown	CH AA R L S T AW N
+Charlestown(2)	CH AA R AH L S T AW N
+Charlesworth	CH AA R AH L S W ER TH
+Charlesworth(2)	CH AA R AH L Z W ER TH
+Charlet	CH AA R L IH T
 charlevoix	SH AA R L AH V W AH
-charley	CH AA R L IY
-charley's	CH AA R L IY Z
-charlie	CH AA R L IY
-charlie's	CH AA R L IY Z
-charlier	CH AA R L IY ER
-charline	SH AA R L IY N
-charlot	CH AA R L AH T
+Charley	CH AA R L IY
+Charley's	CH AA R L IY Z
+Charlie	CH AA R L IY
+Charlie's	CH AA R L IY Z
+Charlier	CH AA R L IY ER
+Charline	SH AA R L IY N
+Charlot	CH AA R L AH T
 Charlotte	SH AA R L AH T
 Charlotte's	SH AA R L AH T S
-charlottesville	SH AA R L AH T S V IH L
-charlottetown	SH AA R L AH T T AW N
-charlotteville	SH AA R L AH T V IH L
-charls	CH AA R L Z
-charlson	CH AA R L S AH N
-charlton	CH AA R L T AH N
+Charlottesville	SH AA R L AH T S V IH L
+Charlottetown	SH AA R L AH T T AW N
+Charlotteville	SH AA R L AH T V IH L
+Charls	CH AA R L Z
+Charlson	CH AA R L S AH N
+Charlton	CH AA R L T AH N
 charm	CH AA R M
 charmain	SH AA R M EY N
 charmaine	SH AA R M EY N
@@ -20300,7 +20301,7 @@ chatihachi's	CH AE T IH HH AA CH IY Z
 chatman	CH AE T M AH N
 chatmon	CH AE T M AH N
 chato	CH EY T OW
-chats	CH AE T R UW M
+chatroom	CH AE T R UW M
 chats	CH AE T S
 chatswood	CH AE T S W UH D
 chatsworth	CH AE T S W ER TH
@@ -21731,25 +21732,25 @@ clapton's	K L AE P T AH N Z
 clar	K L AA R
 Clara	K L AE R AH
 Clara's	K L AE R AH Z
-clara's(2)	K L EH R AH Z
+Clara's(2)	K L EH R AH Z
 Clara(2)	K L EH R AH
-clarabelle	K L AE R AH B AH L
-clarabelle(2)	K L AE R AH B EH L
-claramae	K L AA R AA M AY
-claran	K L EH R AH N
-clarcor	K L AA R K AO R
-clardy	K L AA R D IY
-clare	K L EH R
-claremont	K L EH R M AA N T
-claren	K L AE R AH N
-clarence	K L EH R AH N S
-clarendon	K L EH R AH N D AH N
-claresta	K L AA R EH S T AH
-clarette	K L ER EH T
-clarey	K L AE R IY
-claribel	K L EH R AH B EH L
-clarice	K L ER IY S
-clarida	K L AA R IY D AH
+Clarabelle	K L AE R AH B AH L
+Clarabelle(2)	K L AE R AH B EH L
+Claramae	K L AA R AA M AY
+Claran	K L EH R AH N
+Clarcor	K L AA R K AO R
+Clardy	K L AA R D IY
+Clare	K L EH R
+Claremont	K L EH R M AA N T
+Claren	K L AE R AH N
+Clarence	K L EH R AH N S
+Clarendon	K L EH R AH N D AH N
+Claresta	K L AA R EH S T AH
+Clarette	K L ER EH T
+Clarey	K L AE R IY
+Claribel	K L EH R AH B EH L
+Clarice	K L ER IY S
+Clarida	K L AA R IY D AH
 claridge	K L EH R IH JH
 claridges	K L EH R IH JH IH Z
 claridon	K L EH R AH D AA N
@@ -21962,27 +21963,27 @@ clem	K L EH M
 clemans	K L EH M AH N Z
 clematis	K L EH M AH T IH S
 clematis(2)	K L AH M AE T IH S
-clemen	K L EH M AH N
-clemence	K L EH M AH N S
-clemency	K L EH M AH N S IY
-clemens	K L EH M AH N Z
-clemensen	K L EH M AH N S AH N
-clemenson	K L EH M IH N S AH N
-clement	K L EH M AH N T
+Clemen	K L EH M AH N
+Clemence	K L EH M AH N S
+Clemency	K L EH M AH N S IY
+Clemens	K L EH M AH N Z
+Clemensen	K L EH M AH N S AH N
+Clemenson	K L EH M IH N S AH N
+Clement	K L EH M AH N T
 Clemente	K L AH M EH N T EY
 Clemente's	K L AH M EH N T EY Z
-clemente's(2)	K L AH M EH N T IY Z
+Clemente's(2)	K L AH M EH N T IY Z
 Clemente(2)	K L AH M EH N T IY
-clementes	K L AH M EH N T EY Z
-clementes(2)	K L AH M EH N T IY Z
-clementi	K L EY M EY N T IY
-clementia	K L EY M EY N SH AH
-clementine	K L EH M AH N T AY N
-clementine(2)	K L EH M AH N T IY N
-clements	K L EH M AH N T S
-clementson	K L EH M IH N T S AH N
-clementz	K L EH M IH N T S
-clemmer	K L EH M ER
+Clementes	K L AH M EH N T EY Z
+Clementes(2)	K L AH M EH N T IY Z
+Clementi	K L EY M EY N T IY
+Clementia	K L EY M EY N SH AH
+Clementine	K L EH M AH N T AY N
+Clementine(2)	K L EH M AH N T IY N
+Clements	K L EH M AH N T S
+Clementson	K L EH M IH N T S AH N
+Clementz	K L EH M IH N T S
+Clemmer	K L EH M ER
 clemmie	K L EH M IY
 clemmons	K L EH M AH N Z
 clemmy	K L EH M IY
@@ -22000,9 +22001,9 @@ clendening	K L EH N D AH N IH NG
 clendenning	K L EH N D EH N IH NG
 clenney	K L EH N IY
 clenwar	K L EH N W ER
-cleo	K L IY OW
-cleopatra	K L IY AH P AE T R AH
-cleopatra's	K L IY AH P AE T R AH Z
+Cleo	K L IY OW
+Cleopatra	K L IY AH P AE T R AH
+Cleopatra's	K L IY AH P AE T R AH Z
 clephane	K L EH F EY N
 clepper	K L EH P ER
 clerc	K L ER K
@@ -22578,6 +22579,7 @@ coddled	K AA D AH L D
 coddling	K AA D AH L IH NG
 coddling(2)	K AA D L IH NG
 code	K OW D
+Code	K OW D
 codec	K OW D EH K
 codecs	K OW D EH K S
 code's	K OW D Z
@@ -22971,20 +22973,20 @@ collier	K AA L Y ER
 collier's	K AA L Y ER Z
 colliers	K AA L Y ER Z
 collies	K AA L IY Z
-colligan	K AA L IH G AE N
-collignon	K AH L IH G N AH N
+Colligan	K AA L IH G AE N
+Collignon	K AH L IH G N AH N
 Collin	K AA L IH N
-colling	K AA L IH NG
-collinge	K AA L IH N JH
-collings	K AA L IH NG Z
-collingsworth	K AH L IH NG Z W ER TH
-collingwood	K AA L IH NG W UH D
+Colling	K AA L IH NG
+Collinge	K AA L IH N JH
+Collings	K AA L IH NG Z
+Collingsworth	K AH L IH NG Z W ER TH
+Collingwood	K AA L IH NG W UH D
 Collins	K AA L IH N Z
-collins'	K AA L IH N Z
+Collins'	K AA L IH N Z
 Collins's	K AA L IH N Z IH Z
-collins's(2)	K AA L IH N Z
-collinson	K AA L IH N S AH N
-collinsworth	K AH L IH N S W ER TH
+Collins's(2)	K AA L IH N Z
+Collinson	K AA L IH N S AH N
+Collinsworth	K AH L IH N S W ER TH
 collis	K AA L IH S
 collision	K AH L IH ZH AH N
 collisional	K AH L IH ZH AH N AH L
@@ -23071,7 +23073,7 @@ coloradan	K AA L ER AA D AH N
 coloradans	K AA L ER AA D AH N Z
 Colorado	K AA L ER AA D OW
 Colorado's	K AA L ER AA D OW Z
-colorado's(2)	K AA L ER AE D OW Z
+Colorado's(2)	K AA L ER AE D OW Z
 Colorado(2)	K AA L ER AE D OW
 coloration	K AH L ER EY SH AH N
 coloratura	K AH L ER AH T UH R AH
@@ -28598,58 +28600,58 @@ daus	D AO Z
 dauster	D AW S T ER
 dauterive	D OW T ER IH V
 dauzat	D AW Z AH T
-davalos	D AA V AA L OW Z
-davanzo	D AH V AE N Z OW
-davao	D AH V OW
-davao(2)	D EY V OW
-davault	D AH V OW
-davco	D AE V K OW
-dave	D EY V
-dave's	D EY V Z
-davee	D AE V IY
-davenport	D AE V AH N P AO R T
-davenport's	D AE V AH N P AO R T S
-davern	D AE V ER N
-daversa	D AA V EH R S AH
-daves	D EY V Z
-davey	D EY V IY
-davi	D AA V IY
-davia	D AA V IY AH
+Davalos	D AA V AA L OW Z
+Davanzo	D AH V AE N Z OW
+Davao	D AH V OW
+Davao(2)	D EY V OW
+Davault	D AH V OW
+Davco	D AE V K OW
+Dave	D EY V
+Dave's	D EY V Z
+Davee	D AE V IY
+Davenport	D AE V AH N P AO R T
+Davenport's	D AE V AH N P AO R T S
+Davern	D AE V ER N
+Daversa	D AA V EH R S AH
+Daves	D EY V Z
+Davey	D EY V IY
+Davi	D AA V IY
+Davia	D AA V IY AH
 David	D EY V IH D
 David's	D EY V IH D Z
-davida	D AA V IY D AH
-davide	D AH V IY D EY
-davidge	D AE V IH JH
-davidian	D AH V IH D IY AH N
-davidian's	D AH V IH D IY AH N Z
-davidians	D AH V IH D IY AH N Z
-davidoff	D EY V IH D AO F
-davidow	D AE V IH D OW
-davids	D EY V IH D Z
+Davida	D AA V IY D AH
+Davide	D AH V IY D EY
+Davidge	D AE V IH JH
+Davidian	D AH V IH D IY AH N
+Davidian's	D AH V IH D IY AH N Z
+Davidians	D AH V IH D IY AH N Z
+Davidoff	D EY V IH D AO F
+Davidow	D AE V IH D OW
+Davids	D EY V IH D Z
 Davidson	D EY V IH D S AH N
 Davidson's	D EY V IH D S AH N Z
 Davie	D EY V IY
-davies	D EY V IY Z
-davignon	D AA V IY G N AO N
-davila	D AH V IH L AH
-davilla	D AH V IH L AH
-davin	D AE V IH N
-davina	D AA V IY N AH
-davino	D AA V IY N OW
-davio's	D AE V IY OW Z
-davir	D AH V IH R
+Davies	D EY V IY Z
+Davignon	D AA V IY G N AO N
+Davila	D AH V IH L AH
+Davilla	D AH V IH L AH
+Davin	D AE V IH N
+Davina	D AA V IY N AH
+Davino	D AA V IY N OW
+Davio's	D AE V IY OW Z
+Davir	D AH V IH R
 Davis	D EY V AH S
-davis'	D EY V AH S
-davis'(2)	D EY V AH S AH Z
+Davis'	D EY V AH S
+Davis'(2)	D EY V AH S AH Z
 Davis's	D EY V AH S AH Z
-davis's(2)	D EY V IH S IH Z
+Davis's(2)	D EY V IH S IH Z
 Davis(2)	D EY V IH S
-davison	D EY V IH S AH N
-davisson	D AE V IH S AH N
-davitt	D AH V IH T
-davlin	D AE V L IH N
-davoli	D AA V OW L IY
-davos	D AA V OW S
+Davison	D EY V IH S AH N
+Davisson	D AE V IH S AH N
+Davitt	D AH V IH T
+Davlin	D AE V L IH N
+Davoli	D AA V OW L IY
+Davos	D AA V OW S
 davox	D AE V AA K S
 davy	D EY V IY
 davydov	D EY V IH D AO V
@@ -29038,8 +29040,8 @@ decelerating	D IH S EH L ER EY T IH NG
 deceleration	D IH S EH L ER EY SH AH N
 decelle	D IH S EH L
 decelles	D EH S AH L Z
-december	D IH S EH M B ER
-december's	D IH S EH M B ER Z
+December	D IH S EH M B ER
+December's	D IH S EH M B ER Z
 decency	D IY S AH N S IY
 decennial	D AH S EH N IY AH L
 decent	D IY S AH N T
@@ -31116,10 +31118,10 @@ detritus(2)	D EH T R AH T AH S
 detro	D IY T R OW
 Detroit	D IH T R OY T
 Detroit's	D AH T R OY T S
-detroit's(2)	D IH T R OY T S
+Detroit's(2)	D IH T R OY T S
 Detroit(2)	D IY T R OY T
-detroiters	D AH T R OY T ER Z
-detroiters(2)	D IY T R OY T ER Z
+Detroiters	D AH T R OY T ER Z
+Detroiters(2)	D IY T R OY T ER Z
 detter	D EH T ER
 dettinger	D EH T IH N JH ER
 dettling	D EH T L IH NG
@@ -35233,7 +35235,7 @@ durgan	D ER G AH N
 durgin	D ER JH IH N
 Durham	D ER AH M
 Durham(2)	D UH R HH AE M
-durham(3)	D UH R AH M
+Durham(3)	D UH R AH M
 duri	D UH R IY
 durick	D Y UW R IH K
 durie	D UH R IY
@@ -36283,6 +36285,7 @@ eggnogs	EH G N AO G Z
 eggplant	EH G P L AE N T
 eggplants	EH G P L AE N T S
 eggs	EH G Z
+eggs(2)	EY G Z
 eggshape	EH G SH EY P
 eggshaped	EH G SH EY P T
 eggshell	EH G SH EH L
@@ -37053,37 +37056,37 @@ elves	EH L V Z
 elvgren	EH L V G R EH N
 elvia	EH L V IY AH
 elvie	EH L V IY
-elvin	EH L V IH N
-elvina	EH L V IY N AH
-elving	EH L V IH NG
-elvington	EH L V IH NG T AH N
-elvira	EH L V AY R AH
-elvire	EH L V AY R
-elvis	EH L V IH S
-elvis'	EH L V IH S
-elvis's	EH L V IH S IH Z
-elvy	EH L V IY
-elway	EH L W EY
-elway's	EH L W EY Z
-elwell	IH L W EH L
-elwin	EH L W IH N
-elwood	EH L W UH D
-elxsi	EH L K S IY
-ely	IY L AY
-elyn	EH L IH N
+Elvin	EH L V IH N
+Elvina	EH L V IY N AH
+Elving	EH L V IH NG
+Elvington	EH L V IH NG T AH N
+Elvira	EH L V AY R AH
+Elvire	EH L V AY R
+Elvis	EH L V IH S
+Elvis'	EH L V IH S
+Elvis's	EH L V IH S IH Z
+Elvy	EH L V IY
+Elway	EH L W EY
+Elway's	EH L W EY Z
+Elwell	IH L W EH L
+Elwin	EH L W IH N
+Elwood	EH L W UH D
+Elxsi	EH L K S IY
+Ely	IY L AY
+Elyn	EH L IH N
 Elyria	IH L IH R IY AH
-elyse	EH L AY S
-elysee	EH L IH S IY
-elysee(2)	EH L IY S IY
-elysees	EH L IH S IY Z
-elysees(2)	EH L IY S IY Z
-elysia	IH L IH ZH IY AH
-elysia(2)	IH L IY ZH AH
-elysium	IH L IH Z IY AH M
-elza	EH L Z AH
-elzey	EH L Z IY
-elzinga	EH L Z IY NG G AH
-elzy	EH L Z IY
+Elyse	EH L AY S
+Elysee	EH L IH S IY
+Elysee(2)	EH L IY S IY
+Elysees	EH L IH S IY Z
+Elysees(2)	EH L IY S IY Z
+Elysia	IH L IH ZH IY AH
+Elysia(2)	IH L IY ZH AH
+Elysium	IH L IH Z IY AH M
+Elza	EH L Z AH
+Elzey	EH L Z IY
+Elzinga	EH L Z IY NG G AH
+Elzy	EH L Z IY
 em	EH M
 ema	IY M AH
 emaciate	IH M EY SH IY EY T
@@ -39224,7 +39227,7 @@ eutsler	Y UW T S L ER
 ev	EH V
 Eva	EY V AH
 Eva's	EY V AH Z
-eva's(2)	IY V AH Z
+Eva's(2)	IY V AH Z
 Eva(2)	IY V AH
 evacuate	IH V AE K Y AH EY T
 evacuate(2)	IY V AE K Y AH EY T
@@ -40736,7 +40739,7 @@ farcical	F AA R S AH K AH L
 farcical(2)	F AA R S IH K AH L
 fare	F EH R
 fared	F EH R D
-Farenheit	F EH R EH N H IY T
+Farenheit	F EH R EH N HH IY T
 fares	F EH R Z
 farese	F AA R EY Z IY
 faretlow	F AH R EH T L OW
@@ -41172,16 +41175,16 @@ feazell	F IY Z AH L
 feb	F EH B Y AH W EH R IY
 febles	F EH B AH L Z
 febres	F EH B R AH S
-february	F EH B Y AH W EH R IY
-february's	F EH B Y AH W EH R IY Z
-february's(2)	F EH B AH W EH R IY Z
-february's(3)	F EH B R UW W EH R IY Z
-february's(4)	F EH B UW W EH R IY Z
-february's(5)	F EH B Y UW W EH R IY Z
-february(2)	F EH B AH W EH R IY
-february(3)	F EH B R UW W EH R IY
-february(4)	F EH B UW W EH R IY
-february(5)	F EH B Y UW W EH R IY
+February	F EH B Y AH W EH R IY
+February's	F EH B Y AH W EH R IY Z
+February's(2)	F EH B AH W EH R IY Z
+February's(3)	F EH B R UW W EH R IY Z
+February's(4)	F EH B UW W EH R IY Z
+February's(5)	F EH B Y UW W EH R IY Z
+February(2)	F EH B AH W EH R IY
+February(3)	F EH B R UW W EH R IY
+February(4)	F EH B UW W EH R IY
+February(5)	F EH B Y UW W EH R IY
 fecal	F IY K AH L
 feces	F IY S IY Z
 fecher	F EH K ER
@@ -41600,29 +41603,29 @@ fermin	F ER M IH N
 fermium	F EH R M IY AH M
 fermoyle	F ER M OY L
 fern	F ER N
-fernald	F ER N AA L D
-fernald(2)	F EH R N AA L D
-fernand	F ER N AE N D
-fernand(2)	F ER N AA N
-fernand(3)	F ER N AA N D
-fernanda	F ER N AE N D AH
-fernanda(2)	F ER N AA N D AH
-fernandes	F ER N AA N D EH S
-fernandes(2)	F ER N AE N D EH S
-fernandez	F ER N AE N D EH Z
-fernandez(2)	F EH R N AE N D EH Z
-fernandez(3)	F ER N AA N D EH Z
-fernandez(4)	F EH R N AA N D EH Z
-fernandina	F ER N AH N D IY N AH
+Fernald	F ER N AA L D
+Fernald(2)	F EH R N AA L D
+Fernand	F ER N AE N D
+Fernand(2)	F ER N AA N
+Fernand(3)	F ER N AA N D
+Fernanda	F ER N AE N D AH
+Fernanda(2)	F ER N AA N D AH
+Fernandes	F ER N AA N D EH S
+Fernandes(2)	F ER N AE N D EH S
+Fernandez	F ER N AE N D EH Z
+Fernandez(2)	F EH R N AE N D EH Z
+Fernandez(3)	F ER N AA N D EH Z
+Fernandez(4)	F EH R N AA N D EH Z
+Fernandina	F ER N AH N D IY N AH
 Fernando	F ER N AE N D OW
 Fernando's	F ER N AE N D OW Z
-fernando's(2)	F ER N AA N D OW Z
+Fernando's(2)	F ER N AA N D OW Z
 Fernando(2)	F ER N AA N D OW
-fernao	F ER N AW
-fernau	F ER N AW
-fernbank	F ER N B AE NG K
-fernberg	F ER N B ER G
-ferndale	F ER N D EY L
+Fernao	F ER N AW
+Fernau	F ER N AW
+Fernbank	F ER N B AE NG K
+Fernberg	F ER N B ER G
+Ferndale	F ER N D EY L
 ferner	F ER N ER
 fernery	F ER N ER IY
 fernholz	F ER N HH OW L Z
@@ -42439,7 +42442,7 @@ firefighting	F AY R F AY T IH NG
 firefights	F AY R F AY T S
 fireflies	F AY ER F L AY Z
 firefly	F AY ER F L AY
-firefox	F AY ER F AH X
+Firefox	F AY ER F AH K S
 firehouse	F AY ER HH AW S
 firehouses	F AY ER HH AW S IH Z
 fireman	F AY R M AH N
@@ -43118,14 +43121,14 @@ florian	F L AO R IY AH N
 florid	F L AO R AH D
 Florida	F L AO R AH D AH
 Florida's	F L AO R IH D AH Z
-florida's(2)	F L AA R IH D AH Z
-florida's(3)	F L AO R AH D AH Z
+Florida's(2)	F L AA R IH D AH Z
+Florida's(3)	F L AO R AH D AH Z
 Florida(2)	F L AO R IH D AH
-florida(3)	F L AA R AH D AH
-florida(4)	F L AA R IH D AH
-floridabanc	F L AO R AH D AH B AE NG K
-floridian	F L AO R IH D IY AH N
-floridians	F L AO R IH D IY AH N Z
+Florida(3)	F L AA R AH D AH
+Florida(4)	F L AA R IH D AH
+Floridabanc	F L AO R AH D AH B AE NG K
+Floridian	F L AO R IH D IY AH N
+Floridians	F L AO R IH D IY AH N Z
 florin	F L AO R IH N
 florinda	F L AO R IY N D AH
 florine	F L AO R IY N IY
@@ -44453,51 +44456,51 @@ freck	F R EH K
 freckle	F R EH K AH L
 freckled	F R EH K AH L D
 freckles	F R EH K AH L Z
-fred	F R EH D
-fred's	F R EH D Z
-freda	F R EH D
-freddie	F R EH D IY
-freddy	F R EH D IY
-freddy's	F R EH D IY Z
-freddye	F R EH D IY
-frede	F R IY D
-fredell	F R EH D AH L
-fredella	F R EH D EH L AH
-fredenburg	F R IY D AH N B ER G
-frederic	F R EH D R IH K
-frederica	F R EH D ER IY K AH
+Fred	F R EH D
+Fred's	F R EH D Z
+Freda	F R EH D
+Freddie	F R EH D IY
+Freddy	F R EH D IY
+Freddy's	F R EH D IY Z
+Freddye	F R EH D IY
+Frede	F R IY D
+Fredell	F R EH D AH L
+Fredella	F R EH D EH L AH
+Fredenburg	F R IY D AH N B ER G
+Frederic	F R EH D R IH K
+Frederica	F R EH D ER IY K AH
 Frederick	F R EH D R IH K
 Frederick's	F R EH D R IH K S
-frederick's(2)	F R EH D ER IH K S
+Frederick's(2)	F R EH D ER IH K S
 Frederick(2)	F R EH D ER IH K
-fredericka	F R EY D EH R IY K AH
-fredericks	F R EH D R IH K S
-fredericksburg	F R EH D R IH K S B ER G
-fredericksburg(2)	F R EH D ER IH K S B ER G
-fredericksen	F R EH D ER IH K S AH N
-fredericksen(2)	F R EH D R IH K S AH N
-frederickson	F R EH D ER IH K S AH N
-frederickson(2)	F R EH D R IH K S AH N
-frederico	F R EH D ER IY K OW
-frederika	F R EY D EH R IY K AH
-frederiksen	F R EH D ER IH K S AH N
-frederking	F R EH D ER K IH NG
-frederking(2)	F R IY D ER K IH NG
-fredette	F R IH D EH T
-frediani	F R EH D IY AA N IY
-fredin	F R EH D IH N
-fredkin	F R EH D K IH N
-fredlund	F R EH D L AH N D
-fredman	F R EH D M AH N
-fredo	F R IY D OW
-fredric	F R EH D R IH K
-fredrich	F R EH D R IH K
-fredrick	F R EH D R IH K
-fredricks	F R EH D R IH K S
-fredricksen	F R EH D R IH K S AH N
-fredrickson	F R EH D R IH K S AH N
-fredriksen	F R IH D R IH K S AH N
-fredrikson	F R EH D R IH K S AH N
+Fredericka	F R EY D EH R IY K AH
+Fredericks	F R EH D R IH K S
+Fredericksburg	F R EH D R IH K S B ER G
+Fredericksburg(2)	F R EH D ER IH K S B ER G
+Fredericksen	F R EH D ER IH K S AH N
+Fredericksen(2)	F R EH D R IH K S AH N
+Frederickson	F R EH D ER IH K S AH N
+Frederickson(2)	F R EH D R IH K S AH N
+Frederico	F R EH D ER IY K OW
+Frederika	F R EY D EH R IY K AH
+Frederiksen	F R EH D ER IH K S AH N
+Frederking	F R EH D ER K IH NG
+Frederking(2)	F R IY D ER K IH NG
+Fredette	F R IH D EH T
+Frediani	F R EH D IY AA N IY
+Fredin	F R EH D IH N
+Fredkin	F R EH D K IH N
+Fredlund	F R EH D L AH N D
+Fredman	F R EH D M AH N
+Fredo	F R IY D OW
+Fredric	F R EH D R IH K
+Fredrich	F R EH D R IH K
+Fredrick	F R EH D R IH K
+Fredricks	F R EH D R IH K S
+Fredricksen	F R EH D R IH K S AH N
+Fredrickson	F R EH D R IH K S AH N
+Fredriksen	F R IH D R IH K S AH N
+Fredrikson	F R EH D R IH K S AH N
 free	F R IY
 freeberg	F R IY B ER G
 freeberg's	F R IY B ER G Z
@@ -45059,6 +45062,7 @@ fsi	F S IY
 fthenakis	F TH EH N AA K IH S
 ftp	EH F T IY P IY
 fu	F UW
+Fu	F UW
 fua	F UW AH
 fucci	F UW CH IY
 fuchs	F Y UW K S
@@ -46163,103 +46167,103 @@ garon	G AA R AO N
 garone	G ER OW N
 garonzik	G ER AA N Z IH K
 garoutte	G ER UW T
-garp	G AA R P
-garp's	G AA R P S
-garps	G AA R P S
-garr	G AE R
-garrabrant	G AA R AA B R AH N T
-garrahan	G AE R AH HH AE N
-garramone	G AE R AH M OW N
-garrard	G AE R ER D
-garratt	G EH R AH T
-garraway	G AE R AH W EY
-garrell	G AA R EY L
-garrels	G AE R AH L Z
-garrelts	G AE R IH L T S
-garren	G AA R AH N
-garret	G EH R IH T
-garret's	G EH R AH T S
-garrets	G EH R AH T S
-garretson	G AE R IH T S AH N
+Garp	G AA R P
+Garp's	G AA R P S
+Garps	G AA R P S
+Garr	G AE R
+Garrabrant	G AA R AA B R AH N T
+Garrahan	G AE R AH HH AE N
+Garramone	G AE R AH M OW N
+Garrard	G AE R ER D
+Garratt	G EH R AH T
+Garraway	G AE R AH W EY
+Garrell	G AA R EY L
+Garrels	G AE R AH L Z
+Garrelts	G AE R IH L T S
+Garren	G AA R AH N
+Garret	G EH R IH T
+Garret's	G EH R AH T S
+Garrets	G EH R AH T S
+Garretson	G AE R IH T S AH N
 Garrett	G AE R IH T
 Garrett's	G AE R IH T Z
-garrett's(2)	G EH R IH T Z
+Garrett's(2)	G EH R IH T Z
 Garrett(2)	G EH R IH T
-garrette	G ER EH T
-garrey	G AE R IY
-garrick	G EH R IH K
-garrido	G AA R IY D OW
-garrido-luna	G AA R IY D OW L UW N AH
-garriga	G AE R IH G AH
-garrigan	G AE R IH G AH N
-garrigues	G AA R IY G EH S
-garrigus	G AA R IY G IH S
-garringer	G AE R IH NG ER
-garriott	G AE R IY AH T
-garris	G AE R IH S
-garrison	G AE R IH S AH N
-garrisoned	G AE R AH S AH N D
-garritano	G AA R IY T AA N OW
-garritt	G AE R IH T
-garrity	G EH R IH T IY
-garro	G AA R OW
-garrod	G AE R AH D
-garrol	G AE R AH L
-garrols	G AE R AH L Z
-garron	G AE R AH N
-garron's	G EH R AH N Z
-garros	G EH R OW S
-garrott	G AE R AH T
-garrow	G EH R OW
-garroway	G AE R OW W EY
-garroz	G AE R AH Z
-garrulous	G EH R AH L AH S
-garry	G AE R IY
-garry(2)	G EH R IY
+Garrette	G ER EH T
+Garrey	G AE R IY
+Garrick	G EH R IH K
+Garrido	G AA R IY D OW
+Garrido-luna	G AA R IY D OW L UW N AH
+Garriga	G AE R IH G AH
+Garrigan	G AE R IH G AH N
+Garrigues	G AA R IY G EH S
+Garrigus	G AA R IY G IH S
+Garringer	G AE R IH NG ER
+Garriott	G AE R IY AH T
+Garris	G AE R IH S
+Garrison	G AE R IH S AH N
+Garrisoned	G AE R AH S AH N D
+Garritano	G AA R IY T AA N OW
+Garritt	G AE R IH T
+Garrity	G EH R IH T IY
+Garro	G AA R OW
+Garrod	G AE R AH D
+Garrol	G AE R AH L
+Garrols	G AE R AH L Z
+Garron	G AE R AH N
+Garron's	G EH R AH N Z
+Garros	G EH R OW S
+Garrott	G AE R AH T
+Garrow	G EH R OW
+Garroway	G AE R OW W EY
+Garroz	G AE R AH Z
+Garrulous	G EH R AH L AH S
+Garry	G AE R IY
+Garry(2)	G EH R IY
 gars	G AA R Z
 garside	G AA R S AY D
 garske	G AA R S K
 garson	G AA R S AH N
 garst	G AA R S T
-garsten	G AA R S T EH N
-garsten's	G AA R S T EH N Z
-garstin	G AA R S T AH N
-garstka	G AA R S T K AH
-garston	G AA R S T AH N
-garten	G AA R T AH N
-gartenberg	G AA R T AH N B ER G
-garter	G AA R T ER
-garters	G AA R T ER Z
-garth	G AA R TH
-garthwaite	G AA R TH W EY T
-gartin	G AA R T IH N
-gartland	G AA R T L AH N D
-gartley	G AA R T L IY
-gartman	G AA R T M AH N
-gartmore	G AA R T M AO R
-gartner	G AA R T N ER
-garton	G AA R T AH N
-gartrell	G AA R T R AH L
-gartside	G AA R T S AY D
-gartzke	G AA R T S K
-gartzke(2)	G AA R T S K IY
-garuda	G AH R UW D AH
-garuda's	G AH R UW D AH Z
-garver	G AA R V ER
-garver's	G AA R V ER Z
-garverick	G AA R V ER IH K
-garvey	G AA R V IY
-garvie	G AA R V IY
-garvin	G AA R V IH N
-garwin	G AA R W IH N
-garwood	G AA R W UH D
+Garsten	G AA R S T EH N
+Garsten's	G AA R S T EH N Z
+Garstin	G AA R S T AH N
+Garstka	G AA R S T K AH
+Garston	G AA R S T AH N
+Garten	G AA R T AH N
+Gartenberg	G AA R T AH N B ER G
+Garter	G AA R T ER
+Garters	G AA R T ER Z
+Garth	G AA R TH
+Garthwaite	G AA R TH W EY T
+Gartin	G AA R T IH N
+Gartland	G AA R T L AH N D
+Gartley	G AA R T L IY
+Gartman	G AA R T M AH N
+Gartmore	G AA R T M AO R
+Gartner	G AA R T N ER
+Garton	G AA R T AH N
+Gartrell	G AA R T R AH L
+Gartside	G AA R T S AY D
+Gartzke	G AA R T S K
+Gartzke(2)	G AA R T S K IY
+Garuda	G AH R UW D AH
+Garuda's	G AH R UW D AH Z
+Garver	G AA R V ER
+Garver's	G AA R V ER Z
+Garverick	G AA R V ER IH K
+Garvey	G AA R V IY
+Garvie	G AA R V IY
+Garvin	G AA R V IH N
+Garwin	G AA R W IH N
+Garwood	G AA R W UH D
 Gary	G EH R IY
 Gary's	G EH R IY Z
-gary's(2)	G AE R IY Z
+Gary's(2)	G AE R IY Z
 Gary(2)	G AE R IY
-garza	G AA R Z AH
-garzarelli	G AA R Z ER EH L IY
-garzon	G AA R Z AH N
+Garza	G AA R Z AH
+Garzarelli	G AA R Z ER EH L IY
+Garzon	G AA R Z AH N
 gas	G AE S
 gas's	G AE S IH Z
 gasaway	G AE S AH W EY
@@ -47008,36 +47012,36 @@ geopolitic	JH IY OW P AA L IH T IH K
 geopolitical	JH IY OW P AH L IH T IH K AH L
 geopolitically	JH IY OW P AH L IH T IH K L IY
 geopolitics	JH IY OW P AA L AH T IH K S
-geordie	JH IY ER D IY
-georg	G EY AO R G
-georgakis	JH AO R JH AA K AH S
-georgann	JH AO R JH AE N
+Geordie	JH IY ER D IY
+Georg	G EY AO R G
+Georgakis	JH AO R JH AA K AH S
+Georgann	JH AO R JH AE N
 George	JH AO R JH
 George's	JH AO R JH AH Z
-george's(2)	JH AO R JH IH Z
-georgene	JH AO R JH IY N
-georges	JH AO R JH AH Z
-georges(2)	JH AO R JH IH Z
-georgeson	JH AO R JH IH S AH N
-georgeson(2)	JH AO R JH S AH N
-georgetown	JH AO R JH T AW N
-georgette	JH AO R JH EH T
-georgi	JH IY AA R JH IY
+George's(2)	JH AO R JH IH Z
+Georgene	JH AO R JH IY N
+Georges	JH AO R JH AH Z
+Georges(2)	JH AO R JH IH Z
+Georgeson	JH AO R JH IH S AH N
+Georgeson(2)	JH AO R JH S AH N
+Georgetown	JH AO R JH T AW N
+Georgette	JH AO R JH EH T
+Georgi	JH IY AA R JH IY
 Georgia	JH AO R JH AH
 Georgia's	JH AO R JH AH Z
-georgiades	JH AO R JH IY AA D AH S
-georgiadis	JH AO R JH IY AA D IH S
-georgian	JH AO R JH AH N
-georgiana	JH AO R JH IY AE N AH
-georgians	JH AO R JH AH N Z
-georgie	JH AO R JH IY
-georgienne	JH AO R JH IY EH N
-georgina	JH AO R JH IY N AH
-georgine	JH AO R JH IY N
-georgio	JH AO R JH IY OW
-georgiou	JH AO R JH OW
-georgopoulos	JH AO R JH AA P AH L IH S
-georgy	JH AO R JH IY
+Georgiades	JH AO R JH IY AA D AH S
+Georgiadis	JH AO R JH IY AA D IH S
+Georgian	JH AO R JH AH N
+Georgiana	JH AO R JH IY AE N AH
+Georgians	JH AO R JH AH N Z
+Georgie	JH AO R JH IY
+Georgienne	JH AO R JH IY EH N
+Georgina	JH AO R JH IY N AH
+Georgine	JH AO R JH IY N
+Georgio	JH AO R JH IY OW
+Georgiou	JH AO R JH OW
+Georgopoulos	JH AO R JH AA P AH L IH S
+Georgy	JH AO R JH IY
 geostrophic	JH IY OW S T R AA F IH K
 geosyncline	JH IY OW S IH N K L AY N
 geotaxis	JH IY OW T AE K S AH S
@@ -47749,24 +47753,24 @@ ginza	G IH N Z AH
 ginzberg	G IH N Z B ER G
 gioia	JH OW Y AH
 gionet	JH IY OW N EY T
-gionfriddo	JH OW N F R IY D OW
-giordani	JH AO R D AA N IY
-giordano	JH AO R D AA N OW
-giorgi	JH AO R JH IY
-giorgia	JH AO R JH AH
-giorgio	JH AO R JH IY OW
-giovanelli	JH OW V AA N EH L IY
-giovanetti	JH OW V AA N EH T IY
-giovannetti	JH OW V AA N EH T IY
+Gionfriddo	JH OW N F R IY D OW
+Giordani	JH AO R D AA N IY
+Giordano	JH AO R D AA N OW
+Giorgi	JH AO R JH IY
+Giorgia	JH AO R JH AH
+Giorgio	JH AO R JH IY OW
+Giovanelli	JH OW V AA N EH L IY
+Giovanetti	JH OW V AA N EH T IY
+Giovannetti	JH OW V AA N EH T IY
 Giovanni	JH IY OW V AA N IY
 Giovanni's	JH IY OW V AA N IY Z
-giovanni's(2)	JH AH V AA N IY Z
+Giovanni's(2)	JH AH V AA N IY Z
 Giovanni(2)	JH AH V AA N IY
-giovanniello	JH OW V AA N IY EH L OW
-giovannini	JH OW V AA N IY N IY
-giovannoni	JH OW V AA N OW N IY
-giovenco	JH OW V EH N K OW
-giovinazzo	JH OW V IY N AA Z OW
+Giovanniello	JH OW V AA N IY EH L OW
+Giovannini	JH OW V AA N IY N IY
+Giovannoni	JH OW V AA N OW N IY
+Giovenco	JH OW V EH N K OW
+Giovinazzo	JH OW V IY N AA Z OW
 gipe	JH AY P
 gipp	JH IH P
 gipper	G IH P ER
@@ -48864,7 +48868,9 @@ goofy	G UW F IY
 googe	G UW JH
 googin	G UW G IH N
 googins	G UW G IH N Z
-google	G UW G EH L
+Google	G UW G EH L
+Google's	G UW G EH L Z
+googled	G UW G EH L DH
 gook	G UH K
 gookin	G UH K IH N
 goold	G UW L D
@@ -50490,6 +50496,7 @@ gschwind	G AH SH W AY N D
 gsell	G AH S EH L
 gtech	JH IY T EH K
 gtech's	JH IY T EH K S
+GTK	G IY T IY K EH
 gu	G UW
 guacamole	G W AA K AH M OW L IY
 guadagno	G AA D AA G N OW
@@ -51870,20 +51877,20 @@ hampers	HH AE M P ER Z
 hample	HH AE M P AH L
 Hampshire	HH AE M P SH ER
 Hampshire's	HH AE M P SH ER Z
-hampshire's(2)	HH AE M SH ER Z
-hampshire's(3)	HH AE M P SH AY ER Z
-hampshire's(4)	HH AE M SH AY ER Z
+Hampshire's(2)	HH AE M SH ER Z
+Hampshire's(3)	HH AE M P SH AY ER Z
+Hampshire's(4)	HH AE M SH AY ER Z
 Hampshire(2)	HH AE M SH ER
-hampshire(3)	HH AE M P SH AY ER
-hampshire(4)	HH AE M SH AY ER
-hampshirites	HH AE M P SH ER AY T S
-hampson	HH AE M P S AH N
-hampstead	HH AE M P S T EH D
+Hampshire(3)	HH AE M P SH AY ER
+Hampshire(4)	HH AE M SH AY ER
+Hampshirites	HH AE M P SH ER AY T S
+Hampson	HH AE M P S AH N
+Hampstead	HH AE M P S T EH D
 Hampton	HH AE M P T AH N
 Hampton's	HH AE M P T AH N Z
-hamptons	HH AE M P T AH N Z
-hamptonshire	HH AE M P T AH N SH ER
-hamptonshire's	HH AE M P T AH N SH ER Z
+Hamptons	HH AE M P T AH N Z
+Hamptonshire	HH AE M P T AH N SH ER
+Hamptonshire's	HH AE M P T AH N SH ER Z
 hamre	HH AE M ER
 hamric	HH AE M R IH K
 hamrick	HH AE M R IH K
@@ -60552,12 +60559,12 @@ iovine	IY OW V IY N IY
 iovino	IY OW V IY N OW
 Iowa	AY AH W AH
 Iowa's	AY AH W AH Z
-iowa's(2)	AY OW AH Z
+Iowa's(2)	AY OW AH Z
 Iowa(2)	AY OW AH
-iowan	AY AH W AH N
-iowan(2)	AY OW AH N
-iowans	AY AH W AH N Z
-iowans(2)	AY OW AH N Z
+Iowan	AY AH W AH N
+Iowan(2)	AY OW AH N
+Iowans	AY AH W AH N Z
+Iowans(2)	AY OW AH N Z
 ip	IH P
 ip(2)	AY P IY
 ipalco	IY P AE L K OW
@@ -60569,7 +60576,7 @@ ippolito	IH P OW L IY T OW
 ipsco	IH P S K OW
 ipsen	IH P S AH N
 iptay	IH P T EY
-ipx	AY P IY EH X
+ipx	AY P IY EH K S
 iqbal	IH K B AH L
 ira	AY R AH
 ira's	AY R AH Z
@@ -61115,7 +61122,9 @@ jacintha	JH AH S IH N TH AH
 jacinthe	JH AE S IH N TH
 jacinto	JH AH S IH N T OW
 jack	JH AE K
+Jack	JH AE K
 jack's	JH AE K S
+Jack's	JH AE K S
 jacka	JH AE K AH
 jackal	JH AE K AH L
 jackass	JH AE K AE S
@@ -61145,62 +61154,62 @@ jackpot	JH AE K P AA T
 jackpots	JH AE K P AA T S
 jackrabbit	JH AE K R AE B AH T
 jacks	JH AE K S
-jacksdeit	JH AE K S D IY AH T
+Jacksdeit	JH AE K S D IY AH T
 Jackson	JH AE K S AH N
 Jackson's	JH AE K S AH N Z
-jacksonian	JH AE K S OW N IY AH N
-jacksonians	JH AE K S OW N IY AH N Z
-jacksons	JH AE K S AH N Z
+Jacksonian	JH AE K S OW N IY AH N
+Jacksonians	JH AE K S OW N IY AH N Z
+Jacksons	JH AE K S AH N Z
 Jacksonville	JH AE K S AH N V IH L
 Jacksonville's	JH AE K S AH N V IH L Z
-jacky	JH AE K IY
-jacky's	JH AE K IY Z
-jaclyn	JH AE K L IH N
-jaco	Y AA K OW
+Jacky	JH AE K IY
+Jacky's	JH AE K IY Z
+Jaclyn	JH AE K L IH N
+Jaco	Y AA K OW
 Jacob	JH EY K AH B
 Jacob's	JH EY K AH B Z
-jacoba	Y AA K OW B AH
-jacobe	JH AE K AH B
-jacobean	JH AE K AH B IY AH N
-jacober	JH EY K AH B ER
-jacobi	Y AA K OW B IY
-jacobin	JH AE K AH B AH N
-jacobin(2)	JH AE K AH B IH N
-jacobina	Y AH K AH B AY N AH
-jacobine	JH AE K AH B AY N
-jacobite	JH AE K AH B AY T
-jacobites	JH AE K AH B AY T S
-jacobo	Y AA K OW B OW
-jacoboski	JH AE K OW B AO S K IY
-jacobowitz	Y AH K AA B AH W IH T S
-jacobs	JH EY K AH B Z
-jacobs'	JH EY K AH B Z
-jacobs's	JH EY K AH B Z IH Z
-jacobsen	JH EY K AH B S AH N
-jacobson	JH EY K AH B S AH N
-jacobson's	JH EY K AH B S AH N Z
-jacobus	JH AH K OW B AH S
-jacoby	JH AH K OW B IY
-jacome	JH AH K OW M
-jacor	JH EY K AO R
-jacot	JH AE K AH T
-jacox	JH AE K AA K S
-jacque	ZH EY K
+Jacoba	Y AA K OW B AH
+Jacobe	JH AE K AH B
+Jacobean	JH AE K AH B IY AH N
+Jacober	JH EY K AH B ER
+Jacobi	Y AA K OW B IY
+Jacobin	JH AE K AH B AH N
+Jacobin(2)	JH AE K AH B IH N
+Jacobina	Y AH K AH B AY N AH
+Jacobine	JH AE K AH B AY N
+Jacobite	JH AE K AH B AY T
+Jacobites	JH AE K AH B AY T S
+Jacobo	Y AA K OW B OW
+Jacoboski	JH AE K OW B AO S K IY
+Jacobowitz	Y AH K AA B AH W IH T S
+Jacobs	JH EY K AH B Z
+Jacobs'	JH EY K AH B Z
+Jacobs's	JH EY K AH B Z IH Z
+Jacobsen	JH EY K AH B S AH N
+Jacobson	JH EY K AH B S AH N
+Jacobson's	JH EY K AH B S AH N Z
+Jacobus	JH AH K OW B AH S
+Jacoby	JH AH K OW B IY
+Jacome	JH AH K OW M
+Jacor	JH EY K AO R
+Jacot	JH AE K AH T
+Jacox	JH AE K AA K S
+Jacque	ZH EY K
 Jacqueline	JH AE K W AH L IH N
 Jacqueline(2)	JH AE K L IH N
-jacqueline(3)	JH AE K AH L IH N
-jacquelyn	JH AE K W IH L IH N
-jacques	ZH AA K
-jacques'	ZH AA K S
-jacques'(2)	JH AE K S
-jacques(2)	JH AE K
-jacquet	JH AE K EH T
-jacquet(2)	JH AE K EY
-jacquetta	JH AA K EH T AH
-jacquez	Y AA K W EH Z
-jacquie	JH AE K W IY
-jacquin	JH AE K W IH N
-jacquot	ZH AH K W OW
+Jacqueline(3)	JH AE K AH L IH N
+Jacquelyn	JH AE K W IH L IH N
+Jacques	ZH AA K
+Jacques'	ZH AA K S
+Jacques'(2)	JH AE K S
+Jacques(2)	JH AE K
+Jacquet	JH AE K EH T
+Jacquet(2)	JH AE K EY
+Jacquetta	JH AA K EH T AH
+Jacquez	Y AA K W EH Z
+Jacquie	JH AE K W IY
+Jacquin	JH AE K W IH N
+Jacquot	ZH AH K W OW
 jacuzzi	JH AH K UW Z IY
 jade	JH EY D
 jaded	JH EY D AH D
@@ -61609,40 +61618,40 @@ jealousies	JH EH L AH S IY Z
 jealously	JH EH L AH S L IY
 jealousness	JH EH L AH S N IH S
 jealousy	JH EH L AH S IY
-jean	JH IY N
-jean's	JH IY N Z
-jeana	JH IY N AH
-jeanbaptiste	ZH EH N B AH P T IH S T
-jeanbertrand	JH IY N B ER T R AH N D
-jeanbertrand(2)	ZH AA N B EH R T R AA N D
-jeancourt	JH IY N K AO R T
-jeancourt(2)	ZH AA NG K AO R T
-jeane	JH IY N
-jeaner	JH IY N ER
-jeanerette	JH IY N R EH T
-jeanes	JH IY N Z
-jeanette	JH AH N EH T
-jeaney	JH IY N IY
-jeanie	JH IY N IY
-jeanine	JH AH N IY N
-jeanlouis	ZH AA N L UW IY Z
-jeanmichele	ZH AA N M AH SH EH L
-jeanne	JH IY N
-jeannette	JH AH N EH T
-jeannie	JH IY N IY
-jeanniot	JH IY N IY AH T
-jeanpierre	ZH AO N P IY EH R
-jeans	JH IY N Z
-jeansonne	JH EH N S AH N
-jeb	JH EH B
-jech	JH EH K
-jed	JH EH D
-jedlicka	Y IH D L IH S K AH
+Jean	JH IY N
+Jean's	JH IY N Z
+Jeana	JH IY N AH
+Jeanbaptiste	ZH EH N B AH P T IH S T
+Jeanbertrand	JH IY N B ER T R AH N D
+Jeanbertrand(2)	ZH AA N B EH R T R AA N D
+Jeancourt	JH IY N K AO R T
+Jeancourt(2)	ZH AA NG K AO R T
+Jeane	JH IY N
+Jeaner	JH IY N ER
+Jeanerette	JH IY N R EH T
+Jeanes	JH IY N Z
+Jeanette	JH AH N EH T
+Jeaney	JH IY N IY
+Jeanie	JH IY N IY
+Jeanine	JH AH N IY N
+Jeanlouis	ZH AA N L UW IY Z
+Jeanmichele	ZH AA N M AH SH EH L
+Jeanne	JH IY N
+Jeannette	JH AH N EH T
+Jeannie	JH IY N IY
+Jeanniot	JH IY N IY AH T
+Jeanpierre	ZH AO N P IY EH R
+Jeans	JH IY N Z
+Jeansonne	JH EH N S AH N
+Jeb	JH EH B
+Jech	JH EH K
+Jed	JH EH D
+Jedlicka	Y IH D L IH S K AH
 jee	JH IY
-jeep	JH IY P
-jeep's	JH IY P S
-jeepney	JH IY P N IY
-jeeps	JH IY P S
+Jeep	JH IY P
+Jeep's	JH IY P S
+Jeepney	JH IY P N IY
+Jeeps	JH IY P S
 jeer	JH IH R
 jeered	JH IH R D
 jeering	JH IY R IH NG
@@ -61651,55 +61660,55 @@ jees	JH IY Z
 jeeter	JH IY T ER
 jeez	JH IY Z
 jeeze	JH IY Z
-jefcoat	JH EH F K OW T
-jeff	JH EH F
-jeff's	JH EH F S
-jeffcoat	JH EH F K OW T
-jeffe	JH EH F
-jeffe(2)	JH EH F IY
-jeffer	JH EH F ER
-jefferey	JH EH F ER IY
-jefferies	JH EH F R IY Z
-jefferies'	JH EH F ER IY Z
-jefferies's	JH EH F R IY Z IH Z
-jefferis	JH EH F ER IH S
-jeffers	JH EH F ER Z
+Jefcoat	JH EH F K OW T
+Jeff	JH EH F
+Jeff's	JH EH F S
+Jeffcoat	JH EH F K OW T
+Jeffe	JH EH F
+Jeffe(2)	JH EH F IY
+Jeffer	JH EH F ER
+Jefferey	JH EH F ER IY
+Jefferies	JH EH F R IY Z
+Jefferies'	JH EH F ER IY Z
+Jefferies's	JH EH F R IY Z IH Z
+Jefferis	JH EH F ER IH S
+Jeffers	JH EH F ER Z
 Jefferson	JH EH F ER S AH N
 Jefferson's	JH EH F ER S AH N Z
-jeffersonian	JH EH F ER S OW N IY AH N
-jeffersonians	JH EH F ER S OW N IY AH N Z
-jeffery	JH EH F ER IY
-jefferys	JH EH F ER IY Z
-jeffey	JH EH F IY
-jeffords	JH EH F ER D Z
-jeffress	JH EH F R IH S
+Jeffersonian	JH EH F ER S OW N IY AH N
+Jeffersonians	JH EH F ER S OW N IY AH N Z
+Jeffery	JH EH F ER IY
+Jefferys	JH EH F ER IY Z
+Jeffey	JH EH F IY
+Jeffords	JH EH F ER D Z
+Jeffress	JH EH F R IH S
 Jeffrey	JH EH F R IY
 Jeffrey's	JH EH F R IY Z
-jeffreys	JH EH F R IY Z
-jeffries	JH EH F R IY Z
-jeffry	JH EH F R IY
-jeffs	JH EH F S
-jeffus	JH EH F AH S
-jeffy	JH EH F IY
-jehle	JH EH HH AH L
-jehovah	JH AH HH OW V AH
-jehovah's	JH AH HH OW V AH Z
-jekel	JH EH K AH L
-jekyll	JH EH K AH L
-jelen	JH EH L AH N
-jelinek	JH EH L AH N IH K
-jelinek(2)	JH EH L IH N EH K
-jelinski	Y IH L IH N S K IY
-jelisic	JH AH L IH S T IH K
-jelks	JH EH L K S
+Jeffreys	JH EH F R IY Z
+Jeffries	JH EH F R IY Z
+Jeffry	JH EH F R IY
+Jeffs	JH EH F S
+Jeffus	JH EH F AH S
+Jeffy	JH EH F IY
+Jehle	JH EH HH AH L
+Jehovah	JH AH HH OW V AH
+Jehovah's	JH AH HH OW V AH Z
+Jekel	JH EH K AH L
+Jekyll	JH EH K AH L
+Jelen	JH EH L AH N
+Jelinek	JH EH L AH N IH K
+Jelinek(2)	JH EH L IH N EH K
+Jelinski	Y IH L IH N S K IY
+Jelisic	JH AH L IH S T IH K
+Jelks	JH EH L K S
 jell	JH EH L
 jelled	JH EH L D
 jelley	JH EH L IY
 jellied	JH EH L IY D
 jellies	JH EH L IY Z
-jellison	JH EH L IH S AH N
-jello	JH EH L OW
-jello's	JH EH L OW Z
+Jellison	JH EH L IH S AH N
+Jello	JH EH L OW
+Jello's	JH EH L OW Z
 jelly	JH EH L IY
 jelly's	JH EH L IY Z
 jellyfish	JH EH L IY F IH SH
@@ -62563,11 +62572,11 @@ jundt	JH AH N T
 June	JH UW N
 June's	JH UW N Z
 Juneau	JH UW N OW
-junejo	JH UW N EY HH OW
-junek	JH UW N IH K
-junella	JH UW N EH L AH
-junes	JH UW N Z
-junette	JH UW N EH T
+Junejo	JH UW N EY HH OW
+Junek	JH UW N IH K
+Junella	JH UW N EH L AH
+Junes	JH UW N Z
+Junette	JH UW N EH T
 Jung	Y UH NG
 Jung's	Y UH NG Z
 jungbluth	JH AH NG B L UW TH
@@ -62616,21 +62625,21 @@ junot	JH UW N AH T
 junta	HH UH N T AH
 juntunen	JH AH N T AH N AH N
 junwuxiyan	JH AH N W UW K S IY AH N
-jupin	JH UW P IH N
+Jupin	JH UW P IH N
 Jupiter	JH UW P AH T ER
 Jupiter's	JH UW P AH T ER Z
-jupiter's(2)	JH UW P IH T ER Z
+Jupiter's(2)	JH UW P IH T ER Z
 Jupiter(2)	JH UW P IH T ER
-juppe	JH UW P IY
-jura	JH UH R AH
-jura's	JH UH R AH Z
-jurado	Y UH R AA D OW
-juran	Y UH R AA N
-juranek	JH UH R AH N IH K
-juras	JH UH R AH Z
-jurassic	JH UH R AE S IH K
-jurczak	Y ER CH AE K
-jurczyk	Y ER CH IH K
+Juppe	JH UW P IY
+Jura	JH UH R AH
+Jura's	JH UH R AH Z
+Jurado	Y UH R AA D OW
+Juran	Y UH R AA N
+Juranek	JH UH R AH N IH K
+Juras	JH UH R AH Z
+Jurassic	JH UH R AE S IH K
+Jurczak	Y ER CH AE K
+Jurczyk	Y ER CH IH K
 jure	JH UH R
 jurek	JH UH R EH K
 jurek(2)	Y UH R EH K
@@ -62659,9 +62668,9 @@ jurist(2)	JH UH R IH S T
 jurists	JH UH R IH S T S
 jurists(2)	JH UH R IH S S
 jurists(3)	JH UH R IH S
-jurkiewicz	Y ER K AH V IH CH
-jurkovich	Y ER K AH V IH CH
-jurkowski	Y ER K AO F S K IY
+Jurkiewicz	Y ER K AH V IH CH
+Jurkovich	Y ER K AH V IH CH
+Jurkowski	Y ER K AO F S K IY
 jurney	JH ER N IY
 juror	JH UH R ER
 juror's	JH UH R ER Z
@@ -62697,14 +62706,14 @@ justify	JH AH S T AH F AY
 justifying	JH AH S T AH F AY IH NG
 Justin	JH AH S T AH N
 Justin's	JH AH S T AH N Z
-justin's(2)	JH AH S T IH N Z
+Justin's(2)	JH AH S T IH N Z
 Justin(2)	JH AH S T IH N
-justina	Y UW S T IY N AH
-justine	JH AH S T IY N
-justiniano	JH UW S T IY N IY AA N OW
-justino	JH AH S T IY N OW
-justis	Y UW S T IH S
-justiss	Y UW S T IY S
+Justina	Y UW S T IY N AH
+Justine	JH AH S T IY N
+Justiniano	JH UW S T IY N IY AA N OW
+Justino	JH AH S T IY N OW
+Justis	Y UW S T IH S
+Justiss	Y UW S T IY S
 justly	JH AH S T L IY
 justman	JH AH S T M AH N
 justo	JH AH S T OW
@@ -62736,8 +62745,8 @@ jyishane	JH IY SH EY N
 jynx	JH IH NG K S
 k	K EY
 k's	K EY Z
-k-mart	K EY M AA R T
-k-mart's	K EY M AA R T S
+K-mart	K EY M AA R T
+K-mart's	K EY M AA R T S
 k.	K EY
 k.'s	K EY Z
 ka	K AA
@@ -65390,994 +65399,994 @@ knutzen	N AH T Z AH N
 ko	K OW
 koala	K OW AA L AH
 koalas	K OW AA L AH Z
-koba	K OW B AH
-kobacker	K OW B AE K ER
-kobak	K OW B AH K
-kobayashi	K OW B AA Y AA SH IY
-kobe	K OW B EY
-kobe's	K OW B EY Z
-kobel	K OW B AH L
-kober	K OW B ER
-koberstein	K OW B ER S T AY N
-koberstein(2)	K OW B ER S T IY N
-kobes	K OW B Z
-koble	K OW B AH L
-kobler	K OW B AH L ER
-kobler(2)	K OW B L ER
-kobren	K AA B R AH N
-kobrin	K AA B R IH N
-kobrin's	K AA B R IH N Z
-kobs	K AA B Z
-kobus	K OW B AH S
-koby	K OW B IY
-kobylarz	K AH B IH L ER Z
-kobylinski	K AH B IH L IH N S K IY
-kobza	K AA B Z AH
-kocak	K OW K AH K
-koch	K AO CH
-koch(2)	K OW K
-kochan	K AA K AH N
-kochanek	K AA K AH N IH K
-kochanowski	K AH HH AH N AO F S K IY
-kochanski	K AH HH AE N S K IY
-kochel	K AA K AH L
-kochendorfer	K AA K IH N D AO R F ER
-kocher	K AO CH ER
-kochevar	K AH HH EH V ER
-kochis	K AA K IH S
-kochman	K AA K M AH N
-koci	K OW S IY
-kocian	K OW SH AH N
-kociemba	K OW S IY EH M B AH
-kocinski	K AH CH IH N S K IY
-kociolek	K OW S IY OW L EH K
-kocis	K OW S IH S
-kock	K AA K
-kocourek	K AH K UH R EH K
-kocsis	K AA K S IH S
-kocur	K OW K ER
-kocur's	K OW K ER Z
-kocurek	K AH K Y UW R EH K
-kodacolor	K OW D AH K AH L ER
-kodak	K OW D AE K
-kodak's	K OW D AE K S
-kodama	K OW D AA M AH
-kodiak	K OW D IY AE K
-kodo	K OW D OW
-koebel	K OW B AH L
-koedinger	K OW D IH NG ER
-koegel	K OW G AH L
-koegler	K OW G AH L ER
-koegler(2)	K OW G L ER
-koehl	K OW L
-koehler	K OW L ER
-koehn	K OW N
-koehne	K OW N
-koehnen	K OW N AH N
-koeki	K OW K IY
-koelle	K OW L
-koeller	K OW L ER
-koelling	K OW L IH NG
-koelsch	K OW L SH
-koelzer	K OW L Z ER
-koen	K OW N
-koeneman	K AA IY N M AH N
-koenen	K OW N AH N
-koenig	K ER N IH G
-koenigs	K ER N IH G Z
-koenigsberg	K OW N IH G Z B ER G
-koenigsfeld	K OW N IH G Z F EH L D
-koep	K OW P
-koepke	K OW P K
-koepp	K OW P
-koeppe	K OW P
-koeppel	K OW P AH L
-koeppen	K OW P AH N
-koepsel	K OW P S AH L
-koepsell	K OW P S AH L
-koerber	K AO R B ER
-koerner	K AO R N ER
-koernke	K ER N AH K IY
-koernke(2)	K ER N IH K
-koester	K OW S T ER
-koesters	K OW S T ER Z
-koestler	K OW S AH L ER
-koestler(2)	K OW S L ER
-koestner	K OW S T N ER
-koether	K OW DH ER
-koetje	K OW T JH
-koetter	K OW T ER
-koetting	K OW T IH NG
-koff	K AO F
-koffler	K AA F AH L ER
-koffler(2)	K AA F L ER
-koffman	K AO F M AH N
-kofi	K OW F IY
-kofler	K OW F AH L ER
-kofler(2)	K OW F L ER
-kofoed	K OW F OW D
-kofron	K AA F R AH N
-kofu	K OW F UW
-koga	K OW G AH
-kogan	K OW G AH N
-kogel	K OW G AH L
-koger	K OW G ER
-kogi	K OW G IY
-kogler	K OW G AH L ER
-kogler(2)	K OW G L ER
-koglin	K AA G L IH N
-kogut	K OW G AH T
-kogyo	K OW JH Y OW
-koh	K OW
-kohan	K OW HH AA N
-kohen	K OW AH N
-kohl	K OW L
-kohl's	K OW L Z
-kohlbeck	K OW L B EH K
-kohlberg	K OW L B ER G
-kohlberg's	K OW L B ER G Z
-kohlenberg	K OW L AH N B ER G
-kohler	K OW L ER
-kohles	K OW HH AH L Z
-kohlhepp	K OW L HH IH P
-kohlhoff	K OW L HH AO F
-kohli	K OW L IY
-kohlman	K OW L M AH N
-kohlmann	K OW L M AH N
-kohlmeier	K OW L M AY ER
-kohlmeyer	K OW L M AY ER
-kohlrabi	K AO L R AA B IY
-kohls	K OW L Z
-kohn	K AA N
-kohne	K OW N
-kohnen	K OW N AH N
-kohner	K OW N ER
-kohnke	K AA NG K
-kohout	K OW AW T
-kohr	K AO R
-kohring	K AO R IH NG
-kohrs	K AO R Z
-kohtaro	K OW T AA R OW
-kohtoro	K OW T AO R OW
-kohut	K OW AH T
-koichi	K OW IY CH IY
-koido	K OY D OW
-koike	K OY K
-koito	K OY T OW
-koito(2)	K OW IY T OW
-koivisto	K OY V IH S T OW
-kojak	K OW JH AE K
-koji	K OW JH IY
-kojima	K AH Y AY M AH
-kok	K AA K
-kokan	K OW K AH N
-kokan's	K OW K AH N Z
-kokate	K OW K AA T EY
-kokate's	K OW K AA T EY Z
-koke	K OW K
-koken	K OW K AH N
-koker	K OW K ER
-kokes	K OW K S
-kokesh	K AA K IH SH
-koki	K OW K IY
-kokinda	K AH K IH N D AH
-koko	K OW K OW
-koko's	K OW K OW Z
-kokomo	K OW K AH M OW
-kokoschka	K AH K AO SH K AH
-kokoszka	K AH K AA SH K AH
-kokusai	K AA K Y UW S AY
-kol	K OW L
-kolakowski	K AH L AH K AO F S K IY
-kolander	K AA L AH N D ER
-kolar	K OW L ER
-kolarik	K AH L AA R IH K
-kolasa	K AH L AA S AH
-kolasinski	K AH L AH S IH N S K IY
-kolb	K OW L B
-kolbe	K OW L B
-kolbeck	K AA L B EH K
-kolber	K OW L B ER
-kolberg	K OW L B ER G
-kolbert	K OW L B ER T
-kolbo	K OW L B OW
-kolden	K OW L D AH N
-kole	K OW L
-kolek	K OW L EH K
-kolenda	K AH L EH N D AH
-kolesar	K AH L EH S ER
-kolich	K AA L IH HH
-kolin	K OW L IH N
-kolinski	K AH L IH N S K IY
-kolk	K OW K
-kolka	K OW L K AH
-kolker	K OW K ER
-koll	K AA L
-kollar	K AA L ER
-kollasch	K AA L AH SH
-kollath	K AA L AH TH
-kolle	K AA L
-kollek	K AO L EH K
-kollek(2)	K OW L EH K
-koller	K AA L ER
-kolli	K AA L IY
-kolling	K AA L IH NG
-kollman	K AA L M AH N
-kollmann	K AA L M AH N
-kollmeyer	K AA L M AY ER
-kollmorgen	K OW L M AO R G AH N
-kollmorgen(2)	K AO L M AO R G AH N
-kolm	K OW M
-kolman	K AA L M AH N
-kolodny	K AH L AA D N IY
-kolodziej	K AH L AA D Z IY JH
-kolodziejski	K AH L AA JH IY EY S K IY
-kolojejchick	K OW L OW JH EY CH IH K
-kolokoff	K AA L AH K AO F
-koloski	K AH L AW S K IY
-kolowich	K AA L AH W IH CH
-kolp	K OW L P
-kolski	K OW L S K IY
-kolsky	K OW L S K IY
-kolstad	K OW L S T AH D
-kolter	K OW L T ER
-kolterman	K OW L T ER M AH N
-kolton	K OW L T AH N
-kolts	K OW L T S
-koltz	K OW L T S
-komaba	K OW M AA B AH
-komag	K OW M AE G
-koman	K OW M AH N
-komansky	K OW M AE N S K IY
-komar	K OW M ER
-komara	K OW M AA R AH
-komarek	K OW M AA R EH K
-komarik	K OW M AA R IH K
-komarik's	K OW M AA R IH K S
-komatani	K AO M AH T AA N IY
-komatsu	K OW M AA T S UW
-kombat	K AA M B AE T
-komer	K OW M ER
-komercni	K OW M ER CH N IY
-komi	K OW M IY
-komine	K OW M AY N
-komineft	K AA M IH N EH F T
-kominek	K AO M AH N EH K
-komisar	K AH M IH S ER
-komisar(2)	K AA M IH S AA R
-kommer	K AA M ER
-komodo	K AH M OW D OW
-komodo(2)	K OW M OW D OW
-komori	K OW M AO R IY
-komorny	K OW M AO R N IY
-komorowski	K AH M ER AO F S K IY
-komoto	K OW M OW T OW
-komp	K AA M P
-kompanek	K AA M P AA N EH K
-komsomol	K AA M S OW M AH L
-komsomol's	K AA M S OW M AH L Z
-komura	K OW M UH R AH
-kon	K AA N
-kona	K OW N AH
+Koba	K OW B AH
+Kobacker	K OW B AE K ER
+Kobak	K OW B AH K
+Kobayashi	K OW B AA Y AA SH IY
+Kobe	K OW B EY
+Kobe's	K OW B EY Z
+Kobel	K OW B AH L
+Kober	K OW B ER
+Koberstein	K OW B ER S T AY N
+Koberstein(2)	K OW B ER S T IY N
+Kobes	K OW B Z
+Koble	K OW B AH L
+Kobler	K OW B AH L ER
+Kobler(2)	K OW B L ER
+Kobren	K AA B R AH N
+Kobrin	K AA B R IH N
+Kobrin's	K AA B R IH N Z
+Kobs	K AA B Z
+Kobus	K OW B AH S
+Koby	K OW B IY
+Kobylarz	K AH B IH L ER Z
+Kobylinski	K AH B IH L IH N S K IY
+Kobza	K AA B Z AH
+Kocak	K OW K AH K
+Koch	K AO CH
+Koch(2)	K OW K
+Kochan	K AA K AH N
+Kochanek	K AA K AH N IH K
+Kochanowski	K AH HH AH N AO F S K IY
+Kochanski	K AH HH AE N S K IY
+Kochel	K AA K AH L
+Kochendorfer	K AA K IH N D AO R F ER
+Kocher	K AO CH ER
+Kochevar	K AH HH EH V ER
+Kochis	K AA K IH S
+Kochman	K AA K M AH N
+Koci	K OW S IY
+Kocian	K OW SH AH N
+Kociemba	K OW S IY EH M B AH
+Kocinski	K AH CH IH N S K IY
+Kociolek	K OW S IY OW L EH K
+Kocis	K OW S IH S
+Kock	K AA K
+Kocourek	K AH K UH R EH K
+Kocsis	K AA K S IH S
+Kocur	K OW K ER
+Kocur's	K OW K ER Z
+Kocurek	K AH K Y UW R EH K
+Kodacolor	K OW D AH K AH L ER
+Kodak	K OW D AE K
+Kodak's	K OW D AE K S
+Kodama	K OW D AA M AH
+Kodiak	K OW D IY AE K
+Kodo	K OW D OW
+Koebel	K OW B AH L
+Koedinger	K OW D IH NG ER
+Koegel	K OW G AH L
+Koegler	K OW G AH L ER
+Koegler(2)	K OW G L ER
+Koehl	K OW L
+Koehler	K OW L ER
+Koehn	K OW N
+Koehne	K OW N
+Koehnen	K OW N AH N
+Koeki	K OW K IY
+Koelle	K OW L
+Koeller	K OW L ER
+Koelling	K OW L IH NG
+Koelsch	K OW L SH
+Koelzer	K OW L Z ER
+Koen	K OW N
+Koeneman	K AA IY N M AH N
+Koenen	K OW N AH N
+Koenig	K ER N IH G
+Koenigs	K ER N IH G Z
+Koenigsberg	K OW N IH G Z B ER G
+Koenigsfeld	K OW N IH G Z F EH L D
+Koep	K OW P
+Koepke	K OW P K
+Koepp	K OW P
+Koeppe	K OW P
+Koeppel	K OW P AH L
+Koeppen	K OW P AH N
+Koepsel	K OW P S AH L
+Koepsell	K OW P S AH L
+Koerber	K AO R B ER
+Koerner	K AO R N ER
+Koernke	K ER N AH K IY
+Koernke(2)	K ER N IH K
+Koester	K OW S T ER
+Koesters	K OW S T ER Z
+Koestler	K OW S AH L ER
+Koestler(2)	K OW S L ER
+Koestner	K OW S T N ER
+Koether	K OW DH ER
+Koetje	K OW T JH
+Koetter	K OW T ER
+Koetting	K OW T IH NG
+Koff	K AO F
+Koffler	K AA F AH L ER
+Koffler(2)	K AA F L ER
+Koffman	K AO F M AH N
+Kofi	K OW F IY
+Kofler	K OW F AH L ER
+Kofler(2)	K OW F L ER
+Kofoed	K OW F OW D
+Kofron	K AA F R AH N
+Kofu	K OW F UW
+Koga	K OW G AH
+Kogan	K OW G AH N
+Kogel	K OW G AH L
+Koger	K OW G ER
+Kogi	K OW G IY
+Kogler	K OW G AH L ER
+Kogler(2)	K OW G L ER
+Koglin	K AA G L IH N
+Kogut	K OW G AH T
+Kogyo	K OW JH Y OW
+Koh	K OW
+Kohan	K OW HH AA N
+Kohen	K OW AH N
+Kohl	K OW L
+Kohl's	K OW L Z
+Kohlbeck	K OW L B EH K
+Kohlberg	K OW L B ER G
+Kohlberg's	K OW L B ER G Z
+Kohlenberg	K OW L AH N B ER G
+Kohler	K OW L ER
+Kohles	K OW HH AH L Z
+Kohlhepp	K OW L HH IH P
+Kohlhoff	K OW L HH AO F
+Kohli	K OW L IY
+Kohlman	K OW L M AH N
+Kohlmann	K OW L M AH N
+Kohlmeier	K OW L M AY ER
+Kohlmeyer	K OW L M AY ER
+Kohlrabi	K AO L R AA B IY
+Kohls	K OW L Z
+Kohn	K AA N
+Kohne	K OW N
+Kohnen	K OW N AH N
+Kohner	K OW N ER
+Kohnke	K AA NG K
+Kohout	K OW AW T
+Kohr	K AO R
+Kohring	K AO R IH NG
+Kohrs	K AO R Z
+Kohtaro	K OW T AA R OW
+Kohtoro	K OW T AO R OW
+Kohut	K OW AH T
+Koichi	K OW IY CH IY
+Koido	K OY D OW
+Koike	K OY K
+Koito	K OY T OW
+Koito(2)	K OW IY T OW
+Koivisto	K OY V IH S T OW
+Kojak	K OW JH AE K
+Koji	K OW JH IY
+Kojima	K AH Y AY M AH
+Kok	K AA K
+Kokan	K OW K AH N
+Kokan's	K OW K AH N Z
+Kokate	K OW K AA T EY
+Kokate's	K OW K AA T EY Z
+Koke	K OW K
+Koken	K OW K AH N
+Koker	K OW K ER
+Kokes	K OW K S
+Kokesh	K AA K IH SH
+Koki	K OW K IY
+Kokinda	K AH K IH N D AH
+Koko	K OW K OW
+Koko's	K OW K OW Z
+Kokomo	K OW K AH M OW
+Kokoschka	K AH K AO SH K AH
+Kokoszka	K AH K AA SH K AH
+Kokusai	K AA K Y UW S AY
+Kol	K OW L
+Kolakowski	K AH L AH K AO F S K IY
+Kolander	K AA L AH N D ER
+Kolar	K OW L ER
+Kolarik	K AH L AA R IH K
+Kolasa	K AH L AA S AH
+Kolasinski	K AH L AH S IH N S K IY
+Kolb	K OW L B
+Kolbe	K OW L B
+Kolbeck	K AA L B EH K
+Kolber	K OW L B ER
+Kolberg	K OW L B ER G
+Kolbert	K OW L B ER T
+Kolbo	K OW L B OW
+Kolden	K OW L D AH N
+Kole	K OW L
+Kolek	K OW L EH K
+Kolenda	K AH L EH N D AH
+Kolesar	K AH L EH S ER
+Kolich	K AA L IH HH
+Kolin	K OW L IH N
+Kolinski	K AH L IH N S K IY
+Kolk	K OW K
+Kolka	K OW L K AH
+Kolker	K OW K ER
+Koll	K AA L
+Kollar	K AA L ER
+Kollasch	K AA L AH SH
+Kollath	K AA L AH TH
+Kolle	K AA L
+Kollek	K AO L EH K
+Kollek(2)	K OW L EH K
+Koller	K AA L ER
+Kolli	K AA L IY
+Kolling	K AA L IH NG
+Kollman	K AA L M AH N
+Kollmann	K AA L M AH N
+Kollmeyer	K AA L M AY ER
+Kollmorgen	K OW L M AO R G AH N
+Kollmorgen(2)	K AO L M AO R G AH N
+Kolm	K OW M
+Kolman	K AA L M AH N
+Kolodny	K AH L AA D N IY
+Kolodziej	K AH L AA D Z IY JH
+Kolodziejski	K AH L AA JH IY EY S K IY
+Kolojejchick	K OW L OW JH EY CH IH K
+Kolokoff	K AA L AH K AO F
+Koloski	K AH L AW S K IY
+Kolowich	K AA L AH W IH CH
+Kolp	K OW L P
+Kolski	K OW L S K IY
+Kolsky	K OW L S K IY
+Kolstad	K OW L S T AH D
+Kolter	K OW L T ER
+Kolterman	K OW L T ER M AH N
+Kolton	K OW L T AH N
+Kolts	K OW L T S
+Koltz	K OW L T S
+Komaba	K OW M AA B AH
+Komag	K OW M AE G
+Koman	K OW M AH N
+Komansky	K OW M AE N S K IY
+Komar	K OW M ER
+Komara	K OW M AA R AH
+Komarek	K OW M AA R EH K
+Komarik	K OW M AA R IH K
+Komarik's	K OW M AA R IH K S
+Komatani	K AO M AH T AA N IY
+Komatsu	K OW M AA T S UW
+Kombat	K AA M B AE T
+Komer	K OW M ER
+Komercni	K OW M ER CH N IY
+Komi	K OW M IY
+Komine	K OW M AY N
+Komineft	K AA M IH N EH F T
+Kominek	K AO M AH N EH K
+Komisar	K AH M IH S ER
+Komisar(2)	K AA M IH S AA R
+Kommer	K AA M ER
+Komodo	K AH M OW D OW
+Komodo(2)	K OW M OW D OW
+Komori	K OW M AO R IY
+Komorny	K OW M AO R N IY
+Komorowski	K AH M ER AO F S K IY
+Komoto	K OW M OW T OW
+Komp	K AA M P
+Kompanek	K AA M P AA N EH K
+Komsomol	K AA M S OW M AH L
+Komsomol's	K AA M S OW M AH L Z
+Komura	K OW M UH R AH
+Kon	K AA N
+Kona	K OW N AH
 konaga	K AH N AA G AH
-konarski	K AH N AA R S K IY
-konczal	K AA N CH AH L
-kondas	K AA N D AH Z
-kondo	K AA N D OW
-kondracki	K AH N D R AA T S K IY
-kondrat	K AA N D R AH T
-konecny	K AH N EH K N IY
-konen	K AA N AH N
-kong	K AO NG
-kong's	K AO NG Z
-kong's(2)	K AO NG G Z
-kong(2)	K AO NG G
-konger	K AA NG G ER
-kongers	K AA NG G ER Z
-kongsberg	K AO NG Z B ER G
-kongsberg's	K AO NG Z B ER G Z
-kongsberg's(2)	K AO NG G Z B ER G Z
-kongsberg(2)	K AO NG G Z B ER G
-konica	K AA N IH K AH
-konicek	K AA N IH CH EH K
-konicki	K AH N IH T S K IY
-konieczka	K AH N IY CH K AH
-konieczny	K AH N IY CH N IY
-konig	K AA N IH G
-koning	K OW N IH NG
-koninklijke	K AA N IH NG K L IY K IY
-konishi	K OW N IY SH IY
-konishiroku	K AA N IH SH IH R OW K UW
-konitzer	K AA N IH T Z ER
-konkel	K AA NG K AH L
-konkle	K AA NG K AH L
-konkol	K AA NG K AO L
-konner	K AA N ER
-kono	K OW N OW
-konold	K AA N OW L D
-konop	K OW N AH P
-konopka	K AH N OW P K AH
-konrad	K AA N R AH D
-konrath	K AA N R AH TH
-konstantin	K AA N S T IH N T IY N
-konsultat	K AA N S AH L T AA T
-kontos	K AA N T OW Z
-kontra	K AA N T R AH
-kontras	K AA N T R AH S
-kontrollbank	K AA N T R AH L B AE NG K
-konwinski	K AH N V IH N S K IY
-konz	K AA N Z
-konzen	K AA N Z AH N
-konzi	K AA N Z IY
-konzi's	K AA N Z IY Z
-koo	K UW
-koob	K UW B
-koogler	K UW G L ER
-kooi	K UW IY
-kooiker	K UW IH K ER
-kooiman	K UW IH M AH N
-kooistra	K UW IH Z T R AH
+Konarski	K AH N AA R S K IY
+Konczal	K AA N CH AH L
+Kondas	K AA N D AH Z
+Kondo	K AA N D OW
+Kondracki	K AH N D R AA T S K IY
+Kondrat	K AA N D R AH T
+Konecny	K AH N EH K N IY
+Konen	K AA N AH N
+Kong	K AO NG
+Kong's	K AO NG Z
+Kong's(2)	K AO NG G Z
+Kong(2)	K AO NG G
+Konger	K AA NG G ER
+Kongers	K AA NG G ER Z
+Kongsberg	K AO NG Z B ER G
+Kongsberg's	K AO NG Z B ER G Z
+Kongsberg's(2)	K AO NG G Z B ER G Z
+Kongsberg(2)	K AO NG G Z B ER G
+Konica	K AA N IH K AH
+Konicek	K AA N IH CH EH K
+Konicki	K AH N IH T S K IY
+Konieczka	K AH N IY CH K AH
+Konieczny	K AH N IY CH N IY
+Konig	K AA N IH G
+Koning	K OW N IH NG
+Koninklijke	K AA N IH NG K L IY K IY
+Konishi	K OW N IY SH IY
+Konishiroku	K AA N IH SH IH R OW K UW
+Konitzer	K AA N IH T Z ER
+Konkel	K AA NG K AH L
+Konkle	K AA NG K AH L
+Konkol	K AA NG K AO L
+Konner	K AA N ER
+Kono	K OW N OW
+Konold	K AA N OW L D
+Konop	K OW N AH P
+Konopka	K AH N OW P K AH
+Konrad	K AA N R AH D
+Konrath	K AA N R AH TH
+Konstantin	K AA N S T IH N T IY N
+Konsultat	K AA N S AH L T AA T
+Kontos	K AA N T OW Z
+Kontra	K AA N T R AH
+Kontras	K AA N T R AH S
+Kontrollbank	K AA N T R AH L B AE NG K
+Konwinski	K AH N V IH N S K IY
+Konz	K AA N Z
+Konzen	K AA N Z AH N
+Konzi	K AA N Z IY
+Konzi's	K AA N Z IY Z
+Koo	K UW
+Koob	K UW B
+Koogler	K UW G L ER
+Kooi	K UW IY
+Kooiker	K UW IH K ER
+Kooiman	K UW IH M AH N
+Kooistra	K UW IH Z T R AH
 kook	K UW K
-kooken	K UW K AH N
-kooker	K UH K ER
-kooks	K UW K S
-kooky	K UW K IY
-kool	K UW L
-koolhaas	K UW L HH AA S
-koon	K UW N
-koon's	K UW N Z
-koonce	K UW N S
-koone	K UW N
-koonig	K UW N IH G
-kooning	K UW N IH NG
-koons	K UW N Z
-koonts	K UW N T S
-koontz	K UW N T S
-koop	K UW P
-koop's	K UW P S
-koopman	K UW P M AH N
-koopmann	K UW P M AH N
-koops	K UW P S
-koor	K UW R
-koors	K UH R Z
-koos	K UW Z
-kooser	K UW Z ER
-kootenay	K UW T AH N EY
-kooy	K UW IY
-kooyman	K AA OY M AH N
-kopacz	K AA P AH CH
-kopas	K OW P AH Z
-kopchev	K AA P CH AH V
-kopczynski	K AH P CH IH N S K IY
-kope	K OW P
-kopec	K OW P IH K
-kopecky	K AH P EH T S K IY
-kopek	K OW P AH K
-kopeks	K OW P AH K S
-kopel	K OW P AH L
-kopelman	K OW P AH L M AH N
-koper	K OW P ER
-kopera	K AH P IH R AH
-koperski	K AH P ER S K IY
-kopetski	K AH P EH T S K IY
-kopf	K AO P F
-kopinski	K AH P IH N S K IY
-kopischke	K AH P IH SH K IY
-kopit	K AA P IH T
-kopka	K OW P K AH
-kopke	K OW P K
-kopko	K OW P K OW
-koplan	K AA P L AH N
-koplin	K AA P L IH N
-koplovitz	K AA P L AH V IH T S
-kopp	K AA P
-koppe	K AA P
-koppel	K AA P AH L
-koppel's	K AA P AH L Z
-koppell	K AA P AH L
-koppelman	K AA P AH L M AH N
-koppen	K AA P AH N
-koppenhaver	K AA P IH N HH AH V ER
-kopper	K AA P ER
-koppers	K AA P ER Z
-koppers'	K AA P ER Z
-koppes	K AA P S
-kopple	K AA P AH L
-kopplin	K AA P L IH N
-kopriva	K AA P R IH V AH
-koprowski	K AH P R AO F S K IY
-kops	K AA P S
-kopusovic	K AH P UW S AH V IH K
-kopy	K AA P IY
-kora	K AO R AH
-koral	K AO R AH L
-koran	K AO R AA N
-koranda	K ER AE N D AH
-koranic	K AO R AE N IH K
-korb	K AO R B
-korba	K AO R B AH
-korbel	K AO R B AH L
-korber	K AO R B ER
-korbren	K AO R B R EH N
-korby	K AO R B IY
-korczak	K AO R CH AE K
-korda	K AO R D AH
-kordell	K AO R D EH L
-korea	K AO R IY AH
-korea's	K AO R IY AH Z
-korea's(2)	K R IY AH Z
-korea's(3)	K ER R IY AH Z
-korea(2)	K R IY AH
-korea(3)	K ER R IY AH
-koreagate	K AO R IY AH G EY T
-koreagate(2)	K ER R IY AH G EY T
-korean	K AO R IY AH N
-korean's	K R IY AH N Z
-korean's(2)	K ER IY AH N Z
-korean(2)	K R IY AH N
-korean(3)	K ER R IY AH N
-koreans	K AO R IY AH N Z
-koreans'	K AO R IY AH N Z
-koreans'(2)	K R IY AH N Z
-koreans'(3)	K ER R IY AH N Z
-koreans(2)	K R IY AH N Z
-koreans(3)	K ER R IY AH N Z
-koreas	K AO R IY AH Z
-koreas(2)	K R IY AH Z
-koreas(3)	K ER R IY AH Z
-koreatown	K ER IY AH T AW N
-korell	K AO R EH L
-koren	K AO R AH N
-korenek	K AO R IH N IH K
-koresh	K AO R EH SH
-koresh's	K AO R EH SH AH Z
-koret	K AO R AH T
-korey	K AO R IY
-korf	K AO R F
-korff	K AO R F
-korfhage	K AO R F HH IH JH
-korhonen	K AO R HH AH N AH N
-korinek	K AO R IH N IH K
-korman	K AO R M AH N
-kormos	K AO R M OW Z
-korn	K AO R N
-kornacki	K ER N AA T S K IY
-kornberg	K AO R N B ER G
-kornblum	K AO R N B L AH M
-kornbluth	K AO R N B L UW TH
-kornegay	K AO R N IH G EY
-korner	K AO R N ER
-kornfeld	K AO R N F EH L D
-kornhauser	K AO R N HH AW Z ER
-kornreich	K AO R N R AY K
-korns	K AO N Z
-korol	K AO R AO L
-korologos	K AO R AA L OW G OW S
-korona	K ER OW N AH
-korotich	K AO R AH T IH CH
-korpela	K ER P IY L AH
-korpi	K AO R P IY
-korry	K AO R IY
-korry's	K AO R IY Z
-korson	K AO R S AH N
-kort	K AO R T
-korte	K AO R T
-korten	K AO R T AH N
-korth	K AO R TH
-korthals	K AO R TH AH L Z
-kortman	K AO R T M AH N
-kortum	K AO R T AH M
-kortz	K AO R T S
-koruna	K AO R UW N AH
-korver	K AO R V ER
-kory	K AO R IY
-koryagin	K AO R Y AA G IH N
-korzeniewski	K ER Z IH N IY EH F S K IY
-korzeniewski(2)	K AO R Z AH N UW F S K IY
+Kooken	K UW K AH N
+Kooker	K UH K ER
+Kooks	K UW K S
+Kooky	K UW K IY
+Kool	K UW L
+Koolhaas	K UW L HH AA S
+Koon	K UW N
+Koon's	K UW N Z
+Koonce	K UW N S
+Koone	K UW N
+Koonig	K UW N IH G
+Kooning	K UW N IH NG
+Koons	K UW N Z
+Koonts	K UW N T S
+Koontz	K UW N T S
+Koop	K UW P
+Koop's	K UW P S
+Koopman	K UW P M AH N
+Koopmann	K UW P M AH N
+Koops	K UW P S
+Koor	K UW R
+Koors	K UH R Z
+Koos	K UW Z
+Kooser	K UW Z ER
+Kootenay	K UW T AH N EY
+Kooy	K UW IY
+Kooyman	K AA OY M AH N
+Kopacz	K AA P AH CH
+Kopas	K OW P AH Z
+Kopchev	K AA P CH AH V
+Kopczynski	K AH P CH IH N S K IY
+Kope	K OW P
+Kopec	K OW P IH K
+Kopecky	K AH P EH T S K IY
+Kopek	K OW P AH K
+Kopeks	K OW P AH K S
+Kopel	K OW P AH L
+Kopelman	K OW P AH L M AH N
+Koper	K OW P ER
+Kopera	K AH P IH R AH
+Koperski	K AH P ER S K IY
+Kopetski	K AH P EH T S K IY
+Kopf	K AO P F
+Kopinski	K AH P IH N S K IY
+Kopischke	K AH P IH SH K IY
+Kopit	K AA P IH T
+Kopka	K OW P K AH
+Kopke	K OW P K
+Kopko	K OW P K OW
+Koplan	K AA P L AH N
+Koplin	K AA P L IH N
+Koplovitz	K AA P L AH V IH T S
+Kopp	K AA P
+Koppe	K AA P
+Koppel	K AA P AH L
+Koppel's	K AA P AH L Z
+Koppell	K AA P AH L
+Koppelman	K AA P AH L M AH N
+Koppen	K AA P AH N
+Koppenhaver	K AA P IH N HH AH V ER
+Kopper	K AA P ER
+Koppers	K AA P ER Z
+Koppers'	K AA P ER Z
+Koppes	K AA P S
+Kopple	K AA P AH L
+Kopplin	K AA P L IH N
+Kopriva	K AA P R IH V AH
+Koprowski	K AH P R AO F S K IY
+Kops	K AA P S
+Kopusovic	K AH P UW S AH V IH K
+Kopy	K AA P IY
+Kora	K AO R AH
+Koral	K AO R AH L
+Koran	K AO R AA N
+Koranda	K ER AE N D AH
+Koranic	K AO R AE N IH K
+Korb	K AO R B
+Korba	K AO R B AH
+Korbel	K AO R B AH L
+Korber	K AO R B ER
+Korbren	K AO R B R EH N
+Korby	K AO R B IY
+Korczak	K AO R CH AE K
+Korda	K AO R D AH
+Kordell	K AO R D EH L
+Korea	K AO R IY AH
+Korea's	K AO R IY AH Z
+Korea's(2)	K R IY AH Z
+Korea's(3)	K ER R IY AH Z
+Korea(2)	K R IY AH
+Korea(3)	K ER R IY AH
+Koreagate	K AO R IY AH G EY T
+Koreagate(2)	K ER R IY AH G EY T
+Korean	K AO R IY AH N
+Korean's	K R IY AH N Z
+Korean's(2)	K ER IY AH N Z
+Korean(2)	K R IY AH N
+Korean(3)	K ER R IY AH N
+Koreans	K AO R IY AH N Z
+Koreans'	K AO R IY AH N Z
+Koreans'(2)	K R IY AH N Z
+Koreans'(3)	K ER R IY AH N Z
+Koreans(2)	K R IY AH N Z
+Koreans(3)	K ER R IY AH N Z
+Koreas	K AO R IY AH Z
+Koreas(2)	K R IY AH Z
+Koreas(3)	K ER R IY AH Z
+Koreatown	K ER IY AH T AW N
+Korell	K AO R EH L
+Koren	K AO R AH N
+Korenek	K AO R IH N IH K
+Koresh	K AO R EH SH
+Koresh's	K AO R EH SH AH Z
+Koret	K AO R AH T
+Korey	K AO R IY
+Korf	K AO R F
+Korff	K AO R F
+Korfhage	K AO R F HH IH JH
+Korhonen	K AO R HH AH N AH N
+Korinek	K AO R IH N IH K
+Korman	K AO R M AH N
+Kormos	K AO R M OW Z
+Korn	K AO R N
+Kornacki	K ER N AA T S K IY
+Kornberg	K AO R N B ER G
+Kornblum	K AO R N B L AH M
+Kornbluth	K AO R N B L UW TH
+Kornegay	K AO R N IH G EY
+Korner	K AO R N ER
+Kornfeld	K AO R N F EH L D
+Kornhauser	K AO R N HH AW Z ER
+Kornreich	K AO R N R AY K
+Korns	K AO N Z
+Korol	K AO R AO L
+Korologos	K AO R AA L OW G OW S
+Korona	K ER OW N AH
+Korotich	K AO R AH T IH CH
+Korpela	K ER P IY L AH
+Korpi	K AO R P IY
+Korry	K AO R IY
+Korry's	K AO R IY Z
+Korson	K AO R S AH N
+Kort	K AO R T
+Korte	K AO R T
+Korten	K AO R T AH N
+Korth	K AO R TH
+Korthals	K AO R TH AH L Z
+Kortman	K AO R T M AH N
+Kortum	K AO R T AH M
+Kortz	K AO R T S
+Koruna	K AO R UW N AH
+Korver	K AO R V ER
+Kory	K AO R IY
+Koryagin	K AO R Y AA G IH N
+Korzeniewski	K ER Z IH N IY EH F S K IY
+Korzeniewski(2)	K AO R Z AH N UW F S K IY
 kos	K AA S
-kosa	K OW S AH
-kosak	K OW S AH K
-kosakowski	K AH S AH K AO F S K IY
-kosan	K OW Z AH N
-kosanke	K AA S AH NG K
-kosanovich	K AH S AE N AH V IH CH
-kosar	K OW S ER
-kosberg	K AO Z B ER G
-kosbie	K AA Z B IY
-kosch	K AO SH
-koscheck	K AO S CH EH K
-koscheck's	K AO S CH EH K S
-koscielniak	K AH S CH IY L N IY AE K
-koscinski	K AH S CH IH N S K IY
-kosco	K OW S K OW
-kosecoff	K OW S AH K AO F
-kosek	K OW S EH K
-kosel	K OW S AH L
-koser	K OW Z ER
+Kosa	K OW S AH
+Kosak	K OW S AH K
+Kosakowski	K AH S AH K AO F S K IY
+Kosan	K OW Z AH N
+Kosanke	K AA S AH NG K
+Kosanovich	K AH S AE N AH V IH CH
+Kosar	K OW S ER
+Kosberg	K AO Z B ER G
+Kosbie	K AA Z B IY
+Kosch	K AO SH
+Koscheck	K AO S CH EH K
+Koscheck's	K AO S CH EH K S
+Koscielniak	K AH S CH IY L N IY AE K
+Koscinski	K AH S CH IH N S K IY
+Kosco	K OW S K OW
+Kosecoff	K OW S AH K AO F
+Kosek	K OW S EH K
+Kosel	K OW S AH L
+Koser	K OW Z ER
 kosh	K AA SH
 kosher	K OW SH ER
 koshered	K OW SH ER D
 koshering	K OW SH ER IH NG
 koshers	K OW SH ER S
-kosiba	K OW S IY B AH
-kosier	K OW S IY ER
-kosik	K OW S IH K
-kosin	K OW S IH N
-kosinski	K AH S IH N S K IY
-koska	K OW S K AH
-koskela	K AH S K IY L AH
-koskey	K AA S K IY
-koski	K AW S K IY
-koskinen	K AA S K IH N AH N
-kosko	K OW S K OW
-koskotas	K AO S K OW T AH S
-kosky	K AA S K IY
-kosloski	K AH S L AW S K IY
-koslosky	K AH S L OW S K IY
-koslow	K AA S L OW
-koslow's	K AA Z L OW Z
-koslowski	K AH S L AO F S K IY
-kosman	K AA S M AH N
-kosmatka	K AH S M AA T K AH
-kosmetsky	K AA Z M EH T S K IY
-kosmetsky's	K AA Z M EH T S K IY Z
-kosmicki	K AH S M IH T S K IY
-kosnovsky	K AA Z N AA F S K IY
-kosnovsky's	K AA Z N AA F S K IY Z
-kosovo	K OW S OW V OW
-kosowski	K AH S AO F S K IY
-kosowsky	K AH S AW S K IY
-koss	K AO S
-kossman	K AO S M AH N
-kossow	K AA S OW
-kossuth	K AA S AH TH
-kost	K AA S T
-kosta	K OW S T AH
-kostal	K AA S T AH L
-kostas	K OW S T AH Z
-kostecki	K AH S T EH T S K IY
-kostek	K AA S T EH K
-kostelecky	K AH S T EH L EH T S K IY
-kostelnik	K AH S T EH L N IH K
-koster	K AA S T ER
-kostic	K AA S T IH K
-kostick	K OW S T IH K
-kostka	K AA S T K AH
-kostmayer	K AO S T M EY ER
-kostoff	K AA S T AO F
-kostrzewa	K AH S T R AH Z UW AH
-kostrzewski	K AO S T ER Z EH F S K IY
-kosub	K OW S AH B
-kosy	K OW S IY
-kosyakov	K OW S Y AH K AA V
-kosygin	K OW S IH G IH N
-kosygin(2)	K OW S IY G IH N
-kot	K AA T
-kotara	K OW T AA R AH
-kotarski	K AH T AA R S K IY
-kotas	K OW T AH Z
-kotch	K AA CH
-kote	K OW T
-kotecki	K AH T EH T S K IY
-kotek	K OW T EH K
-koteles	K AA T EH L EH Z
-koth	K AA TH
-kothari	K AA TH ER IY
-kothe	K OW DH
-kotila	K AH T AY L AH
-kotlarz	K AA T L ER Z
-kotler	K OW T AH L ER
-kotler(2)	K AA T L ER
-kotlowitz	K AA T L AH W IH T S
-koto	K OW T OW
-kotowski	K AH T AO F S K IY
-kotsonis	K AE T S OW N AH S
-kotsonis'	K AE T S OW N AH S
-kotsonis'(2)	K OW T S OW N AH S
-kotsonis's	K AE T S OW N AH S IH Z
-kotsonis's(2)	K OW T S OW N AH S IH Z
-kotsonis(2)	K OW T S OW N AH S
-kott	K AA T
-kotter	K AA T ER
-kottke	K AA T K IY
-kottler	K AA T L ER
-kottwitz	K AA T W IH T S
-kotula	K AH T UW L AH
-kotz	K AA T S
-kotzebue	K AA T S AH B Y UW
-kouba	K UW B AH
-koudelka	K AW D EH L K AH
-kough	K AW
-kouns	K AW N Z
-kountz	K AW N T S
-kouri	K OW UH R IY
-kouril	K UW R AH L
-kourou	K UW R UW
-koury	K AW R IY
-kouyate	K AW Y AA T EY
-kovac	K OW V AH K
-kovacevic	K AH V AH CH EH V IH K
-kovacevich	K AH V AA CH IH V IH CH
-kovach	K OW V AA K
-kovach's	K OW V AA K S
-kovacic	K AH V AA K IH K
-kovacich	K AH V AA CH IH HH
-kovacik	K AA V AH CH IH K
-kovack	K AA V AH K
-kovacs	K OW V AE K S
-kovaks	K OW V AE K S
-koval	K OW V AH L
-kovalchik	K AH V AA L HH IH K
-kovalcik	K AA V AH L CH IH K
-kovaleski	K AH V AH L EH S K IY
-kovalik	K AH V AA L IH K
-kovalsky	K AH V AA L S K IY
-kovalyov	K OW V AA L Y AH V
-kovar	K OW V ER
-kovarik	K AH V AA R IH K
-kovatch	K AA V AH CH
-kovats	K OW V AH T S
-koven	K OW V AH N
-kover	K OW V ER
-koversada	K AH V ER S AA T AH
-kovich	K AA V IH CH
+Kosiba	K OW S IY B AH
+Kosier	K OW S IY ER
+Kosik	K OW S IH K
+Kosin	K OW S IH N
+Kosinski	K AH S IH N S K IY
+Koska	K OW S K AH
+Koskela	K AH S K IY L AH
+Koskey	K AA S K IY
+Koski	K AW S K IY
+Koskinen	K AA S K IH N AH N
+Kosko	K OW S K OW
+Koskotas	K AO S K OW T AH S
+Kosky	K AA S K IY
+Kosloski	K AH S L AW S K IY
+Koslosky	K AH S L OW S K IY
+Koslow	K AA S L OW
+Koslow's	K AA Z L OW Z
+Koslowski	K AH S L AO F S K IY
+Kosman	K AA S M AH N
+Kosmatka	K AH S M AA T K AH
+Kosmetsky	K AA Z M EH T S K IY
+Kosmetsky's	K AA Z M EH T S K IY Z
+Kosmicki	K AH S M IH T S K IY
+Kosnovsky	K AA Z N AA F S K IY
+Kosnovsky's	K AA Z N AA F S K IY Z
+Kosovo	K OW S OW V OW
+Kosowski	K AH S AO F S K IY
+Kosowsky	K AH S AW S K IY
+Koss	K AO S
+Kossman	K AO S M AH N
+Kossow	K AA S OW
+Kossuth	K AA S AH TH
+Kost	K AA S T
+Kosta	K OW S T AH
+Kostal	K AA S T AH L
+Kostas	K OW S T AH Z
+Kostecki	K AH S T EH T S K IY
+Kostek	K AA S T EH K
+Kostelecky	K AH S T EH L EH T S K IY
+Kostelnik	K AH S T EH L N IH K
+Koster	K AA S T ER
+Kostic	K AA S T IH K
+Kostick	K OW S T IH K
+Kostka	K AA S T K AH
+Kostmayer	K AO S T M EY ER
+Kostoff	K AA S T AO F
+Kostrzewa	K AH S T R AH Z UW AH
+Kostrzewski	K AO S T ER Z EH F S K IY
+Kosub	K OW S AH B
+Kosy	K OW S IY
+Kosyakov	K OW S Y AH K AA V
+Kosygin	K OW S IH G IH N
+Kosygin(2)	K OW S IY G IH N
+Kot	K AA T
+Kotara	K OW T AA R AH
+Kotarski	K AH T AA R S K IY
+Kotas	K OW T AH Z
+Kotch	K AA CH
+Kote	K OW T
+Kotecki	K AH T EH T S K IY
+Kotek	K OW T EH K
+Koteles	K AA T EH L EH Z
+Koth	K AA TH
+Kothari	K AA TH ER IY
+Kothe	K OW DH
+Kotila	K AH T AY L AH
+Kotlarz	K AA T L ER Z
+Kotler	K OW T AH L ER
+Kotler(2)	K AA T L ER
+Kotlowitz	K AA T L AH W IH T S
+Koto	K OW T OW
+Kotowski	K AH T AO F S K IY
+Kotsonis	K AE T S OW N AH S
+Kotsonis'	K AE T S OW N AH S
+Kotsonis'(2)	K OW T S OW N AH S
+Kotsonis's	K AE T S OW N AH S IH Z
+Kotsonis's(2)	K OW T S OW N AH S IH Z
+Kotsonis(2)	K OW T S OW N AH S
+Kott	K AA T
+Kotter	K AA T ER
+Kottke	K AA T K IY
+Kottler	K AA T L ER
+Kottwitz	K AA T W IH T S
+Kotula	K AH T UW L AH
+Kotz	K AA T S
+Kotzebue	K AA T S AH B Y UW
+Kouba	K UW B AH
+Koudelka	K AW D EH L K AH
+Kough	K AW
+Kouns	K AW N Z
+Kountz	K AW N T S
+Kouri	K OW UH R IY
+Kouril	K UW R AH L
+Kourou	K UW R UW
+Koury	K AW R IY
+Kouyate	K AW Y AA T EY
+Kovac	K OW V AH K
+Kovacevic	K AH V AH CH EH V IH K
+Kovacevich	K AH V AA CH IH V IH CH
+Kovach	K OW V AA K
+Kovach's	K OW V AA K S
+Kovacic	K AH V AA K IH K
+Kovacich	K AH V AA CH IH HH
+Kovacik	K AA V AH CH IH K
+Kovack	K AA V AH K
+Kovacs	K OW V AE K S
+Kovaks	K OW V AE K S
+Koval	K OW V AH L
+Kovalchik	K AH V AA L HH IH K
+Kovalcik	K AA V AH L CH IH K
+Kovaleski	K AH V AH L EH S K IY
+Kovalik	K AH V AA L IH K
+Kovalsky	K AH V AA L S K IY
+Kovalyov	K OW V AA L Y AH V
+Kovar	K OW V ER
+Kovarik	K AH V AA R IH K
+Kovatch	K AA V AH CH
+Kovats	K OW V AH T S
+Koven	K OW V AH N
+Kover	K OW V ER
+Koversada	K AH V ER S AA T AH
+Kovich	K AA V IH CH
 kowabunga	K AW AH B AH NG G AH
-kowal	K AW AH L
-kowalchuk	K AW AA L HH AH K
-kowalczyk	K AW AH L CH IH K
-kowaleski	K AW AH L EH S K IY
-kowalewski	K AW AH L EH F S K IY
-kowalik	K AW AA L IH K
-kowalke	K AA W AO K
-kowalkowski	K AA W AO K AO F S K IY
-kowall	K AW AH L
-kowalski	K AH W AA L S K IY
-kowalsky	K AW AA L S K IY
-kowitz	K AA W IH T S
-kownacki	K AW N AA K IY
+Kowal	K AW AH L
+Kowalchuk	K AW AA L HH AH K
+Kowalczyk	K AW AH L CH IH K
+Kowaleski	K AW AH L EH S K IY
+Kowalewski	K AW AH L EH F S K IY
+Kowalik	K AW AA L IH K
+Kowalke	K AA W AO K
+Kowalkowski	K AA W AO K AO F S K IY
+Kowall	K AW AH L
+Kowalski	K AH W AA L S K IY
+Kowalsky	K AW AA L S K IY
+Kowitz	K AA W IH T S
+Kownacki	K AW N AA K IY
 kowtow	K AW T AW
 kowtow(2)	K OW T OW
-koyama	K OW Y AA M AH
-koyo	K OY OW
-koza	K OW Z AH
-kozak	K OW Z AH K
-kozakiewicz	K AH Z AA K AH V IH CH
-kozar	K OW Z ER
-kozberg	K AA Z B ER G
-kozel	K OW Z AH L
-kozemchak	K OW Z EH M CH AE K
-kozicki	K AH Z IH T S K IY
-koziel	K AA Z IY L
-kozik	K OW Z IH K
-kozikowski	K AH Z IH K AO F S K IY
-kozinski	K AH Z IH N S K IY
-koziol	K AA Z IY AO L
-kozlik	K AA Z L IH K
-kozloff	K AA Z L AO F
-kozloski	K AH Z L AW S K IY
-kozlow	K AA Z L OW
-kozlowski	K AH Z L AO F S K IY
-kozma	K OW Z M AH
-kozminski	K AH Z M IH N S K IY
-koznovsky	K AA Z N AA F S K IY
-koznovsky's	K AA Z N AA F S K IY Z
-kozo	K OW Z OW
-kozol	K OW Z AH L
-kozub	K OW Z AH B
-kozuch	K AA Z AH HH
-kozyrev	K AA Z ER EH V
-kozyrev's	K AA Z ER EH V Z
-kraai	K R AA IY
-kraatz	K R AA T S
-krabbe	K R AE B
-krabbenhoft	K R AE B IH N HH AH F T
-krabill	K R AE B AH L
-krach	K R AE CH
-kracht	K R AE K T
-krack	K R AE K
-kracke	K R AE K
-kraeger	K R EH G ER
-kraemer	K R EH M ER
-kraeutler	K R AW T L ER
-krafft	K R AE F T
-kraft	K R AE F T
-kraft's	K R AE F T S
-kraftwerk	K R AE F T W ER K
-krage	K R EY JH
-krager	K R EY G ER
-kragh	K R AE G
-kragt	K R AE G T
-krah	K R AA
-krahenbuhl	K R AA IH N B AH L
-krahl	K R AA L
-krahn	K R AE N
-krain	K R EY N
-krajewski	K R AY EH F S K IY
-krajicek	K R AY IH CH EH K
-krajina	K R AY N AH
-krajina's	K R AY N AH Z
-krajina's(2)	K R AY IY N AH Z
-krajina(2)	K R AY IY N AH
-kraker	K R EY K ER
-krakow	K R AA K AW
-krakow(2)	K R AA K AA V
-krakow(3)	K R AE K AW
-krakower	K R AE K OW ER
-krakowski	K R AH K AO F S K IY
-kral	K R AE L
-kralicek	K R AA L IH CH EH K
-kralik	K R AA L IH K
-krall	K R AO L
-kram	K R AE M
-kramar	K R AE M ER
-kramer	K R EY M ER
-kramer's	K R EY M ER Z
-kramlich	K R AE M L IH K
-kramm	K R AE M
-kramme	K R AE M
-krammer	K R AE M ER
-krammes	K R AE M Z
-kramp	K R AE M P
-krampe	K R AE M P
-krandall	K R AE N D AH L
-krane	K R EY N
-kraner	K R EY N ER
-kranich	K R AE N IH CH
-krans	K R AE N Z
-krantz	K R AE N T S
-kranz	K R AE N Z
-kranzler	K R AE N Z L ER
-krapels	K R AE P AH L Z
-krapf	K R AE P F
-krapp	K R AE P
-kraprayoon	K R AE P R AA Y UW N
-kras	K R AE S
-krasinski	K R AH S IH N S K IY
-kraska	K R AA S K AH
-krasner	K R AE S N ER
-krasnoff	K R AE S N AO F
-krasnow	K R AA S N OW
-krasnoyarsk	K R AE S N OY AA R S K
-krasny	K R AE Z N IY
-krasowski	K R AH S AO F S K IY
-krass	K R AE S
-kraszewski	K R AH SH EH F S K IY
-krat	K R AE T
-kratky	K R AE T K IY
-kratochvil	K R AE T AH K V AH L
-kratt	K R AE T
-kratz	K R AE T S
-kratzer	K R EY T Z ER
-kratzke	K R AE T S K IY
-krauer	K R AW R
-kraus	K R AW S
-krause	K R AO S
-krauser	K R AW S ER
-kraushaar	K R AW SH AA R
-krauskopf	K R AW S K AO F
-krauss	K R AW S
-krausse	K R AO S
-krausz	K R AW SH
-kraut	K R AW T
-krauter	K R AW T ER
-krauth	K R AO TH
-krauthammer	K R AW T HH AE M ER
-krauze	K R AW Z
-kravchuk	K R AA V CH UH K
-kravchuk's	K R AA V CH UH K Z
-kravetz	K R AE V IH T S
-kravis	K R AE V IH S
-kravitz	K R AE V IH T S
-krawccykiewi	K R AW CH IH K UW IY
-krawchuk	K R AO CH AH K
-krawczak	K R AA V CH AE K
-krawczyk	K R AA V CH IH K
-krawiec	K R AA V IY K
-krawitz	K R AA W IH T S
-kray	K R EY
-kraynak	K R EY N AH K
-kreager	K R IY G ER
-kreamer	K R IY M ER
-krebbs	K R EH B Z
-krebs	K R EH B Z
-krebs's	K R EH B Z IH Z
-krebsbach	K R EH B Z B AA K
-krech	K R EH K
-krecko	K R EH K OW
-kredietbank	K R EH D IY T B AE NG K
-kredit	K R EH T IH T
-kreditanstalt	K R EH D IH T AH N S T AO L T
-kreeger	K R IY G ER
-kreft	K R EH F T
-kreg	K R EH G
-kregel	K R EH G AH L
-kreger	K R IY G ER
-kreh	K R EH
-krehbiel	K R EH B IY L
-kreher	K R EH R
-kreicher	K R AY K ER
-kreider	K R AY D ER
-kreidler	K R AY D AH L ER
-kreidler(2)	K R AY D L ER
-kreifels	K R AY F AH L Z
-kreig	K R IY G
-kreiger	K R AY G ER
+Koyama	K OW Y AA M AH
+Koyo	K OY OW
+Koza	K OW Z AH
+Kozak	K OW Z AH K
+Kozakiewicz	K AH Z AA K AH V IH CH
+Kozar	K OW Z ER
+Kozberg	K AA Z B ER G
+Kozel	K OW Z AH L
+Kozemchak	K OW Z EH M CH AE K
+Kozicki	K AH Z IH T S K IY
+Koziel	K AA Z IY L
+Kozik	K OW Z IH K
+Kozikowski	K AH Z IH K AO F S K IY
+Kozinski	K AH Z IH N S K IY
+Koziol	K AA Z IY AO L
+Kozlik	K AA Z L IH K
+Kozloff	K AA Z L AO F
+Kozloski	K AH Z L AW S K IY
+Kozlow	K AA Z L OW
+Kozlowski	K AH Z L AO F S K IY
+Kozma	K OW Z M AH
+Kozminski	K AH Z M IH N S K IY
+Koznovsky	K AA Z N AA F S K IY
+Koznovsky's	K AA Z N AA F S K IY Z
+Kozo	K OW Z OW
+Kozol	K OW Z AH L
+Kozub	K OW Z AH B
+Kozuch	K AA Z AH HH
+Kozyrev	K AA Z ER EH V
+Kozyrev's	K AA Z ER EH V Z
+Kraai	K R AA IY
+Kraatz	K R AA T S
+Krabbe	K R AE B
+Krabbenhoft	K R AE B IH N HH AH F T
+Krabill	K R AE B AH L
+Krach	K R AE CH
+Kracht	K R AE K T
+Krack	K R AE K
+Kracke	K R AE K
+Kraeger	K R EH G ER
+Kraemer	K R EH M ER
+Kraeutler	K R AW T L ER
+Krafft	K R AE F T
+Kraft	K R AE F T
+Kraft's	K R AE F T S
+Kraftwerk	K R AE F T W ER K
+Krage	K R EY JH
+Krager	K R EY G ER
+Kragh	K R AE G
+Kragt	K R AE G T
+Krah	K R AA
+Krahenbuhl	K R AA IH N B AH L
+Krahl	K R AA L
+Krahn	K R AE N
+Krain	K R EY N
+Krajewski	K R AY EH F S K IY
+Krajicek	K R AY IH CH EH K
+Krajina	K R AY N AH
+Krajina's	K R AY N AH Z
+Krajina's(2)	K R AY IY N AH Z
+Krajina(2)	K R AY IY N AH
+Kraker	K R EY K ER
+Krakow	K R AA K AW
+Krakow(2)	K R AA K AA V
+Krakow(3)	K R AE K AW
+Krakower	K R AE K OW ER
+Krakowski	K R AH K AO F S K IY
+Kral	K R AE L
+Kralicek	K R AA L IH CH EH K
+Kralik	K R AA L IH K
+Krall	K R AO L
+Kram	K R AE M
+Kramar	K R AE M ER
+Kramer	K R EY M ER
+Kramer's	K R EY M ER Z
+Kramlich	K R AE M L IH K
+Kramm	K R AE M
+Kramme	K R AE M
+Krammer	K R AE M ER
+Krammes	K R AE M Z
+Kramp	K R AE M P
+Krampe	K R AE M P
+Krandall	K R AE N D AH L
+Krane	K R EY N
+Kraner	K R EY N ER
+Kranich	K R AE N IH CH
+Krans	K R AE N Z
+Krantz	K R AE N T S
+Kranz	K R AE N Z
+Kranzler	K R AE N Z L ER
+Krapels	K R AE P AH L Z
+Krapf	K R AE P F
+Krapp	K R AE P
+Kraprayoon	K R AE P R AA Y UW N
+Kras	K R AE S
+Krasinski	K R AH S IH N S K IY
+Kraska	K R AA S K AH
+Krasner	K R AE S N ER
+Krasnoff	K R AE S N AO F
+Krasnow	K R AA S N OW
+Krasnoyarsk	K R AE S N OY AA R S K
+Krasny	K R AE Z N IY
+Krasowski	K R AH S AO F S K IY
+Krass	K R AE S
+Kraszewski	K R AH SH EH F S K IY
+Krat	K R AE T
+Kratky	K R AE T K IY
+Kratochvil	K R AE T AH K V AH L
+Kratt	K R AE T
+Kratz	K R AE T S
+Kratzer	K R EY T Z ER
+Kratzke	K R AE T S K IY
+Krauer	K R AW R
+Kraus	K R AW S
+Krause	K R AO S
+Krauser	K R AW S ER
+Kraushaar	K R AW SH AA R
+Krauskopf	K R AW S K AO F
+Krauss	K R AW S
+Krausse	K R AO S
+Krausz	K R AW SH
+Kraut	K R AW T
+Krauter	K R AW T ER
+Krauth	K R AO TH
+Krauthammer	K R AW T HH AE M ER
+Krauze	K R AW Z
+Kravchuk	K R AA V CH UH K
+Kravchuk's	K R AA V CH UH K Z
+Kravetz	K R AE V IH T S
+Kravis	K R AE V IH S
+Kravitz	K R AE V IH T S
+Krawccykiewi	K R AW CH IH K UW IY
+Krawchuk	K R AO CH AH K
+Krawczak	K R AA V CH AE K
+Krawczyk	K R AA V CH IH K
+Krawiec	K R AA V IY K
+Krawitz	K R AA W IH T S
+Kray	K R EY
+Kraynak	K R EY N AH K
+Kreager	K R IY G ER
+Kreamer	K R IY M ER
+Krebbs	K R EH B Z
+Krebs	K R EH B Z
+Krebs's	K R EH B Z IH Z
+Krebsbach	K R EH B Z B AA K
+Krech	K R EH K
+Krecko	K R EH K OW
+Kredietbank	K R EH D IY T B AE NG K
+Kredit	K R EH T IH T
+Kreditanstalt	K R EH D IH T AH N S T AO L T
+Kreeger	K R IY G ER
+Kreft	K R EH F T
+Kreg	K R EH G
+Kregel	K R EH G AH L
+Kreger	K R IY G ER
+Kreh	K R EH
+Krehbiel	K R EH B IY L
+Kreher	K R EH R
+Kreicher	K R AY K ER
+Kreider	K R AY D ER
+Kreidler	K R AY D AH L ER
+Kreidler(2)	K R AY D L ER
+Kreifels	K R AY F AH L Z
+Kreig	K R IY G
+Kreiger	K R AY G ER
 kreiling	K R AY L IH NG
 kreimer	K R AY M ER
-krein	K R EY N
-kreiner	K R AY N ER
-kreis	K R IY Z
-kreisberg	K R AY S B ER G
-kreischer	K R AY SH ER
-kreisel	K R AY S AH L
-kreiser	K R AY S ER
-kreisher	K R IY IH SH ER
-kreisler	K R AY S L ER
-kreisman	K R AY S M AH N
-kreiss	K R AY S
-kreiter	K R AY T ER
-kreitman	K R AY T M AH N
-kreitner	K R AY T N ER
-kreitz	K R IY T S
-kreitzberg	K R AY T S B ER G
-kreitzer	K R AY T Z ER
-krejci	K R EH JH S IY
-krell	K R EH L
-kremer	K R IY M ER
-kremers	K R IY M ER Z
-kremlin	K R EH M L AH N
-kremlin's	K R EH M L IH N Z
-kremlin(2)	K R EH M L IH N
+Krein	K R EY N
+Kreiner	K R AY N ER
+Kreis	K R IY Z
+Kreisberg	K R AY S B ER G
+Kreischer	K R AY SH ER
+Kreisel	K R AY S AH L
+Kreiser	K R AY S ER
+Kreisher	K R IY IH SH ER
+Kreisler	K R AY S L ER
+Kreisman	K R AY S M AH N
+Kreiss	K R AY S
+Kreiter	K R AY T ER
+Kreitman	K R AY T M AH N
+Kreitner	K R AY T N ER
+Kreitz	K R IY T S
+Kreitzberg	K R AY T S B ER G
+Kreitzer	K R AY T Z ER
+Krejci	K R EH JH S IY
+Krell	K R EH L
+Kremer	K R IY M ER
+Kremers	K R IY M ER Z
+Kremlin	K R EH M L AH N
+Kremlin's	K R EH M L IH N Z
+Kremlin(2)	K R EH M L IH N
 kremlinologist	K R EH M L IH N AA L AH JH IH S T
 kremlinologists	K R EH M L IH N AA L AH JH IH S T S
 kremlinologists(2)	K R EH M L IH N AA L AH JH IH S S
 kremlinologists(3)	K R EH M L IH N AA L AH JH IH S
-krempa	K R EH M P AH
-krempasky	K R IH M P AA S K IY
-krempler	K R EH M P L ER
-kremplers	K R EH M P L ER Z
-kren	K R EH N
-krenek	K R EH N IH K
-krengel	K R EH NG G AH L
-krenik	K R EH N IH K
-krenke	K R EH NG K
-krenn	K R EH N
-krentz	K R EH N T S
-krenwinkle	K R EH N W IH NG K AH L
-krenwinkle's	K R EH N W IH NG K AH L Z
-krenz	K R EH N Z
-krenzer	K R EH N Z ER
-krepps	K R EH P S
-kreps	K R EH P S
-kresa	K R IY S ER
-kresge	K R EH S G IY
-kreslovsky	K R EH S L AO V S K IY
-kress	K R EH S
-kresse	K R EH S
-kresser	K R EH S ER
-kressin	K R EH S IH N
-kressler	K R EH S L ER
-kretchman	K R EH CH M AH N
-kretchmer	K R EH CH M ER
-kretsch	K R EH CH
-kretschmar	K R EH CH M ER
-kretschmer	K R EH CH M ER
-kretz	K R EH T S
-kretzer	K R EH T Z ER
-kretzschmar	K R EH CH M ER
-kreuger	K R OY G ER
-kreul	K R UW L
-kreuser	K R OY S ER
-kreuter	K R OY T ER
-kreutz	K R UW T S
-kreuzer	K R UW Z ER
-krewson	K R UW S AH N
-krey	K R EY
-kribs	K R IH B Z
-krichbaum	K R IH K B AW M
-krick	K R IH K
-krider	K R AY D ER
-kridler	K R IH D L ER
-kriebel	K R IY B AH L
-krieg	K R IY G
-kriegel	K R IY G AH L
-krieger	K R IY G ER
-krieger's	K R IY G ER Z
-krienke	K R IY NG K
-krier	K R AY ER
-kriese	K R IY Z
-kriesel	K R IY S AH L
-kriete	K R IY T
-krigbaum	K R IH G B AW M
-kriger	K R AY G ER
-krigsten	K R IH G S T IH N
-krikalev	K R IH K AH L EH V
-krikalev's	K R IH K AH L EH V Z
-krikorian	K R IH K AO R IY AH N
+Krempa	K R EH M P AH
+Krempasky	K R IH M P AA S K IY
+Krempler	K R EH M P L ER
+Kremplers	K R EH M P L ER Z
+Kren	K R EH N
+Krenek	K R EH N IH K
+Krengel	K R EH NG G AH L
+Krenik	K R EH N IH K
+Krenke	K R EH NG K
+Krenn	K R EH N
+Krentz	K R EH N T S
+Krenwinkle	K R EH N W IH NG K AH L
+Krenwinkle's	K R EH N W IH NG K AH L Z
+Krenz	K R EH N Z
+Krenzer	K R EH N Z ER
+Krepps	K R EH P S
+Kreps	K R EH P S
+Kresa	K R IY S ER
+Kresge	K R EH S G IY
+Kreslovsky	K R EH S L AO V S K IY
+Kress	K R EH S
+Kresse	K R EH S
+Kresser	K R EH S ER
+Kressin	K R EH S IH N
+Kressler	K R EH S L ER
+Kretchman	K R EH CH M AH N
+Kretchmer	K R EH CH M ER
+Kretsch	K R EH CH
+Kretschmar	K R EH CH M ER
+Kretschmer	K R EH CH M ER
+Kretz	K R EH T S
+Kretzer	K R EH T Z ER
+Kretzschmar	K R EH CH M ER
+Kreuger	K R OY G ER
+Kreul	K R UW L
+Kreuser	K R OY S ER
+Kreuter	K R OY T ER
+Kreutz	K R UW T S
+Kreuzer	K R UW Z ER
+Krewson	K R UW S AH N
+Krey	K R EY
+Kribs	K R IH B Z
+Krichbaum	K R IH K B AW M
+Krick	K R IH K
+Krider	K R AY D ER
+Kridler	K R IH D L ER
+Kriebel	K R IY B AH L
+Krieg	K R IY G
+Kriegel	K R IY G AH L
+Krieger	K R IY G ER
+Krieger's	K R IY G ER Z
+Krienke	K R IY NG K
+Krier	K R AY ER
+Kriese	K R IY Z
+Kriesel	K R IY S AH L
+Kriete	K R IY T
+Krigbaum	K R IH G B AW M
+Kriger	K R AY G ER
+Krigsten	K R IH G S T IH N
+Krikalev	K R IH K AH L EH V
+Krikalev's	K R IH K AH L EH V Z
+Krikorian	K R IH K AO R IY AH N
 krill	K R IH L
-krim	K R IH M
-kriminyok	K R IH M IH N Y AO K
-krimmel	K R IH M AH L
-kriner	K R AY N ER
-kring	K R IH NG
-kringen	K R IH NG AH N
-kringley	K R IH NG G L IY
-krings	K R IH NG Z
-krinke	K R IH NG K
-krinsky	K R IH N S K IY
-kris	K R IH S
-krisch	K R IH SH
-krischer	K R IH SH ER
-krise	K R AY Z
-krisher	K R IH SH ER
-krishna	K R IH SH N AH
-krishna(2)	K R IY SH N AH
-krishnan	K R IH SH N AH N
-krisko	K R IH S K OW
-krispies	K R IH S P IY Z
-kriss	K R IH S
-krist	K R IH S T
-krista	K R IH S T AH
-kristall	K R IH S T AH L
-kristallnacht	K R IH S T AH L N AA K T
-kristen	K R IH S T AH N
-kristensen	K R IH S T AH N S AH N
-kristi	K R IH S T IY
-kristi's	K R IH S T IY Z
-kristiansen	K R IH S CH AH N S AH N
-kristie	K R IH S T IY
-kristin	K R IH S T IH N
-kristina	K R IH S T IY N AH
-kristine	K R IH S T IY N
-kristof	K R IH S T AH F
-kristoff	K R IH S T AO F
-kristoffe	K R IH S T AO F
-kristofferson	K R IH S T AO F ER S AH N
-kristol	K R IH S T AH L
-kristol's	K R IH S T AH L Z
-kristopher	K R IH S T AH F ER
-kristopher's	K R IH S T AH F ER Z
-kristy	K R IH S T IY
-kritz	K R IH T S
-kritzer	K R IH T Z ER
-krivanek	K R IH V AH N IH K
-kriz	K R IH Z
-krizan	K R IH Z AH N
-krizek	K R IH Z EH K
-krob	K R AA B
-kroboth	K R AA B AH TH
-kroc	K R AA K
-kroc's	K R AA K S
-krock	K R AA K
-kroeber	K R OW B ER
-kroeber's	K R OW B ER Z
-kroeger	K R OW G ER
-kroeger's	K R OW G ER Z
-kroegers	K R OW G ER Z
-kroeker	K R OW K ER
-kroener	K R OW N ER
-kroening	K R AA AH N IH NG
-kroenke	K R OW NG K
-kroes	K R OW Z
-kroese	K R OW S
-kroeze	K R OW Z
-kroft	K R AA F T
-krog	K R AA G
-kroger	K R OW G ER
-kroger's	K R OW G ER Z
-krogh	K R OW
-krogman	K R AA G M AH N
-krogstad	K R AA G S T AH D
-kroh	K R OW
-krohn	K R OW N
-krok	K R AA K
-krol	K R AO L
-krolak	K R OW L AH K
-krolczyk	K R OW L CH IH K
-krolick	K R AA L IH K
-krolikowski	K R AH L IH K AO F S K IY
-kroll	K R OW L
-krom	K R AA M
+Krim	K R IH M
+Kriminyok	K R IH M IH N Y AO K
+Krimmel	K R IH M AH L
+Kriner	K R AY N ER
+Kring	K R IH NG
+Kringen	K R IH NG AH N
+Kringley	K R IH NG G L IY
+Krings	K R IH NG Z
+Krinke	K R IH NG K
+Krinsky	K R IH N S K IY
+Kris	K R IH S
+Krisch	K R IH SH
+Krischer	K R IH SH ER
+Krise	K R AY Z
+Krisher	K R IH SH ER
+Krishna	K R IH SH N AH
+Krishna(2)	K R IY SH N AH
+Krishnan	K R IH SH N AH N
+Krisko	K R IH S K OW
+Krispies	K R IH S P IY Z
+Kriss	K R IH S
+Krist	K R IH S T
+Krista	K R IH S T AH
+Kristall	K R IH S T AH L
+Kristallnacht	K R IH S T AH L N AA K T
+Kristen	K R IH S T AH N
+Kristensen	K R IH S T AH N S AH N
+Kristi	K R IH S T IY
+Kristi's	K R IH S T IY Z
+Kristiansen	K R IH S CH AH N S AH N
+Kristie	K R IH S T IY
+Kristin	K R IH S T IH N
+Kristina	K R IH S T IY N AH
+Kristine	K R IH S T IY N
+Kristof	K R IH S T AH F
+Kristoff	K R IH S T AO F
+Kristoffe	K R IH S T AO F
+Kristofferson	K R IH S T AO F ER S AH N
+Kristol	K R IH S T AH L
+Kristol's	K R IH S T AH L Z
+Kristopher	K R IH S T AH F ER
+Kristopher's	K R IH S T AH F ER Z
+Kristy	K R IH S T IY
+Kritz	K R IH T S
+Kritzer	K R IH T Z ER
+Krivanek	K R IH V AH N IH K
+Kriz	K R IH Z
+Krizan	K R IH Z AH N
+Krizek	K R IH Z EH K
+Krob	K R AA B
+Kroboth	K R AA B AH TH
+Kroc	K R AA K
+Kroc's	K R AA K S
+Krock	K R AA K
+Kroeber	K R OW B ER
+Kroeber's	K R OW B ER Z
+Kroeger	K R OW G ER
+Kroeger's	K R OW G ER Z
+Kroegers	K R OW G ER Z
+Kroeker	K R OW K ER
+Kroener	K R OW N ER
+Kroening	K R AA AH N IH NG
+Kroenke	K R OW NG K
+Kroes	K R OW Z
+Kroese	K R OW S
+Kroeze	K R OW Z
+Kroft	K R AA F T
+Krog	K R AA G
+Kroger	K R OW G ER
+Kroger's	K R OW G ER Z
+Krogh	K R OW
+Krogman	K R AA G M AH N
+Krogstad	K R AA G S T AH D
+Kroh	K R OW
+Krohn	K R OW N
+Krok	K R AA K
+Krol	K R AO L
+Krolak	K R OW L AH K
+Krolczyk	K R OW L CH IH K
+Krolick	K R AA L IH K
+Krolikowski	K R AH L IH K AO F S K IY
+Kroll	K R OW L
+Krom	K R AA M
 krome	K R OW M
 kromer	K R OW M ER
 kromm	K R AA M
@@ -66476,342 +66485,342 @@ krzywicki	K R IH V IH T S K IY
 krzyzanowski	K R IH Z AH N AO F S K IY
 ksiazek	K AH S IY AA Z EH K
 ku	K UW
-kuala	K W AA L AH
-kuan	K W AA N
-kuba	K Y UW B AH
-kubacki	K AH B AA T S K IY
-kubala	K AH B AA L AH
-kubala(2)	K UW B AA L AH
-kuban	K Y UW B AH N
-kubas	K UW B AH Z
-kubat	K UW B AH T
-kube	K Y UW B
-kubena	K AH B IY N AH
-kuberski	K AH B ER S K IY
-kubes	K Y UW B Z
-kubiak	K UW B IY AE K
-kubic	K Y UW B IH K
-kubica	K Y UW B IH K AH
-kubicek	K AH B IH CH EH K
-kubick	K Y UW B IH K
-kubicki	K AH B IH T S K IY
-kubik	K Y UW B IH K
-kubin	K Y UW B IH N
-kubinski	K AH B IH N S K IY
-kubis	K UW B IH S
-kubisiak	K AH B IH S IY AE K
-kubitz	K Y UW B IH T S
-kubler	K Y UW B AH L ER
-kubler(2)	K Y UW B L ER
-kubly	K AH B L IY
-kubo	K Y UW B OW
-kubota	K UW B OW T AH
-kubrick	K Y UW B R IH K
-kubrick's	K Y UW B R IH K S
-kuby	K Y UW B IY
-kuc	K AH K
-kucan	K Y UW K AH N
-kucera	K AH CH IH R AH
-kucewicz	K Y UW S IH W IH T S
-kuch	K AH CH
-kuchar	K AH K ER
-kucharski	K AH CH AA R S K IY
-kuchenbecker	K AH K IH N B EH K ER
-kucher	K AH K ER
-kuchera	K AH CH ER AH
-kuchera(2)	K UW CH EH R AH
-kuchinski	K AH CH IH N S K IY
-kuchinsky	K AH CH IH N S K IY
-kuchler	K AH K AH L ER
-kuchler(2)	K AH K L ER
-kuchma	K UW CH M AH
-kuchma's	K UW CH M AH Z
-kuchta	K AH CH T AH
-kucinski	K AH CH IH N S K IY
-kuck	K AH K
-kuczek	K AH CH EH K
-kuczynski	K AH CH IH N S K IY
-kuder	K Y UW D ER
-kudla	K AH D L AH
-kudlow	K AH D L OW
-kudner	K AH D N ER
+Kuala	K W AA L AH
+Kuan	K W AA N
+Kuba	K Y UW B AH
+Kubacki	K AH B AA T S K IY
+Kubala	K AH B AA L AH
+Kubala(2)	K UW B AA L AH
+Kuban	K Y UW B AH N
+Kubas	K UW B AH Z
+Kubat	K UW B AH T
+Kube	K Y UW B
+Kubena	K AH B IY N AH
+Kuberski	K AH B ER S K IY
+Kubes	K Y UW B Z
+Kubiak	K UW B IY AE K
+Kubic	K Y UW B IH K
+Kubica	K Y UW B IH K AH
+Kubicek	K AH B IH CH EH K
+Kubick	K Y UW B IH K
+Kubicki	K AH B IH T S K IY
+Kubik	K Y UW B IH K
+Kubin	K Y UW B IH N
+Kubinski	K AH B IH N S K IY
+Kubis	K UW B IH S
+Kubisiak	K AH B IH S IY AE K
+Kubitz	K Y UW B IH T S
+Kubler	K Y UW B AH L ER
+Kubler(2)	K Y UW B L ER
+Kubly	K AH B L IY
+Kubo	K Y UW B OW
+Kubota	K UW B OW T AH
+Kubrick	K Y UW B R IH K
+Kubrick's	K Y UW B R IH K S
+Kuby	K Y UW B IY
+Kuc	K AH K
+Kucan	K Y UW K AH N
+Kucera	K AH CH IH R AH
+Kucewicz	K Y UW S IH W IH T S
+Kuch	K AH CH
+Kuchar	K AH K ER
+Kucharski	K AH CH AA R S K IY
+Kuchenbecker	K AH K IH N B EH K ER
+Kucher	K AH K ER
+Kuchera	K AH CH ER AH
+Kuchera(2)	K UW CH EH R AH
+Kuchinski	K AH CH IH N S K IY
+Kuchinsky	K AH CH IH N S K IY
+Kuchler	K AH K AH L ER
+Kuchler(2)	K AH K L ER
+Kuchma	K UW CH M AH
+Kuchma's	K UW CH M AH Z
+Kuchta	K AH CH T AH
+Kucinski	K AH CH IH N S K IY
+Kuck	K AH K
+Kuczek	K AH CH EH K
+Kuczynski	K AH CH IH N S K IY
+Kuder	K Y UW D ER
+Kudla	K AH D L AH
+Kudlow	K AH D L OW
+Kudner	K AH D N ER
 kudos	K UW D OW S
-kudrna	K AH D ER N AH
+Kudrna	K AH D ER N AH
 kudzu	K AH D Z UW
-kuebler	K UH B AH L ER
-kuebler(2)	K UH B L ER
-kuechler	K UH K AH L ER
-kuechler(2)	K UH K L ER
-kueck	K UW K
-kuecker	K UH K ER
-kuehl	K UH L
-kuehler	K UH L ER
-kuehn	K UW N
-kuehne	K UW N
-kuehnel	K UH N AH L
-kuehner	K UH N ER
-kuehnle	K UH N AH L
-kueker	K UH K ER
-kuenheim	K Y UW AH N HH AY M
-kuennen	K UH N AH N
-kuenstler	K UH N S AH L ER
-kuenstler(2)	K UH N S L ER
-kuenzel	K UH N Z AH L
-kuenzi	K UW EY N Z IY
-kuenzli	K UH N Z L IY
-kuester	K UH S T ER
-kuether	K UH DH ER
-kufahl	K AH F AA L
-kuffel	K AH F AH L
-kuffner	K AH F N ER
-kugel	K UW G AH L
-kugelman	K AH G AH L M AH N
-kugler	K UW G AH L ER
-kugler(2)	K UW G L ER
-kuhar	K UW ER
-kuhl	K AH L
-kuhle	K UW AH L
-kuhlenschmidt	K Y UW L AH N SH M IH T
-kuhlman	K UW L M AH N
-kuhlmann	K UW L M AH N
-kuhn	K UW N
-kuhne	K AH N
-kuhner	K UW N ER
-kuhnert	K UW N ER T
-kuhnke	K AH NG K
-kuhnle	K AH N AH L
-kuhns	K UW N Z
-kuhr	K ER
-kuhrt	K ER T
-kuiken	K UW K AH N
-kuiper	K UW P ER
-kuipers	K UW P ER Z
-kujala	K AY AA L AH
-kujawa	K UW JH AA W AH
-kujawski	K AH Y AA F S K IY
-kuk	K AH K
-kuker	K Y UW K ER
-kukje	K UW K Y IH
-kukje(2)	K UW K JH EY
-kukje(3)	K UW K JH IY
-kukla	K AH K L AH
-kuklinski	K AH K L IH N S K IY
-kukowski	K AH K AO F S K IY
-kukuk	K UW K AH K
-kula	K UW L AH
-kulaga	K UW L AA G AH
-kulakowski	K Y UW L AH K AO F S K IY
-kulas	K Y UW L AH Z
-kulesa	K Y UW L IY S AH
-kulesza	K Y UW L EH SH AH
-kulhanek	K AH L HH AH N EH K
-kulich	K Y UW L IH K
-kulick	K Y UW L IH K
-kulig	K Y UW L IH G
-kuligowski	K Y UW L IH G AO F S K IY
-kulik	K Y UW L IH K
-kulikowski	K Y UW L IH K AO F S K IY
-kulinski	K Y UW L IH N S K IY
-kulis	K UW L IH S
-kulish	K Y UW L IH SH
-kulka	K AH L K AH
-kulkarni	K AH L K AA R N IY
-kull	K AH L
-kulla	K AH L AH
-kullberg	K AH L B ER G
-kullman	K AH L M AH N
-kully	K AH L IY
-kulon	K UW L AO N
-kulow	K Y UW L OW
-kulp	K AH L P
-kulpa	K AH L P AH
-kulwicki	K AH L V IH T S K IY
-kulzer	K AH L Z ER
-kumagai	K UW M AA G AA IY
-kumar	K UW M AA R
-kumaratunga	K UW M AA R AH T AH N G AH
-kumarisami	K UW M AA R AH S AA M IY
-kumbaya	K UH M B AY Y AH
-kumble	K AH M B AH L
-kume	K Y UW M
-kumho	K AH M HH OW
-kumler	K AH M L ER
-kumm	K AH M
-kummer	K AH M ER
-kumouri	K UW M AO R IY
-kumouri's	K UW M AO R IY Z
-kump	K AH M P
-kumpf	K AH M P F
+Kuebler	K UH B AH L ER
+Kuebler(2)	K UH B L ER
+Kuechler	K UH K AH L ER
+Kuechler(2)	K UH K L ER
+Kueck	K UW K
+Kuecker	K UH K ER
+Kuehl	K UH L
+Kuehler	K UH L ER
+Kuehn	K UW N
+Kuehne	K UW N
+Kuehnel	K UH N AH L
+Kuehner	K UH N ER
+Kuehnle	K UH N AH L
+Kueker	K UH K ER
+Kuenheim	K Y UW AH N HH AY M
+Kuennen	K UH N AH N
+Kuenstler	K UH N S AH L ER
+Kuenstler(2)	K UH N S L ER
+Kuenzel	K UH N Z AH L
+Kuenzi	K UW EY N Z IY
+Kuenzli	K UH N Z L IY
+Kuester	K UH S T ER
+Kuether	K UH DH ER
+Kufahl	K AH F AA L
+Kuffel	K AH F AH L
+Kuffner	K AH F N ER
+Kugel	K UW G AH L
+Kugelman	K AH G AH L M AH N
+Kugler	K UW G AH L ER
+Kugler(2)	K UW G L ER
+Kuhar	K UW ER
+Kuhl	K AH L
+Kuhle	K UW AH L
+Kuhlenschmidt	K Y UW L AH N SH M IH T
+Kuhlman	K UW L M AH N
+Kuhlmann	K UW L M AH N
+Kuhn	K UW N
+Kuhne	K AH N
+Kuhner	K UW N ER
+Kuhnert	K UW N ER T
+Kuhnke	K AH NG K
+Kuhnle	K AH N AH L
+Kuhns	K UW N Z
+Kuhr	K ER
+Kuhrt	K ER T
+Kuiken	K UW K AH N
+Kuiper	K UW P ER
+Kuipers	K UW P ER Z
+Kujala	K AY AA L AH
+Kujawa	K UW JH AA W AH
+Kujawski	K AH Y AA F S K IY
+Kuk	K AH K
+Kuker	K Y UW K ER
+Kukje	K UW K Y IH
+Kukje(2)	K UW K JH EY
+Kukje(3)	K UW K JH IY
+Kukla	K AH K L AH
+Kuklinski	K AH K L IH N S K IY
+Kukowski	K AH K AO F S K IY
+Kukuk	K UW K AH K
+Kula	K UW L AH
+Kulaga	K UW L AA G AH
+Kulakowski	K Y UW L AH K AO F S K IY
+Kulas	K Y UW L AH Z
+Kulesa	K Y UW L IY S AH
+Kulesza	K Y UW L EH SH AH
+Kulhanek	K AH L HH AH N EH K
+Kulich	K Y UW L IH K
+Kulick	K Y UW L IH K
+Kulig	K Y UW L IH G
+Kuligowski	K Y UW L IH G AO F S K IY
+Kulik	K Y UW L IH K
+Kulikowski	K Y UW L IH K AO F S K IY
+Kulinski	K Y UW L IH N S K IY
+Kulis	K UW L IH S
+Kulish	K Y UW L IH SH
+Kulka	K AH L K AH
+Kulkarni	K AH L K AA R N IY
+Kull	K AH L
+Kulla	K AH L AH
+Kullberg	K AH L B ER G
+Kullman	K AH L M AH N
+Kully	K AH L IY
+Kulon	K UW L AO N
+Kulow	K Y UW L OW
+Kulp	K AH L P
+Kulpa	K AH L P AH
+Kulwicki	K AH L V IH T S K IY
+Kulzer	K AH L Z ER
+Kumagai	K UW M AA G AA IY
+Kumar	K UW M AA R
+Kumaratunga	K UW M AA R AH T AH N G AH
+Kumarisami	K UW M AA R AH S AA M IY
+Kumbaya	K UH M B AY Y AH
+Kumble	K AH M B AH L
+Kume	K Y UW M
+Kumho	K AH M HH OW
+Kumler	K AH M L ER
+Kumm	K AH M
+Kummer	K AH M ER
+Kumouri	K UW M AO R IY
+Kumouri's	K UW M AO R IY Z
+Kump	K AH M P
+Kumpf	K AH M P F
 kumquat	K AH M K W AA T
-kun	K AH N
-kuna	K Y UW N AH
-kunaev	K Y UW N EY V
-kunath	K AH N AH TH
-kunayev	K Y UW N EY AH V
-kunce	K AH N S
-kunda	K AH N D AH
-kunde	K AH N D
-kundera	K AH N D EH R AH
-kundert	K AH N D ER T
-kundinger	K AH N D IH NG ER
-kundrat	K AH N D R AH T
-kundun	K UH N D AH N
-kunert	K Y UW N ER T
-kunes	K Y UW N Z
-kunesh	K AH N IH SH
-kuney	K Y UW N IY
-kung	K AH NG
-kunin	K Y UW N IH N
-kunio	K Y UW N IY OW
-kunka	K AH NG K AH
-kunkel	K AH NG K AH L
-kunkle	K AH NG K AH L
-kunkler	K AH NG K L ER
-kuns	K AH N Z
-kunselman	K AH N S AH L M AH N
-kunsman	K AH N S M AH N
-kunst	K AH N S T
-kunstler	K AH N S T L ER
-kunstler(2)	K AH N S L ER
-kuntsler	K AH N T S L ER
-kuntz	K AH N T S
-kuntze	K AH N T Z
-kuntzman	K AH N T S M AH N
-kunz	K AH N Z
-kunze	K AH N Z
-kunzelman	K AH N Z AH L M AH N
-kunzler	K AH N Z L ER
-kunzman	K AH N Z M AH N
-kuo	K UW OW
-kuomintang	K W OW M IH N T AE NG
-kuomintang's	K W OW M IH N T AE NG Z
-kuomintang's(2)	G W OW M IH N T AE NG Z
-kuomintang(2)	G W OW M IH N T AE NG
-kuow	K Y UW OW
-kupek	K UW P IH K
-kuper	K Y UW P ER
-kuperman	K UW P ER M AH N
-kupfer	K AH P F ER
-kupferman	K AH P F ER M AH N
-kupiec	K AH P IY K
-kupka	K AH P K AH
-kupor	K Y UW P ER
-kupper	K AH P ER
-kupres	K UW P R AH S
-kuralt	K Y ER AO L T
-kuralt's	K Y ER AO L T S
-kuramoto	K UH R AA M OW T OW
-kuranari	K UH R AH N AA R IY
-kuras	K UH R AH Z
-kurd	K ER D
-kurdish	K ER D IH SH
-kurdistan	K ER D IH S T AE N
-kurds	K ER D Z
-kurdziel	K ER D Z IY L
-kurek	K Y UW R EH K
-kurian	K Y UH R IY AH N
-kuriansky	K UH R IY AE N S K IY
-kurihara	K UW R IH HH AA R AH
-kuril	K ER AH L
-kurilla	K ER IH L AH
-kurinsky	K Y ER IH N S K IY
-kuriyama	K UW R IH Y AA M AH
-kurk	K ER K
-kurka	K ER K AH
-kurkjian	K ER K JH IY AH N
-kurkowski	K ER K AO F S K IY
-kurlak	K ER L AE K
-kurland	K ER L AH N D
-kurlander	K ER L AH N D ER
-kurman	K ER M AH N
-kurmel	K ER M AH L
-kurnit	K ER N IH T
-kuroda	K ER OW D AH
-kurokawa	K UW R OW K AA W AH
-kurosawa	K UH R OW S AA W AH
-kurowski	K ER AO F S K IY
-kurshikov	K ER SH N IH K AO V
-kurshikov(2)	K ER SH N IH K AO F
-kurt	K ER T
-kurtenbach	K ER T IH N B AA K
-kurth	K ER TH
-kurtis	K ER T IH S
-kurtz	K ER T S
-kurtzman	K ER T S M AH N
-kuruman	K Y UH R UW M AH N
-kurumizowa	K UH R UW M IY Z OW AH
-kurumizowa's	K UH R UW M IY Z OW AH Z
-kury	K Y UW R IY
-kurylo	K ER IH L OW
-kurz	K ER Z
-kurzawa	K UH R Z AA W AH
-kurzban	K ER Z B AE N
-kurzweil	K ER Z W AY L
-kus	K AH S
-kusa	K UW Z AH
-kusa(2)	K UW S AH
-kusch	K AH SH
-kuschel	K AH SH AH L
-kuse	K Y UW Z
-kusek	K UW S EH K
-kusel	K UW S AH L
-kush	K UH SH
-kushner	K AH SH N ER
-kushnir	K AH SH N ER
-kusiak	K AH S IY AE K
-kuske	K AH S K
-kusler	K AH S AH L ER
-kusler(2)	K AH S L ER
-kuss	K AH S
-kusserow	K AH S ER OW
-kussman	K AH S M AH N
-kuster	K AH S T ER
-kustra	K AH S T R AH
-kut	K AH T
-kutch	K AH CH
-kutcher	K AH CH ER
-kutchna	K AH CH N AH
-kuter	K Y UW T ER
-kutner	K AH T N ER
-kutsch	K AH CH
-kutscher	K AH CH ER
-kuttab	K UW T AE B
-kutter	K AH T ER
-kuttner	K AH T N ER
-kutuzovsky	K UW T AH Z AA V S K IY
-kutz	K AH T S
-kutzer	K AH T Z ER
-kuvin	K UW V IH N
-kuwahara	K UW W AA HH AA R AH
-kuwait	K UW W EY T
-kuwait's	K UW W EY T S
-kuwaiti	K UW W EY T IY
-kuwaitis	K UW W EY T IY Z
-kuwam	K Y UW W AA M
-kuykendall	K AY K EH N D AA L
-kuyper	K AY P ER
-kuzara	K Y UW Z AA R AH
-kuze	K Y UW Z
-kuzel	K UW Z AH L
-kuzma	K AH Z M AH
-kuzminski	K AH Z M IH N S K IY
-kuznets	K AH Z N EH T S
-kuznia	K AH Z N IY AH
-kuzniar	K AH Z N Y ER
-kuznicki	K AH Z N IH T S K IY
-kvale	K AH V EY L
-kvam	K AH V AE M
-kvamme	K AH V AE M
-kvamme(2)	K AH V AA M EY
-kvamme(3)	K V AA M EY
-kvant	K AH V AA N T
-kvasnicka	K AH V AH S N IH S K AH
+Kun	K AH N
+Kuna	K Y UW N AH
+Kunaev	K Y UW N EY V
+Kunath	K AH N AH TH
+Kunayev	K Y UW N EY AH V
+Kunce	K AH N S
+Kunda	K AH N D AH
+Kunde	K AH N D
+Kundera	K AH N D EH R AH
+Kundert	K AH N D ER T
+Kundinger	K AH N D IH NG ER
+Kundrat	K AH N D R AH T
+Kundun	K UH N D AH N
+Kunert	K Y UW N ER T
+Kunes	K Y UW N Z
+Kunesh	K AH N IH SH
+Kuney	K Y UW N IY
+Kung	K AH NG
+Kunin	K Y UW N IH N
+Kunio	K Y UW N IY OW
+Kunka	K AH NG K AH
+Kunkel	K AH NG K AH L
+Kunkle	K AH NG K AH L
+Kunkler	K AH NG K L ER
+Kuns	K AH N Z
+Kunselman	K AH N S AH L M AH N
+Kunsman	K AH N S M AH N
+Kunst	K AH N S T
+Kunstler	K AH N S T L ER
+Kunstler(2)	K AH N S L ER
+Kuntsler	K AH N T S L ER
+Kuntz	K AH N T S
+Kuntze	K AH N T Z
+Kuntzman	K AH N T S M AH N
+Kunz	K AH N Z
+Kunze	K AH N Z
+Kunzelman	K AH N Z AH L M AH N
+Kunzler	K AH N Z L ER
+Kunzman	K AH N Z M AH N
+Kuo	K UW OW
+Kuomintang	K W OW M IH N T AE NG
+Kuomintang's	K W OW M IH N T AE NG Z
+Kuomintang's(2)	G W OW M IH N T AE NG Z
+Kuomintang(2)	G W OW M IH N T AE NG
+Kuow	K Y UW OW
+Kupek	K UW P IH K
+Kuper	K Y UW P ER
+Kuperman	K UW P ER M AH N
+Kupfer	K AH P F ER
+Kupferman	K AH P F ER M AH N
+Kupiec	K AH P IY K
+Kupka	K AH P K AH
+Kupor	K Y UW P ER
+Kupper	K AH P ER
+Kupres	K UW P R AH S
+Kuralt	K Y ER AO L T
+Kuralt's	K Y ER AO L T S
+Kuramoto	K UH R AA M OW T OW
+Kuranari	K UH R AH N AA R IY
+Kuras	K UH R AH Z
+Kurd	K ER D
+Kurdish	K ER D IH SH
+Kurdistan	K ER D IH S T AE N
+Kurds	K ER D Z
+Kurdziel	K ER D Z IY L
+Kurek	K Y UW R EH K
+Kurian	K Y UH R IY AH N
+Kuriansky	K UH R IY AE N S K IY
+Kurihara	K UW R IH HH AA R AH
+Kuril	K ER AH L
+Kurilla	K ER IH L AH
+Kurinsky	K Y ER IH N S K IY
+Kuriyama	K UW R IH Y AA M AH
+Kurk	K ER K
+Kurka	K ER K AH
+Kurkjian	K ER K JH IY AH N
+Kurkowski	K ER K AO F S K IY
+Kurlak	K ER L AE K
+Kurland	K ER L AH N D
+Kurlander	K ER L AH N D ER
+Kurman	K ER M AH N
+Kurmel	K ER M AH L
+Kurnit	K ER N IH T
+Kuroda	K ER OW D AH
+Kurokawa	K UW R OW K AA W AH
+Kurosawa	K UH R OW S AA W AH
+Kurowski	K ER AO F S K IY
+Kurshikov	K ER SH N IH K AO V
+Kurshikov(2)	K ER SH N IH K AO F
+Kurt	K ER T
+Kurtenbach	K ER T IH N B AA K
+Kurth	K ER TH
+Kurtis	K ER T IH S
+Kurtz	K ER T S
+Kurtzman	K ER T S M AH N
+Kuruman	K Y UH R UW M AH N
+Kurumizowa	K UH R UW M IY Z OW AH
+Kurumizowa's	K UH R UW M IY Z OW AH Z
+Kury	K Y UW R IY
+Kurylo	K ER IH L OW
+Kurz	K ER Z
+Kurzawa	K UH R Z AA W AH
+Kurzban	K ER Z B AE N
+Kurzweil	K ER Z W AY L
+Kus	K AH S
+Kusa	K UW Z AH
+Kusa(2)	K UW S AH
+Kusch	K AH SH
+Kuschel	K AH SH AH L
+Kuse	K Y UW Z
+Kusek	K UW S EH K
+Kusel	K UW S AH L
+Kush	K UH SH
+Kushner	K AH SH N ER
+Kushnir	K AH SH N ER
+Kusiak	K AH S IY AE K
+Kuske	K AH S K
+Kusler	K AH S AH L ER
+Kusler(2)	K AH S L ER
+Kuss	K AH S
+Kusserow	K AH S ER OW
+Kussman	K AH S M AH N
+Kuster	K AH S T ER
+Kustra	K AH S T R AH
+Kut	K AH T
+Kutch	K AH CH
+Kutcher	K AH CH ER
+Kutchna	K AH CH N AH
+Kuter	K Y UW T ER
+Kutner	K AH T N ER
+Kutsch	K AH CH
+Kutscher	K AH CH ER
+Kuttab	K UW T AE B
+Kutter	K AH T ER
+Kuttner	K AH T N ER
+Kutuzovsky	K UW T AH Z AA V S K IY
+Kutz	K AH T S
+Kutzer	K AH T Z ER
+Kuvin	K UW V IH N
+Kuwahara	K UW W AA HH AA R AH
+Kuwait	K UW W EY T
+Kuwait's	K UW W EY T S
+Kuwaiti	K UW W EY T IY
+Kuwaitis	K UW W EY T IY Z
+Kuwam	K Y UW W AA M
+Kuykendall	K AY K EH N D AA L
+Kuyper	K AY P ER
+Kuzara	K Y UW Z AA R AH
+Kuze	K Y UW Z
+Kuzel	K UW Z AH L
+Kuzma	K AH Z M AH
+Kuzminski	K AH Z M IH N S K IY
+Kuznets	K AH Z N EH T S
+Kuznia	K AH Z N IY AH
+Kuzniar	K AH Z N Y ER
+Kuznicki	K AH Z N IH T S K IY
+Kvale	K AH V EY L
+Kvam	K AH V AE M
+Kvamme	K AH V AE M
+Kvamme(2)	K AH V AA M EY
+Kvamme(3)	K V AA M EY
+Kvant	K AH V AA N T
+Kvasnicka	K AH V AH S N IH S K AH
 kvetch	K AH V EH CH
 kvetch(2)	K V EH CH
-kveton	K AH V EH T AH N
-kvistad	K AH V IH S T AE D
-kvitsinsky	K AH V IH T S IH N S K IY
-kvitsinsky(2)	K V IH T S IH N S K IY
+Kveton	K AH V EH T AH N
+Kvistad	K AH V IH S T AE D
+Kvitsinsky	K AH V IH T S IH N S K IY
+Kvitsinsky(2)	K V IH T S IH N S K IY
 kwai	K W AY
 kwak	K W AE K
 kwan	K W AA N
@@ -68880,6 +68889,7 @@ leftwinger	L EH F T W IH NG ER
 leftwingers	L EH F T W IH NG ER Z
 lefty	L EH F T IY
 leg	L EH G
+leg(2)	L EY G
 leg's	L EH G Z
 legacies	L EH G AH S IY Z
 legacy	L EH G AH S IY
@@ -71107,6 +71117,7 @@ loken	L OW K AH N
 loker	L OW K ER
 lokey	L OW K IY
 lokken	L AA K AH N
+LOL	L OW L
 lola	L OW L AH
 loleta	L OW L EH T AH
 lolita	L OW L IY T AH
@@ -72735,9 +72746,9 @@ madill	M AA D IY L
 madis	M AE D AH S
 Madison	M AE D AH S AH N
 Madison's	M AE D AH S AH N Z
-madison's(2)	M AE D IH S AH N Z
+Madison's(2)	M AE D IH S AH N Z
 Madison(2)	M AE D IH S AH N
-madkins	M AE D K IH N Z
+Madkins	M AE D K IH N Z
 madl	M AE D AH L
 madlen	M AE D AH L AH N
 madlin	M AE D L IH N
@@ -73438,6 +73449,7 @@ malvie	M AO L V IY
 malvin	M AE L V IH N
 malvina	M AA L V IY N AH
 malvinas	M AO L V IY N AH S
+Malwarebytes	M AE L W AE R B IY T Z
 maly	M EY L IY
 malzahn	M AE L Z AH N
 mam	M AA M
@@ -74085,22 +74097,22 @@ marette	M ER EH T
 marez	M AA R EH Z
 marfa	M AA R F AH
 marga	M AA R G AH
-margalo	M AA R G AA L OW
-margalov	M AA G AH L AO V
+Margalo	M AA R G AA L OW
+Margalov	M AA G AH L AO V
 Margaret	M AA R G ER IH T
 Margaret's	M AA R G ER IH T S
-margaret's(2)	M AA R G R IH T S
+Margaret's(2)	M AA R G R IH T S
 Margaret(2)	M AA R G R AH T
-margaret(3)	M AA R G R IH T
-margareta	M AA R G AA R EH T AH
-margarete	M AA R G ER IY T
-margarethe	M AA R G AA R EH DH IY
-margaretten	M AA R G ER EH T AH N
-margarine	M AA R JH ER AH N
-margarita	M AA R G ER IY T AH
-margaritas	M AA R G EH R IY T AH S
-margaux	M AA R G OW
-marge	M AA R JH
+Margaret(3)	M AA R G R IH T
+Margareta	M AA R G AA R EH T AH
+Margarete	M AA R G ER IY T
+Margarethe	M AA R G AA R EH DH IY
+Margaretten	M AA R G ER EH T AH N
+Margarine	M AA R JH ER AH N
+Margarita	M AA R G ER IY T AH
+Margaritas	M AA R G EH R IY T AH S
+Margaux	M AA R G OW
+Marge	M AA R JH
 margeotes	M AA R JH IY OW T IY Z
 margerum	M AA R G ER AH M
 margery	M AA R JH ER IY
@@ -77158,13 +77170,13 @@ memorizes	M EH M ER AY Z IH Z
 memorizing	M EH M ER AY Z IH NG
 memory	M EH M ER IY
 memos	M EH M OW Z
-memotec	M EH M OW T EH K
+Memotec	M EH M OW T EH K
 Memphis	M EH M F AH S
 Memphis(2)	M EH M F IH S
-memphis(3)	M EH M P F AH S
-memphis(4)	M EH M P F IH S
-memtec	M EH M T EH K
-memtec's	M EH M T EH K S
+Memphis(3)	M EH M P F AH S
+Memphis(4)	M EH M P F IH S
+Memtec	M EH M T EH K
+Memtec's	M EH M T EH K S
 men	M EH N
 men's	M EH N Z
 mena	M IY N AH
@@ -79228,18 +79240,18 @@ missions	M IH SH AH N Z
 mississauga	M IH S IH S AO G AH
 Mississippi	M IH S IH S IH P IY
 Mississippi's	M IH S IH S IH P IY Z
-mississippian	M IH S IH S IH P IY AH N
-mississippians	M IH S IH S IH P IY AH N Z
-mississippis	M IH S IH S IH P IY Z
+Mississippian	M IH S IH S IH P IY AH N
+Mississippians	M IH S IH S IH P IY AH N Z
+Mississippis	M IH S IH S IH P IY Z
 missive	M IH S IH V
 missler	M IH S L ER
 Missoula	M IH Z UW L AH
 Missouri	M AH Z UH R IY
 Missouri's	M AH Z UH R IY Z
-missouri's(2)	M AH Z ER AH Z
+Missouri's(2)	M AH Z ER AH Z
 Missouri(2)	M AH Z ER AH
-missourian	M AH Z UH R IY AH N
-missourians	M AH Z UH R IY AH N Z
+Missourian	M AH Z UH R IY AH N
+Missourians	M AH Z UH R IY AH N Z
 misspeak	M IH S S P IY K
 misspeak(2)	M IH S P IY K
 misspell	M IH S S P EH L
@@ -80316,7 +80328,7 @@ moorco	M UH R K OW
 moorco(2)	M AO R K OW
 Moore	M UH R
 Moore's	M UH R Z
-moore's(2)	M AO R Z
+Moore's(2)	M AO R Z
 Moore(2)	M AO R
 moored	M UH R D
 moorefield	M UH R IH F IY L D
@@ -82340,6 +82352,7 @@ nationals	N AE SH AH N AH L Z
 nationals(2)	N AE SH N AH L Z
 nationhood	N EY SH AH N HH UH D
 nations	N EY SH AH N Z
+Nations	N EY SH AH N Z
 nations'	N EY SH AH N Z
 nationsbanc	N EY SH AH N Z B AE NG K
 nationsbanc's	N EY SH AH N Z B AE NG K
@@ -83091,10 +83104,10 @@ neuzil	N UW Z AH L
 neva	N EY V AH
 Nevada	N AH V AA D AH
 Nevada's	N AH V AE D AH Z
-nevada's(2)	N AH V AA D AH Z
+Nevada's(2)	N AH V AA D AH Z
 Nevada(2)	N AH V AE D AH
-nevadan	N AH V AE D AH N
-nevadans	N AH V AE D AH N Z
+Nevadan	N AH V AE D AH N
+Nevadans	N AH V AE D AH N Z
 nevala	N EY V AA L AH
 nevarach	N AH V AA R AH CH
 nevarach's	N AH V AA R AH CH AH Z
@@ -83126,6 +83139,7 @@ nevitt	N EH V IH T
 nevius	N IY V IY IH S
 new	N UW
 new(2)	N Y UW
+New	N UW
 new-bedford	N UW B EH D F ER D
 new-bern	N UW B ER N
 new-caledonia	N UW K AE L AH D OW N IY AH
@@ -83393,27 +83407,29 @@ nicety	N AY S IH T IY
 niche	N IH CH
 nichelson	N IH CH IH L S AH N
 niches	N IH CH IH Z
-nichol	N IH K AO L
-nichola	N IH HH OW L AH
+Nichol	N IH K AO L
+Nichola	N IH HH OW L AH
 Nicholas	N IH K AH L AH S
-nicholas'	N IH K AH L AH S
-nicholas'(2)	N IH K L AH S
+Nicholas'	N IH K AH L AH S
+Nicholas'(2)	N IH K L AH S
 Nicholas's	N IH K AH L AH S IH Z
-nicholas's(2)	N IH K L AH S IH Z
+Nicholas's(2)	N IH K L AH S IH Z
 Nicholas(2)	N IH K L AH S
-nichole	N IH K OW L
-nicholes	N IH K OW L Z
-nicholi	N IH K AH L AY
-nicholl	N IH K AH L
-nicholls	N IH K AH L Z
-nichols	N IH K AH L Z
-nichols'	N IH K AH L Z
-nichols's	N IH K AH L Z IH Z
-nicholson	N IH K AH L S AH N
-nicholson's	N IH K AH L S AH N Z
-nichter	N IH K T ER
+Nichole	N IH K OW L
+Nicholes	N IH K OW L Z
+Nicholi	N IH K AH L AY
+Nicholl	N IH K AH L
+Nicholls	N IH K AH L Z
+Nichols	N IH K AH L Z
+Nichols'	N IH K AH L Z
+Nichols's	N IH K AH L Z IH Z
+Nicholson	N IH K AH L S AH N
+Nicholson's	N IH K AH L S AH N Z
+Nichter	N IH K T ER
 nick	N IH K
+Nick	N IH K
 nick's	N IH K S
+Nick's	N IH K S
 nicked	N IH K T
 nickel	N IH K AH L
 nickel's	N IH K AH L Z
@@ -84560,8 +84576,8 @@ novelly	N OW V AH L IY
 novels	N AA V AH L Z
 novelties	N AA V AH L T IY Z
 novelty	N AA V AH L T IY
-november	N OW V EH M B ER
-november's	N OW V EH M B ER Z
+November	N OW V EH M B ER
+November's	N OW V EH M B ER Z
 noverco	N OW V ER K OW
 novey	N OW V IY
 novgorod	N AA V G ER AA D
@@ -85398,8 +85414,8 @@ octel	AA K T EH L
 octet	AA K T EH T
 octial	AA K T Y AH L
 octillion	AA K T IH L Y AH N
-october	AA K T OW B ER
-october's	AA K T OW B ER Z
+October	AA K T OW B ER
+October's	AA K T OW B ER Z
 octogenarian	AA K T AH JH IH N EH R IY AH N
 octopi	AA K T AH P AY
 octopus	AA K T AH P UH S
@@ -85723,18 +85739,18 @@ ojala	OW Y AA L AH
 ojeda	OW Y EY D AH
 oji	OW JH IY
 ojibwa	OW JH IH B W AH
-ok	OW K EY
+OK	OW K EY
 oka	OW K AH
 okabe	OW K AA B EY
 okada	OW K AA D AH
-okaloosa	AO K AH L UW S AH
-okaloosa(2)	OW K AH L UW S AH
-okamoto	OW K AH M OW T OW
-okamura	OW K AH M UH R AH
-okane	OW K EY N
-okano	OW K AA N OW
-okasaki	OW K AH S AA K IY
-okasan	OW K EY Z AH N
+Okaloosa	AO K AH L UW S AH
+Okaloosa(2)	OW K AH L UW S AH
+Okamoto	OW K AH M OW T OW
+Okamura	OW K AH M UH R AH
+Okane	OW K EY N
+Okano	OW K AA N OW
+Okasaki	OW K AH S AA K IY
+Okasan	OW K EY Z AH N
 okay	OW K EY
 okayed	OW K EY D
 okays	OW K EY Z
@@ -85742,30 +85758,30 @@ okaz	OW K AA Z
 okazaki	OW K AA Z AA K IY
 okdo	AO K D OW
 okeechobee	OW K IY CH OW B IY
-okeefe	OW K IY F
-okeeffe	OW K IY F
-okelley	OW K EH L IY
-okelly	OW K EH L IY
-oken	OW K EY AH N
-okerlund	AA K ER L AH N D
-okeson	OW K IH S AH N
+Okeefe	OW K IY F
+Okeeffe	OW K IY F
+Okelley	OW K EH L IY
+Okelly	OW K EH L IY
+Oken	OW K EY AH N
+Okerlund	AA K ER L AH N D
+Okeson	OW K IH S AH N
 okey	OW K IY
 okey-dokey	OW K IY D OW K IY
 oki	OW K IY
 okie	OW K IY
 okimoto	OW K IY M OW T OW
 okin	OW K IH N
-okinawa	OW K IH N AA W AH
-okinawa(2)	OW K IY N AA W AH
-okinawans	OW K IH N AA W AH N Z
-okinawans(2)	OW K IY N AA W AH N Z
+Okinawa	OW K IH N AA W AH
+Okinawa(2)	OW K IY N AA W AH
+Okinawans	OW K IH N AA W AH N Z
+Okinawans(2)	OW K IY N AA W AH N Z
 Oklahoma	OW K L AH HH OW M AH
 Oklahoma's	OW K L AH HH OW M AH Z
-oklahoman	OW K L AH HH OW M AH N
-oklahomans	OW K L AH HH OW M AH N Z
+Oklahoman	OW K L AH HH OW M AH N
+Oklahomans	OW K L AH HH OW M AH N Z
 okon	OW K OW N
-okoniewski	OW K AA N IY EH F S K IY
-okoniewski(2)	OW K AH N UW S K IY
+Okoniewski	OW K AA N IY EH F S K IY
+Okoniewski(2)	OW K AH N UW S K IY
 okonski	AH K AA N S K IY
 okpo	AA K P OW
 okra	OW K R AH
@@ -86490,11 +86506,11 @@ oregano	AO R EH G AH N OW
 oregano(2)	ER EH G AH N OW
 Oregon	AO R AH G AH N
 Oregon's	AO R AH G AH N Z
-oregon's(2)	AO R AH G AA N Z
+Oregon's(2)	AO R AH G AA N Z
 Oregon(2)	AO R AH G AA N
-oregonian	AO R AH G OW N IY AH N
-oregonians	AO R AH G OW N IY AH N Z
-oreilly	AO R AH L IY
+Oregonian	AO R AH G OW N IY AH N
+Oregonians	AO R AH G OW N IY AH N Z
+Oreilly	AO R AH L IY
 orel	AO R AH L
 orela	AO R EH L AH
 orelia	AO R EH L IY AH
@@ -86505,9 +86521,9 @@ oren	AO R AH N
 orenda	AO R EH N D AH
 orendorff	AO R IH N D AO R F
 orens	AO R AH N Z
-orenstein	AO R AH N S T AY N
-orenstein(2)	AO R AH N S T IY N
-orenthal	AO R AH N TH AA L
+Orenstein	AO R AH N S T AY N
+Orenstein(2)	AO R AH N S T IY N
+Orenthal	AO R AH N TH AA L
 oreo	AO R IY OW
 ores	AO R Z
 oreskovich	AO R EH S K AH V IH CH
@@ -89495,8 +89511,8 @@ paz	P AA Z
 pazner	P AA Z N ER
 pazos	P AA Z OW Z
 pazuto	P AH Z UW T OW
-PBX	P IY B IY EH KS
-PBXs	P IY B IY EH KS IH S
+PBX	P IY B IY EH K S
+PBXs	P IY B IY EH K S IH S
 pc	P IY S IY
 pc's	P IY S IY Z
 pcs	P IY S IY Z
@@ -93069,10 +93085,10 @@ pontes	P OW N T EH S
 ponti	P AA N T IY
 Pontiac	P AA N T IY AE K
 Pontiac's	P AA N T IY AE K S
-pontiac's(2)	P AA N IY AE K S
+Pontiac's(2)	P AA N IY AE K S
 Pontiac(2)	P AA N IY AE K
-pontiacs	P AA N T IY AE K S
-pontiacs(2)	P AA N IY AE K S
+Pontiacs	P AA N T IY AE K S
+Pontiacs(2)	P AA N IY AE K S
 pontiff	P AA N T AH F
 pontiff's	P AA N T AH F S
 pontiff(2)	P AA N T IH F
@@ -97845,19 +97861,19 @@ reaffirming	R IY AH F ER M IH NG
 reaffirms	R IY AH F ER M Z
 Reagan	R EY G AH N
 Reagan's	R EY G AH N Z
-reagan's(2)	R IY G AH N Z
+Reagan's(2)	R IY G AH N Z
 Reagan(2)	R IY G AH N
-reaganesque	R EY G AH N EH S K
-reaganesque(2)	R IY G AH N EH S K
-reaganism	R EY G AH N IH Z AH M
-reaganism(2)	R IY G AH N IH Z AH M
-reaganite	R EY G AH N AY T
-reaganite(2)	R IY G AH N AY T
-reaganites	R EY G AH N AY T S
-reaganomics	R EY G AH N AA M IH K S
-reagans	R EY G AH N Z
-reagans'	R EY G AH N Z
-reagans'(2)	R IY G AH N Z
+Reaganesque	R EY G AH N EH S K
+Reaganesque(2)	R IY G AH N EH S K
+Reaganism	R EY G AH N IH Z AH M
+Reaganism(2)	R IY G AH N IH Z AH M
+Reaganite	R EY G AH N AY T
+Reaganite(2)	R IY G AH N AY T
+Reaganites	R EY G AH N AY T S
+Reaganomics	R EY G AH N AA M IH K S
+Reagans	R EY G AH N Z
+Reagans'	R EY G AH N Z
+Reagans'(2)	R IY G AH N Z
 reagen	R IY G AH N
 reagent	R IY EY JH AH N T
 reagent(2)	R IY JH AH N T
@@ -102194,26 +102210,26 @@ rocco's	R AA K OW Z
 roch	R AA K
 rocha	R OW K AH
 rochat	R AA CH AH T
-rochberg	R OW CH B ER G
-roche	R OW CH
-roche's	R OW SH IH Z
-roche(2)	R OW SH
+Rochberg	R OW CH B ER G
+Roche	R OW CH
+Roche's	R OW SH IH Z
+Roche(2)	R OW SH
 rochefort	R AA K IH F ER T
 rochefort(2)	R AA SH F ER T
 rochefort(3)	R AA K F ER T
-rocheleau	R AA SH IH L OW
-rochella	R AH CH EH L AH
+Rocheleau	R AA SH IH L OW
+Rochella	R AH CH EH L AH
 Rochelle	R OW SH EH L
 Rochelle's	R OW SH EH L Z
-rochelle's(2)	R AH SH EH L Z
+Rochelle's(2)	R AH SH EH L Z
 Rochelle(2)	R AH SH EH L
-rocher	R OW CH ER
-rocher(2)	R OW SH ER
+Rocher	R OW CH ER
+Rocher(2)	R OW SH ER
 Rochester	R AA CH EH S T ER
 Rochester's	R AA CH EH S T ER Z
-rochette	R AH SH EH T
-rochford	R AA CH F ER D
-rochlin	R AA K L IH N
+Rochette	R AH SH EH T
+Rochford	R AA CH F ER D
+Rochlin	R AA K L IH N
 rochon	R AA CH AH N
 rock	R AA K
 rock'n'roll	R AA K AH N R OW L
@@ -104871,28 +104887,28 @@ sansui's	S AE N S UW IY Z
 sant	S AE N T
 Santa	S AE N T AH
 Santa's	S AE N T AH
-santa's(2)	S AE N AH
+Santa's(2)	S AE N AH
 Santa(2)	S AE N AH
-santa-croce	S AE N T AH K R OW CH IY
-santa-croce(2)	S AE N AH K R OW CH IY
-santa-cruz	S AE N T AH K R UW Z
-santa-cruz(2)	S AE N AH K R UW Z
-santa-fe	S AE N T AH F EY
-santa-fe's	S AE N T AH F EY Z
-santa-fe's(2)	S AE N AH F EY Z
-santa-fe(2)	S AE N AH F EY
-santa-maria	S AE N T AH M ER IY AH
-santa-maria(2)	S AE N AH M ER IY AH
-santagata	S AA N T AA G AA T AH
-santala	S AE N T AA L AH
-santana	S AE N T AE N AH
-santander	S AE N T AE N D ER
-santangelo	S AA N T AA NG G EH L OW
-santaniello	S AA N T AA N IY EH L OW
-santarelli	S AA N T AA R EH L IY
-santarsiero	S AA N T AA R S IH R OW
-santas	S AE N T AH S
-santayana	S AE N T AY AA N AH
+Santa-croce	S AE N T AH K R OW CH IY
+Santa-croce(2)	S AE N AH K R OW CH IY
+Santa-cruz	S AE N T AH K R UW Z
+Santa-cruz(2)	S AE N AH K R UW Z
+Santa-fe	S AE N T AH F EY
+Santa-fe's	S AE N T AH F EY Z
+Santa-fe's(2)	S AE N AH F EY Z
+Santa-fe(2)	S AE N AH F EY
+Santa-Maria	S AE N T AH M ER IY AH
+Santa-Maria(2)	S AE N AH M ER IY AH
+Santagata	S AA N T AA G AA T AH
+Santala	S AE N T AA L AH
+Santana	S AE N T AE N AH
+Santander	S AE N T AE N D ER
+Santangelo	S AA N T AA NG G EH L OW
+Santaniello	S AA N T AA N IY EH L OW
+Santarelli	S AA N T AA R EH L IY
+Santarsiero	S AA N T AA R S IH R OW
+Santas	S AE N T AH S
+Santayana	S AE N T AY AA N AH
 sante	S AE N T AH
 santella	S AA N T EH L AH
 santelli	S AA N T EH L IY
@@ -108003,8 +108019,8 @@ seppi	S EH P IY
 sepsis	S EH P S IH S
 sept	S EH P T
 septa	S EH P T AH
-september	S EH P T EH M B ER
-september's	S EH P T EH M B ER Z
+September	S EH P T EH M B ER
+September's	S EH P T EH M B ER Z
 septer	S EH P T ER
 septic	S EH P T IH K
 septima	S EH P T IY M AH
@@ -114151,6 +114167,7 @@ stater	S T EY T ER
 stater's	S T EY T ER Z
 staters	S T EY T ER Z
 states	S T EY T S
+States	S T EY T S
 states'	S T EY T S
 statesborough	S T EY T S B AH R OW
 stateside	S T EY T S AY D
@@ -114615,28 +114632,28 @@ stepchildren	S T EH P CH IH L D R AH N
 stepdaughter	S T EH P D AO T ER
 stepdaughters	S T EH P D AO T ER Z
 stepfather	S T EH P F AA DH ER
-steph	S T EH F
-stepha	S T EH F AH
-stephan	S T EH F AH N
-stephana	S T EH F AA N AH
-stephane	S T EH F AA N
-stephani	S T EH F AH N IY
-stephania	S T IH F AE N IY AH
+Steph	S T EH F
+Stepha	S T EH F AH
+Stephan	S T EH F AH N
+Stephana	S T EH F AA N AH
+Stephane	S T EH F AA N
+Stephani	S T EH F AH N IY
+Stephania	S T IH F AE N IY AH
 Stephanie	S T EH F AH N IY
-stephanopoulos	S T EH F AH N AA P AH L AH S
-stephanopoulos'	S T EH F AH N AA P AH L AH S
-stephanopoulos's	S T EH F AH N AA P AH L AH S IH S
-stephans	S T EH F AH N Z
-stephany	S T EH F AH N IY
+Stephanopoulos	S T EH F AH N AA P AH L AH S
+Stephanopoulos'	S T EH F AH N AA P AH L AH S
+Stephanopoulos's	S T EH F AH N AA P AH L AH S IH S
+Stephans	S T EH F AH N Z
+Stephany	S T EH F AH N IY
 Stephen	S T IY V AH N
 Stephen's	S T IY V AH N Z
-stephen's(2)	S T EH F AH N Z
+Stephen's(2)	S T EH F AH N Z
 Stephen(2)	S T EH F AH N
-stephens	S T IY V AH N Z
-stephens's	S T IY V IH N Z IH Z
-stephens(2)	S T EH F AH N Z
-stephenson	S T IY V AH N S AH N
-stephenville	S T IY V IH N V IH L
+Stephens	S T IY V AH N Z
+Stephens's	S T IY V IH N Z IH Z
+Stephens(2)	S T EH F AH N Z
+Stephenson	S T IY V AH N S AH N
+Stephenville	S T IY V IH N V IH L
 stepien	S T EH P IY AH N
 stepka	S T EH P K AH
 stepladder	S T EH P L AE D ER
@@ -119550,23 +119567,23 @@ tevye	T EH V IY
 tew	CH UW
 tew(2)	T UW
 tew(3)	T IY IY D AH B AH L Y UW
-tewell	T EH W EH L
-tewes	CH UW Z
-tewksbury	T UW K S B ER IY
-tews	CH UW Z
+Tewell	T EH W EH L
+Tewes	CH UW Z
+Tewksbury	T UW K S B ER IY
+Tews	CH UW Z
 tex	T EH K S
-texaco	T EH K S AH K OW
-texaco's	T EH K S AH K OW Z
-texan	T EH K S AH N
-texan's	T EH K S AH N Z
-texans	T EH K S AH N Z
-texarkana	T EH K S AA R K AE N AH
+Texaco	T EH K S AH K OW
+Texaco's	T EH K S AH K OW Z
+Texan	T EH K S AH N
+Texan's	T EH K S AH N Z
+Texans	T EH K S AH N Z
+Texarkana	T EH K S AA R K AE N AH
 Texas	T EH K S AH S
-texas'	T EH K S AH S IH Z
-texas'(2)	T EH K S AH S
+Texas'	T EH K S AH S IH Z
+Texas'(2)	T EH K S AH S
 Texas's	T EH K S AH S AH Z
-texas's(2)	T EH K S AH S IH Z
-texasgulf	T EH K S AH S G AH L F
+Texas's(2)	T EH K S AH S IH Z
+Texasgulf	T EH K S AH S G AH L F
 texeira	T EY K S EH R AH
 texfi	T EH K S F IY
 texpool	T EH K S P UW L
@@ -121147,7 +121164,7 @@ tooke	T UH K
 tooker	T UH K ER
 tookes	T UH K S
 tool	T UW L
-tool	T UW L K IH T
+toolkit	T UW L K IH T
 toolan	T UW L AH N
 toolbox	T UW L B AO K S
 toole	T UW L
@@ -123358,7 +123375,7 @@ twothirds	T UW TH ER D Z
 twyford	T W AY F ER D
 twyla	T W AY L AH
 twyman	T W AY M AH N
-txt	T IY EH KS T IY
+txt	T IY EH K S T IY
 ty	T AY
 ty-sachs	T AY S AE K S
 tybalt	T IH B AH L T
@@ -124413,6 +124430,7 @@ unitary	Y UW N IH T EH R IY
 unitas	Y UW N AY T AH S
 unite	Y UW N AY T
 united	Y UW N AY T AH D
+United	Y UW N AY T AH D
 united's	Y UW N AY T AH D Z
 united(2)	Y UW N AY T IH D
 unitedbank	Y UW N AY T IH D B AE NG K
@@ -124443,6 +124461,7 @@ universes	Y UW N AH V ER S IH Z
 universities	Y UW N AH V ER S AH T IY Z
 universities'	Y UW N IH V ER S IH T IY Z
 university	Y UW N AH V ER S AH T IY
+University	Y UW N AH V ER S AH T IY
 university's	Y UW N AH V ER S AH T IY Z
 univisa	Y UW N IH V IY S AH
 univision	Y UW N IH V IH ZH AH N
@@ -127909,6 +127928,7 @@ walkure	W AO K Y ER
 walkway	W AO K W EY
 walkways	W AO K W EY Z
 wall	W AO L
+wall(2)	W AA L
 wall's	W AO L Z
 wall-tex	W AO L T EH K S
 walla	W AO L AH

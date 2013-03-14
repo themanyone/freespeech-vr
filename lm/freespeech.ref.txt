@@ -117,7 +117,7 @@
 <s> robustness this is more applicable to white box testing than black box testing and more so during the development phase than for integration testing .period adhering to good coding standards such as </s>
 <s> interacting with interfaces ,comma naming conventions ,comma and checking inputs helps prepare for this step .period </s>
 <s> automated tools exist for checking robustness of code and compilers .period a production environment may not have room for these tools ,comma however ;semi-colon robustness testing can be performed by teams of alpha and beta testers .period </s>
-<s> alpha testing is generally done prior to release and beta testing is often done as a prerelease event to attract hundreds or even thousands of beta testers .period testers are invited to experiment with unusual situations and are sometimes not often enough )right-paren encouraged with incentives to report any bugs they find .period </s>
+<s> alpha testing is generally done prior to release and beta testing is often done as a prerelease event to attract hundreds or even thouSands of beta testers .period testers are invited to experiment with unusual situations and are sometimes not often enough )right-paren encouraged with incentives to report any bugs they find .period </s>
 <s> testing approaches flexibility some updating of white -hyphen box -hyphen tested code may be needed at this point to make it more </s>
 <s> flexible .period do the variable names make sense ?question-mark do class and function names follow convention ?question-mark black box tested code should be put through tests anticipating future and beta standards and interoperability with newer or bleeding -hyphen edge operating systems or drivers .period </s>
 <s> reusability this applies to white box testing .period refactoring may be necessary to ensure code is reusable .period do variable names make sense ?question-mark can an expert programmer who is not familiar with the </s>
@@ -174,7 +174,7 @@
 <s> them .period i started crying and went to tell my parents .period i would have to tell them about the plan .period this was a very young age to be concerned about the fate of the world .period it changed my perspective .period i began thinking of everyone as being connected .period infrastructure became a major concern .period a </s>
 <s> favorite pastime was playing with small boats ,comma canals ,comma railroads ,comma pipelines ,comma and distribution networks .period </s>
 <s> level iii stage .period after high school i slipped a disk and developed a bad back from commercial fishing .period i was also suffering from partial paralysis ,comma tooth problems ,comma pneumonia ,comma and an itchy rash </s>
-<s> that was driving me insane because none of the products or prescriptions would cure it .period hospitals bills were accumulating .period i decided to try Scientology .period </s>
+<s> that was driving me inSane because none of the products or prescriptions would cure it .period hospitals bills were accumulating .period i decided to try Scientology .period </s>
 <s> Scientology 'single-quote s introductory practices seemed to help .period i took some courses where i learned Scientology 'single-quote s study technology TM )right-paren .dot the technology basically says to look up the definition of words ,comma but it has some additional tricks that a person can use tell when they are falling asleep </s>
 <s> because of a misunderstood word .period it also deals with fully understanding the definition ,comma </s>
 <s> derivations ,comma epistemology ,comma and etymology of words and being able to demonstrate that understanding .period having been home -hyphen schooled this helped me a great deal as my understanding of words was fairly glib .period study technology helped me to understand medical materials .period i developed </s>
@@ -243,7 +243,7 @@
 <s> protected mode memory protection :colon one program can not bring down the whole system demand loads :colon Linux only reads parts of a program that are used </s>
 <s> shared copy -hyphen on -hyphen write pages :colon multiple processes can share memory virtual memory :colon paging ,comma not swapping ,comma up to Gb unified memory pool :colon cache expands and shrinks with memory demands </s>
 <s> windows and Linux core dumps :colon debug crashed programs compatibility :colon source code compatible with POSIX ,comma system,comma and BSD </s>
-<s> comparison with other operating systems we will start comparing Linux with other operating systems by looking at Linux features that some windows users wish were included in their operating system for a pencil .period </s>
+<s> comParison with other operating systems we will start comparing Linux with other operating systems by looking at Linux features that some windows users wish were included in their operating system for a pencil .period </s>
 <s> windows and Linux easy window positioning /slash resizing a feature common to most Linux desktops is using the alt key for easier organizing of </s>
 <s> windows on the desktop .period moving and resizing windows on Linux is exactly the same as on windows ,comma but by pressing and holding down the alt key a user can click -hyphen drag anywhere in a Linux window to make the whole window move around .period windows can be re -hyphen sized on Linux by </s>
 <s> pressing and holding the alt key and clicking the middle mouse button anywhere near one of the window edges or corners .period on windows ,comma the user has to position the mouse exactly over an edge or corner to re -hyphen size a window .period there is a secret key combination to move and size a window </s>
@@ -311,8 +311,8 @@
 <s> Internet ,comma utilities ,comma multimedia and office software .period unlike a mainframe ,comma a PC is used directly .period no intermediate operator or administrator is needed to schedule jobs started by the user .period </s>
 <s> PCs usually come with some form of windows operating system pre -hyphen installed .period most people use the installed operating system so as not to void their warrantee .period power users might install a more challenging operating system like Linux to get a slightly more mainframe -hyphen like or </s>
 <s> server -hyphen oriented experience from their PC .period pretty much all operating systems present users with an interface that is similar to a desktop .period documents may be placed on the desktop ,comma but are usually organized into folders .period </s>
-<s> mainframes according to mainframes summary n .period d .period )right-paren ,comma mainframes used to be synonymous with computers .period a typical mainframe might service some tens of thousands of users processing </s>
-<s> thousands of database queries on terabytes of data .period the architecture is scalable and may consist of processors that individually are similar to those used in a typical PC .period the i /slash o subsystems of mainframes are very robust ,comma servicing high bandwidth reliably to thousands of users </s>
+<s> mainframes according to mainframes summary n .period d .period )right-paren ,comma mainframes used to be synonymous with computers .period a typical mainframe might service some tens of thouSands of users processing </s>
+<s> thouSands of database queries on terabytes of data .period the architecture is scalable and may consist of processors that individually are similar to those used in a typical PC .period the i /slash o subsystems of mainframes are very robust ,comma servicing high bandwidth reliably to thouSands of users </s>
 <s> simultaneously history since the s ,comma mainframes were made by several manufacturers ,comma including Burroughs ,comma </s>
 <s> IBM ,comma RCA ,comma and ncr .period these days the only mainframes in serious use are IBM system /slash 3 6 0 or clones .period physical size and cost reduction has helped the mainframe as well as the PC .period what once took up a large data center can fit in a space the size of a file cabinet .period </s>
 <s> an economical mainframe might contain parallel processors running at MHz ,comma Gb of memory ,comma and some terabytes of storage .period </s>
@@ -342,7 +342,7 @@
 <s> options promoting environmental justice ,comma sustainable harvesting and check poaching ,comma as suggested by ecosmiles ,comma provide compensation ,comma as suggested by icer ,comma and provide health care resulted in a successful outcome managing environmental issues ,comma n .period d .period )right-paren .dot </s>
 <s> the simulated exercise agrees with personal experience having to do with environmental justice and resource management .period as a Tsimshian Indian and member of the Ninilchick tribe ,comma i have personally witnessed local harvesting of trees for wood pulp and chips .period the option of </s>
 <s> sustainable harvests is the one most often chosen today .period sometimes compensation is provided .period </s>
-<s> health care is already provided to natives through treaty .period i perceive that the forest still suffers greatly from select logging .period due to a proliferation of parasitic beetles and fungus ,comma thousands of additional trees ,comma sometimes miles away ,comma die off in the years following logging activities .period it is my </s>
+<s> health care is already provided to natives through treaty .period i perceive that the forest still suffers greatly from select logging .period due to a proliferation of parasitic beetles and fungus ,comma thouSands of additional trees ,comma sometimes miles away ,comma die off in the years following logging activities .period it is my </s>
 <s> contention that the abundance of parasitic species results from nourishment provided by the number of dead trees and stumps left behind by loggers .period </s>
 <s> in spite of the harm to the forest ,comma the select logging can help protect land from forest fires ,comma when logging is done along fire breaks .period the dead trees in following years are useful as firewood for local residents .period also ,comma the additional cleared land is a boon to moose and other stuff like casual </s>
 <s> grazing species who thrive on willows ,comma berries ,comma and grasses .period careful balance of sustainable logging ensures the resource does not disappear .period compensation is welcome and helps pay for education .period </s>
@@ -458,10 +458,10 @@ this kind of applications is particularly important as speech is the main form o
 <s> during the late century a technology involving neural networks and )right-paren was introduced into the speech recognition research ,comma the main idea behind this technology was to identify phonemes or even complete words using multi layer perceptions maps )right-paren .dot however ,comma program quit </s>
 <s> by measuring their accuracy and ,comma most importantly ,comma their word error rate technology )right-paren ,comma as illustrated by figure </s>
 <s> figure d arpa speech recognition benchmark tests .period </s>
-<s> large vocabulary with more than thousand words .period the Darpa program also helped to create a number of speech databases used to train and evaluate systems .period some of these databases are the Wall Street Journal ,comma the Switchboard and the Call home </s>
+<s> large vocabulary with more than thouSand words .period the Darpa program also helped to create a number of speech databases used to train and evaluate systems .period some of these databases are the Wall Street Journal ,comma the Switchboard and the Call home </s>
 <s> databases ;semi-colon all of them are publicly available .period </s>
 <s> driven by the Darpa initiatives ,comma the technology evolved and several research programs were created in different parts of the world .period the speech recognition systems eventually become very sophisticated and capable of supporting large vocabularies with </s>
-<s> thousands of words and phonemes .period however ,comma the technology for conversational speech still can be considered high ,comma with a value of near </s>
+<s> thouSands of words and phonemes .period however ,comma the technology for conversational speech still can be considered high ,comma with a value of near </s>
 <s> become popular in order to develop machines able to speak to humans .period nonetheless ,comma </s>
 <s> designing and building machines able to mimic a person seems to be a challenge for future work figure depicts important milestones of speech recognition .period </s>
 <s> figure milestones and evolution of the technology .period </s>
@@ -696,7 +696,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> the audio files ,comma it is necessary to use an external library .period for that ,comma the bass audio library 7 was used .period </s>
 <s> the bass audio library allows the streaming of different audio type files ,comma included ogg .period </s>
 <s> moreover ,comma the library is free for non -hyphen commercial use and it is available for different programming languages ,comma including c .period furthermore ,comma one of the main advantages of this library is that everything is contained within a small dll file of only kb .period </s>
-<s> custom language model and dictionary although PocketSphinx can be used in applications supporting vocabularies composed by several thousands of words ,comma the best performance in terms of accuracy and execution </s>
+<s> custom language model and dictionary although PocketSphinx can be used in applications supporting vocabularies composed by several thouSands of words ,comma the best performance in terms of accuracy and execution </s>
 <s> time can be obtained using small vocabularies after downloading and compiling the source code for PocketSphinx ,comma we proceeded to run a test program using the default language model ,comma acoustic model and dictionary .period nonetheless ,comma the word accuracy for the </s>
 <s> application tended to be very low .period in other words ,comma most of the speech sentences used as inputs were not recognized correctly .period </s>
 <s> after performing some research in the documentation for PocketSphinx ,comma we found out that is recommended to use a reduced language model and a custom dictionary with support for a small vocabulary .period the smaller the vocabulary ,comma the fastest PocketSphinx will </s>
@@ -807,7 +807,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> steam engine radio station energy </s>
 <s> overall metrics matches sentences </s>
 <s> table overall test results note .period for test number the input text corpus was not filtered .period in other words ,comma it included some sentences that did not contain keywords .period this is why the vocabulary size </s>
-<s> in test number is smaller but the number of URLs remained the same .period </s>
+<s> in test number is smaller but the number of URLs reMained the same .period </s>
 <s> keep the vocabulary size around words in order to maintain the execution time low .period </s>
 <s> during the final round of tests ,comma the application managed to get a keyword decoding accuracy of in other words ,comma around of the keywords in the test sentences were decoded correctly while maintaining an average execution time of around </s>
 <s> as it was explained previously ,comma this could affect the overall performance of the application adversely .period </s>
@@ -1086,10 +1086,10 @@ this kind of applications is particularly important as speech is the main form o
 <s> I think I will log into Facebook and update my status again .period </s>
 <s> you learn something new every day .period </s>
 <s> back to school specials </s>
-<s> I guess I need to make me a sandwich .period </s>
+<s> I guess I need to make me a Sandwich .period </s>
 <s> A sexist phrase that a male says to a female when he's drunk and /slash or hungry .period </s>
 <s> girl :colon </s>
-<s> my boyfriend keeps yelling at me ,comma "quote make me a sandwich ,comma BITCH !exclamation-point "quote He's being sexist and now I need a good comeback to say to him .period </s>
+<s> my boyfriend keeps yelling at me ,comma "quote make me a Sandwich ,comma BITCH !exclamation-point "quote He's being sexist and now I need a good comeback to say to him .period </s>
 <s> make love not war .period </s>
 <s> coined by the hippie generation in the 1960's .period </s>
 <s> its real meaning is that love and yes sex is better than war .period </s>
@@ -1106,7 +1106,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> the can be a lot of different possible situations to learn from .period </s>
 <s> my only hope is that you will get through this tutorial without too much trouble and be able to work through problems like these in the future .period </s>
 <s> we are now using UTF-8 unicode code points for everything .period </s>
-<s> pocketSphinx's vocabulary this currently one hundred and thirty -hyphen three thousand words and growing .period </s>
+<s> pocketSphinx's vocabulary this currently one hundred and thirty -hyphen three thouSand words and growing .period </s>
 <s> this is cool !exclamation-point </s>
 <s> I will have to research that on the Internet .period </s>
 <s> I will get back to you on that .period </s>
