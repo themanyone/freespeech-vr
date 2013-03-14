@@ -19,6 +19,8 @@ Launching the program may be done via the Python interpreter.
 
     python freespeech.py
 
+If this is a fresh install, press the "Learn" button to generate the required files.
+
 Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
 Voice commands are included. For the most updated information about this, take a look at the source. Some voice commands at the time of this writing include:
@@ -41,16 +43,16 @@ The biggest improvements in accuracy have been achieved by adjusting the microph
 
 The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time! You may also train it by pasting in gobs of text from websites and documents.
 
-If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy hiding less-commonly used words like spaghetti and pencil --StackOverflow].
+If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy failing to recognize some words like spaghetti and pencil --StackOverflow].
 
 It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
 
     new  N UW
     New  N UW
 
-Now PocketSphinx will choose which word to use depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big?
+Now PocketSphinx will choose which word to use depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big?
 
-Don't worry if you inadvertently teach it bad grammar. It's not strictly necessary, but the file, "freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
+Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but our corpus file, "freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
 
 The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
