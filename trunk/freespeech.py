@@ -30,11 +30,11 @@ import subprocess
 import os, sys, codecs
 import re
 
-lang_ref= os.path.join('lm','freespeech.ref.txt')
-vocab   = os.path.join('lm','freespeech.vocab')
-idngram = os.path.join('lm','freespeech.idngram')
-arpa    = os.path.join('lm','freespeech.arpa')
-dmp     = os.path.join('lm','freespeech.dmp')
+lang_ref= os.path.join('lm', 'freespeech.ref.txt')
+vocab   = os.path.join('lm', 'freespeech.vocab')
+idngram = os.path.join('lm', 'freespeech.idngram')
+arpa    = os.path.join('lm', 'freespeech.arpa')
+dmp     = os.path.join('lm', 'freespeech.dmp')
 
 class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
@@ -55,7 +55,7 @@ class freespeech(object):
             os.chdir(os.path.dirname(sys.argv[0]))     
         self.icon = gtk.gdk.pixbuf_new_from_file("icon.png")
         self.window.connect("delete-event", gtk.main_quit)
-        self.window.set_default_size(400,200)
+        self.window.set_default_size(400, 200)
         self.window.set_border_width(10)
         self.window.set_icon(self.icon)
         vbox = gtk.VBox()
@@ -63,7 +63,10 @@ class freespeech(object):
         self.textbuf = gtk.TextBuffer()
         self.text = gtk.TextView(self.textbuf)
         self.text.set_wrap_mode(gtk.WRAP_WORD)
-        vbox.pack_start(self.text, True, True, 5)
+        self.scroller = gtk.ScrolledWindow(None, None)
+        self.scroller.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
+        self.scroller.add(self.text)
+        vbox.pack_start(self.scroller, True, True, 5)
         vbox.pack_end(hbox, False, False)
         self.button = gtk.Button("Learn")
         self.button.connect('clicked', self.learn_new_words)
@@ -82,7 +85,7 @@ class freespeech(object):
             gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
-        me.set_default_size(400,300)
+        me.set_default_size(400, 300)
         me.label = gtk.Label("Nice label")
         me.vbox.pack_start(me.label)
         me.label.show()
@@ -95,7 +98,7 @@ class freespeech(object):
             gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
-        me.set_default_size(400,200)
+        me.set_default_size(400, 200)
         me.label = gtk.Label("Nice label")
         me.vbox.pack_start(me.label)
         me.label.show()
@@ -110,9 +113,11 @@ class freespeech(object):
         """Load custom dictionary and language model"""
         asr.set_property('dict', 'custom.dic')
         
-        # The language model dmp that came with pocketsphinx works OK...
+        # The language model that came with pocketsphinx works OK...
         # asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP')
         # but it is too large and can't be modified, so we use our own
+        if not os.access(dmp, os.R_OK): # create if not exists
+                self.learn_new_words(None)
         asr.set_property('lm', dmp)
         
         # Adapt pocketsphinx to your voice for better accuracy.
@@ -203,25 +208,28 @@ class freespeech(object):
                     f.write(line + '\n')
         
         # compile a vocabulary
-        if subprocess.call('text2wfreq -verbosity 2 -hash 1000000 < ' \
-            + lang_ref + ' | wfreq2vocab -records 10000 > ' + vocab, \
+        # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2wfreq
+        if subprocess.call('text2wfreq -verbosity 2 < ' \
+            + lang_ref + ' | wfreq2vocab -records 200000 > ' + vocab, \
             shell=True):
             self.err('Trouble writing ' + vocab)
         
         # update the idngram
-        if subprocess.call('text2idngram -vocab ' + vocab + \
+        # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2idngram
+        if subprocess.call('text2idngram -fof_size 10 -vocab ' + vocab + \
             ' -n 3 < ' + lang_ref + ' > ' + idngram, shell=True):
             self.err('Trouble writing ' + idngram)
         
         # (re)build arpa language model
-        if subprocess.call('idngram2lm -idngram ' + idngram + \
+        # http://drupal.cs.grinnell.edu/~stone/courses/computational-linguistics/ngram-lab.html
+        if subprocess.call('idngram2lm -idngram -n 3 -verbosity 2 ' + idngram + \
             ' -vocab ' + vocab + ' -arpa ' + arpa + ' -vocab_type 1' \
-            ' -linear', shell=True):
+            ' -good_turing', shell=True):
             self.err('Trouble writing ' + arpa)
         
         # convert to dmp
         if subprocess.call('sphinx_lm_convert -i ' + arpa + \
-            ' -o ' + dmp + ' -ofmt arpa', shell=True):
+            ' -o ' + dmp + ' -ofmt dmp', shell=True):
             self.err('Trouble writing ' + dmp)
         
         # load the dmp
@@ -269,21 +277,21 @@ class freespeech(object):
             index += 1
         hyp = " ".join(words)
         hyp = hyp.replace(" ...ellipsis"," ...")
-        hyp = re.sub(r" ([^\w\s]{1,3})\s*",r"\1 ",hyp)
-        hyp = re.sub(r"([({[]) ",r" \1",hyp).strip()
+        hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
+        hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
         if self.capitalize_first_letter:
             hyp = hyp[0].capitalize()+hyp[1:]
         print(hyp)
         self.capitalize_first_letter = hyp[-1] in ".:!?"
-        if re.match(r"\w",hyp[0]) and started:
+        if re.match(r"\w", hyp[0]) and started:
             space = " "
         else:
             space = ""
         return space + hyp
         
-    def expand_punctuation(self,corpus):
+    def expand_punctuation(self, corpus):
         # tweak punctuation to match dictionary utterances
-        for ind,line in enumerate(corpus):
+        for ind, line in enumerate(corpus):
             line = re.sub(r'--',          r'--dash',                  line)
             line = re.sub(r'- ',          r'-hyphen ',                line)
             line = re.sub(r'`',           r'`agrave',                 line)
@@ -336,15 +344,15 @@ class freespeech(object):
             corpus[ind] = line
         return corpus
 
-    def prepare_corpus(self,txt):
+    def prepare_corpus(self, txt):
         txt.begin_user_action()
         txt_bounds = txt.get_bounds()
-        text = txt.get_text(txt_bounds[0],txt_bounds[1])
+        text = txt.get_text(txt_bounds[0], txt_bounds[1])
         # break on end of sentence
-        text = re.sub(r'(\w[.:;!])\s+(\w)',r'\1\n\2',text)
-        text = re.sub(r'\n+',r'\n',text)
+        text = re.sub(r'(\w[.:;?!])\s+(\w)', r'\1\n\2', text)
+        text = re.sub(r'\n+', r'\n', text)
         corpus= re.split(r'\n', text)       
-        for ind,tex in enumerate(corpus):
+        for ind, tex in enumerate(corpus):
             # try to remove blank lines
             tex = tex.strip()
             if len(tex) == 0:
@@ -359,9 +367,9 @@ class freespeech(object):
             # separate punctuation marks into 'words'
             # by adding spaces between them
             tex = re.sub(r'\s*([^\w\s]|[_])\s*', r' \1 ', tex)
-            # except apostrophe smldv
-            tex = re.sub(r"(\w) ' ([smldv])", r"\1'\2", tex)
-            tex = re.sub(r'\s+',' ',tex)
+            # except apostrophe followed by lower-case letter
+            tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
+            tex = re.sub(r'\s+',' ', tex)
             # fixme: needs more unicode -> dictionary replacements
             # or we could convert the rest of the dictionary to utf-8
             # and use the ʼunicode charactersʼ
