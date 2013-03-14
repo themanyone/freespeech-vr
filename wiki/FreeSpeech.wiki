@@ -19,8 +19,6 @@ Launching the program may be done via the Python interpreter.
 
     python freespeech.py
 
-If this is a fresh install, press the "Learn" button to generate the required files.
-
 Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
 Voice commands are included. For the most updated information about this, take a look at the source. Some voice commands at the time of this writing include:
