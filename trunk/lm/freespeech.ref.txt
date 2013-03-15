@@ -1,3 +1,15 @@
+<s> delete that </s>
+<s> resume edits </s>
+<s> pause dictation </s>
+<s> done editing </s>
+<s> go to the end </s>
+<s> select to end </s>
+<s> file quit </s>
+<s> file preferences </s>
+<s> select all </s>
+<s> selection clear </s>
+<s> undo that </s>
+<s> scratch that </s>
 <s> hi there ,comma so what is the plan ?question-mark </s>
 <s> do you know what this is ?question-mark we should show file preferences . </s>
 <s> my name is Henry and I would like to introduce you to something new . </s>
@@ -922,7 +934,6 @@ this kind of applications is particularly important as speech is the main form o
 <s> note that Python identifiers are restricted to the ASCII </s>
 <s> subset of the encoding ,comma and thus need no further conversion </s>
 <s> after step 4 .period </s>
-
 <s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
 <s> work as follows :colon </s>
 <s> 1 .dot read the file </s>
@@ -936,7 +947,6 @@ this kind of applications is particularly important as speech is the main form o
 <s> note that Python identifiers are restricted to the ASCII </s>
 <s> subset of the encoding ,comma and thus need no further conversion </s>
 <s> after step 4 .period </s>
-
 <s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
 <s> work as follows :colon </s>
 <s> 1 .dot read the file </s>
@@ -952,7 +962,6 @@ this kind of applications is particularly important as speech is the main form o
 <s> after step 4 .period </s>
 <s> the attributes set with this function will be ignored if either the "quote use -hyphen underline "quote or "quote use -hyphen markup "quote attributes is True .period </s>
 <s> the arguments shown above are merely the most common ones ,comma described below in Frequently Used Arguments (left-paren hence the slightly odd notation in the abbreviated signature )right-paren .dot The full function signature is the same as that of the Popen constructor -hyphen this functions passes all supplied arguments directly through to that interface .period </s>
-
 <s> Kitcosilver is a big step forward in silver coverage by Kitco .period </s>
 <s> besides charts ,comma there is silver news ,comma commentaries ,comma press releases ,comma silver equities performance and much more .period </s>
 <s> hello ,comma and welcome to the hobby pages of web designer ,comma photographer ,comma musician ,comma fisherman ,comma and software engineer ,comma Henry "quote Hank "quote Kroll III .period </s>
@@ -1015,12 +1024,6 @@ this kind of applications is particularly important as speech is the main form o
 <s> you may try making a recording with audacity and checking the noise levels to make sure it sounds like intelligible speech when played back .period </s>
 <s> essentially ,comma FreeSpeech is a "quote front -hyphen end "quote for PocketSphinx with additional learning ability .period </s>
 <s> it automatically manages the difficult process of creating language models .period </s>
-<s> file quit </s>
-<s> file preferences </s>
-<s> select all </s>
-<s> selection clear </s>
-<s> undo that </s>
-<s> scratch that </s>
 <s> good morning .period </s>
 <s> the insert method inserts the text into the text buffer at the specified position .period </s>
 <s> new paragraph .period </s>
@@ -1127,3 +1130,530 @@ this kind of applications is particularly important as speech is the main form o
 <s> could you get off the Internet for a minute ?question-mark </s>
 <s> I would like to go over there and talk about it tomorrow .period </s>
 <s> that is the only moral choice .period </s>
+<s> add the words to the dictionary .period </s>
+<s> the University of Phoenix .period </s>
+<s> a bird in the hand is worth two in the bush :colon </s>
+<s> having something that is certain is much better than taking a risk for more ,comma because chances are you might lose everything .period </s>
+<s> a blessing in disguise :colon </s>
+<s> something good that isn't recognized at first .period </s>
+<s> a chip on your shoulder :colon </s>
+<s> being upset for something that happened in the past .period </s>
+<s> a dime a dozen :colon </s>
+<s> anything that is common and easy to get .period </s>
+<s> a doubting thomas :colon </s>
+<s> a skeptic who needs physical or personal evidence in order to believe something .period </s>
+<s> a drop in the bucket :colon </s>
+<s> a very small part of something big or whole .period </s>
+<s> a fool and his money are easily parted :colon </s>
+<s> it's easy for a foolish person to lose his /slash her money .period </s>
+<s> a house divided against itself cannot stand :colon </s>
+<s> everyone involved must unify and function together or it will not work out .period </s>
+<s> a leopard can't change his spots :colon </s>
+<s> you cannot change who you are .period </s>
+<s> a penny saved is a penny earned :colon </s>
+<s> by not spending money ,comma you are saving money (left-paren little by little )right-paren .period </s>
+<s> a picture paints a thousand words :colon </s>
+<s> a visual presentation is far more descriptive than words .period </s>
+<s> a piece of cake :colon </s>
+<s> a task that can be accomplished very easily .period </s>
+<s> a slap on the wrist :colon </s>
+<s> a very mild punishment .period </s>
+<s> a taste of your own medicine :colon </s>
+<s> when you are mistreated the same way you mistreat others .period </s>
+<s> a toss -hyphen up :colon </s>
+<s> a result that is still unclear and can go either way .period </s>
+<s> actions speak louder than words :colon </s>
+<s> it's better to actually do something than just talk about it .period </s>
+<s> add fuel to the fire :colon </s>
+<s> whenever something is done to make a bad situation even worse than it is .period </s>
+<s> against the clock :colon </s>
+<s> rushed and short on time .period </s>
+<s> all bark and no bite :colon </s>
+<s> when someone is threatening and /slash or aggressive but not willing to engage in a fight .period </s>
+<s> all greek to me :colon </s>
+<s> meaningless and incomprehensible like someone who cannot read ,comma speak ,comma or understand any of the greek language would be .period </s>
+<s> all in the same boat :colon </s>
+<s> when everyone is facing the same challenges .period </s>
+<s> an arm and a leg :colon </s>
+<s> very expensive .period </s>
+<s> a large amount of money .period </s>
+<s> an axe to grind :colon </s>
+<s> to have a dispute with someone .period </s>
+<s> apple of my eye :colon </s>
+<s> someone who is cherished above all others .period </s>
+<s> as high as a kite :colon </s>
+<s> anything that is high up in the sky .period </s>
+<s> at the drop of a hat :colon </s>
+<s> willing to do something immediately .period </s>
+<s> back seat driver :colon </s>
+<s> people who criticize from the sidelines ,comma much like someone giving unwanted advice from the back seat of a vehicle to the driver .period </s>
+<s> back to square one :colon </s>
+<s> having to start all over again .period </s>
+<s> back to the drawing board :colon </s>
+<s> when an attempt fails and it's time to start all over .period </s>
+<s> baker's dozen :colon </s>
+<s> thirteen .period </s>
+<s> barking up the wrong tree :colon </s>
+<s> a mistake made in something you are trying to achieve .period </s>
+<s> beat a dead horse :colon </s>
+<s> to force an issue that has already ended .period </s>
+<s> beating around the bush :colon </s>
+<s> avoiding the main topic .period </s>
+<s> not speaking directly about the issue .period </s>
+<s> bend over backwards :colon </s>
+<s> do whatever it takes to help .period </s>
+<s> willing to do anything .period </s>
+<s> between a rock and a hard place :colon </s>
+<s> stuck between two very bad options .period </s>
+<s> bite off more than you can chew :colon </s>
+<s> to take on a task that is way to big .period </s>
+<s> bite your tongue :colon </s>
+<s> to avoid talking .period </s>
+<s> blood is thicker than water :colon </s>
+<s> the family bond is closer than anything else .period </s>
+<s> blue moon :colon </s>
+<s> a rare event or occurance .period </s>
+<s> break a leg :colon </s>
+<s> a superstitious way to say'good luck'without saying'good luck 'single-quote ,comma but rather the opposite .period </s>
+<s> buy a lemon :colon </s>
+<s> to purchase a vehicle that constantly gives problems or stops running after you drive it away .period </s>
+<s> can't cut the mustard :colon </s>
+<s> someone who isn't adequate enough to compete or participate .period </s>
+<s> cast iron stomach :colon </s>
+<s> someone who has no problems ,comma complications or ill effects with eating anything or drinking anything .period </s>
+<s> charley horse :colon </s>
+<s> stiffness in the leg /slash a leg cramp .period </s>
+<s> chew someone out :colon </s>
+<s> verbally scold someone .period </s>
+<s> chip on his shoulder :colon </s>
+<s> angry today about something that occured in the past .period </s>
+<s> chow down :colon </s>
+<s> to eat .period </s>
+<s> close but no cigar :colon </s>
+<s> to be very near and almost accomplish a goal ,comma but fall short .period </s>
+<s> cock and bull story :colon </s>
+<s> an unbelievable tale .period </s>
+<s> come hell or high water :colon </s>
+<s> any difficult situation or obstacle .period </s>
+<s> crack someone up :colon </s>
+<s> to make someone laugh .period </s>
+<s> cross your fingers :colon </s>
+<s> to hope that something happens the way you want it to .period </s>
+<s> cry over spilt milk :colon </s>
+<s> when you complain about a loss from the past .period </s>
+<s> cry wolf :colon </s>
+<s> intentionally raise a false alarm .period </s>
+<s> cup of joe :colon </s>
+<s> a cup of coffee .period </s>
+<s> curiosity killed the cat :colon </s>
+<s> being inquisitive can lead you into a dangerous situation .period </s>
+<s> cut to the chase :colon </s>
+<s> leave out all the unnecessary details and just get to the point .period </s>
+<s> dark horse :colon </s>
+<s> one who was previously unknown and is now prominent .period </s>
+<s> dead ringer :colon </s>
+<s> 100 %percent identical .period </s>
+<s> a duplicate .period </s>
+<s> devil's advocate :colon </s>
+<s> someone who takes a position for the sake of argument without believing in that particular side of the arguement .period </s>
+<s> it can also mean one who presents a counter argument for a position they do believe in ,comma to another debater .period </s>
+<s> dog days of summer :colon </s>
+<s> the hottest days of the summer season .period </s>
+<s> don't count your chickens before they hatch :colon </s>
+<s> don't rely on it until your sure of it .period </s>
+<s> don't look a gift horse in the mouth :colon </s>
+<s> when someone gives you a gift ,comma don't be ungrateful .period </s>
+<s> don't put all your eggs in one basket :colon </s>
+<s> do not put all your resources in one possibility .period </s>
+<s> doozy :colon </s>
+<s> something outstanding .period </s>
+<s> down to the wire :colon </s>
+<s> something that ends at the last minute or last few seconds .period </s>
+<s> drastic times call for drastic measures :colon </s>
+<s> when you are extremely desperate you need to take extremely desperate actions .period </s>
+<s> drink like a fish :colon </s>
+<s> to drink very heavily .period </s>
+<s> drive someone up the wall :colon </s>
+<s> to irritate and /slash or annoy very much .period </s>
+<s> dropping like flies :colon </s>
+<s> a large number of people either falling ill or dying .period </s>
+<s> dry run :colon </s>
+<s> rehearsal .period </s>
+<s> eighty six :colon </s>
+<s> a certain item is no longer available .period </s>
+<s> or this idiom can also mean ,comma to throw away .period </s>
+<s> elvis has left the building :colon </s>
+<s> the show has come to an end .period </s>
+<s> it's all over .period </s>
+<s> ethnic cleansing :colon </s>
+<s> killing of a certain ethnic or religious group on a massive scale .period </s>
+<s> every cloud has a silver lining :colon </s>
+<s> be optomistic ,comma even difficult times will lead to better days .period </s>
+<s> everything but the kitchen sink :colon </s>
+<s> almost everything and anything has been included .period </s>
+<s> excuse my french :colon </s>
+<s> please forgive me for cussing .period </s>
+<s> cock and bull story :colon </s>
+<s> an unbelievable tale .period </s>
+<s> cock and bull story :colon </s>
+<s> an unbelievable tale .period </s>
+<s> feeding frenzy :colon </s>
+<s> an aggressive attack on someone by a group .period </s>
+<s> field day :colon </s>
+<s> an enjoyable day or circumstance .period </s>
+<s> finding your feet :colon </s>
+<s> to become more comfortable in whatever you are doing .period </s>
+<s> finger lickin'good :colon </s>
+<s> a very tasty food or meal .period </s>
+<s> fixed in your ways :colon </s>
+<s> not willing or wanting to change from your normal way of doing something .period </s>
+<s> flash in the pan :colon </s>
+<s> something that shows potential or looks promising in the beginning but fails to deliver anything in the end .period </s>
+<s> flea market :colon </s>
+<s> a swap meet .period </s>
+<s> a place where people gather to buy and sell inexpensive goods .period </s>
+<s> flesh and blood :colon </s>
+<s> this idiom can mean living material of which people are made of ,comma or it can refer to someone's family .period </s>
+<s> flip the bird :colon </s>
+<s> to raise your middle finger at someone .period </s>
+<s> foam at the mouth :colon </s>
+<s> to be enraged and show it .period </s>
+<s> fools'gold :colon </s>
+<s> iron pyrites ,comma a worthless rock that resembles real gold .period </s>
+<s> french kiss :colon </s>
+<s> an open mouth kiss where tongues touch .period </s>
+<s> from rags to riches :colon </s>
+<s> to go from being very poor to being very wealthy .period </s>
+<s> fuddy -hyphen duddy :colon </s>
+<s> an old -hyphen fashioned and foolish type of person .period </s>
+<s> full monty :colon </s>
+<s> this idiom can mean either ,comma "quote the whole thing "quote or "quote completely nude "quote .period </s>
+<s> funny farm :colon </s>
+<s> a mental institutional facility .period </s>
+<s> get down to brass tacks :colon </s>
+<s> to become serious about something .period </s>
+<s> get over it :colon </s>
+<s> to move beyond something that is bothering you .period </s>
+<s> get up on the wrong side of the bed :colon </s>
+<s> someone who is having a horrible day .period </s>
+<s> get your walking papers :colon </s>
+<s> get fired from a job .period </s>
+<s> give him the slip :colon </s>
+<s> to get away from .period </s>
+<s> to escape .period </s>
+<s> go down like a lead balloon :colon </s>
+<s> to be received badly by an audience .period </s>
+<s> go for broke :colon </s>
+<s> to gamble everything you have .period </s>
+<s> go out on a limb :colon </s>
+<s> put yourself in a tough position in order to support someone /slash something .period </s>
+<s> go the extra mile :colon </s>
+<s> going above and beyond whatever is required for the task at hand .period </s>
+<s> good samaritan :colon </s>
+<s> someone who helps others when they are in need ,comma with no discussion for compensation ,comma and no thought of a reward .period </s>
+<s> graveyard shift :colon </s>
+<s> working hours from about 12 :colon 00 am to 8 :colon 00 am .period </s>
+<s> the time of the day when most other people are sleeping .period </s>
+<s> great minds think alike :colon </s>
+<s> intelligent people think like each other .period </s>
+<s> green room :colon </s>
+<s> the waiting room ,comma especially for those who are about to go on a tv or radio show .period </s>
+<s> gut feeling :colon </s>
+<s> a personal intuition you get ,comma especially when feel something may not be right .period </s>
+<s> haste makes waste :colon </s>
+<s> quickly doing things results in a poor ending .period </s>
+<s> hat trick :colon </s>
+<s> when one player scores three goals in the same hockey game .period </s>
+<s> this idiom can also mean three scores in any other sport ,comma such as 3 homeruns ,comma 3 touchdowns ,comma 3 soccer goals ,comma etc .period </s>
+<s> have an axe to grind :colon </s>
+<s> to have a dispute with someone .period </s>
+<s> he lost his head :colon </s>
+<s> angry and overcome by emotions .period </s>
+<s> head over heels :colon </s>
+<s> very excited and /slash or joyful ,comma especially when in love .period </s>
+<s> hell in a handbasket :colon </s>
+<s> deteriorating and headed for complete disaster .period </s>
+<s> high five :colon </s>
+<s> slapping palms above each others heads as celebration gesture .period </s>
+<s> high on the hog :colon </s>
+<s> living in luxury .period </s>
+<s> hit the books :colon </s>
+<s> to study ,comma especially for a test or exam .period </s>
+<s> hit the hay :colon </s>
+<s> go to bed or go to sleep .period </s>
+<s> hit the nail on the head :colon </s>
+<s> do something exactly right or say something exactly right .period </s>
+<s> hit the sack :colon </s>
+<s> go to bed or go to sleep .period </s>
+<s> hocus pocus :colon </s>
+<s> in general ,comma a term used in magic or trickery .period </s>
+<s> hold your horses :colon </s>
+<s> be patient .period </s>
+<s> icing on the cake :colon </s>
+<s> when you already have it good and get something on top of what you already have .period </s>
+<s> idle hands are the devil's tools :colon </s>
+<s> you are more likely to get in trouble if you have nothing to do .period </s>
+<s> if it's not one thing ,comma it's another :colon </s>
+<s> when one thing goes wrong ,comma then another ,comma and another ...ellipsis </s>
+<s> in like flynn :colon </s>
+<s> to be easily successful ,comma especially when sexual or romantic .period </s>
+<s> in the bag :colon </s>
+<s> to have something secured .period </s>
+<s> in the buff :colon </s>
+<s> nude .period </s>
+<s> in the heat of the moment :colon </s>
+<s> overwhelmed by what is happening in the moment .period </s>
+<s> in your face :colon </s>
+<s> an aggressive and bold confrontation .period </s>
+<s> it takes two to tango :colon </s>
+<s> a two person conflict where both people are at fault .period </s>
+<s> it's a small world :colon </s>
+<s> you frequently see the same people in different places .period </s>
+<s> its anyone's call :colon </s>
+<s> a competition where the outcome is difficult to judge or predict .period </s>
+<s> ivy league :colon </s>
+<s> since 1954 the ivy league has been the following universities :colon </s>
+<s> columbia ,comma brown ,comma cornell ,comma dartmouth ,comma yale ,comma pennsylvania ,comma princeton ,comma and harvard .period </s>
+<s> jaywalk :colon </s>
+<s> crossing the street (left-paren from the middle )right-paren without using the crosswalk .period </s>
+<s> joshing me :colon </s>
+<s> tricking me .period </s>
+<s> keep an eye on him :colon </s>
+<s> you should carefully watch him .period </s>
+<s> keep body and soul together :colon </s>
+<s> to earn a sufficient amount of money in order to keep yourself alive .period </s>
+<s> keep your chin up :colon </s>
+<s> to remain joyful in a tough situation .period </s>
+<s> kick the bucket :colon </s>
+<s> die .period </s>
+<s> kitty -hyphen corner :colon </s>
+<s> diagonally across .period </s>
+<s> sometimes called catty -hyphen corner as well .period </s>
+<s> knee jerk reaction :colon </s>
+<s> a quick and automatic response .period </s>
+<s> knock on wood :colon </s>
+<s> knuckle tapping on wood in order to avoid some bad luck .period </s>
+<s> know the ropes :colon </s>
+<s> to understand the details .period </s>
+<s> last but not least :colon </s>
+<s> an introduction phrase to let the audience know that the last person mentioned is no less important than those introduced before him /slash her .period </s>
+<s> lend me your ear :colon </s>
+<s> to politely ask for someone's full attention .period </s>
+<s> let bygones be bygones :colon </s>
+<s> to forget about a disagreement or arguement .period </s>
+<s> let sleeping dogs lie :colon </s>
+<s> to avoid restarting a conflict .period </s>
+<s> let the cat out of the bag :colon </s>
+<s> to share a secret that wasn't suppose to be shared .period </s>
+<s> level playing field :colon </s>
+<s> a fair competition where no side has an advantage .period </s>
+<s> like a chicken with its head cut off :colon </s>
+<s> to act in a frenzied manner .period </s>
+<s> liquor someone up :colon </s>
+<s> to get someone drunk .period </s>
+<s> long in the tooth :colon </s>
+<s> old people (left-paren or horses )right-paren .period </s>
+<s> loose cannon :colon </s>
+<s> someone who is unpredictable and can cause damage if not kept in check .period </s>
+<s> make no bones about :colon </s>
+<s> to state a fact so there are no doubts or objections .period </s>
+<s> method to my madness :colon </s>
+<s> strange or crazy actions that appear meaningless but in the end are done for a good reason .period </s>
+<s> mumbo jumbo :colon </s>
+<s> nonsense or meaningless speech .period </s>
+<s> mum's the word :colon </s>
+<s> to keep quiet .period </s>
+<s> to say nothing .period </s>
+<s> nest egg :colon </s>
+<s> savings set aside for future use .period </s>
+<s> never bite the hand that feeds you :colon </s>
+<s> don't hurt anyone that helps you .period </s>
+<s> new kid on the block :colon </s>
+<s> someone new to the group or area .period </s>
+<s> new york minute :colon </s>
+<s> a minute that seems to go by quickly ,comma especially in a fast paced environment .period </s>
+<s> no dice :colon </s>
+<s> to not agree .period </s>
+<s> to not accept a proposition .period </s>
+<s> no room to swing a cat :colon </s>
+<s> an unsually small or confined space .period </s>
+<s> not playing with a full deck :colon </s>
+<s> someone who lacks intelligence .period </s>
+<s> off on the wrong foot :colon </s>
+<s> getting a bad start on a relationship or task .period </s>
+<s> off the hook :colon </s>
+<s> no longer have to deal with a tough situation .period </s>
+<s> off the record :colon </s>
+<s> something said in confidence that the one speaking doesn't want attributed to him /slash her .period </s>
+<s> on pins and needles :colon </s>
+<s> anxious or nervous ,comma especially in anticipation of something .period </s>
+<s> on the fence :colon </s>
+<s> undecided .period </s>
+<s> on the same page :colon </s>
+<s> when multiple people all agree on the same thing .period </s>
+<s> out of the blue :colon </s>
+<s> something that suddenly and unexpectedly occurs .period </s>
+<s> out on a limb :colon </s>
+<s> when someone puts themself in a risky situation .period </s>
+<s> out on the town :colon </s>
+<s> to enjoy yourself by going out .period </s>
+<s> over my dead body :colon </s>
+<s> when you absolutely will not allow something to happen .period </s>
+<s> over the top :colon </s>
+<s> very excessive .period </s>
+<s> pass the buck :colon </s>
+<s> avoid responsibility by giving it to someone else .period </s>
+<s> pedal to the metal :colon </s>
+<s> to go full speed ,comma especially while driving a vehicle .period </s>
+<s> peeping tom :colon </s>
+<s> someone who observes people in the nude or sexually active people ,comma mainly for his own gratification .period </s>
+<s> pick up your ears :colon </s>
+<s> to listen very carefully .period </s>
+<s> pig in a poke :colon </s>
+<s> a deal that is made without first examining it .period </s>
+<s> pig out :colon </s>
+<s> to eat alot and eat it quickly .period </s>
+<s> pipe down :colon </s>
+<s> to shut -hyphen up or be quiet .period </s>
+<s> practice makes perfect :colon </s>
+<s> by constantly practicing ,comma you will become better .period </s>
+<s> pull the plug :colon </s>
+<s> to stop something .period </s>
+<s> to bring something to an end .period </s>
+<s> pulling your leg :colon </s>
+<s> tricking someone as a joke .period </s>
+<s> put a sock in it :colon </s>
+<s> to tell noisy person or a group to be quiet .period </s>
+<s> queer the pitch :colon </s>
+<s> destroy or ruin a plan .period </s>
+<s> raincheck :colon </s>
+<s> an offer or deal that is declined right now but willing to accept later .period </s>
+<s> raining cats and dogs :colon </s>
+<s> a very loud and noisy rain storm .period </s>
+<s> ring fencing :colon </s>
+<s> seperated usual judgement to guarantee protection ,comma especially project funds .period </s>
+<s> rise and shine :colon </s>
+<s> time to get out of bed and get ready for work /slash school .period </s>
+<s> rome was not built in one day :colon </s>
+<s> if you want something to be completely properly ,comma then its going to take time .period </s>
+<s> rule of thumb :colon </s>
+<s> a rough estimate .period </s>
+<s> run out of steam :colon </s>
+<s> to be completely out of energy .period </s>
+<s> saved by the bell :colon </s>
+<s> saved at the last possible moment .period </s>
+<s> scapegoat :colon </s>
+<s> someone else who takes the blame .period </s>
+<s> scot -hyphen free :colon </s>
+<s> to escape and not have to pay .period </s>
+<s> sick as a dog :colon </s>
+<s> to be very sick (left-paren with the flu or a cold )right-paren .period </s>
+<s> sitting shotgun :colon </s>
+<s> riding in the front passenger seat of a car .period </s>
+<s> sixth sense :colon </s>
+<s> a paranormal sense that allows you to communicate with the dead .period </s>
+<s> skid row :colon </s>
+<s> the rundown area of a city where the homeless and drug users live .period </s>
+<s> smell a rat :colon </s>
+<s> to detect somone in the group is betraying the others .period </s>
+<s> smell something fishy :colon </s>
+<s> detecting that something isn't right and there might be a reason for it .period </s>
+<s> son of a gun :colon </s>
+<s> a scamp .period </s>
+<s> southpaw :colon </s>
+<s> someone who is left -hyphen handed .period </s>
+<s> spitting image :colon </s>
+<s> the exact likeness or kind .period </s>
+<s> start from scratch :colon </s>
+<s> to do it all over again from the beginning .period </s>
+<s> the ball is in your court :colon </s>
+<s> it is your decision this time .period </s>
+<s> the best of both worlds :colon </s>
+<s> there are two choices and you have them both .period </s>
+<s> the bigger they are the harder they fall :colon </s>
+<s> while the bigger and stronger opponent might be alot more difficult to beat ,comma when you do they suffer a much bigger loss .period </s>
+<s> the last straw :colon </s>
+<s> when one small burden after another creates an unbearable situation ,comma the last straw is the last small burden that one can take .period </s>
+<s> the whole nine yards :colon </s>
+<s> everything .period </s>
+<s> all of it .period </s>
+<s> third times a charm :colon </s>
+<s> after no success the first two times ,comma the third try is a lucky one .period </s>
+<s> tie the knot :colon </s>
+<s> to get married .period </s>
+<s> til the cows come home :colon </s>
+<s> a long time .period </s>
+<s> to make a long story short :colon </s>
+<s> something someone would say during a long and boring story in order to keep his /slash her audience from losing attention .period </s>
+<s> usually the story isn't shortened .period </s>
+<s> to steal someone's thunder :colon </s>
+<s> to take the credit for something someone else did .period </s>
+<s> tongue -hyphen in -hyphen cheek :colon </s>
+<s> humor ,comma not to be taken serious .period </s>
+<s> turn a blind eye :colon </s>
+<s> refuse to acknowledge something you know is real or legit .period </s>
+<s> twenty three skidoo :colon </s>
+<s> to be turned away .period </s>
+<s> under the weather :colon </s>
+<s> feeling ill or sick .period </s>
+<s> up a blind alley :colon </s>
+<s> going down a course of action that leads to a bad outcome .period </s>
+<s> use your loaf :colon </s>
+<s> use your head .period </s>
+<s> think smart .period </s>
+<s> van gogh's ear for music :colon </s>
+<s> tone deaf .period </s>
+<s> variety is the spice of life :colon </s>
+<s> the more experiences you try the more exciting life can be .period </s>
+<s> wag the dog :colon </s>
+<s> a diversion away from something of greater importance .period </s>
+<s> water under the bridge :colon </s>
+<s> anything from the past that isn't significant or important anymore .period </s>
+<s> wear your heart on your sleeve :colon </s>
+<s> to openly and freely express your emotions .period </s>
+<s> when it rains ,comma it pours :colon </s>
+<s> since it rarely rains ,comma when it does it will be a huge storm .period </s>
+<s> when pigs fly :colon </s>
+<s> something that will never ever happen .period </s>
+<s> wild and woolly :colon </s>
+<s> uncultured and without laws .period </s>
+<s> wine and dine :colon </s>
+<s> when somebody is treated to an expensive meal .period </s>
+<s> without a doubt :colon </s>
+<s> for certain .period </s>
+<s> x marks the spot :colon </s>
+<s> a phrase that is said when someone finds something he /slash she has been looking for .period </s>
+<s> you are what you eat :colon </s>
+<s> in order to stay healthy you must eat healthy foods .period </s>
+<s> you can't judge a book by its cover :colon </s>
+<s> decisions shouldn't be made primarily on appearance .period </s>
+<s> you can't take it with you :colon </s>
+<s> enjoy what you have and not what you don't have ,comma since when you die you cannot take things (left-paren such as money )right-paren with you .period </s>
+<s> your guess is as good as mine :colon </s>
+<s> i have no idea if it is .period </s>
+<s> zero tolerance :colon </s>
+<s> no crime or law breaking big or small will be overlooked .period </s>
+<s> let's go fly a kite that the lake .period </s>
+<s> take a long walk off a short pier .period </s>
+<s> nevertheless ,comma I like it .period </s>
+<s> I like to eat cheese .period </s>
+<s> can you say something nice ?question-mark </s>
+<s> would you like to go to the movies ?question-mark </s>
+<s> this is a good thing to say to someone who is bothering you .period </s>
+<s> got to keep putting one foot before the other .period </s>
+<s> don't put the cart before the horse .period </s>
+<s> A stitch in time saves nine .period </s>
+<s> usually if you catch one problem soon enough you can avoid bigger problems later .period </s>
+<s> this program is free software :colon </s>
+<s> you can redistribute it and /slash or modify </s>
+<s> it under the terms of the GNU General Public License as published by </s>
+<s> the Free Software Foundation ,comma either version 3 of the License ,comma or </s>
+<s> (left-paren at your option )right-paren any later version .period </s>
+<s> this program is distributed in the hope that it will be useful ,comma </s>
+<s> but WITHOUT ANY WARRANTY ;semi-colon </s>
+<s> without even the implied warranty of </s>
+<s> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE .period </s>
+<s> see the GNU General Public License for more details .period </s>
+<s> you should have received a copy of the GNU General Public License </s>
+<s> in the future ,comma I am going to put a button here to echo this text to the keyboard .period </s>
+<s> to the future ,comma with love .period </s>

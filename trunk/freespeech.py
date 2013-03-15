@@ -122,10 +122,10 @@ class freespeech(object):
         
         # Adapt pocketsphinx to your voice for better accuracy.
         # See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
-        # The tutorial contains broken download links!
-        # Hit me up for the missing files
         
         # asr.set_property('hmm', '../sphinx/hub4wsj_sc_8kadapt')
+        
+        #fixme: write an acoustic model trainer
         
         asr.connect('partial_result', self.asr_partial_result)
         asr.connect('result', self.asr_result)
@@ -137,58 +137,6 @@ class freespeech(object):
 
         #self.pipeline.set_state(gst.STATE_PAUSED)
         self.pipeline.set_state(gst.STATE_PLAYING)
-
-    def asr_partial_result(self, asr, text, uttid):
-        """Forward partial result signals on the bus to the main thread."""
-        struct = gst.Structure('partial_result')
-        struct.set_value('hyp', text)
-        struct.set_value('uttid', uttid)
-        asr.post_message(gst.message_new_application(asr, struct))
-
-    def asr_result(self, asr, text, uttid):
-        """Forward result signals on the bus to the main thread."""
-        struct = gst.Structure('result')
-        struct.set_value('hyp', text)
-        struct.set_value('uttid', uttid)
-        asr.post_message(gst.message_new_application(asr, struct))
-
-    def application_message(self, bus, msg):
-        """Receive application messages from the bus."""
-        msgtype = msg.structure.get_name()
-        if msgtype == 'partial_result':
-            self.partial_result(msg.structure['hyp'], 
-            msg.structure['uttid'])
-        elif msgtype == 'result':
-            self.final_result(msg.structure['hyp'], 
-            msg.structure['uttid'])
-            #self.pipeline.set_state(gst.STATE_PAUSED)
-            #self.button.set_active(False)
-
-    def partial_result(self, hyp, uttid):
-        """Delete any previous selection, insert text and select it."""
-        # All this stuff appears as one single action
-        self.textbuf.begin_user_action()
-        self.textbuf.delete_selection(True, self.text.get_editable())
-        self.textbuf.insert_at_cursor(hyp)
-        ins = self.textbuf.get_insert()
-        iter = self.textbuf.get_iter_at_mark(ins)
-        iter.backward_chars(len(hyp))
-        self.textbuf.move_mark(ins, iter)
-        self.textbuf.end_user_action()
-
-    def final_result(self, hyp, uttid):
-        """Insert the final result."""
-        # All this stuff appears as one single action
-        txt = self.textbuf
-        self.textbuf.begin_user_action()
-        txt.delete_selection(True, self.text.get_editable())
-        txt_bounds = txt.get_bounds()
-        # Fix punctuation
-        if not self.do_command(hyp):
-            hyp = self.collapse_punctuation(hyp, \
-            not txt_bounds[1].is_start())
-            txt.insert_at_cursor(hyp)
-        txt.end_user_action()
 
     def learn_new_words(self, button):
         """ Learn new words, jargon, or other language
@@ -210,13 +158,13 @@ class freespeech(object):
         # compile a vocabulary
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2wfreq
         if subprocess.call('text2wfreq -verbosity 2 < ' \
-            + lang_ref + ' | wfreq2vocab -records 200000 > ' + vocab, \
+            + lang_ref + ' | wfreq2vocab -top 20000 -records 100000 > ' + vocab, \
             shell=True):
             self.err('Trouble writing ' + vocab)
         
         # update the idngram
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2idngram
-        if subprocess.call('text2idngram -fof_size 10 -vocab ' + vocab + \
+        if subprocess.call('text2idngram -vocab ' + vocab + \
             ' -n 3 < ' + lang_ref + ' > ' + idngram, shell=True):
             self.err('Trouble writing ' + idngram)
         
@@ -251,19 +199,6 @@ class freespeech(object):
             vader.set_property('silent', True)
             self.pipeline.set_state(gst.STATE_PAUSED)
 
-    def err(self, errormsg):
-        self.errmsg.label.set_text(errormsg)
-        self.errmsg.run()
-        self.errmsg.hide()
-    
-    def launch_preferences(self):
-        self.prefsdialog.run()
-        self.prefsdialog.hide()
-    def clear_edits(self):
-        txt = self.textbuf
-        txt.set_text('')
-        self.capitalize_first_letter = True
-        
     def collapse_punctuation(self, hyp, started):
         index = 0
         words = hyp.split()
@@ -276,11 +211,11 @@ class freespeech(object):
                 words[index] = word[0]
             index += 1
         hyp = " ".join(words)
-        hyp = hyp.replace(" ...ellipsis"," ...")
+        hyp = hyp.replace(" ...ellipsis", " ...")
         hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
         if self.capitalize_first_letter:
-            hyp = hyp[0].capitalize()+hyp[1:]
+            hyp = hyp[0].capitalize() + hyp[1:]
         print(hyp)
         self.capitalize_first_letter = hyp[-1] in ".:!?"
         if re.match(r"\w", hyp[0]) and started:
@@ -369,26 +304,162 @@ class freespeech(object):
             tex = re.sub(r'\s*([^\w\s]|[_])\s*', r' \1 ', tex)
             # except apostrophe followed by lower-case letter
             tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
-            tex = re.sub(r'\s+',' ', tex)
+            tex = re.sub(r'\s+', ' ', tex)
             # fixme: needs more unicode -> dictionary replacements
             # or we could convert the rest of the dictionary to utf-8
             # and use the ʼunicode charactersʼ
-            tex = tex.replace(u"ʼ","'apostrophe")
+            tex = tex.replace(u"ʼ", "'apostrophe")
             tex = tex.strip()
             corpus[ind] = tex
         return self.expand_punctuation(corpus)
 
+    def asr_partial_result(self, asr, text, uttid):
+        """Forward partial result signals on the bus to the main thread."""
+        struct = gst.Structure('partial_result')
+        struct.set_value('hyp', text)
+        struct.set_value('uttid', uttid)
+        asr.post_message(gst.message_new_application(asr, struct))
+
+    def asr_result(self, asr, text, uttid):
+        """Forward result signals on the bus to the main thread."""
+        struct = gst.Structure('result')
+        struct.set_value('hyp', text)
+        struct.set_value('uttid', uttid)
+        asr.post_message(gst.message_new_application(asr, struct))
+
+    def application_message(self, bus, msg):
+        """Receive application messages from the bus."""
+        msgtype = msg.structure.get_name()
+        if msgtype == 'partial_result':
+            self.partial_result(msg.structure['hyp'], 
+            msg.structure['uttid'])
+        elif msgtype == 'result':
+            self.final_result(msg.structure['hyp'], 
+            msg.structure['uttid'])
+            #self.pipeline.set_state(gst.STATE_PAUSED)
+            #self.button.set_active(False)
+
+    def partial_result(self, hyp, uttid):
+        """Delete any previous selection, insert text and select it."""
+        self.text.set_tooltip_text(hyp)
+
+    def final_result(self, hyp, uttid):
+        """Insert the final result."""
+        self.text.set_tooltip_text(hyp)
+        # All this stuff appears as one single action
+        self.textbuf.begin_user_action()
+        txt = self.textbuf
+        txt_bounds = txt.get_bounds()
+        # Fix punctuation
+        hyp = self.collapse_punctuation(hyp, \
+        not txt_bounds[1].is_start())
+        # handle commands
+        if not self.do_command(hyp):
+            self.undo.append(hyp)
+            txt.delete_selection(True, self.text.get_editable())
+            txt.insert_at_cursor(hyp)
+        ins = self.textbuf.get_insert()
+        iter = self.textbuf.get_iter_at_mark(ins)
+        self.text.scroll_to_iter(iter, 0, False)
+        txt.end_user_action()
+
+    """Process spoken commands"""
+    def err(self, errormsg):
+        self.errmsg.label.set_text(errormsg)
+        self.errmsg.run()
+        self.errmsg.hide()
+    def launch_preferences(self):
+        self.prefsdialog.run()
+        self.prefsdialog.hide()
+    def clear_edits(self):
+        self.textbuf.set_text('')
+        self.capitalize_first_letter = True
+        return True
+    def delete(self):
+        self.textbuf.delete_selection(True, self.text.get_editable())
+        return True # command completed successfully!
+    def done_editing(self):
+        txt_iter = self.textbuf.get_bounds()
+        self.textbuf.place_cursor(txt_iter[1])
+        return True # command completed successfully!
+    def scratch_that(self):
+        txt_iter = self.textbuf.get_bounds()
+        scratch = self.undo.pop(-1)
+        print('scratching ' + scratch)
+        search_back = txt_iter[1].backward_search( \
+            scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
+        self.textbuf.select_range(search_back[0], search_back[1])
+        self.textbuf.delete_selection(True, self.text.get_editable())
+        return True
+
     def do_command(self, hyp):
-        # todo: load command list from file?
+        """decode spoken commands"""
+        hyp = hyp.strip()
+        hyp = hyp[0].lower() + hyp[1:]
+        txt_iter = self.textbuf.get_bounds()
+        # todo: this dynamic list allows runtime command editing!
+        # todo: insert as editable ListView in the Preferences dialog
         commands = {'file quit': gtk.main_quit, \
                     'file preferences': self.launch_preferences, \
-                    'editor clear': self.clear_edits}
+                    'editor clear': self.clear_edits,
+                    'clear edits': self.clear_edits,
+                    'delete that': self.delete,
+                    'go to the end': self.done_editing,
+                    'done editing': self.done_editing,
+                    'scratch that': self.scratch_that,
+                    }
         if commands.has_key(hyp):
-            commands[hyp]()
+            return commands[hyp]()
+        try:# separate command and arguments
+            reg = re.match(r'(\w+) (.*)', hyp)
+            command = reg.group(1)
+            argument = reg.group(2)
+        except:
+            return False # fail
+            
+        # "select" command uttered
+        if re.match("select", command):
+            print('->' + hyp)
+            if re.match("^to end", argument):
+                start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+                end = txt_iter[1]
+                self.textbuf.select_range(start, end)
+                return True # success
+            search_back = self.searchback(txt_iter[1], argument)
+            if None == search_back:
+                return True
+            # also select the space before it
+            search_back[0].backward_char()
+            self.textbuf.select_range(search_back[0], search_back[1])
+            # remember the selected text just in case we fubar it
+            if not search_back[0].is_start():
+                self.capitalize_first_letter = search_back[0].is_start()
+            return True # command completed successfully!
+        # "insert" command uttered
+        if re.match("^insert after", hyp):
+            print(hyp)
+            argument = re.match(r'\w+(.*)', argument).group(1)
+            search_back = self.searchback(txt_iter[1], argument)
+            if None == search_back:
+                return True
+            self.textbuf.place_cursor(search_back[1])
+            if search_back[0].is_start():
+                self.capitalize_first_letter = True               
             return True
         return False
 
-
+    def searchback(self, iter, argument):
+        """helper function to search backwards in text buffer"""
+        search_back = iter.backward_search( \
+        argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+        print("search for " + argument)
+        if None == search_back:
+            print("searching for " + argument.capitalize())
+            search_back = iter.backward_search( \
+            argument.capitalize(), gtk.TEXT_SEARCH_TEXT_ONLY)
+            if None == search_back:
+                return None
+        return search_back
 
 app = freespeech()
 gtk.main()
