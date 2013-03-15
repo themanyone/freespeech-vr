@@ -48,7 +48,7 @@ It seems that the PocketSphinx folks were trying to add support for capitalized 
     new  N UW
     New  N UW
 }}}
-Now PocketSphinx will choose which word to use depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big?
+Now PocketSphinx will choose which word to use depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary. That way upper-case words will be chosen based on their relation to other words in the corpus.
 
 Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but our corpus file, "freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
 
