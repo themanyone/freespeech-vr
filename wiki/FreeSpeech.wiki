@@ -44,10 +44,10 @@ The language corpus that ships with this download, "freespeech.ref.txt" is likel
 If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy failing to recognize some words like spaghetti and pencil --StackOverflow].
 
 It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
-
+{{{
     new  N UW
     New  N UW
-
+}}}
 Now PocketSphinx will choose which word to use depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big?
 
 Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but our corpus file, "freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
@@ -60,7 +60,10 @@ If there is a word that it stubbornly refuses to recognize, even after teaching 
 
 Sometimes the dictionary pronunciation can be little bit off. You will notice that some other words have alternate pronunciations denoted with (2). Go ahead and add an alternate and see if it doesn't improve immediately the next time the program starts.
 
-This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say "period"?) and some capitalized words. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer. I noticed many of the words need to be capitalized in the dictionary. I'll keep updating them as I find them.
+This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say ".full-stop" or "?question-mark") and some capitalized words. See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer. I noticed many of the words need to be capitalized in the dictionary. I'll keep updating them as I find them.
+
+About the CMU Pronouncing Dictionary
+http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 
 Adapt PocketSphinx to your voice for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
