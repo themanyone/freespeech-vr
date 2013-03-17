@@ -55,19 +55,17 @@ Install:
     * GStreamer-WinBuilds-SDK-LGPL-x86-Beta04-0.10.7
 Get them from http://code.google.com/p/ossbuild/
 
-Probably should have installed in C:\Dev...
-
-<strike>Copy contents of:</strike>
+<strike>Copy contents of:</strike> This might not be necessary. Try the [http://wiki.pitivi.org/wiki/PyGST_Tutorial tutorial] first.
 {{{
-C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\sdk\bindings\python\v2.7\lib\site-packages
+GStreamer\v0.10.7\sdk\bindings\python\v2.7\lib\site-packages
 }}}
 to:
 {{{
-C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\lib\site-packages
+GStreamer\v0.10.7\lib\site-packages
 }}}
 Reboot or log out / in
 
-Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
+Tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
