@@ -75,3 +75,8 @@ Another option is _compiling pocketsphinx from svn_.
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
+
+== CMU-Cam_Toolkit_v2 ==
+
+We compiled the CMU-Cam_Toolkit_v2 for Win32. Put the *.exe files inside the freespeech-vr folder.
+https://code.google.com/p/freespeech-vr/downloads/detail?name=CMU-Cam_Toolkit_v2-win32.zip
