@@ -68,14 +68,14 @@ GStreamer\v0.10.7\lib\site-packages
 
 *This is the point where we are stuck:* Getting gst-plugin to work. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
 
-Compiling pocketsphinx on Windows, from svn, is going to take some time. Specifically, compiling gst-plugin requires development headers and libraries for all of these packges, and their dependencies. The best way to make sure that all works is to download the sources for them.
+Compiling pocketsphinx on Windows, from svn, is going to take some time. Specifically, compiling _gst-plugin_ requires development headers and libraries for all of these packges, and their dependencies. The best way to make sure that all works is to download the sources for them.
 
-    * gstreamer-0.10.36
-    * pocketsphinx-0.8
-    * Python-2.7.3 requires zlib, openssl, ncurses, bzip, SQlite3 and libffi.
-    * sphinxbase-0.8
+    * gstreamer
+    * pocketsphinx
+    * Python requires zlib, openssl, ncurses, bzip, SQlite3 and libffi.
+    * sphinxbase
 
-We tried the following Windows binary download of PocketSphinx but we could not find the gst-plugin binary anywhere in the package. We need this to connect to PocketSphinx via gstreamer in Python. They probably did not compile gst-plugin into this one and I don't blame them because of the above.
+We tried the following Windows binary download of PocketSphinx but we could not find the _gst-plugin_ binary anywhere in the package. We need this to connect to PocketSphinx via gstreamer in Python. They probably did not compile _gst-plugin_ into this one and I don't blame them because of the above.
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
