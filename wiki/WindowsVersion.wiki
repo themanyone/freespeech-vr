@@ -69,7 +69,7 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
-*This version does not work yet!* According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin should be there since Version 0.5. Maybe the installer put in the wrong GST_PLUGIN_PATH? Running gst-inspect fails to find the plugin. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
+*This is the point where we are stuck.* Gstreamer can't find the pocketsphinx audio plugin. According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin should be included, since Version 0.5. Maybe the installer put in the wrong GST_PLUGIN_PATH or maybe we need to set a different LD_LIBRARY_PATH? Running gst-inspect fails to find the plugin. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
 
 Another option is _compiling pocketsphinx from svn_.
 
