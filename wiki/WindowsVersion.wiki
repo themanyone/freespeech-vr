@@ -48,10 +48,6 @@ window=gtk.Window()
 window.show
 }}}
 
-== FreeSpeech ==
-
-Get FreeSpeech from http://code.google.com/p/freespeech-vr/
-
 == Gstreamer for Windows ==
 
 *This version does not work yet!* They did not distribute the python-gst plugin with it. We will have to compile our own from svn. Meanwhile, you can play around with gstreamer tutorial or try to get mingw or MS Visual Studio set up and build the plugin yourself.
@@ -77,3 +73,7 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
     # Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
+
+== FreeSpeech ==
+
+Get FreeSpeech from http://code.google.com/p/freespeech-vr/
