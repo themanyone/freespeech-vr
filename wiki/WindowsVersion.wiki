@@ -50,12 +50,15 @@ window.show
 
 == Gstreamer for Windows ==
 
-Install:
-    * GStreamer-WinBuilds-LGPL-x86-Beta04-0.10.7
-    * GStreamer-WinBuilds-SDK-LGPL-x86-Beta04-0.10.7
-Get them from http://code.google.com/p/ossbuild/
+    # Go to http://code.google.com/p/ossbuild/
+    # Install GStreamer-WinBuilds-LGPL-x86-Beta04-0.10.7
+    # Install GStreamer-WinBuilds-SDK-LGPL-x86-Beta04-0.10.7
 
-<strike>Copy contents of:</strike> This might not be necessary. Try the [http://wiki.pitivi.org/wiki/PyGST_Tutorial tutorial] first.
+Reboot or log out / in
+
+Tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
+
+*If the tutorial complains about an outdated version of Python* try this:
 {{{
 GStreamer\v0.10.7\sdk\bindings\python\v2.7\lib\site-packages
 }}}
@@ -63,10 +66,6 @@ to:
 {{{
 GStreamer\v0.10.7\lib\site-packages
 }}}
-Reboot or log out / in
-
-Tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
-
 == PocketSphinx ==
 
 *This is the point where we are stuck:* Getting gst-plugin to work. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
