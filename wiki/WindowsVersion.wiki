@@ -78,5 +78,5 @@ Another option is _compiling pocketsphinx from svn_.
 
 == CMU-Cam_Toolkit_v2 ==
 
-We compiled the CMU-Cam_Toolkit_v2 for Win32. Put the *.exe files inside the freespeech-vr folder.
+We compiled the CMU-Cam_Toolkit_v2 for Win32. Put the .exe files inside the freespeech-vr folder.
 https://code.google.com/p/freespeech-vr/downloads/detail?name=CMU-Cam_Toolkit_v2-win32.zip
