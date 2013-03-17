@@ -69,7 +69,7 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
-*This version does not work yet!* They did not distribute the gstreamer pocketsphinx-plugin with it which is kind of necessary unless we want to write our own audio capture. Developers will have to _compile pocketsphinx from svn_. Meanwhile, you can play around with gstreamer tutorial or try to get svn and mingw or MS Visual Studio set up and build the plugin yourself.
+*This version does not work yet!* According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin won't be available until version 0.5 is releaed. Developers may get it by _compiling pocketsphinx from svn_. Meanwhile, you can play around with gstreamer tutorial or try to get svn and mingw or MS Visual Studio set up and build the plugin yourself.
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
