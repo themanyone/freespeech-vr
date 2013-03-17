@@ -69,7 +69,9 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
-*This version does not work yet!* According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin won't be available until version 0.5 is releaed. Developers may get it by _compiling pocketsphinx from svn_. Meanwhile, you can play around with gstreamer tutorial or try to get svn and mingw or MS Visual Studio set up and build the plugin yourself.
+*This version does not work yet!* According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin should be there since Version 0.5. Maybe the installer put in the wrong GST_PLUGIN_PATH? Running gst-inspect fails to find the plugin. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
+
+Another option is _compiling pocketsphinx from svn_.
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
