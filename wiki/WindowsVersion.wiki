@@ -53,12 +53,10 @@ window.show
     # Go to http://code.google.com/p/ossbuild/
     # Install GStreamer-WinBuilds-LGPL-x86-Beta04-0.10.7
     # Install GStreamer-WinBuilds-SDK-LGPL-x86-Beta04-0.10.7
+    # Reboot or log out / in
+    # Test with the [http://wiki.pitivi.org/wiki/PyGST_Tutorial tutorial]
 
-Reboot or log out / in
-
-Tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
-
-*If the tutorial complains about an outdated version of Python* try this:
+*If the tutorial complains about an outdated version of Python* copy everything in:
 {{{
 GStreamer\v0.10.7\sdk\bindings\python\v2.7\lib\site-packages
 }}}
