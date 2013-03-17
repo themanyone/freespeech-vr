@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Work in progress
 #labels Featured,Phase-Requirements,Phase-QA,Phase-Support,Phase-Implementation,Phase-Design,Phase-Deploy
 <g:plusone size="medium"></g:plusone>
 = Windows Setup =
@@ -71,14 +71,21 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
-*This is the point where we are stuck.* Gstreamer can't find the pocketsphinx audio plugin. According to http://cmusphinx.sourceforge.net/wiki/gstreamer the gstreamer pocketsphinx-plugin should be included, since Version 0.5. Maybe the installer put in the wrong GST_PLUGIN_PATH or maybe we need to set a different LD_LIBRARY_PATH? Running gst-inspect fails to find the plugin. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
+*This is the point where we are stuck:* Getting gst-plugin to work. Refer to http://cmusphinx.sourceforge.net/wiki/gstreamer
 
-Another option is _compiling pocketsphinx from svn_.
+The following Windows download of PocketSphinx is available, but we could not find the gst-plugin binary anywhere in the package. We need this to connect to PocketSphinx via gstreamer in Python. They probably did not compile gst-plugin into the Windows version. Compiling pocketsphinx on Windows, from svn, is going to take some time. Specifically, compiling gst-plugin requires development headers and libraries for all of these packges, and their dependencies. The best way to make sure that all works is to download the sources for them.
+
+    * gstreamer-0.10.36
+    * pocketsphinx-0.8
+    * Python-2.7.3 requires zlib, openssl, ncurses, bzip, SQlite3 and libffi.
+    * sphinxbase-0.8
+
+We tried the following Windows binary download of PocketSphinx but we could not find the gst-plugin binary anywhere in the package. We need this to connect to PocketSphinx via gstreamer in Python. They probably did not compile gst-plugin into this one and I don't blame them because of the above.
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
 
 == CMU-Cam_Toolkit_v2 ==
 
-We compiled the CMU-Cam_Toolkit_v2 for Win32. Put the .exe files inside the freespeech-vr folder.
+We compiled the CMU-Cam_Toolkit_v2 for Win32. Copy the .exe files to the freespeech-vr folder (or put them anywhere in the computer's path if you want to use them from the command line).
 https://code.google.com/p/freespeech-vr/downloads/detail?name=CMU-Cam_Toolkit_v2-win32.zip
