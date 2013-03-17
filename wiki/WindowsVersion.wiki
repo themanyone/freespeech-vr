@@ -71,7 +71,8 @@ Copy contents of:
 {{{
 C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\sdk\bindings\python\v2.7\lib\site-packages
 }}}
-to: {{{
+to:
+{{{
 C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\lib\site-packages
 }}}
 Reboot or log out / in
