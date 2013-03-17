@@ -50,8 +50,6 @@ window.show
 
 == Gstreamer for Windows ==
 
-*This version does not work yet!* They did not distribute the python-gst plugin with it. We will have to compile our own from svn. Meanwhile, you can play around with gstreamer tutorial or try to get mingw or MS Visual Studio set up and build the plugin yourself.
-
 Install:
     * GStreamer-WinBuilds-LGPL-x86-Beta04-0.10.7
     * GStreamer-WinBuilds-SDK-LGPL-x86-Beta04-0.10.7
@@ -71,7 +69,9 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
 == PocketSphinx ==
 
-    # Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download
+*This version does not work yet!* They did not distribute the pocketsphinx-plugin with it. Developers will have to _compile their own from svn_. Meanwhile, you can play around with gstreamer tutorial or try to get svn and mingw or MS Visual Studio set up and build the plugin yourself.
+
+    # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
 
 == FreeSpeech ==
