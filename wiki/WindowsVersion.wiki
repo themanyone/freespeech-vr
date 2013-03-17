@@ -22,10 +22,8 @@ _FreeSpeech Windows install is in development. Here is what we have so far, if y
 === Install GTK+ ===
 
     * Read instructions on http://www.gtk.org/download/win64.php
-    * They should say to download GTK+ bundle from http://www.gtk.org/download/win64.php
-
     * Open up the README that you just extracted.
-    * Verify that their installation instructions agree with ours.
+    * Verify that their instructions agree with ours.
 
 === Add System Paths ===
 
