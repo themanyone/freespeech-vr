@@ -3,6 +3,8 @@
 <g:plusone size="medium"></g:plusone>
 = Windows Setup =
 
+_FreeSpeech Windows install is in development. Here is what we have so far, if you want to help._
+
 == Dev Preparation ==
 
     # Make a c:\Dev folder
@@ -11,7 +13,7 @@
 
 === Install Python ===
 
-64 Python will not work for this. I tried it.
+64 bit Python will not work for this. I tried it.
 
     # Get python-2.7.3 32 bit from http://www.python.org/getit/
     # Install to C:\Dev\Python27
@@ -73,7 +75,3 @@ Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
 
     # <strike>Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download</strike>
     # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
-
-== FreeSpeech ==
-
-Get FreeSpeech from http://code.google.com/p/freespeech-vr/
