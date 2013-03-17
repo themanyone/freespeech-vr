@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 #labels Featured,Phase-Requirements,Phase-QA,Phase-Support,Phase-Implementation,Phase-Design,Phase-Deploy
-
+<g:plusone size="medium"></g:plusone>
 = Windows Setup =
 
 == Dev Preparation ==
