@@ -37,9 +37,7 @@
 
 === Install PyGTK ===
 
-    # Install pygtk-all-in-one-2.24.2.win32-py2.7.msi
-    # from http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/
-    # take a break
+Install pygtk-all-in-one-2.24.2.win32-py2.7.msi from http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/
 
 Test the installation
 Open a terminal: Start Menu->"type in 'cmd'"->Enter
@@ -49,18 +47,14 @@ import gtk
 window=gtk.Window()
 window.show
 }}}
-OK that was a lame test, but it worked, didn't it?
-
-== PocketSphinx ==
-
-    # Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download
-    # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
 
 == FreeSpeech ==
 
 Get FreeSpeech from http://code.google.com/p/freespeech-vr/
 
 == Gstreamer for Windows ==
+
+*This version does not work yet!* They did not distribute the python-gst plugin with it. We will have to compile our own from svn. Meanwhile, you can play around with gstreamer tutorial or try to get mingw or MS Visual Studio set up and build the plugin yourself.
 
 Install:
     * GStreamer-WinBuilds-LGPL-x86-Beta04-0.10.7
@@ -77,4 +71,9 @@ C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\lib\site-packages
 }}}
 Reboot or log out / in
 
-Tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
+Check out this tutorial: http://wiki.pitivi.org/wiki/PyGST_Tutorial
+
+== PocketSphinx ==
+
+    # Get from http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8-win32.zip/download
+    # Pocketsphinx needs MSVCR100.dll which you can get from MS Visual Studio 2010, Visual C++ 2010 Express (for programmers) or vcredist (32bit) (for users) at http://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
