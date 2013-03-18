@@ -47,20 +47,25 @@ Install
     * python: Python language interpreter
 
 Download and unpack from http://sourceforge.net/projects/cmusphinx/files
+*Do not download the zipfile (22.7MB)* Get sources from Files tab.
 
-    * pocketsphinx-0.8-win32.zip
+    * [http://sourceforge.net/projects/cmusphinx/files/sphinxbase/0.8/sphinxbase-0.8.tar.gz/download pocketsphinx-0.8.tar.gz]
+    * [http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8/pocketsphinx-0.8.tar.gz/download sphinxbase-0.8.tar.gz]
     * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2]
 
-Unpack to C:\cygwin\home\dev or wherever you want to build.
-Read the README inside the package for instructions.
-Using xterm, change directory to the folders and install
+Copy the archives to C:\cygwin\home\dev or wherever you want to build.
+
+Using xterm, change directory to the folders, unpack, and install
 {{{
 cd /home/dev
-cd pock*
+tar xvf sphinxbase*
+tar xvf pocketsph*
+cd sphinxb*
 ./configure
 make
 make install
 }}}
+Read the README inside the package for instructions.
 Continue with FreeSpeech setup.
 
 (Optional) Try building native WindowsBinary
