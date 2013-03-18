@@ -9,7 +9,6 @@ _FreeSpeech Windows install is in development. Here is what we have so far, if y
 
 Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and install the dependencies listed in FreeSpeech instructions to install it inside the Cygwin environment.
 
-Install the following packages through setup.exe
     * python
     * python-cairo
     * python-gobject
@@ -17,11 +16,24 @@ Install the following packages through setup.exe
     * python-gtk2.0
     * python-gtk2.0-demo
     * python-gtk2.0-devel
+    * gtk2.0
     * gstreamer0.10
     * gstreamer0.10-plugins-base
-    * gstreamer0.10-plugins-good (optional)
+    * gstreamer0.10-plugins-good
+    * gstreamer0.10-plugins-pulse
+    * libgstreamer0.10-devel
+    * libgstreamer0.10_0
+    * Xorg
+    * Xorg-common
+    * cairo
+    * xwin
+
+    # Launch xterm: ProgramFiles->CygwinX->xterm
+    # Test pygtk: pygtk-demo
+    # Test gstreamer: gst-inspect
 
 Install pocketsphinx here http://www.cs.columbia.edu/~ecooper/CS4706/ps-cygwin.html
+but use python 2.7 instead of python 2.6
 
 Continue with FreeSpeech setup.
 
