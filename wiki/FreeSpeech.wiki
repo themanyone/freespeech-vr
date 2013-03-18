@@ -5,7 +5,7 @@ FreeSpeech is a realtime speech recognition application for the desktop (Android
 
 == Installation ==
 
-Windows: We are working on a WindowsVersion installer. In the meantime, install [http://cygwin.com/ Cygwin] and continue on down this page.
+Windows: We are working on a WindowsVersion installer.
 
 Linux/Cygwin The following _development_ packages should be installed through the package manager.
 
