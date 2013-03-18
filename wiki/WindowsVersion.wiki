@@ -62,11 +62,12 @@ cd /home/dev
 tar xvf sphinxbase*
 tar xvf pocketsph*
 cd sphinxb*
-./configure
+./configure --prefix=/usr
 make
 make install
 }}}
-Read the README inside the package for instructions.
+See http://www.cs.columbia.edu/~ecooper/CS4706/ps-cygwin.html for helpful tips on getting pocketsphinx installation working.
+
 Continue with FreeSpeech setup.
 
 (Optional) Try building native WindowsBinary
