@@ -30,7 +30,7 @@ Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and instal
 
     # Launch xterm: ProgramFiles->CygwinX->xterm
     # Test pygtk: pygtk-demo
-    # Test gstreamer: gst-inspect
+    # Test gstreamer: gst-inspect-0.10.exe |grep source
 
 Install pocketsphinx here http://www.cs.columbia.edu/~ecooper/CS4706/ps-cygwin.html
 but use python 2.7 instead of python 2.6
