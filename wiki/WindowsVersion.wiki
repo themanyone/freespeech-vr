@@ -5,6 +5,12 @@
 
 _FreeSpeech Windows install is in development. Here is what we have so far, if you want to help._
 
+== Cygwin ==
+
+*Ignore the rest of this instructional.* Just install Cygwin Linux emulation layer for Windows and install the dependencies and then follow the FreeSpeech instructions to install it inside the Cygwin environment.
+
+The rest of this is for developers who are trying to bundle everything into a Windows EXE using Py2Exe or whatever...
+
 == Dev Preparation ==
 
     # Make a c:\Dev folder
