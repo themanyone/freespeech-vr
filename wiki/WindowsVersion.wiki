@@ -51,15 +51,12 @@ Download and unpack from http://sourceforge.net/projects/cmusphinx/files
     * pocketsphinx-0.8-win32.zip
     * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2]
 
-Unpack to C:\cygwin\home\dev or wherever you want to build
+Unpack to C:\cygwin\home\dev or wherever you want to build.
+Read the README inside the package for instructions.
 Using xterm, change directory to the folders and install
 {{{
 cd /home/dev
-cd sphinxbase-0.8
-./configure
-make
-make install
-cd ../pocketsphinx-0.8
+cd pock*
 ./configure
 make
 make install
