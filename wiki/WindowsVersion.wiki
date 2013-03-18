@@ -7,7 +7,7 @@ _FreeSpeech Windows install is in development. Here is what we have so far, if y
 
 == Cygwin ==
 
-Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and install the dependencies listed in FreeSpeech instructions to install it inside the Cygwin environment.
+Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run setup.exe to search and install these dependencies:
 
     * python
     * python-cairo
@@ -32,9 +32,39 @@ Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and instal
     # Test pygtk: pygtk-demo
     # Test gstreamer: gst-inspect-0.10.exe |grep source
 
-Install pocketsphinx here http://www.cs.columbia.edu/~ecooper/CS4706/ps-cygwin.html
-but use python 2.7 instead of python 2.6
+Install
 
+    * libgcc1: GCC compiler support shared runtime
+    * gcc4: GCC Release series 4 compiler (C & C++ install helper)
+    * gcc4-core: Core C++ compiler subpackage
+    * gcc4-g++: G++ subpackage
+    * make: The GNU version of the 'make' utility
+    * subversion: A version control system
+    * autoconf: Wrapper scripts for autoconf commands
+    * libtool: A shared library generation tool
+    * automake: Wrapper scripts for automake and aclocal
+    * libiconv: GNU character set conversion library and utilities
+    * python: Python language interpreter
+
+Download and unpack from http://cmusphinx.sourceforge.net/wiki/download/
+
+    * sphinxbase-0.8
+    * pocketsphinx-0.8
+    * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2]
+
+Unpack to C:\cygwin\home\dev or wherever you want to build
+Using xterm, change directory to the folders and install
+{{{
+cd /home/dev
+cd sphinxbase-0.8
+./configure
+make
+make install
+cd ../pocketsphinx-0.8
+./configure
+make
+make install
+}}}
 Continue with FreeSpeech setup.
 
 (Optional) Try building native WindowsBinary
