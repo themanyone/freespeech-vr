@@ -15,6 +15,8 @@ Linux/Cygwin The following _development_ packages should be installed through th
   * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
   * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
 
+Unpack FreeSpeech into a folder such as /opt/freespeech and make sure the end user has write file permission.
+
 == Using FreeSpeech ==
 
 There is no desktop icon yet. Right-click on the desktop to create one.
