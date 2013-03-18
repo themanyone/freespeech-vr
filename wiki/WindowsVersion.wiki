@@ -46,10 +46,9 @@ Install
     * libiconv: GNU character set conversion library and utilities
     * python: Python language interpreter
 
-Download and unpack from http://cmusphinx.sourceforge.net/wiki/download/
+Download and unpack from http://sourceforge.net/projects/cmusphinx/files
 
-    * sphinxbase-0.8
-    * pocketsphinx-0.8
+    * pocketsphinx-0.8-win32.zip
     * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2]
 
 Unpack to C:\cygwin\home\dev or wherever you want to build
