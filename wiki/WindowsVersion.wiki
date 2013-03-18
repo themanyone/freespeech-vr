@@ -35,6 +35,7 @@ Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run se
 Install
 
     * libgcc1: GCC compiler support shared runtime
+    * libmpfr4: A library for multiple-precision floating point
     * gcc4: GCC Release series 4 compiler (C & C++ install helper)
     * gcc4-core: Core C++ compiler subpackage
     * gcc4-g++: G++ subpackage
