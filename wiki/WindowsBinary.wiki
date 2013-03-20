@@ -1,5 +1,5 @@
 #labels Phase-Design,Phase-QA
-This is for hard-core windows developers making a native binary installer. Perhaps you would rather mess around with getting the WindowsVersion working first.
+Development on the Windows binary has stalled while we try to build libgstpocketsphinx as a .DLL. The CygwinVersion has the same problem.
 
 == Dev Preparation ==
 
