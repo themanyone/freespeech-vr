@@ -5,6 +5,8 @@
 
 _FreeSpeech Windows development is stalled while we try to build libgstpocketsphinx.dll_
 
+This is the progress we have so far...
+
 == Cygwin ==
 
 Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run setup.exe to search and install these dependencies:
