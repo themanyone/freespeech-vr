@@ -3,7 +3,7 @@
 <g:plusone size="medium"></g:plusone>
 = Windows Setup =
 
-_FreeSpeech Windows install is in development. Here is what we have so far, if you want to help._
+_FreeSpeech Windows development is stalled while we try to build libgstpocketsphinx.dll_
 
 == Cygwin ==
 
