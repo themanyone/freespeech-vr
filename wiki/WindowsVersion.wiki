@@ -74,6 +74,16 @@ You should be able to get access to the plugin.
 {{{
 gst-inspect-0.10.exe|grep pocket
 }}}
-Continue with FreeSpeech setup.
+
+Of course the plugin is not there. It is being built as the wrong type of library. Look in /lib/gstreamer-0.10 for the plugin:
+{{{
+cd /lib/gstreamer-0.10
+ls libgst*
+libgstpocketsphinx.a
+libgstpocketsphinx.la*
+}}}
+It should be libgstpocketsphinx.dll now there is probably some option to setup.py to build it as a dll. Maybe --compiler=cygwin or try installing Mingw32 and --compiler=mingw32
+
+Once we get that DLL built, continue with FreeSpeech setup...
 
 (Optional) Try building native WindowsBinary
