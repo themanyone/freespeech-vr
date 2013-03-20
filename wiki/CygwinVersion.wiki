@@ -1,6 +1,5 @@
 #Development work in progress
 
-#summary Work in progress
 <g:plusone size="medium"></g:plusone>
 = Windows Setup =
 
@@ -12,6 +11,7 @@ This is the progress we have so far...
 
 Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run setup.exe to search and install these dependencies:
 
+    * pkg-config
     * python
     * python-cairo
     * python-gobject
@@ -19,13 +19,10 @@ Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run se
     * python-gtk2.0
     * python-gtk2.0-demo
     * python-gtk2.0-devel
-    * gtk2.0
-    * gstreamer0.10
-    * gstreamer0.10-plugins-base
-    * gstreamer0.10-plugins-good
-    * gstreamer0.10-plugins-pulse
+    * gtk2.0lc
+    * liblzma-devel-5.0.2
     * libgstreamer0.10-devel
-    * libgstreamer0.10_0
+    * libgstreamerinterfaces0.10-devel
     * Xorg
     * Xorg-common
     * cairo
@@ -35,7 +32,7 @@ Install [http://cygwin.com/ Cygwin] Linux emulation layer for Windows and run se
     # Test pygtk: pygtk-demo
     # Test gstreamer: gst-inspect-0.10.exe |grep source
 
-Install
+Get a development environment together.
 
     * libgcc1: GCC compiler support shared runtime
     * libmpfr4: A library for multiple-precision floating point
@@ -48,7 +45,6 @@ Install
     * libtool: A shared library generation tool
     * automake: Wrapper scripts for automake and aclocal
     * libiconv: GNU character set conversion library and utilities
-    * python: Python language interpreter
 
 Download and unpack from http://sourceforge.net/projects/cmusphinx/files
 *Do not download the zipfile (22.7MB)* Get sources from Files tab.
@@ -87,4 +83,4 @@ It should be libgstpocketsphinx.dll now there is probably some option to setup.p
 
 Once we get that DLL built, continue with FreeSpeech setup...
 
-(Optional) Try building native WindowsBinary
+(Optional) Try building the native WindowsBinary
