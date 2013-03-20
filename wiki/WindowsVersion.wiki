@@ -68,8 +68,12 @@ cd sphinxb*
 make
 make install
 }}}
+=== Test pocketsphinx. ===
 
-
+You should be able to get access to the plugin.
+{{{
+gst-inspect-0.10.exe|grep pocket
+}}}
 Continue with FreeSpeech setup.
 
 (Optional) Try building native WindowsBinary
