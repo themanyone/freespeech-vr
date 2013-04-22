@@ -38,7 +38,6 @@ dmp     = os.path.join('lm', 'freespeech.dmp')
 
 class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
-    capitalize_first_letter = True
     def __init__(self):
         """Initialize a freespeech object"""
         self.init_gui()
@@ -58,6 +57,7 @@ class freespeech(object):
         self.window.set_default_size(400, 200)
         self.window.set_border_width(10)
         self.window.set_icon(self.icon)
+        self.window.set_title("FreeSpeech")
         vbox = gtk.VBox()
         hbox = gtk.HBox(homogeneous=True)
         self.textbuf = gtk.TextBuffer()
@@ -76,7 +76,6 @@ class freespeech(object):
         hbox.pack_start(self.button, True, False, 5)
         hbox.pack_start(self.button2, True, False, 5)
         self.window.add(vbox)
-        self.window.add(hbox)
         self.window.show_all()
 
     def init_prefs(self):
@@ -105,7 +104,7 @@ class freespeech(object):
         
     def init_gst(self):
         """Initialize the speech components"""
-        self.pipeline = gst.parse_launch('gconfaudiosrc ! audioconvert ! audioresample '
+        self.pipeline = gst.parse_launch('autoaudiosrc ! audioconvert ! audioresample '
                                          + '! vader name=vad auto-threshold=true '
                                          + '! pocketsphinx name=asr ! fakesink')
         asr = self.pipeline.get_by_name('asr')
@@ -201,6 +200,7 @@ class freespeech(object):
 
     def collapse_punctuation(self, hyp, started):
         index = 0
+        start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
         words = hyp.split()
         # remove the extra text to the right of the punctuation mark
         while True:
@@ -214,10 +214,9 @@ class freespeech(object):
         hyp = hyp.replace(" ...ellipsis", " ...")
         hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
-        if self.capitalize_first_letter:
+        if not start.inside_sentence():
             hyp = hyp[0].capitalize() + hyp[1:]
         print(hyp)
-        self.capitalize_first_letter = hyp[-1] in ".:!?"
         if re.match(r"\w", hyp[0]) and started:
             space = " "
         else:
@@ -340,7 +339,7 @@ class freespeech(object):
             #self.button.set_active(False)
 
     def partial_result(self, hyp, uttid):
-        """Delete any previous selection, insert text and select it."""
+        """Show partial result on tooltip."""
         self.text.set_tooltip_text(hyp)
 
     def final_result(self, hyp, uttid):
@@ -373,32 +372,37 @@ class freespeech(object):
         self.prefsdialog.hide()
     def clear_edits(self):
         self.textbuf.set_text('')
-        self.capitalize_first_letter = True
         return True
+    def backspace(self):
+        start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+        self.textbuf.backspace(start, False, True)
+        return True # command completed successfully!
     def delete(self):
         self.textbuf.delete_selection(True, self.text.get_editable())
         return True # command completed successfully!
     def done_editing(self):
-        txt_iter = self.textbuf.get_bounds()
-        self.textbuf.place_cursor(txt_iter[1])
+        txt_bounds = self.textbuf.get_bounds()
+        self.textbuf.place_cursor(txt_bounds[1])
         return True # command completed successfully!
     def scratch_that(self):
-        txt_iter = self.textbuf.get_bounds()
+        txt_bounds = self.textbuf.get_bounds()
         scratch = self.undo.pop(-1)
-        print('scratching ' + scratch)
-        search_back = txt_iter[1].backward_search( \
+        search_back = txt_bounds[1].backward_search( \
             scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
         self.textbuf.select_range(search_back[0], search_back[1])
         self.textbuf.delete_selection(True, self.text.get_editable())
         return True
-
+    def new_paragraph(self):
+        self.textbuf.insert_at_cursor('\n')
+        return True
+        
     def do_command(self, hyp):
         """decode spoken commands"""
         hyp = hyp.strip()
         hyp = hyp[0].lower() + hyp[1:]
-        txt_iter = self.textbuf.get_bounds()
-        # todo: this dynamic list allows runtime command editing!
-        # todo: insert as editable ListView in the Preferences dialog
+        txt_bounds = self.textbuf.get_bounds()
+        # editable commands
+        # todo: insert as ListView in the Preferences dialog
         commands = {'file quit': gtk.main_quit, \
                     'file preferences': self.launch_preferences, \
                     'editor clear': self.clear_edits,
@@ -407,7 +411,10 @@ class freespeech(object):
                     'go to the end': self.done_editing,
                     'done editing': self.done_editing,
                     'scratch that': self.scratch_that,
+                    'back space':self.backspace,
+                    'new paragraph':self.new_paragraph,
                     }
+        # process editable commands
         if commands.has_key(hyp):
             return commands[hyp]()
         try:# separate command and arguments
@@ -417,34 +424,46 @@ class freespeech(object):
         except:
             return False # fail
             
-        # "select" command uttered
-        if re.match("select", command):
-            print('->' + hyp)
+        # "delete" command uttered
+        if re.match("delete", command):
             if re.match("^to end", argument):
                 start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
-                end = txt_iter[1]
+                end = txt_bounds[1]
+                self.textbuf.delete(start, end)
+                return True # success
+            search_back = self.searchback(txt_bounds[1], argument)
+            if None == search_back:
+                return True
+            # also select the space before it
+            search_back[0].backward_char()
+            self.textbuf.delete(search_back[0], search_back[1])
+            return True # command completed successfully!
+            
+        # "select" command uttered
+        if re.match("select", command):
+            if re.match("^to end", argument):
+                start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+                end = txt_bounds[1]
                 self.textbuf.select_range(start, end)
                 return True # success
-            search_back = self.searchback(txt_iter[1], argument)
+            search_back = self.searchback(txt_bounds[1], argument)
+            if re.match("^all", argument):
+                self.textbuf.select_range(txt_bounds[0], txt_bounds[1])
+                return True # success
+            search_back = self.searchback(txt_bounds[1], argument)
             if None == search_back:
                 return True
             # also select the space before it
             search_back[0].backward_char()
             self.textbuf.select_range(search_back[0], search_back[1])
-            # remember the selected text just in case we fubar it
-            if not search_back[0].is_start():
-                self.capitalize_first_letter = search_back[0].is_start()
             return True # command completed successfully!
         # "insert" command uttered
         if re.match("^insert after", hyp):
-            print(hyp)
             argument = re.match(r'\w+(.*)', argument).group(1)
-            search_back = self.searchback(txt_iter[1], argument)
+            search_back = self.searchback(txt_bounds[1], argument)
             if None == search_back:
                 return True
-            self.textbuf.place_cursor(search_back[1])
-            if search_back[0].is_start():
-                self.capitalize_first_letter = True               
+            self.textbuf.place_cursor(search_back[1])        
             return True
         return False
 
@@ -452,9 +471,7 @@ class freespeech(object):
         """helper function to search backwards in text buffer"""
         search_back = iter.backward_search( \
         argument, gtk.TEXT_SEARCH_TEXT_ONLY)
-        print("search for " + argument)
         if None == search_back:
-            print("searching for " + argument.capitalize())
             search_back = iter.backward_search( \
             argument.capitalize(), gtk.TEXT_SEARCH_TEXT_ONLY)
             if None == search_back:

@@ -125,7 +125,7 @@
 <s> reliability :colon mean time between failures ?question-mark scalability :colon could it be built into something bigger ?question-mark security :colon can the program be intentionally compromised ?question-mark </s>
 <s> sufficiency the way to test sufficiency is to install the program in the actual operating environment or a test environment that is very similar .period the operating system ,comma databases ,comma file system ,comma network </s>
 <s> resources ,comma and available command line tools should be the same .period </s>
-<s> does the program perform as expected ?question-mark can it perform a typical task ?question-mark some scripts or automated testing algorithms should be codified in order to standardize the testing procedure .period </s>
+<s> does the program perform as expected ?question-mark can it perform a typical task ?question-mark some automated testing algorithms should be codified in order to standardize the testing procedure .period </s>
 <s> robustness this is more applicable to white box testing than black box testing and more so during the development phase than for integration testing .period adhering to good coding standards such as </s>
 <s> interacting with interfaces ,comma naming conventions ,comma and checking inputs helps prepare for this step .period </s>
 <s> automated tools exist for checking robustness of code and compilers .period a production environment may not have room for these tools ,comma however ;semi-colon robustness testing can be performed by teams of alpha and beta testers .period </s>
@@ -144,7 +144,7 @@
 <s> application development and testing ,comma so expertise needs to be maintained in both areas .period </s>
 <s> source code security analyzers n .period d .period )right-paren ,comma has a list of code analysis software that may be of use .period this is just a brief overview of security .period writing secure code is careful work .period there are no shortages of viruses and hackers out there and new threats are coming out every day .period </s>
 <s> web -hyphen enabled languages and active web pages are rife with potential security problems .period </s>
-<s> services need to be locked down ,comma checked ,comma and double checked .period scripts should be tested for input validation ,comma cross -hyphen site scripting vulnerabilities xss )right-paren ,comma buffer overflow ,comma variable poisoning ,comma </s>
+<s> services need to be locked down ,comma checked ,comma and double checked .period forms should be tested for input validation ,comma cross -hyphen site scripting vulnerabilities xss )right-paren ,comma buffer overflow ,comma variable poisoning ,comma </s>
 <s> code injection ,comma and directory traversal ,comma among others .period </s>
 <s> performance testing workload testing workload testing involves workload planning ,comma identifying the actions taking by users and </s>
 <s> triggered internally in the system and determining exactly what response times are necessary for which actions .period it is natural to assume that faster is better ,comma and in most cases it is ,comma but it may not be practical for an application .period specifically ,comma the fastest response times should be focused at the </s>
@@ -1657,3 +1657,28 @@ this kind of applications is particularly important as speech is the main form o
 <s> you should have received a copy of the GNU General Public License </s>
 <s> in the future ,comma I am going to put a button here to echo this text to the keyboard .period </s>
 <s> to the future ,comma with love .period </s>
+<s> that is the truth of scratch that and insert after </s>
+<s> I am going to write a letter to the editor .period </s>
+<s> delete this delete believe delete that </s>
+<s> delete delete delete </s>
+<s> go to the end </s>
+<s> backspace </s>
+<s> his name is David .period </s>
+<s> we began to do more than we ordinarily would have </s>
+<s> the United States of America began to rock .period </s>
+<s> I opened the terminal ,comma typed in </s>
+<s> after installation ,comma the desktop icon was unresponsive .period </s>
+<s> to solve the problem ,comma I tried loading it from the command line .period </s>
+<s> it's always been groups .period </s>
+<s> that's the joke ,comma I think .period </s>
+<s> otherwise there would be one dude out there with a rock or something .period </s>
+<s> A young man and woman had been dating for several months .period </s>
+<s> the agreement was that he was going to buy her a ring ,comma once his debts were paid off .period </s>
+<s> he kept working and making payments ,comma but she became impatient .period </s>
+<s> she started pestering him about the ring and asking him when they were going to get married .period </s>
+<s> she was about to receive a big inheritance anyway and could not understand why he kept making these big payments when they could share the burden .period </s>
+<s> she thought it was selfish of him to spend so much time paying off debts when they could be enjoying their time together .period </s>
+<s> he started working two jobs and they never had time to talk .period </s>
+<s> he became evasive about where the money was going .period </s>
+<s> finally it occurred to her that he could not be trusted and she decided to call the whole thing off .period </s>
+<s> the next day a young man went to the store to pick up a ring ,comma the one he had been secretly making payments on .period </s>
