@@ -72,7 +72,6 @@ class freespeech(object):
         self.button.connect('clicked', self.learn_new_words)
         self.button2 = gtk.ToggleButton("Mute")
         self.button2.connect('clicked', self.mute)
-        self.button2.set_active(True)
         hbox.pack_start(self.button, True, False, 5)
         hbox.pack_start(self.button2, True, False, 5)
         self.window.add(vbox)
@@ -81,16 +80,62 @@ class freespeech(object):
     def init_prefs(self):
         """Initialize new GUI components"""
         me = self.prefsdialog = gtk.Dialog("Preferences", None,
-            gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+            gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
         me.set_default_size(400, 300)
-        me.label = gtk.Label("Nice label")
+        self.commands = {'file quit': gtk.main_quit,
+            'file preferences': self.launch_preferences,
+            'editor clear': self.clear_edits,
+            'clear edits': self.clear_edits,
+            'delete': self.delete,
+            'select': self.select,
+            'insert': self.insert,
+            'go to the end': self.done_editing,
+            'done editing': self.done_editing,
+            'scratch that': self.scratch_that,
+            'back space': self.backspace,
+            'new paragraph': self.new_paragraph,
+            }
+        me.label = gtk.Label( \
+"Double-click to customize commands.\n\
+If the new command phrase doesn't work you may have to train it\n\
+by typing it into the editor and pressing the 'Learn' button.\n\n\
+Changes will be forgotten when the program restarts.")
         me.vbox.pack_start(me.label)
+        me.liststore=gtk.ListStore(str, str)
+        for x,y in self.commands.items():
+            me.liststore.append([x,y.__doc__])
+        me.liststore.set_sort_column_id(0, gtk.SORT_ASCENDING)
+        me.tree=gtk.TreeView(me.liststore)
+        editable = gtk.CellRendererText()
+        fixed = gtk.CellRendererText()
+        editable.set_property('editable', True)
+        editable.connect('edited', self.edited_cb)
+        column = gtk.TreeViewColumn("Spoken command",editable,text=0)
+        me.tree.append_column(column)
+        column = gtk.TreeViewColumn("What it does",fixed,text=1)
+        me.tree.append_column(column)
+        me.vbox.pack_end(me.tree)
         me.label.show()
-        me.checkbox = gtk.CheckButton("Useless checkbox")
-        me.action_area.pack_end(me.checkbox)
-        me.checkbox.show()
+        me.tree.show()
+        self.commands_old = self.commands
+        ret = me.run()
+        if not ret==gtk.RESPONSE_OK:
+            self.commands = self.commands_old
+        me.hide()
+        
+    def edited_cb(self, cellrenderertext, path, new_text):
+        """ callback activated when treeview text edited """
+        #~ self.prefsdialog.tree.path=new_text
+        liststore=self.prefsdialog.liststore
+        treeiter = liststore.get_iter(path)
+        old_text = liststore.get_value(treeiter,0)
+        if not self.commands.has_key(new_text):
+            liststore.set_value(treeiter,0,new_text)
+            self.commands[new_text]=self.commands[old_text]
+            del(self.commands[old_text])
+            print(old_text, new_text)
         
     def init_errmsg(self):
         me = self.errmsg = gtk.Dialog("Error", None,
@@ -114,7 +159,7 @@ class freespeech(object):
         
         # The language model that came with pocketsphinx works OK...
         # asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP')
-        # but it is too large and can't be modified, so we use our own
+        # but it does not contain editing commands and can't be modified, so we use our own
         if not os.access(dmp, os.R_OK): # create if not exists
                 self.learn_new_words(None)
         asr.set_property('lm', dmp)
@@ -189,7 +234,7 @@ class freespeech(object):
         
     def mute(self, button):
         """Handle button presses."""
-        if button.get_active():
+        if not button.get_active():
             button.set_label("Mute")
             self.pipeline.set_state(gst.STATE_PLAYING)
         else:
@@ -368,79 +413,27 @@ class freespeech(object):
         self.errmsg.run()
         self.errmsg.hide()
     def launch_preferences(self):
-        self.prefsdialog.run()
-        self.prefsdialog.hide()
+        """ show this preferences dialog """
+        me=self.prefsdialog
+        self.commands_old = self.commands
+        ret = me.run()
+        if not ret==gtk.RESPONSE_OK:
+            self.commands = self.commands_old
+        me.hide()
+        return True # command completed successfully!
     def clear_edits(self):
+        """ erase text buffer """
         self.textbuf.set_text('')
-        return True
+        return True # command completed successfully!
     def backspace(self):
+        """ delete one character """
         start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
         self.textbuf.backspace(start, False, True)
         return True # command completed successfully!
-    def delete(self):
-        self.textbuf.delete_selection(True, self.text.get_editable())
-        return True # command completed successfully!
-    def done_editing(self):
+    def select(self,argument=None):
+        """ select [text/all/to end] """
         txt_bounds = self.textbuf.get_bounds()
-        self.textbuf.place_cursor(txt_bounds[1])
-        return True # command completed successfully!
-    def scratch_that(self):
-        txt_bounds = self.textbuf.get_bounds()
-        scratch = self.undo.pop(-1)
-        search_back = txt_bounds[1].backward_search( \
-            scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
-        self.textbuf.select_range(search_back[0], search_back[1])
-        self.textbuf.delete_selection(True, self.text.get_editable())
-        return True
-    def new_paragraph(self):
-        self.textbuf.insert_at_cursor('\n')
-        return True
-        
-    def do_command(self, hyp):
-        """decode spoken commands"""
-        hyp = hyp.strip()
-        hyp = hyp[0].lower() + hyp[1:]
-        txt_bounds = self.textbuf.get_bounds()
-        # editable commands
-        # todo: insert as ListView in the Preferences dialog
-        commands = {'file quit': gtk.main_quit, \
-                    'file preferences': self.launch_preferences, \
-                    'editor clear': self.clear_edits,
-                    'clear edits': self.clear_edits,
-                    'delete that': self.delete,
-                    'go to the end': self.done_editing,
-                    'done editing': self.done_editing,
-                    'scratch that': self.scratch_that,
-                    'back space':self.backspace,
-                    'new paragraph':self.new_paragraph,
-                    }
-        # process editable commands
-        if commands.has_key(hyp):
-            return commands[hyp]()
-        try:# separate command and arguments
-            reg = re.match(r'(\w+) (.*)', hyp)
-            command = reg.group(1)
-            argument = reg.group(2)
-        except:
-            return False # fail
-            
-        # "delete" command uttered
-        if re.match("delete", command):
-            if re.match("^to end", argument):
-                start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
-                end = txt_bounds[1]
-                self.textbuf.delete(start, end)
-                return True # success
-            search_back = self.searchback(txt_bounds[1], argument)
-            if None == search_back:
-                return True
-            # also select the space before it
-            search_back[0].backward_char()
-            self.textbuf.delete(search_back[0], search_back[1])
-            return True # command completed successfully!
-            
-        # "select" command uttered
-        if re.match("select", command):
+        if argument:
             if re.match("^to end", argument):
                 start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
                 end = txt_bounds[1]
@@ -457,14 +450,73 @@ class freespeech(object):
             search_back[0].backward_char()
             self.textbuf.select_range(search_back[0], search_back[1])
             return True # command completed successfully!
-        # "insert" command uttered
-        if re.match("^insert after", hyp):
+        return False
+    def delete(self,argument=None):
+        """ delete [text] or erase selection """
+        txt_bounds = self.textbuf.get_bounds()
+        if argument:
+            print("del "+argument)
+            if re.match("^to end", argument):
+                start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+                end = txt_bounds[1]
+                self.textbuf.delete(start, end)
+                return True # success
+            search_back = self.searchback(txt_bounds[1], argument)
+            if None == search_back:
+                return True
+            # also select the space before it
+            search_back[0].backward_char()
+            self.textbuf.delete(search_back[0], search_back[1])
+            return True # command completed successfully!
+        self.textbuf.delete_selection(True, self.text.get_editable())
+        return True # command completed successfully!
+    def insert(self,argument=None):
+        """ insert after [text] """
+        txt_bounds = self.textbuf.get_bounds()
+        if re.match("^after", argument):
             argument = re.match(r'\w+(.*)', argument).group(1)
             search_back = self.searchback(txt_bounds[1], argument)
             if None == search_back:
                 return True
             self.textbuf.place_cursor(search_back[1])        
-            return True
+            return True # command completed successfully!
+    def done_editing(self):
+        """ place cursor at end """
+        txt_bounds = self.textbuf.get_bounds()
+        self.textbuf.place_cursor(txt_bounds[1])
+        return True # command completed successfully!
+    def scratch_that(self):
+        """ erase recent text """
+        txt_bounds = self.textbuf.get_bounds()
+        scratch = self.undo.pop(-1)
+        search_back = txt_bounds[1].backward_search( \
+            scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
+        self.textbuf.select_range(search_back[0], search_back[1])
+        self.textbuf.delete_selection(True, self.text.get_editable())
+        return True # command completed successfully!
+    def new_paragraph(self):
+        """ start a new paragraph """
+        self.textbuf.insert_at_cursor('\n')
+        return True # command completed successfully!
+        
+        
+    def do_command(self, hyp):
+        """decode spoken commands"""
+        hyp = hyp.strip()
+        hyp = hyp[0].lower() + hyp[1:]
+        txt_bounds = self.textbuf.get_bounds()
+        # editable commands
+        commands=self.commands
+        # process editable commands
+        if commands.has_key(hyp):
+            return commands[hyp]()
+        try:# separate command and arguments
+            reg = re.match(r'(\w+) (.*)', hyp)
+            command = reg.group(1)
+            argument = reg.group(2)
+            return commands[command](argument)
+        except:
+            pass # no args, so not a command
         return False
 
     def searchback(self, iter, argument):
