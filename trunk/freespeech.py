@@ -56,7 +56,7 @@ class freespeech(object):
         # Change to executable's dir
         if os.path.dirname(sys.argv[0]):
             os.chdir(os.path.dirname(sys.argv[0]))     
-        self.icon = gtk.gdk.pixbuf_new_from_file("icon.png")
+        self.icon = gtk.gdk.pixbuf_new_from_file("FreeSpeech.png")
         self.window.connect("delete-event", gtk.main_quit)
         self.window.set_default_size(400, 200)
         self.window.set_border_width(10)
@@ -86,16 +86,8 @@ class freespeech(object):
         parent=self.window, action=gtk.FILE_CHOOSER_ACTION_OPEN,
         buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT), backend=None)
-
-    def init_prefs(self):
-        """Initialize new GUI components"""
-        me = self.prefsdialog = gtk.Dialog("Command Preferences", None,
-            gtk.DIALOG_DESTROY_WITH_PARENT,
-            (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
-        me.set_default_size(400, 300)
-        if not os.access(self.prefsfile, os.R_OK):
-            #~ write some default commands to a file if it doesn't exist
+    
+    def init_commands(self):
             self.commands = {'file quit': 'gtk.main_quit',
                 'file open': 'self.file_open',
                 'file save': 'self.file_save',
@@ -114,24 +106,37 @@ class freespeech(object):
                 'new paragraph':  'self.new_paragraph',
             }
             self.write_prefs()
+            self.prefsdialog.checkbox.set_active(False)
+
+    def init_prefs(self):
+        """Initialize new GUI components"""
+        me = self.prefsdialog = gtk.Dialog("Command Preferences", None,
+            gtk.DIALOG_DESTROY_WITH_PARENT,
+            (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+        me.set_default_size(400, 300)
+        if not os.access(self.prefsfile, os.R_OK):
+            #~ write some default commands to a file if it doesn't exist
+            self.init_commands()
         else:
             self.read_prefs()
         
         me.label = gtk.Label( \
 "Double-click to change command wording.\n\
 If the new command phrase doesn't work you may have to train it\n\
-by typing it into the editor and pressing the 'Learn' button.\n\n\
-Changes are stored in "+self.prefsfile)
+by typing it into the editor and pressing the 'Learn' button.")
         me.vbox.pack_start(me.label)
+        me.checkbox=gtk.CheckButton("Restore Defaults")
+        me.checkbox.show()
+        me.action_area.pack_start(me.checkbox)
         me.liststore=gtk.ListStore(str, str)
-        for x,y in self.commands.items():
-            me.liststore.append([x,eval(y).__doc__])
         me.liststore.set_sort_column_id(0, gtk.SORT_ASCENDING)
         me.tree=gtk.TreeView(me.liststore)
         editable = gtk.CellRendererText()
         fixed = gtk.CellRendererText()
         editable.set_property('editable', True)
         editable.connect('edited', self.edited_cb)
+        me.connect("expose-event", self.prefs_expose)
         column = gtk.TreeViewColumn("Spoken command",editable,text=0)
         me.tree.append_column(column)
         column = gtk.TreeViewColumn("What it does",fixed,text=1)
@@ -141,12 +146,22 @@ Changes are stored in "+self.prefsfile)
         me.tree.show()
         self.commands_old = self.commands
         ret = me.run()
-        if ret!=gtk.RESPONSE_ACCEPT:
-            self.commands = self.commands_old
+        if me.checkbox.get_active():
+            self.init_commands()
         else:
-            self.write_prefs()
+            if ret!=gtk.RESPONSE_ACCEPT:
+                self.commands = self.commands_old
+            else:
+                self.write_prefs()
         me.hide()
-    
+
+    def prefs_expose(self, me, event):
+        """ callback when prefs window is shown """
+        # populate commands list with documentation
+        me.liststore.clear()
+        for x,y in self.commands.items():
+            me.liststore.append([x,eval(y).__doc__])        
+        
     def write_prefs(self):
         with codecs.open(self.prefsfile, encoding='utf-8', mode='w') as f:
                 f.write(json.dumps(self.commands))
@@ -355,8 +370,8 @@ Changes are stored in "+self.prefsfile)
 
     def prepare_corpus(self, txt):
         txt.begin_user_action()
-        txt_bounds = txt.get_bounds()
-        text = txt.get_text(txt_bounds[0], txt_bounds[1])
+        self.bounds = self.textbuf.get_bounds()
+        text = txt.get_text(self.bounds[0], self.bounds[1])
         # break on end of sentence
         text = re.sub(r'(\w[.:;?!])\s+(\w)', r'\1\n\2', text)
         text = re.sub(r'\n+', r'\n', text)
@@ -418,24 +433,24 @@ Changes are stored in "+self.prefsfile)
         self.text.set_tooltip_text(hyp)
 
     def final_result(self, hyp, uttid):
-        """Insert the final result."""
-        self.text.set_tooltip_text(hyp)
+        """Insert the final result into the textbox."""
         # All this stuff appears as one single action
         self.textbuf.begin_user_action()
-        txt = self.textbuf
-        txt_bounds = txt.get_bounds()
+        self.text.set_tooltip_text(hyp)
+        # get bounds of text buffer
+        self.bounds = self.textbuf.get_bounds()
         # Fix punctuation
         hyp = self.collapse_punctuation(hyp, \
-        not txt_bounds[1].is_start())
+        not self.bounds[1].is_start())
         # handle commands
         if not self.do_command(hyp):
             self.undo.append(hyp)
-            txt.delete_selection(True, self.text.get_editable())
-            txt.insert_at_cursor(hyp)
+            self.textbuf.delete_selection(True, self.text.get_editable())
+            self.textbuf.insert_at_cursor(hyp)
         ins = self.textbuf.get_insert()
         iter = self.textbuf.get_iter_at_mark(ins)
         self.text.scroll_to_iter(iter, 0, False)
-        txt.end_user_action()
+        self.textbuf.end_user_action()
 
     """Process spoken commands"""
     def err(self, errormsg):
@@ -447,16 +462,20 @@ Changes are stored in "+self.prefsfile)
         me=self.prefsdialog
         self.commands_old = self.commands
         ret = me.run()
-        if ret!=gtk.RESPONSE_ACCEPT:
-            self.commands = self.commands_old
+        if me.checkbox.get_active():
+            self.init_commands()
         else:
-            self.write_prefs()
+            if ret!=gtk.RESPONSE_ACCEPT:
+                self.commands = self.commands_old
+            else:
+                self.write_prefs()
         me.hide()
         return True # command completed successfully!
     def clear_edits(self):
         """ erase text buffer, close files """
         self.textbuf.set_text('')
         self.open_filename=''
+        self.window.set_title("FreeSpeech")
         return True # command completed successfully!
     def backspace(self):
         """ delete one character """
@@ -465,18 +484,17 @@ Changes are stored in "+self.prefsfile)
         return True # command completed successfully!
     def select(self,argument=None):
         """ select [text/all/to end] """
-        txt_bounds = self.textbuf.get_bounds()
         if argument:
             if re.match("^to end", argument):
                 start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
-                end = txt_bounds[1]
+                end = self.bounds[1]
                 self.textbuf.select_range(start, end)
                 return True # success
-            search_back = self.searchback(txt_bounds[1], argument)
+            search_back = self.searchback(self.bounds[1], argument)
             if re.match("^all", argument):
-                self.textbuf.select_range(txt_bounds[0], txt_bounds[1])
+                self.textbuf.select_range(self.bounds[0], self.bounds[1])
                 return True # success
-            search_back = self.searchback(txt_bounds[1], argument)
+            search_back = self.searchback(self.bounds[1], argument)
             if None == search_back:
                 return True
             # also select the space before it
@@ -486,15 +504,14 @@ Changes are stored in "+self.prefsfile)
         return False
     def delete(self,argument=None):
         """ delete [text] or erase selection """
-        txt_bounds = self.textbuf.get_bounds()
         if argument:
             print("del "+argument)
             if re.match("^to end", argument):
                 start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
-                end = txt_bounds[1]
+                end = self.bounds[1]
                 self.textbuf.delete(start, end)
                 return True # success
-            search_back = self.searchback(txt_bounds[1], argument)
+            search_back = self.searchback(self.bounds[1], argument)
             if None == search_back:
                 return True
             # also select the space before it
@@ -505,24 +522,21 @@ Changes are stored in "+self.prefsfile)
         return True # command completed successfully!
     def insert(self,argument=None):
         """ insert after [text] """
-        txt_bounds = self.textbuf.get_bounds()
         if re.match("^after", argument):
             argument = re.match(r'\w+(.*)', argument).group(1)
-            search_back = self.searchback(txt_bounds[1], argument)
+            search_back = self.searchback(self.bounds[1], argument)
             if None == search_back:
                 return True
             self.textbuf.place_cursor(search_back[1])        
             return True # command completed successfully!
     def done_editing(self):
         """ place cursor at end """
-        txt_bounds = self.textbuf.get_bounds()
-        self.textbuf.place_cursor(txt_bounds[1])
+        self.textbuf.place_cursor(self.bounds[1])
         return True # command completed successfully!
     def scratch_that(self):
         """ erase recent text """
-        txt_bounds = self.textbuf.get_bounds()
         scratch = self.undo.pop(-1)
-        search_back = txt_bounds[1].backward_search( \
+        search_back = self.bounds[1].backward_search( \
             scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
         self.textbuf.select_range(search_back[0], search_back[1])
         self.textbuf.delete_selection(True, self.text.get_editable())
@@ -539,18 +553,19 @@ Changes are stored in "+self.prefsfile)
             with codecs.open(self.open_filename, encoding='utf-8', mode='r') as f:
                 self.textbuf.set_text(f.read())
         self.file_chooser.hide()
+        self.window.set_title("FreeSpeech | "+ os.path.basename(self.open_filename))
         return True # command completed successfully!
     def file_save(self):
-        """ save file """
-        txt_bounds = self.textbuf.get_bounds()
+        """ save text buffer to disk """
         if not self.open_filename:
             response=self.file_chooser.run()
             if response==gtk.RESPONSE_ACCEPT:
                 self.open_filename=self.file_chooser.get_filename()
             self.file_chooser.hide()
+            self.window.set_title("FreeSpeech | "+ os.path.basename(self.open_filename))
         if self.open_filename:
             with codecs.open(self.open_filename, encoding='utf-8', mode='w') as f:
-                f.write(self.textbuf.get_text(txt_bounds[0],txt_bounds[1]))
+                f.write(self.textbuf.get_text(self.bounds[0],self.bounds[1]))
         return True # command completed successfully!
     def file_save_as(self):
         """ save under a different name """
@@ -561,7 +576,6 @@ Changes are stored in "+self.prefsfile)
         """decode spoken commands"""
         hyp = hyp.strip()
         hyp = hyp[0].lower() + hyp[1:]
-        txt_bounds = self.textbuf.get_bounds()
         # editable commands
         commands=self.commands
         # process editable commands
