@@ -1684,3 +1684,4 @@ this kind of applications is particularly important as speech is the main form o
 <s> the next day a young man went to the store to pick up a ring ,comma the one he had been secretly making payments on .period </s>
 <s> go to the end </s>
 <s> goodbye </s>
+<s> show commands </s>

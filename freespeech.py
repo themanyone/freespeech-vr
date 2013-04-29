@@ -29,6 +29,7 @@ import gst
 import subprocess
 import os, sys, codecs
 import re
+import json
 
 lang_ref= os.path.join('lm', 'freespeech.ref.txt')
 vocab   = os.path.join('lm', 'freespeech.vocab')
@@ -40,6 +41,7 @@ class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
     def __init__(self):
         """Initialize a freespeech object"""
+        self.prefsfile=".freespeech_prefs"
         self.init_gui()
         self.init_prefs()
         self.init_errmsg()
@@ -79,33 +81,39 @@ class freespeech(object):
 
     def init_prefs(self):
         """Initialize new GUI components"""
-        me = self.prefsdialog = gtk.Dialog("Preferences", None,
+        me = self.prefsdialog = gtk.Dialog("Command Preferences", None,
             gtk.DIALOG_DESTROY_WITH_PARENT,
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
         me.set_default_size(400, 300)
-        self.commands = {'file quit': gtk.main_quit,
-            'file preferences': self.launch_preferences,
-            'editor clear': self.clear_edits,
-            'clear edits': self.clear_edits,
-            'delete': self.delete,
-            'select': self.select,
-            'insert': self.insert,
-            'go to the end': self.done_editing,
-            'done editing': self.done_editing,
-            'scratch that': self.scratch_that,
-            'back space': self.backspace,
-            'new paragraph': self.new_paragraph,
+        if not os.access(self.prefsfile, os.R_OK):
+            #~ write some default commands to a file if it doesn't exist
+            self.commands = {'file quit': 'gtk.main_quit',
+                'show commands': 'self.show_commands',
+                'editor clear': 'self.clear_edits',
+                'clear edits': 'self.clear_edits',
+                'delete': 'self.delete',
+                'select': 'self.select',
+                'insert': 'self.insert',
+                'go to the end': 'self.done_editing',
+                'done editing': 'self.done_editing',
+                'scratch that': 'self.scratch_that',
+                'back space': 'self.backspace',
+                'new paragraph': 'self.new_paragraph',
             }
+            self.write_prefs()
+        else:
+            self.read_prefs()
+        
         me.label = gtk.Label( \
-"Double-click to customize commands.\n\
+"Double-click to change command wording.\n\
 If the new command phrase doesn't work you may have to train it\n\
 by typing it into the editor and pressing the 'Learn' button.\n\n\
-Changes will be forgotten when the program restarts.")
+Changes are stored in "+self.prefsfile)
         me.vbox.pack_start(me.label)
         me.liststore=gtk.ListStore(str, str)
         for x,y in self.commands.items():
-            me.liststore.append([x,y.__doc__])
+            me.liststore.append([x,eval(y).__doc__])
         me.liststore.set_sort_column_id(0, gtk.SORT_ASCENDING)
         me.tree=gtk.TreeView(me.liststore)
         editable = gtk.CellRendererText()
@@ -121,9 +129,19 @@ Changes will be forgotten when the program restarts.")
         me.tree.show()
         self.commands_old = self.commands
         ret = me.run()
-        if not ret==gtk.RESPONSE_OK:
+        if ret!=gtk.RESPONSE_ACCEPT:
             self.commands = self.commands_old
+        else:
+            self.write_prefs()
         me.hide()
+    
+    def write_prefs(self):
+        with codecs.open(self.prefsfile, encoding='utf-8', mode='w') as f:
+                f.write(json.dumps(self.commands))
+        
+    def read_prefs(self):
+        with codecs.open(self.prefsfile, encoding='utf-8', mode='r') as f:
+                self.commands=json.loads(f.read())
         
     def edited_cb(self, cellrenderertext, path, new_text):
         """ callback activated when treeview text edited """
@@ -135,7 +153,7 @@ Changes will be forgotten when the program restarts.")
             liststore.set_value(treeiter,0,new_text)
             self.commands[new_text]=self.commands[old_text]
             del(self.commands[old_text])
-            print(old_text, new_text)
+            #~ print(old_text, new_text)
         
     def init_errmsg(self):
         me = self.errmsg = gtk.Dialog("Error", None,
@@ -412,13 +430,15 @@ Changes will be forgotten when the program restarts.")
         self.errmsg.label.set_text(errormsg)
         self.errmsg.run()
         self.errmsg.hide()
-    def launch_preferences(self):
-        """ show this preferences dialog """
+    def show_commands(self):
+        """ show these command preferences """
         me=self.prefsdialog
         self.commands_old = self.commands
         ret = me.run()
-        if not ret==gtk.RESPONSE_OK:
+        if ret!=gtk.RESPONSE_ACCEPT:
             self.commands = self.commands_old
+        else:
+            self.write_prefs()
         me.hide()
         return True # command completed successfully!
     def clear_edits(self):
@@ -509,14 +529,14 @@ Changes will be forgotten when the program restarts.")
         commands=self.commands
         # process editable commands
         if commands.has_key(hyp):
-            return commands[hyp]()
+            return eval(commands[hyp])()
         try:# separate command and arguments
             reg = re.match(r'(\w+) (.*)', hyp)
             command = reg.group(1)
             argument = reg.group(2)
-            return commands[command](argument)
+            return eval(commands[command])(argument)
         except:
-            pass # no args, so not a command
+            pass # didn't work; not a command
         return False
 
     def searchback(self, iter, argument):
