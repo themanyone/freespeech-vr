@@ -5,9 +5,9 @@ FreeSpeech is a realtime speech recognition application for the desktop (Android
 
 == Installation ==
 
-Windows: We are working on a WindowsVersion installer.
+Windows: Work on the WindowsBinary is stalled until the CMU folks get the pocketsphinx plugin updated to work with gst-python on gstreamer 1.0.
 
-Linux/Cygwin The following _development_ packages should be installed through the package manager.
+Linux/Cygwin The following _development_ packages should be installed through the package manager. 
 
   * [http://www.python.org/ Python 2.7]
   * [http://www.pygtk.org/ pygtk2]
