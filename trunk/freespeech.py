@@ -42,9 +42,11 @@ class freespeech(object):
     def __init__(self):
         """Initialize a freespeech object"""
         self.prefsfile=".freespeech_prefs"
+        self.open_filename=''
         self.init_gui()
-        self.init_prefs()
         self.init_errmsg()
+        self.init_prefs()
+        self.init_file_chooser()
         self.init_gst()
 
     def init_gui(self):
@@ -79,6 +81,12 @@ class freespeech(object):
         self.window.add(vbox)
         self.window.show_all()
 
+    def init_file_chooser(self):
+        self.file_chooser = gtk.FileChooserDialog(title="File Chooser",
+        parent=self.window, action=gtk.FILE_CHOOSER_ACTION_OPEN,
+        buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT), backend=None)
+
     def init_prefs(self):
         """Initialize new GUI components"""
         me = self.prefsdialog = gtk.Dialog("Command Preferences", None,
@@ -89,9 +97,13 @@ class freespeech(object):
         if not os.access(self.prefsfile, os.R_OK):
             #~ write some default commands to a file if it doesn't exist
             self.commands = {'file quit': 'gtk.main_quit',
+                'file open': 'self.file_open',
+                'file save': 'self.file_save',
+                'file save as': 'self.file_save_as',
                 'show commands': 'self.show_commands',
                 'editor clear': 'self.clear_edits',
                 'clear edits': 'self.clear_edits',
+                'file close': 'self.clear_edits',
                 'delete': 'self.delete',
                 'select': 'self.select',
                 'insert': 'self.insert',
@@ -99,7 +111,7 @@ class freespeech(object):
                 'done editing': 'self.done_editing',
                 'scratch that': 'self.scratch_that',
                 'back space': 'self.backspace',
-                'new paragraph': 'self.new_paragraph',
+                'new paragraph':  'self.new_paragraph',
             }
             self.write_prefs()
         else:
@@ -442,8 +454,9 @@ Changes are stored in "+self.prefsfile)
         me.hide()
         return True # command completed successfully!
     def clear_edits(self):
-        """ erase text buffer """
+        """ erase text buffer, close files """
         self.textbuf.set_text('')
+        self.open_filename=''
         return True # command completed successfully!
     def backspace(self):
         """ delete one character """
@@ -518,8 +531,32 @@ Changes are stored in "+self.prefsfile)
         """ start a new paragraph """
         self.textbuf.insert_at_cursor('\n')
         return True # command completed successfully!
-        
-        
+    def file_open(self):
+        """ open file dialog """
+        response=self.file_chooser.run()
+        if response==gtk.RESPONSE_ACCEPT:
+            self.open_filename=self.file_chooser.get_filename()
+            with codecs.open(self.open_filename, encoding='utf-8', mode='r') as f:
+                self.textbuf.set_text(f.read())
+        self.file_chooser.hide()
+        return True # command completed successfully!
+    def file_save(self):
+        """ save file """
+        txt_bounds = self.textbuf.get_bounds()
+        if not self.open_filename:
+            response=self.file_chooser.run()
+            if response==gtk.RESPONSE_ACCEPT:
+                self.open_filename=self.file_chooser.get_filename()
+            self.file_chooser.hide()
+        if self.open_filename:
+            with codecs.open(self.open_filename, encoding='utf-8', mode='w') as f:
+                f.write(self.textbuf.get_text(txt_bounds[0],txt_bounds[1]))
+        return True # command completed successfully!
+    def file_save_as(self):
+        """ save under a different name """
+        self.open_filename=''
+        return self.file_save()
+
     def do_command(self, hyp):
         """decode spoken commands"""
         hyp = hyp.strip()

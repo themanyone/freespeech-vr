@@ -1685,3 +1685,5 @@ this kind of applications is particularly important as speech is the main form o
 <s> go to the end </s>
 <s> goodbye </s>
 <s> show commands </s>
+<s> erase all </s>
+<s> file open file save </s>

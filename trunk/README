@@ -1,27 +1,22 @@
 == About ==
 
-FreeSpeech is a realtime speech recognition application for the 
-desktop (Android soon, hopefully). Offline speaker-independent voice 
-recognition with dynamic language learning capability using the 
-[http://cmusphinx.sourceforge.net/ PocketSphinx] back-end. 
-Essentially, FreeSpeech is a front-end for pocketsphinx with 
-additional learning ability and automation. It automatically manages 
-the difficult process of 
-[http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html 
-creating language models].
+FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ PocketSphinx] back-end. Essentially, FreeSpeech is a front-end for pocketsphinx with additional learning ability and automation. It automatically manages the difficult process of [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html creating language models].
 
-== Requirements ==
+== Installation ==
 
-The following _development_ packages should be installed.
+Windows: We are working on a WindowsVersion installer.
 
-  * [http://www.python.org/ Python 2.7] * [http://www.pygtk.org/ 
-  pygtk2] * [http://gstreamer.freedesktop.org/ gstreamer, including 
-  gstreamer-python] * [http://cmusphinx.sourceforge.net/ 
-  pocketsphinx] * 
-  [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz 
-  CMU-Cambridge Statistical Language Modeling Toolkit v2] 
-  ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html 
-  documentation])
+Linux/Cygwin The following _development_ packages should be installed through the package manager.
+
+  * [http://www.python.org/ Python 2.7]
+  * [http://www.pygtk.org/ pygtk2]
+  * [http://undefined.org/python/#simplejson python-simplejson]
+  * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+  * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
+  * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
+
+Unpack FreeSpeech into a folder such as /opt/freespeech and make sure the end user has write file permission.
+
 == Using FreeSpeech ==
 
 There is no desktop icon yet. Right-click on the desktop to create one.
@@ -29,108 +24,64 @@ Launching the program may be done via the Python interpreter.
 
     python freespeech.py
 
-Position the microphone somewhere near your face and begin talking. 
-To end of the sentence, say "period" (or "colon", "question-mark", 
-"exclamation-point") Look at the dictionary, "custom.dic" for ideas.
+Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
-Voice commands are included. For the most updated information about 
-this, take a look at the source. Some voice commands at the time of 
-this writing include:
+Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. Currently the following voice commands are supported:
 
   * file quit - quits the program
-  * file preferences - pops up a dialog (not very useful yet)
+  * file open - open a text file in the editor
+  * file save (as) - save the file
+  * show commands - pops up a customize-able list of spoken commands
   * editor clear - clears all text in the editor and starts over
-    
+  * delete - delete [text] or erase selected text
+  * insert - move cursor after word or punctuation example: "Insert after period"
+  * select - select [text] example: "select the states"
+  * go to the end - put cursor at end of document
+  * scratch that - erase last spoken text
+  * back space - erase one character
+  * new paragraph - equivalent to pressing Enter twice
+
 == Troubleshooting ==
 
-Make sure the various requirements work. For example, 
-"pocketsphinx", which may be run from the command line.
+Make sure the various requirements work. For example, "pocketsphinx", which may be run from the command line.
 
 == Improving accuracy  ==
 
 === Audio ===
 
-The biggest improvements in accuracy have been achieved by adjusting 
-the microphone position. The volume level is adjusted automatically 
-and tweaking it is not likely to improve much. You may try making a 
-recording with [http://audacity.sourceforge.net Audacity] and 
-checking the noise levels to make sure it sounds like intelligible 
-speech when played back.
+The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level is adjusted automatically and tweaking it is not likely to improve much. You may try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
 
 === Language corpus ===
 
-The language corpus that ships with this download, 
-"freespeech.ref.txt" is likely to be very limited. Our excuse is 
-that the small size saves memory while providing room to learn your 
-spoken grammar. Don't be surprised if it does not work very well for 
-you at first. Use the keyboard to manually edit the text in the box 
-until it says what you intended to say. Then hit the "Learn" button. 
-It will try to do better at understanding you next time! You may 
-also train it by pasting in gobs of text from websites and documents.
+The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time! You may also train it by pasting in gobs of text from websites and documents.
 
-If all that training is not for you there is a VERY LARGE corpus for 
-testing in the downloads section, "freespeech.ref.txt.zip", which 
-contains all the 2-grams and 3-grams extracted from pocketsphinx 
-/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word 
-frequency weights have been lost, but this may be a good thing. The 
-original was 
-[http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-
-and-improving-accuracy failing to recognize some words like 
-spaghetti and pencil --StackOverflow].
+If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy having trouble with some words --StackOverflow].
 
-It seems that the PocketSphinx folks were trying to add support for 
-capitalized words. If there is a word like "new" in the dictionary 
-which could also be capitalized, as in "New Mexico" it is enough to 
-make a capitalized copy like so:
-
+It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
+{{{
     new  N UW
     New  N UW
+}}}
+Now PocketSphinx will decide the capitalization depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary, using the word or acronym as it is found in the corpus, not the dictionary.
 
-Now PocketSphinx will choose which word to use depending on the 
-context in which it appears in the text corpus. We tested it and it 
-works! It capitalizes words like "New Mexico" and "The United States 
-of America" but does not capitalize "altered states" nor "new 
-pants". This is a wild idea, but maybe we could make a dictionary 
-containing _both_ capitalized and un-capitalized words. That would 
-save us the effort of going through and capitalizing all the proper 
-names. The only question is would the resulting dictionary be too big?
+Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
 
-Don't worry if you inadvertently teach PocketSphinx bad grammar. 
-It's not strictly necessary, but our corpus file, 
-"freespeech.ref.txt" may be manually corrected if it develops bad 
-speech habits. Changes will apply next time you hit the "Learn" 
-button.
-
-The language model may be further 
-[http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm 
-tweaked and improved].
+The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
 === Dictionary ===
 
-If there is a word that it stubbornly refuses to recognize, even 
-after teaching it with several sentences, you may need to edit the 
-dictionary: "freespeech.dic"
+If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, you may need to edit the dictionary: "freespeech.dic"
 
-Sometimes the dictionary pronunciation can be little bit off. You 
-will notice that some other words have alternate pronunciations 
-denoted with (2). Go ahead and add an alternate and see if it 
-doesn't improve immediately the next time the program starts.
+Sometimes the dictionary pronunciation can be little bit off. You will notice that some other words have alternate pronunciations denoted with (2). Go ahead and add an alternate and see if it doesn't improve immediately the next time the program starts.
 
-This dictionary is based on Pocketsphinx's cmu07a.dic because it 
-contains punctuation (Can you say "period"?) and some capitalized 
-words. Adding new words to the dictionary may be done manually, 
-along with their phonetic representation, but we are working on 
-incorporating a word trainer. I noticed many of the words need to be 
-capitalized in the dictionary. I'll keep updating them as I find them.
+This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say ".full-stop" or "?question-mark") and some capitalized words. See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
+
+About the CMU Pronouncing Dictionary
+http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 
 Adapt PocketSphinx to your voice for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 == Security and privacy ==
 
-Learned speech patterns are stored in "plain text" format in 
-"lm/freespeech.ref.txt". You probably do not want to teach 
-FreeSpeech sensitive or private information like passwords, 
-especially if other people will have access to your PC. That said, 
-it is very handy to use voice passwords on non-secure sites, and 
-such. Not recommended for banking and payroll.
+Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC. That said, it is very handy to use voice passwords on non-secure sites, and such. Not recommended for banking and payroll.
