@@ -11,36 +11,36 @@
 <s> undo that </s>
 <s> scratch that </s>
 <s> hi there ,comma so what is the plan ?question-mark </s>
-<s> do you know what this is ?question-mark we should show file preferences . </s>
-<s> my name is Henry and I would like to introduce you to something new . </s>
-<s> Henry is my name and I am working on speech recognition software for Linux . </s>
-<s> hi ,comma i am Henry and I am happy to say that this is working pretty well for a wall . </s>
-<s> this is much better than a paper and pencil wall ,comma even if you eat spaghetti . </s>
-<s> i am going to put this on my wall or any kind of wall where you put spaghetti or a pencil on . </s>
-<s> a wall is something that you put status messages on . </s>
+<s> do you know what this is ?question-mark we should show file preferences .period </s>
+<s> my name is Henry and I would like to introduce you to something new .period </s>
+<s> Henry is my name and I am working on speech recognition software for Linux .period </s>
+<s> hi ,comma I am Henry and I am happy to say that this is working pretty well for a wall .period </s>
+<s> this is much better than a paper and pencil wall ,comma even if you eat spaghetti .period </s>
+<s> i am going to put this on my wall or any kind of wall where you put spaghetti or a pencil on .period </s>
+<s> a wall is something that you put status messages on .period </s>
 <s> do you need a twitter profile or Facebook wall status message on your wall ?question-mark </s>
 <s> objects (left-paren instances )right-paren -hyphen a collection of data along with the spaghetti and functions to work with that data as opposed to purely procedural languages where the data and functions are separate ...ellipsis all code must be written inside object definitions such as class that is an object definition containing the data and function elements </s>
 <s> necessary to create an object ...ellipsis an instance of an object is one object created from the class definition ...ellipsis the data and function elements are known as members ...ellipsis data members are also known as fields ,comma properties ,comma or attributes ,comma and function members as methods ...ellipsis </s>
 <s> encapsulation -hyphen in programming there is a technique that is used to hide data inside of an object ;semi-colon it is called encapsulation ...ellipsis all of the data is hidden from view and is only accessed from within the object ...ellipsis </s>
-<s> hi there ,comma this is Henry Kroll and I am going to the zoo . </s>
+<s> hi there ,comma this is Henry Kroll and I am going to the zoo .period </s>
 <s> is Henry here for evaluation of events that are going on with the wall ?question-mark </s>
 <s> by hiding the code within the object protects it from being accessed outside the class ...ellipsis the code can still be modified or accessed even when the user is accessing it by the book or buying the book from the bookstore ...ellipsis </s>
-<s> polymorphism -hyphen polymorphism generally means one name ,comma many forms ...ellipsis in OOP ,comma it gives allows a response from spaghetti that belong to different types to methods ,comma fields ,comma or properties of the same name ...ellipsis the exact type of the object does not need to be known before hand ,comma and is determined at run -hyphen time ...ellipsis the objects start to proliferate wildly . </s>
+<s> polymorphism -hyphen polymorphism generally means one name ,comma many forms ...ellipsis in OOP ,comma it gives allows a response from spaghetti that belong to different types to methods ,comma fields ,comma or properties of the same name ...ellipsis the exact type of the object does not need to be known before hand ,comma and is determined at run -hyphen time ...ellipsis the objects start to proliferate wildly .period </s>
 <s> only need to present compatible interfaces ...ellipsis </s>
-<s> this assignment is a basic checkbook organizer for this Turing test at turing .dot com . </s>
+<s> this assignment is a basic checkbook organizer for this Turing test at turing .dot com .period </s>
 <s> this assignment requires a bit more thought on design ,comma so be sure to check it ...ellipsis </s>
 <s> it must be extendable from the start ...ellipsis </s>
-<s> i am wrapping spaghetti around a pencil ,comma so check this out . </s>
+<s> i am wrapping spaghetti around a pencil ,comma so check this out .period </s>
 <s> for Henry .dot com ,comma and to Henry is Henry here ?question-mark </s>
-<s> i am going to put this in my Facebook status and twitter status today . </s>
-<s> the use of pencils and spaghetti dates back to ancient times . </s>
-<s> it has been a while since i used MySpace . </s>
+<s> i am going to put this in my Facebook status and twitter status today .period </s>
+<s> the use of pencils and spaghetti dates back to ancient times .period </s>
+<s> it has been a while since i used MySpace .period </s>
 <s> Luther focus on object oriented principles to </s>
 <s> help understand the need for different classes .period </s>
 <s> assignment extended checkbook organizer </s>
-<s> there are some specific UI requirements for file preferences to be shown . </s>
-<s> this week we have commands that need to be followed . </s>
-<s> working with multiple windows could prove a little more difficult than previously . </s>
+<s> there are some specific UI requirements for file preferences to be shown .period </s>
+<s> this week we have commands that need to be followed .period </s>
+<s> working with multiple windows could prove a little more difficult than previously .period </s>
 <s> vb .period net suggests doing some additional reading /slash research on handling of windows in vb .period net actual difficulties :colon </s>
 <s> assignment extended checkbook organizer batch mode </s>
 <s> this week 'single-quote s assignment requires dealing with file </s>
@@ -51,7 +51,7 @@
 <s> research file IO handing in vb .period net make sure to include </s>
 <s> the proper error handing as part of the design from the start .period </s>
 <s> assignment extended checkbook organizer web based </s>
-<s> I've never converted a vb application to a web application before . </s>
+<s> I've never converted a vb application to a web application before .period </s>
 <s> I can only assume there will be some details with </s>
 <s> that ,comma such as UI that may need some attention .period </s>
 <s> Luther as the instructions point out ,comma session </s>
@@ -221,7 +221,7 @@
 <s> with enough practice ,comma a person can climb to professional standards and journey freely with love into that bright future .period </s>
 <s> ethical development references Trevino ,comma l .period Nelson ,comma k .period ,comma managing business ethics :colon straight talk about how to do it </s>
 <s> windows and Linux windows windows XP ,comma and Linux Henry Kroll ,comma Sean Zaleski and James Briggs </s>
-<s> POS /slash 3 5 5 January Joseph Fischer ,comma now that is what Henry does . </s>
+<s> POS /slash 3 5 5 January Joseph Fischer ,comma now that is what Henry does .period </s>
 <s> is Henry here for the role call ?question-mark </s>
 <s> windows and Linux windows XP operating system </s>
 <s> an operating system OS )right-paren is a type of software that enables communication and operation between the hardware and the software of a computer system .period a computer would be completely useless without an operating system in place .period </s>
@@ -278,12 +278,12 @@
 <s> its own or as part of a server farm or cluster .period </s>
 <s> Linux advantages cost :colon Linux is cheap and can even be gotten legally free from certain websites where windows can go for as much windows restrict the number of computers that any one </s>
 <s> purchased operating system can run on ,comma but Linux once it has been purchased can be used on many computers legally .period </s>
-<s> my name is Henry . </s>
+<s> my name is Henry .period </s>
 <s> windows rose to power when their cost stayed significantly lower that mac computer windows and Linux software ;semi-colon it looks as if it might soon be Linux 'single-quote s turn .period </s>
 <s> Linux provides some clear advantages over windows for basic text handling ,comma certain types of servers ,comma as well as writing and debugging programs targeting multiple operating systems and platforms .period </s>
 <s> the variety of distros and freedom of licensing encourage much creativity with gmail .period </s>
 <s> windows and Linux references Linux features windows should have by default .period gmail .period n .period d .period )right-paren .dot retrieved January </s>
-<s> my name is Henry ,comma yes it is so now you know that my name could be Henry by Henry and for Henry with a gmail account . </s>
+<s> my name is Henry ,comma yes it is so now you know that my name could be Henry by Henry and for Henry with a gmail account .period </s>
 <s> facilitator availability i am available from a .period m .period -hyphen 9 p .period m .period eastern time on most days ,comma if these times are not convenient for you ,comma please let me know .period i will be happy to accommodate your schedule ,comma if possible .period i provide you with these times to make it </s>
 <s> easier to communicate with me ,comma and not to limit our contact .period </s>
 <s> i want you to know that ,comma should you need to contact me outside these time frames ,comma you should not hesitate to do so .period </s>
@@ -422,16 +422,15 @@
 <s> keywords :colon automatic speech recognition ,comma PocketSphinx ,comma embedded systems acknowledgments this master 'single-quote s thesis represent the completion of a journey we decided to start two years </s>
 <s> Mexico for the financial support provided through the scholarships we were both granted .period </s>
 <s> we would also like to thank our families for their immense support and encouragement during all this time we have been away .period finally ,comma we are grateful with life for having had the great opportunity of being able to accomplish one more goal together .period </s>
-<s> list of tables vi introduction </s>
-<s> i keyword list stop . </s>
-<s> audio files pause and stop dictation is all I have to do . </s>
-<s> this is what I was talking about . </s>
-<s> now I will begin to dictate some text . </s>
-<s> custom language model and dictionary decoding system is pretty good . </s>
-<s> i think you look pretty today . </s>
+<s> list of tables introduction </s>
+<s> audio files pause and stop dictation is all I have to do .period </s>
+<s> this is what I was talking about .period </s>
+<s> now I will begin to dictate some text .period </s>
+<s> custom language model and dictionary decoding system is pretty good .period </s>
+<s> i think you look pretty today .period </s>
 <s> are you feeling pretty ?question-mark </s>
-<s> this is pretty bad for an example . </s>
-<s> the privacy is pretty decent . </s>
+<s> this is pretty bad for an example .period </s>
+<s> the privacy is pretty decent .period </s>
 <s> text extractor operation mode the amount of text is limited and so is the vocabulary </s>
 <s> text extractor operation mode limited by the imagination </s>
 <s> dict-generator operation modes and generated dictionary files limited </s>
@@ -918,8 +917,8 @@ this kind of applications is particularly important as speech is the main form o
 <s> recognizer file :colon recognizer .period c description :colon adapted from PocketSphinx _underscore continuous /slash continuous .period c in order to develop </s>
 <s> an interactive system .period the system reacts based on identified keywords "quote incoming speech signal .period an ogg audio file with information related to the keyword identified .period additional information is played </s>
 <s> whenever a keyword is not identified we can add it to the dictionary and use it in a few sentences .period </s>
-<s> program quit and ping scanner 65 bytes from start to finish . </s>
-<s> this voice recognition software is useful for taking dictation . </s>
+<s> program quit and ping scanner 65 bytes from start to finish .period </s>
+<s> this voice recognition software is useful for taking dictation .period </s>
 <s> i would like to say that it is time to update my status ,comma so let's do it !exclamation-point </s>
 <s> 3 .dot Python's tokenizer /slash compiler combo will need to be updated to </s>
 <s> work as follows :colon </s>
@@ -1073,7 +1072,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> please understand that without detailed descriptoin it's hard to help you since there are too many unknowns .period </s>
 <s> like you might have done minor mistake somewhere and that minor type can break the whole system .period </s>
 <s> in case you are adapting to a single speaker you can record the adaptation data yourself .period </s>
-<s> the degree sign (left-paren °degree-sign )right-paren is useful for other things as wel. </s>
+<s> the degree sign (left-paren °degree-sign )right-paren is useful for other things as well .period </s>
 <s> oops ,comma I really screwed things up !exclamation-point </s>
 <s> I really did it !exclamation-point </s>
 <s> I am ready to try it out .period </s>

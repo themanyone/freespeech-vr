@@ -1,6 +1,6 @@
 == About ==
 
-FreeSpeech is a realtime speech recognition application for the desktop (Android soon, hopefully). Offline speaker-independent voice recognition with dynamic language learning capability using the [http://cmusphinx.sourceforge.net/ PocketSphinx] back-end. Essentially, FreeSpeech is a front-end for pocketsphinx with additional learning ability and automation. It automatically manages the difficult process of [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html creating language models].
+FreeSpeech is a free and open-source (FOSS) cross-platform dictation, voice transcription, and realtime speech recognition application for the desktop. Offline speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine.
 
 == Installation ==
 
@@ -15,7 +15,11 @@ Linux/Cygwin The following _development_ packages should be installed through th
   * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
   * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
 
-Unpack FreeSpeech into a folder such as /opt/freespeech and make sure the end user has write file permission.
+Unpack FreeSpeech into a folder such as /opt/freespeech
+
+Language files and preferences are copied to $XDG_CONFIG_HOME, so be sure
+to set this environment variable to a user-writeable location if it isn't already set. (This
+normally points to /home/$USER/.config on most modern Linux systems.)
 
 == Using FreeSpeech ==
 
