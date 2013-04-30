@@ -27,22 +27,46 @@ import gobject
 gobject.threads_init()
 import gst
 import subprocess
-import os, sys, codecs
+import platform, os, shutil, sys, codecs
 import re
 import json
 
-lang_ref= os.path.join('lm', 'freespeech.ref.txt')
-vocab   = os.path.join('lm', 'freespeech.vocab')
-idngram = os.path.join('lm', 'freespeech.idngram')
-arpa    = os.path.join('lm', 'freespeech.arpa')
-dmp     = os.path.join('lm', 'freespeech.dmp')
+""" global variables """
+appname = 'FreeSpeech'
+refdir = 'lm'
+
+# hmmm, where to put files? How about XDG_CONFIG_HOME?
+# This will work on most Linux
+if os.environ.has_key('XDG_CONFIG_HOME'):
+    confhome = os.environ['XDG_CONFIG_HOME']
+    confdir  = os.path.join(confhome, appname)
+else:
+    # todo: determine suitable writable location for other os
+    confdir = refdir
+
+# reference files written by this application
+lang_ref= os.path.join(confdir, 'freespeech.ref.txt')
+vocab   = os.path.join(confdir, 'freespeech.vocab')
+idngram = os.path.join(confdir, 'freespeech.idngram')
+arpa    = os.path.join(confdir, 'freespeech.arpa')
+dmp     = os.path.join(confdir, 'freespeech.dmp')
+cmdtext = os.path.join(confdir, 'freespeech.cmd.txt')
+cmdjson = os.path.join(confdir, 'freespeech.cmd.json')
 
 class freespeech(object):
     """GStreamer/PocketSphinx Demo Application"""
     def __init__(self):
         """Initialize a freespeech object"""
-        self.prefsfile=".freespeech_prefs"
+        # place to store the currently open file name, if any
         self.open_filename=''
+        # create confdir if not exists
+        if not os.access(confdir, os.R_OK):
+            os.mkdir(confdir)
+        # copy lang_ref to confdir if not exists
+        if not os.access(lang_ref, os.R_OK):
+            lang_ref_orig = os.path.join(refdir, 'freespeech.ref.txt')
+            shutil.copy(lang_ref_orig, lang_ref)
+        # initialize components
         self.init_gui()
         self.init_errmsg()
         self.init_prefs()
@@ -56,12 +80,12 @@ class freespeech(object):
         # Change to executable's dir
         if os.path.dirname(sys.argv[0]):
             os.chdir(os.path.dirname(sys.argv[0]))     
-        self.icon = gtk.gdk.pixbuf_new_from_file("FreeSpeech.png")
+        self.icon = gtk.gdk.pixbuf_new_from_file(appname+".png")
         self.window.connect("delete-event", gtk.main_quit)
         self.window.set_default_size(400, 200)
         self.window.set_border_width(10)
         self.window.set_icon(self.icon)
-        self.window.set_title("FreeSpeech")
+        self.window.set_title(appname)
         vbox = gtk.VBox()
         hbox = gtk.HBox(homogeneous=True)
         self.textbuf = gtk.TextBuffer()
@@ -106,7 +130,10 @@ class freespeech(object):
                 'new paragraph':  'self.new_paragraph',
             }
             self.write_prefs()
-            self.prefsdialog.checkbox.set_active(False)
+            try:
+                self.prefsdialog.checkbox.set_active(False)
+            except:
+                pass
 
     def init_prefs(self):
         """Initialize new GUI components"""
@@ -115,7 +142,7 @@ class freespeech(object):
             (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
             gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
         me.set_default_size(400, 300)
-        if not os.access(self.prefsfile, os.R_OK):
+        if not os.access(cmdjson, os.R_OK):
             #~ write some default commands to a file if it doesn't exist
             self.init_commands()
         else:
@@ -123,8 +150,7 @@ class freespeech(object):
         
         me.label = gtk.Label( \
 "Double-click to change command wording.\n\
-If the new command phrase doesn't work you may have to train it\n\
-by typing it into the editor and pressing the 'Learn' button.")
+If new commands don't work click the learn button to train them.")
         me.vbox.pack_start(me.label)
         me.checkbox=gtk.CheckButton("Restore Defaults")
         me.checkbox.show()
@@ -163,12 +189,18 @@ by typing it into the editor and pressing the 'Learn' button.")
             me.liststore.append([x,eval(y).__doc__])        
         
     def write_prefs(self):
-        with codecs.open(self.prefsfile, encoding='utf-8', mode='w') as f:
-                f.write(json.dumps(self.commands))
+        # write command list to file
+        with codecs.open(cmdjson, encoding='utf-8', mode='w') as f:
+            f.write(json.dumps(self.commands))
+        # write commands text, so we don't have to train each time
+        with codecs.open(cmdtext, encoding='utf-8', mode='w') as f:
+            for j in self.commands.keys():
+                f.write('<s> '+j+' </s>\n')
         
+
     def read_prefs(self):
-        with codecs.open(self.prefsfile, encoding='utf-8', mode='r') as f:
-                self.commands=json.loads(f.read())
+        with codecs.open(cmdjson, encoding='utf-8', mode='r') as f:
+            self.commands=json.loads(f.read())
         
     def edited_cb(self, cellrenderertext, path, new_text):
         """ callback activated when treeview text edited """
@@ -204,7 +236,7 @@ by typing it into the editor and pressing the 'Learn' button.")
         
         # The language model that came with pocketsphinx works OK...
         # asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP')
-        # but it does not contain editing commands and can't be modified, so we use our own
+        # but it does not contain editing commands, so we make our own
         if not os.access(dmp, os.R_OK): # create if not exists
                 self.learn_new_words(None)
         asr.set_property('lm', dmp)
@@ -244,14 +276,19 @@ by typing it into the editor and pressing the 'Learn' button.")
                 if line:
                     f.write(line + '\n')
         
+        # cat command
+        if platform.system()=='Windows':
+            catcmd = 'type '
+        else:
+            catcmd = 'cat '
+        
         # compile a vocabulary
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2wfreq
-        if subprocess.call('text2wfreq -verbosity 2 < ' \
-            + lang_ref + ' | wfreq2vocab -top 20000 -records 100000 > ' + vocab, \
-            shell=True):
+        if subprocess.call(catcmd + cmdtext + ' ' + lang_ref + '|text2wfreq -verbosity 2' \
+        + ' |wfreq2vocab -top 20000 -records 100000 > ' + vocab, shell=True):
             self.err('Trouble writing ' + vocab)
         
-        # update the idngram
+        # update the idngram\
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2idngram
         if subprocess.call('text2idngram -vocab ' + vocab + \
             ' -n 3 < ' + lang_ref + ' > ' + idngram, shell=True):
@@ -476,6 +513,7 @@ by typing it into the editor and pressing the 'Learn' button.")
         self.textbuf.set_text('')
         self.open_filename=''
         self.window.set_title("FreeSpeech")
+        self.undo = []
         return True # command completed successfully!
     def backspace(self):
         """ delete one character """
