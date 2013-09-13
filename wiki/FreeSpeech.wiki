@@ -54,7 +54,7 @@ Trouble writing /home/*/.config/FreeSpeech/freespeech.idngram
 Trouble writing...
 }}}
 
-It usually means you haven't installed the [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] or there is a problem with the tools themselves. For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in <stdio.h>, so perhaps it was compiled on such a machine. Perhaps building the toolkit from source would fix that. The other quick-fix is to provide /usr/tmp for it with a symlink to /tmp or /var/tmp.
+It usually means you haven't installed the [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] or there is a problem with the tools themselves. For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in <stdio.h>, so perhaps it was compiled on such a machine. Building the toolkit from source should fix that. The quick-fix is to provide /usr/tmp for machines that don't have it.
 
 {{{
 ln -s /tmp /usr/tmp
