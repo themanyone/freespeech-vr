@@ -5,7 +5,7 @@ FreeSpeech is a free and open-source (FOSS) cross-platform dictation, voice tran
 
 == Installation ==
 
-Windows: We are working on a WindowsVersion installer.
+Windows: We are waiting for some bugs and version conflicts to be fixed before we can make FreeSpeech work reliably on Windows. You can try it, but do not expect immediate success...
 
 Linux/Cygwin The following _development_ packages should be installed through the package manager.
 
@@ -27,8 +27,19 @@ Unpack FreeSpeech into a folder such as /opt/freespeech
 
 Language files and preferences are copied to $XDG_CONFIG_HOME, so be sure
 to set this environment variable to a user-writeable location if it isn't already set. (This
-normally points to /home/$USER/.config on most modern Linux systems.)
+normally points to /home/$USER/.config on most modern Linux systems.) Try it:
 
+{{{
+echo $XDG_CONFIG_HOME
+}}}
+
+If that command doesn't print anything, you need to add XDG_CONFIG_HOME to your environment. On Linux, this is done by editing .bashrc. [http://www.computerhope.com/issues/ch000549.htm Windows users do it another way].
+
+{{{
+export XDG_CONFIG_HOME=$HOME/.config
+}}}
+
+_Note: Be sure not to put anything in .bashrc that would echo text to the screen. That tends to mess up programs that spawn shells._
 
 == Using FreeSpeech ==
 
