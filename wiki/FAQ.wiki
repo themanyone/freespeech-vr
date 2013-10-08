@@ -1,6 +1,17 @@
 #labels Featured,Phase-Requirements,Phase-QA
 #Frequently Asked Questions
 
+Q. Can you use freespeech to transcribe existing audio files?
+
+A. No, but [https://pythonism.wordpress.com/2013/06/06/pocketsphinx-voice-recognition-with-python/ Pythonism] has a small Python module that would be easy to incorporate into FreeSpeech if more people desire this functionality. It would add dependencies on [http://people.csail.mit.edu/hubert/pyaudio/#downloads Pyaudio] and [http://www.portaudio.com/ Portaudio]. We're not sure if we want to go that direction because it might make it harder for people to set up, but it would still be portable, open, and cross-platform. Leave a comment to us know if you want it in the next version.
+
+Here are some other possible solutions.
+
+    * [https://wiki.gnome.org/Gaupol/SpeechRecognition Guapol] can transcribe video files. It might work on audio or if you can convert audio to video.
+    * https://github.com/pranavrc/audio-transcribe
+    * http://stackoverflow.com/questions/9404099/python-speech-compare
+    * https://code.google.com/p/dragonfly/
+
 = Operating System =
 
 Q. "What operating system are you developing it for?"
