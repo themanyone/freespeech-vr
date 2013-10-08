@@ -3,7 +3,7 @@
 
 Q. Can you use freespeech to transcribe existing audio files?
 
-A. No, but [https://pythonism.wordpress.com/2013/06/06/pocketsphinx-voice-recognition-with-python/ Pythonism] has a small Python module that would be easy to incorporate into FreeSpeech if more people desire this functionality. It would add dependencies on [http://people.csail.mit.edu/hubert/pyaudio/#downloads Pyaudio] and [http://www.portaudio.com/ Portaudio]. We're not sure if we want to go that direction because it might make it harder for people to set up, but it would still be portable, open, and cross-platform. Leave a comment to us know if you want it in the next version.
+A. No, but [https://pythonism.wordpress.com/2013/06/06/pocketsphinx-voice-recognition-with-python/ Pythonism] has a small Python module that would be easy to incorporate into FreeSpeech if more people desire this functionality. It would add dependencies on [http://people.csail.mit.edu/hubert/pyaudio/#downloads Pyaudio] and [http://www.portaudio.com/ Portaudio]. We're not sure if we want to go that direction because it might make it harder to set up, document, and support (we're rafting together enough extreme alpha software as it is), but it would still be portable, open, and cross-platform. Leave a comment to us know if you want it in the next version.
 
 Here are some other possible solutions.
 
