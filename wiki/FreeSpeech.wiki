@@ -30,7 +30,7 @@ Also install python-xlib python-simplejson python-gtk2
 
 Download [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cam_Toolkit_v2] and unpack it. Read the instructions in the README and edit the Makefile. Manually copy the tools from the bin directory somewhere in $PATH like: `/usr/local/bin`
 
-Unpack FreeSpeech into a folder such as /opt/freespeech
+Unpack FreeSpeech into a user-writeable folder such as Downloads/freespeech
 
 Language files and preferences are copied to $XDG_CONFIG_HOME, so be sure
 to set this environment variable to a user-writeable location if it isn't already set. (This
