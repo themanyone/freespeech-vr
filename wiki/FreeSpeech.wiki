@@ -93,9 +93,10 @@ ln -s /tmp /usr/tmp
 
 == Improving accuracy  ==
 
-=== Audio ===
+The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level is adjusted automatically and tweaking it is not likely to improve much. You may try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
 
-The biggest improvements in accuracy have been achieved by adjusting the microphone position. Adjust the mic volume as high as necessary, but not so much that it clips. Find a volume control app with a VU meter, or try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
+Adapt PocketSphinx to your voice for better accuracy.
+See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 === Language corpus ===
 
@@ -122,9 +123,6 @@ This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctu
 
 About the CMU Pronouncing Dictionary
 http://www.speech.cs.cmu.edu/cgi-bin/cmudict
-
-Adapt PocketSphinx to your voice for better accuracy.
-See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 == Security and privacy ==
 
