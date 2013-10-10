@@ -23,6 +23,8 @@ On Fedora, for example, install these dependencies:
 su -c 'yum -y install python-xlib gstreamer-python blas sphinxbase-libs pocketsphinx-libs pocketsphinx python-simplejson sphinxbase pocketsphinx-plugin'
 }}}
 
+Ubuntu: https://launchpad.net/ubuntu/+source/pocketsphinx
+
 Unpack FreeSpeech into a folder such as /opt/freespeech
 
 Language files and preferences are copied to $XDG_CONFIG_HOME, so be sure
