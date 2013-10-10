@@ -30,6 +30,7 @@ import subprocess
 import platform, os, shutil, sys, codecs
 import re
 import json
+from send_key import *
 
 """ global variables """
 appname = 'FreeSpeech'
@@ -98,9 +99,12 @@ class freespeech(object):
         vbox.pack_end(hbox, False, False)
         self.button = gtk.Button("Learn")
         self.button.connect('clicked', self.learn_new_words)
+        self.button1 = gtk.ToggleButton("Send keys")
+        self.button1.connect('clicked', self.toggle_echo)
         self.button2 = gtk.ToggleButton("Mute")
         self.button2.connect('clicked', self.mute)
         hbox.pack_start(self.button, True, False, 5)
+        hbox.pack_start(self.button1, True, False, 5)
         hbox.pack_start(self.button2, True, False, 5)
         self.window.add(vbox)
         self.window.show_all()
@@ -122,6 +126,7 @@ class freespeech(object):
                 'file close': 'self.clear_edits',
                 'delete': 'self.delete',
                 'select': 'self.select',
+                'send keys' : 'self.toggle_keys',
                 'insert': 'self.insert',
                 'go to the end': 'self.done_editing',
                 'done editing': 'self.done_editing',
@@ -189,16 +194,16 @@ If new commands don't work click the learn button to train them.")
             me.liststore.append([x,eval(y).__doc__])        
         
     def write_prefs(self):
-        # write command list to file
+        """ write command list to file """
         with codecs.open(cmdjson, encoding='utf-8', mode='w') as f:
             f.write(json.dumps(self.commands))
         # write commands text, so we don't have to train each time
         with codecs.open(cmdtext, encoding='utf-8', mode='w') as f:
             for j in self.commands.keys():
                 f.write('<s> '+j+' </s>\n')
-        
 
     def read_prefs(self):
+        """ read command list from file """
         with codecs.open(cmdjson, encoding='utf-8', mode='r') as f:
             self.commands=json.loads(f.read())
         
@@ -284,10 +289,9 @@ If new commands don't work click the learn button to train them.")
         
         # compile a vocabulary
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2wfreq
-        if subprocess.call(catcmd + cmdtext + ' ' + lang_ref + '|text2wfreq -verbosity 2' \
+        if subprocess.call(catcmd + cmdtext + ' ' + cmdtext + ' ' + cmdtext + ' ' + cmdtext + ' ' + lang_ref + '|text2wfreq -verbosity 2' \
         + ' |wfreq2vocab -top 20000 -records 100000 > ' + vocab, shell=True):
             self.err('Trouble writing ' + vocab)
-        
         # update the idngram\
         # http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#text2idngram
         if subprocess.call('text2idngram -vocab ' + vocab + \
@@ -300,7 +304,7 @@ If new commands don't work click the learn button to train them.")
             ' -vocab ' + vocab + ' -arpa ' + arpa + ' -vocab_type 1' \
             ' -good_turing', shell=True):
             self.err('Trouble writing ' + arpa)
-        
+
         # convert to dmp
         if subprocess.call('sphinx_lm_convert -i ' + arpa + \
             ' -o ' + dmp + ' -ofmt dmp', shell=True):
@@ -324,6 +328,21 @@ If new commands don't work click the learn button to train them.")
             vader = self.pipeline.get_by_name('vad')
             vader.set_property('silent', True)
             self.pipeline.set_state(gst.STATE_PAUSED)
+    
+    def toggle_echo(self, button):
+        """ echo keystrokes to the desktop """
+        print("hi")
+        if not button.get_active():
+            button.set_label("Send keys")
+            button.set_active(False)
+        else:
+            button.set_label("Stop sending")
+            button.set_active(True)
+
+    def toggle_keys(self):
+        """ echo keystrokes to the desktop """
+        self.button1.set_active(True - self.button1.get_active())
+        return True
 
     def collapse_punctuation(self, hyp, started):
         index = 0
@@ -343,7 +362,6 @@ If new commands don't work click the learn button to train them.")
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
         if not start.inside_sentence():
             hyp = hyp[0].capitalize() + hyp[1:]
-        print(hyp)
         if re.match(r"\w", hyp[0]) and started:
             space = " "
         else:
@@ -484,6 +502,10 @@ If new commands don't work click the learn button to train them.")
             self.undo.append(hyp)
             self.textbuf.delete_selection(True, self.text.get_editable())
             self.textbuf.insert_at_cursor(hyp)
+            # send keystrokes to the desktop?
+            if self.button1.get_active():
+                send_string(hyp)
+                display.sync()
         ins = self.textbuf.get_insert()
         iter = self.textbuf.get_iter_at_mark(ins)
         self.text.scroll_to_iter(iter, 0, False)
@@ -578,6 +600,10 @@ If new commands don't work click the learn button to train them.")
             scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
         self.textbuf.select_range(search_back[0], search_back[1])
         self.textbuf.delete_selection(True, self.text.get_editable())
+        if self.button1.get_active():
+            b="".join(["\b" for x in range(0,len(scratch))])
+            send_string(b)
+            display.sync()
         return True # command completed successfully!
     def new_paragraph(self):
         """ start a new paragraph """
