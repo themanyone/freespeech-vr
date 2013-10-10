@@ -57,7 +57,7 @@ Launching the program may be done via the Python interpreter.
 
 Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
-Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. Currently the following voice commands are supported:
+Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. The following voice commands are supported (except only "scratch that" is implemented with "send keys" experimental X keyboard emulation in the latest version):
 
     * file quit - quits the program
     * file open - open a text file in the editor
