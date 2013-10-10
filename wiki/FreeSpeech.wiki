@@ -5,7 +5,7 @@ FreeSpeech is a free and open-source (FOSS) cross-platform dictation, voice tran
 
 == Installation ==
 
-Windows: We are waiting for some bugs and version conflicts to be fixed before we can make FreeSpeech work reliably on Windows. You can try it, but do not expect immediate success...
+Windows: We are waiting for pocketsphinx to be ported to gstreamer 1.0 before we can try again to make FreeSpeech work reliably on Windows. You can try it, but do not expect immediate success...
 
 Linux/Cygwin The following _development_ packages should be installed through the package manager.
 
