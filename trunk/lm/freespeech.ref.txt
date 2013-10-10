@@ -214,7 +214,7 @@
 <s> free and open -hyphen source software adheres to universal ethical principles .period we let you know what 'single-quote s in those biscuits .period understanding the free software licenses availed me of principles that are superior to and help guide legislation in new and exciting areas of digital content creation ,comma </s>
 <s> modification ,comma and distribution .period my values changed to creating royalty -hyphen free music ,comma open -hyphen source innovation ,comma and free software when i understood how valuable it is to the community .period this was to be where i would spend time and energy from then on .period but how would i make money ?question-mark some </s>
 <s> people are able to do it .period i would follow their examples by starting my own free software company or working within free industries .period </s>
-<s> my plan was to study information technology ,comma software engineering ,comma and business at the university of phoenix .period so far ,comma i have been doing very well advocating free software and its principles of creative freedom and learning .period the courses have been giving me many business </s>
+<s> my plan was to study information technology ,comma software engineering ,comma and business at the University of Phoenix .period so far ,comma i have been doing very well advocating free software and its principles of creative freedom and learning .period the courses have been giving me many business </s>
 <s> ideas that align with my principles .period i have developed my own free sense of ethics that do not depend on proprietary ethical standards .period </s>
 <s> conclusion my position is that ethical behavior actions ,comma character ,comma and values )right-paren can be self -hyphen taught ,comma if a person desires improvement for themselves .period like anything ,comma it takes practice .period it does not matter to </s>
 <s> me so much which discipline ,comma religion ,comma or instrument someone practices ,comma so long as it brings satisfaction to the soul .period practice brings discipline ,comma self -hyphen control ,comma and the ability to think ahead .period </s>
@@ -244,9 +244,9 @@
 <s> headless operation is supported in windows it can run without monitor ,comma keyboard ,comma </s>
 <s> and mouse attached .period the servers can be restarted via serial .period it can even run without a video card ,comma </s>
 <s> IIS is bundled in .period the new security settings are locked down from the start .period </s>
-<s> resultant set of polices are)right-paren makes information available about the effects of policy settings on users .period sop helps debug policies also by seeing the results before deployment .period </s>
+<s> resultant set of polices are what makes information available about the effects of policy settings on users .period SOP helps debug policies also by seeing the results before deployment .period </s>
 <s> renaming a domain is easier in windows server it is no longer necessary to create a new domain and migrate all the objects to it .period </s>
-<s> Microsoft volume shadow copy service )right-paren keeps backups of files as they are changed .period recovering old versions of software from network shares has been made easier .period </s>
+<s> Microsoft volume shadow copy service keeps backups of files as they are changed .period recovering old versions of software from network shares has been made easier .period </s>
 <s> windows and Linux Linux Linux is very different from Microsoft windows operating systems .period most versions of </s>
 <s> popular Linux distributions distros include Ubuntu ,comma Linux Mint ,comma PCLinuxOS ,comma Slackware Linux ,comma </s>
 <s> arch Linux ,comma FreeBSD ,comma OpenSuse ,comma Fedora ,comma Debian GNU /slash Linux ,comma Mageia ,comma and Centos .period </s>
@@ -290,9 +290,9 @@
 <s> for emergencies ,comma when you are not able to gain access to messages on the online learning system owls )right-paren ,comma </s>
 <s> please send a message to my personal email address .period in the event a third party needs to contact me ,comma please direct them to my contact information listed under facilitator information .period "quote no third party should use your login credentials to gain access to the classroom .period </s>
 <s> late assignments late assignments receive a 1 0 %percent deduction for each day they are late if assignments are not posted by p .period m .period m .period s .period t .period on the day they are due .period assignments more than days late will not be accepted .period technological </s>
-<s> issues are not considered valid grounds for late assignment submission .period in the event of a university of phoenix server outage ,comma students should submit assignments to the instructor and when systems are restored ,comma submit those assignments according to syllabus instructions .period unless an incomplete grade has been granted ,comma learner </s>
+<s> issues are not considered valid grounds for late assignment submission .period in the event of a University of Phoenix server outage ,comma students should submit assignments to the instructor and when systems are restored ,comma submit those assignments according to syllabus instructions .period unless an incomplete grade has been granted ,comma learner </s>
 <s> assignments submitted after the last day of class will not be accepted .period </s>
-<s> learning teams university of phoenix students are expected to work effectively in diverse groups and teams to achieve tasks .period </s>
+<s> learning teams University of Phoenix students are expected to work effectively in diverse groups and teams to achieve tasks .period </s>
 <s> they must collaborate and function well in team settings as both leaders and followers .period they should respect human diversity and behave in a tolerant manner toward colleagues and peers .period if you experience difficulties working with your team ,comma you are expected to resolve them within the team if possible .period however ,comma please feel free </s>
 <s> to contact me for guidance if you have concerns in this area .period because learning team projects are outcome based ,comma all members of your learning team will generally earn the same grade for learning team projects .period </s>
 <s> however ,comma i reserve the right to report different grades for different learning team members if i see a substantial imbalance in individual contribution .period learning teams should provide a brief summary of any communication held outside the forum .period therefore ,comma if you hold conference calls ,comma work in a real -hyphen time chat room ,comma or get together outside </s>
@@ -449,7 +449,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> between processing power and accuracy is acceptable for simple applications ,comma however ,comma </s>
 <s> as the technology becomes more popular ,comma the expectations regarding accuracy and vocabulary increase </s>
 <s> one particular area of interest in the research community is to optimize the performance of existing speech recognizers by implementing faster ,comma lighter and smarter algorithms .period </s>
-<s> for example ,comma PocketSphinx is an open source ,comma continuous speech recognition system for hand held devices developed by the Carnegie Mellon university CMU )right-paren .dot as its name suggests ,comma this system is a heavily simplified and optimized version of the existing tool </s>
+<s> for example ,comma PocketSphinx is an open source ,comma continuous speech recognition system for hand held devices developed by the Carnegie Mellon University CMU )right-paren .dot as its name suggests ,comma this system is a heavily simplified and optimized version of the existing tool </s>
 <s> sphinx ,comma developed by the same university .period there are other existing speech recognizers developed for embedded devices ,comma but most of these systems are not free and their source code is not publicly available .period for this reason it is difficult to use them for </s>
 <s> experimentation and research purposes </s>
 <s> outline this master 'single-quote s thesis report is organized as the following :colon </s>
@@ -527,7 +527,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> order to obtain these vectors .period figure depicts the series of steps required to get the feature vectors from the input speech signal .period </s>
 <s> figure signal processing to obtain the mfcc vectors due to the nature of human speech ,comma the speech signal is attenuated as the frequencies increase .period also ,comma the speech signal is subject to a falloff of db when passing through </s>
 <s> the vocal tract therefore ,comma the signal needs to be pre-emphasized ,comma which means that a pre-emphasis filter ,comma which is a high -hyphen pass filter ,comma is applied to the signal .period this increases the amplitude of the signal for the high frequencies while decreasing the components </s>
-<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new pre-emphasized sample at time n is given by the difference a (left-parenâ 1 </s>
+<s> of lower frequencies .period then ,comma having the original speech signal x ,comma a new pre-emphasized sample at time n is given by the difference </s>
 <s> where a is a factor that is typically set to a value near </s>
 <s> once the signal has been pre-emphasized ,comma it is partitioned into smaller frames of sizes of about to milliseconds sampled every milliseconds .period the higher the sample rate ,comma the better it is to model fast speech changes the frames are overlapped in </s>
 <s> order to avoid missing information that could have been in between the limits of each frame .period this process is called windowing and it is used in order to minimize the effects of partitioning the signal into small windows .period the most used window function in </s>
@@ -560,8 +560,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> the trigram model looks slightly more complicated as it uses the two words to compute each conditional probability :colon </s>
 <s> p w p call "quote |pipe-symbol "quote collect "quote ,comma a "quote )right-paren p collect "quote |pipe-symbol "quote a "quote ,comma make "quote )right-paren .dot p like "quote |pipe-symbol "quote would "quote ,comma i "quote )right-paren </s>
 <s> the n -hyphen gram model can be generalized using the following form </s>
-<s> n p wk wk wk wk â n </s>
-<s> p w k =equals-sign 1 in general ,comma as n increases ,comma the n gram approximation becomes more effective ,comma however ,comma </s>
+<s> the n gram approximation becomes more effective ,comma however ,comma </s>
 <s> most systems use a bigram ,comma or trigram model .period </s>
 <s> of every phoneme in a language .period the English language is composed by around different phonemes however ,comma due to the co -hyphen articulation effects ,comma one phoneme is affected by the preceding and succeeding phonemes depending on the context .period the most common </s>
 <s> approach to overcome this problem is by using triphones ,comma in other words each phone is modeled along its preceding and succeeding phones for example ,comma the phoneme representation for the word houseboat is :colon </s>
@@ -587,7 +586,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> finally ,comma the third problem deals with the adjustment of the model parameters a ,comma b ,comma )right-paren in order to maximize the probability p o |pipe-symbol )right-paren to better determine the origin of the observation this is considered to be an optimization problem </s>
 <s> where the output results to be the decision criterion .period in addition ,comma this is the point where training takes an important role in as it allows adapting the model parameters to observed training data .period therefore ,comma a common approach to solve this is by means of </s>
 <s> the maximum likelihood optimization procedure .period this procedure uses separate training observation sequences or to obtain model parameters for each model </s>
-<s>typical usage of hidden Markov models in ,comma various models can be made based on hmm ,comma being the most common models the </s>
+<s> typical usage of hidden Markov models in ,comma various models can be made based on hmm ,comma being the most common models the </s>
 <s> ones for phonemes and words .period an example of these type of models is depicted in figure where various phone hmm models are used to construct the phonetic representation of the word one and the concatenation of these models are used to construct word hmm </s>
 <s> phoneme models are constrained by pronunciations from a dictionary ,comma while word models are constrained by a grammar .period phone or phoneme models are usually made up using one or more state hmm .period on the other hand ,comma word models are made up of the concatenation </s>
 <s> the front end phase of any speech recognition system is in charge of converting the input sound waves into feature vectors .period nonetheless ,comma these vectors need to be converted into observation probabilities in order to decode the most probable sequence of phonemes and </s>
@@ -617,7 +616,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> i .period if the end -hyphen of -hyphen sentence is not reached ,comma insert candidate into the stack ii .period if the end -hyphen of sentence is reached ,comma insert it into the stack with end -hyphen of sentence flag .period </s>
 <s> probabilities of previous words GI t )right-paren and an heuristic function to predict the remaining words in the sentence .period for example :colon </s>
 <s> alternatively ,comma these functions can be expressed in terms of a partial path p ,comma instead of time t .period in this case f p )right-paren is the score of the best complete path which starts at path p .period similarly GI p )right-paren represents the score from the beginning of the utterance towards </s>
-<s> the partial path p .period lastly ,comma h â p )right-paren estimated the best extension from the partial path p towards the end of the sentence </s>
+<s> the partial path p .period lastly ,comma estimated the best extension from the partial path p towards the end of the sentence </s>
 <s> finding an efficient and accurate heuristic function might represent a complex task .period fast matches are heuristic functions that are computationally cheap and are used to reduce the number of next possible word candidates .period nonetheless ,comma these fast match functions </s>
 <s> must be checked by more accurate detailed match functions </s>
 <s> training for hidden Markov models one of the most challenging phases of developing an automatic speech recognizer system is finding a suitable method to train and evaluate its hidden Markov models .period this </s>
@@ -656,7 +655,7 @@ this kind of applications is particularly important as speech is the main form o
 <s> furthermore ,comma several tools were created in order to ease the system 'single-quote s development and they are introduced in this chapter .period however ,comma more information on these tools and their usage can be found at appendix a .period </s>
 <s> the CMU sphinx technology this section describes the sphinx speech recognition system that is part of the CMU sphinx technology .period also described is the PocketSphinx system which is the decoder </s>
 <s> library selected for this project .period </s>
-<s> sphinx sphinx is a continuous -hyphen speech and speaker -hyphen independent recognition system developed in at the Carnegie Mellon university CMU )right-paren in order to try to overcome some </s>
+<s> sphinx sphinx is a continuous -hyphen speech and speaker -hyphen independent recognition system developed in at the Carnegie Mellon University CMU )right-paren in order to try to overcome some </s>
 <s> of the greatest challenges within speech recognition :colon speaker independence ,comma continuous speech and large vocabularies this system is part of the CMU sphinx ,comma open source ,comma technology that provides a set of speech recognizers and tools that allow the </s>
 <s> development of speech recognition systems .period this technology has been used to ease the development of speech recognition systems as it provides a way to avoid developers the need to start from scratch .period </s>
 <s> while sphinx 3 is a continuous hmm based speech recognition system and both are written in the c programming language on the other hand ,comma sphinx 4 is a system that provides a more flexible and modular framework written in the java programming </s>
@@ -761,7 +760,6 @@ this kind of applications is particularly important as speech is the main form o
 <s> the generation of a new phonetic dictionary might be much more complex as every word supported by the language model needs to be included in the dictionary .period it is important to mention that every word needs to be translated into its corresponding arpa bet </s>
 <s> representation in order to be used by PocketSphinx .period for example ,comma table illustrates the first five words in a phonetic dictionary for Spanish .period </s>
 <s> http :colon /slash /slash SourceForge .period net /slash projects /slash CMUSphinx /slash files /slash acoustic %percent 2 0 and %percent 2 0 language %percent 2 0 models /slash </s>
-<s> arpa bet representation abrogate Afrikaner/s>
 <s> table phonetical dictionary building a detailed phonetic dictionary for a language can be a very time -hyphen consuming and challenging task as the developer needs to demonstrate a very good understanding of the </s>
 <s> language and its pronunciation .period in fact ,comma it is recommended to get help from a group of linguists in order to aid the developers during the generation of the dictionary .period </s>
 <s> in contrast ,comma a new acoustic model can be trained automatically ,comma provided there are enough recordings acoustic database )right-paren and the corresponding transcript for every single sentence is available .period PocketSphinx includes a tool called begin that is intended </s>
@@ -1687,3 +1685,10 @@ this kind of applications is particularly important as speech is the main form o
 <s> erase all </s>
 <s> file open file save </s>
 <s> sometimes it gets confused and capitalizes words in the middle of a sentence if you pause while dictating text .period </s>
+<s> send keys </s>
+<s> I have been fascinated by domes ever since my parents bought me a book about them when I was in school .period </s>
+<s> their space savings structure encloses a large area with a minimum of materials .period </s>
+<s> other advantages of domes include resistance to strong winds ,comma ample room for skylights ,comma and their overall aesthetics .period </s>
+<s> geodesic domes typically start with a platonic solid ,comma such as the 20 -hyphen sided icosahedron .period </s>
+<s> the process of subdividing the edges and bringing the center points out to form the dome's iconic spherical structure is called tesselation .period </s>
+<s> I pried the cover off and removed the circuit board right where it sat .period </s>

@@ -10,10 +10,17 @@ Linux/Cygwin The following _development_ packages should be installed through th
 
   * [http://www.python.org/ Python 2.7]
   * [http://www.pygtk.org/ pygtk2]
+  * [http://python-xlib.sourceforge.net/ python-xlib]
   * [http://undefined.org/python/#simplejson python-simplejson]
   * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
   * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
   * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
+  
+On Fedora, for example, install these dependencies:
+
+{{{
+su -c 'yum -y install python-xlib gstreamer-python blas sphinxbase-libs pocketsphinx-libs pocketsphinx python-simplejson sphinxbase pocketsphinx-plugin'
+}}}
 
 Unpack FreeSpeech into a folder such as /opt/freespeech
 
@@ -88,4 +95,4 @@ See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 == Security and privacy ==
 
-Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC. That said, it is very handy to use voice passwords on non-secure sites, and such. Not recommended for banking and payroll.
+Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC.
