@@ -9,21 +9,24 @@ Windows: We are waiting for pocketsphinx to be ported to gstreamer 1.0 before we
 
 Linux/Cygwin The following _development_ packages should be installed through the package manager.
 
-  * [http://www.python.org/ Python 2.7]
-  * [http://www.pygtk.org/ pygtk2]
-  * [http://python-xlib.sourceforge.net/ python-xlib]
-  * [http://undefined.org/python/#simplejson python-simplejson]
-  * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
-  * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
-  * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
-  
+    * [http://www.python.org/ Python 2.7]
+    * [http://www.pygtk.org/ pygtk2]
+    * [http://python-xlib.sourceforge.net/ python-xlib]
+    * [http://undefined.org/python/#simplejson python-simplejson]
+    * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+    * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
+    * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
+
 On Fedora, for example, install these dependencies:
 
 {{{
-su -c 'yum -y install python-xlib gstreamer-python blas sphinxbase-libs pocketsphinx-libs pocketsphinx python-simplejson sphinxbase pocketsphinx-plugin'
+su -c 'yum -y install gstreamer-python sphinxbase-libs \
+pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
+python-simplejson python-xlib ppygtk2'
 }}}
 
 Ubuntu: https://launchpad.net/ubuntu/+source/pocketsphinx
+Also install python-xlib python-simplejson python-gtk2
 
 Unpack FreeSpeech into a folder such as /opt/freespeech
 
@@ -54,16 +57,18 @@ Position the microphone somewhere near your face and begin talking. To end of th
 
 Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. Currently the following voice commands are supported:
 
-  * file quit - quits the program
-  * show commands - pops up a customize-able list of spoken commands
-  * editor clear - clears all text in the editor and starts over
-  * delete - delete [text] or erase selected text
-  * insert - move cursor after word or punctuation example: "Insert after period"
-  * select - select [text] example: "select the states"
-  * go to the end - put cursor at end of document
-  * scratch that - erase last spoken text
-  * back space - erase one character
-  * new paragraph - equivalent to pressing Enter twice
+    * file quit - quits the program
+    * file open - open a text file in the editor
+    * file save (as) - save the file
+    * show commands - pops up a customize-able list of spoken commands
+    * editor clear - clears all text in the editor and starts over
+    * delete - delete `[text]` or erase selected text
+    * insert - move cursor after word or punctuation example: "Insert after period"
+    * select - select `[text]` example: "select the states"
+    * go to the end - put cursor at end of document
+    * scratch that - erase last spoken text
+    * back space - erase one character
+    * new paragraph - equivalent to pressing Enter twice
 
 == Troubleshooting ==
 
