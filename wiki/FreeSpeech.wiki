@@ -126,4 +126,4 @@ http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 
 == Security and privacy ==
 
-Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC.
+Learned speech patterns (from pressing the learn button) are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech passwords, or private details of your life, especially if other people will have access to your PC. This file may be edited (whew)!
