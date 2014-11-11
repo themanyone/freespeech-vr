@@ -34,29 +34,37 @@ Replace ppa:dhuggins/cmusphinx in the following instructions with whatever is su
 
 Open a terminal and enter:
 
-{{{sudo add-apt-repository ppa:dhuggins/cmusphinx
+{{{
+sudo add-apt-repository ppa:dhuggins/cmusphinx
 }}}
 
 Enter password and press Enter twice.
 
-{{{sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase python-pocketsphinx
+{{{
+sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase python-pocketsphinx
 }}}
 
 If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
 
-{{{sudo ln -s (location, change this) /media/cdrom}}}
+{{{
+sudo ln -s (location, change this) /media/cdrom
+}}}
 
 ==Testing==
 
 Before we begin, load pavucontrol, Audacity (or some other audio recording program that has a recording monitor) and check sound levels.
 Users should be able to record and play back audio.
 
-{{{arecord temp.wav -r 16000
-aplay}}}
+{{{
+arecord temp.wav -r 16000
+aplay
+}}}
 
 Test pocketsphinx
 
-{{{pocketsphinx_continuous}}}
+{{{
+pocketsphinx_continuous
+}}}
 
 Download [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cam_Toolkit_v2] and unpack it. Read the instructions in the README and edit the Makefile.
 
@@ -64,7 +72,9 @@ Run `make` to build the tools.
 
 Manually copy the tools from ../bin to somewhere in $PATH like: `/usr/local/bin`
 
-{{{sudo cp ../bin/* /usr/local/bin/}}}
+{{{
+sudo cp ../bin/* /usr/local/bin/
+}}}
 
 Unpack FreeSpeech into a user-writeable folder such as Downloads/freespeech
 
