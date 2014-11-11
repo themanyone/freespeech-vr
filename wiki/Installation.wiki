@@ -1,0 +1,115 @@
+#summary Installation instructions
+
+==Installation==
+
+Windows: Installation should work using [https://code.google.com/p/ossbuild/ ossbuild] for gstreamer. Will update this once we get a windows machine to test it.
+
+===Linux/Cygwin===
+The following packages should be installed through the package manager.
+
+    * [http://www.python.org/ Python 2.7]
+    * [http://www.pygtk.org/ pygtk2]
+    * [http://python-xlib.sourceforge.net/ python-xlib]
+    * [http://undefined.org/python/#simplejson python-simplejson]
+    * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+    * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
+    * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
+
+On *Fedora*, for example, install these dependencies:
+
+{{{
+su -c 'yum -y install gstreamer-python sphinxbase-libs \
+pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
+python-simplejson python-xlib pygtk2'
+}}}
+
+*Ubuntu*
+
+Go to https://launchpad.net/~dhuggins/+archive/ubuntu/cmusphinx for updated instructions to install ppa:dhuggins/cmusphinx
+
+*If that doesn't work*
+Go to https://launchpad.net/ubuntu/+ppas
+Search for "sphinx"
+Replace ppa:dhuggins/cmusphinx in the following instructions with whatever new pocketsphinx PPA is found.
+
+Otherwise, open a terminal and enter:
+
+sudo add-apt-repository ppa:dhuggins/cmusphinx 
+Enter password and press Enter twice.
+
+sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase python-pocketsphinx
+
+If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
+
+sudo ln -s (location, change this) /media/cdrom
+
+==Testing==
+
+Before we begin, load pavucontrol, Audacity (or some other audio recording program that has a recording monitor) and check sound levels.
+Users should be able to record and play back audio.
+
+{{{arecord temp.wav -r 16000
+aplay}}}
+
+Test pocketsphinx
+
+{{{pocketsphinx_continuous}}}
+
+Download [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cam_Toolkit_v2] and unpack it. Read the instructions in the README and edit the Makefile.
+
+Run `make` to build the tools.
+
+Manually copy the tools from ../bin to somewhere in $PATH like: `/usr/local/bin`
+
+{{{sudo cp ../bin/* /usr/local/bin/}}}
+
+Unpack FreeSpeech into a user-writeable folder such as Downloads/freespeech
+
+Language files and preferences are copied to /home/$USER/.config but the location may be changed by changing or adding the environment variable, `$XDG_CONFIG_HOME`
+
+{{{
+export XDG_CONFIG_HOME=$HOME/.config
+}}}
+
+== Using FreeSpeech ==
+
+There is no desktop icon yet. Right-click on the desktop to create one.
+Launching the program may be done via the Python interpreter.
+
+    python freespeech.py
+
+Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
+
+Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. The following voice commands are supported (except only "scratch that" is available when using X keyboard emulation).
+
+    * file quit - quits the program
+    * file open - open a text file in the editor
+    * file save (as) - save the file
+    * show commands - pops up a customize-able list of spoken commands
+    * editor clear - clears all text in the editor and starts over
+    * delete - delete `[text]` or erase selected text
+    * insert - move cursor after word or punctuation example: "Insert after period"
+    * select - select `[text]` example: "select the states"
+    * go to the end - put cursor at end of document
+    * scratch that - erase last spoken text
+    * back space - erase one character
+    * new paragraph - equivalent to pressing Enter twice
+
+== Troubleshooting ==
+
+Make sure the various requirements work. For example, `pocketsphinx_continuous`, which may be tested from the command line in a terminal.
+
+If you get messages like this:
+
+{{{
+Trouble writing /home/*/.config/FreeSpeech/freespeech.idngram
+Trouble writing...
+}}}
+
+It usually means you haven't installed the [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] or there is a problem with the tools themselves. You must edit the Makefile and follow the instructions therein before running `make`. Then you must manually copy the files in the bin directory somewhere in your `$PATH` like `/usr/local/bin` on Linux or `C:\windows\system32` on Windows.
+
+For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in <stdio.h>, so perhaps they changed it. Building the toolkit from source should fix that. The quick-fix is to provide /usr/tmp for machines that don't have it.
+
+{{{
+ln -s /tmp /usr/tmp
+}}}
