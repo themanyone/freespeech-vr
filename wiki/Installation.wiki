@@ -1,5 +1,7 @@
 #summary Installation instructions
 
+Official page http://thenerdshow.com/freespeech.html
+
 ==Installation==
 
 Windows: Installation should work using [https://code.google.com/p/ossbuild/ ossbuild] for gstreamer. Will update this once we get a windows machine to test it.
