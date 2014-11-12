@@ -24,20 +24,22 @@ su -c 'yum -y install python-xlib gstreamer-python blas sphinxbase-libs pocketsp
 
 Unpack FreeSpeech into a folder such as /opt/freespeech
 
-Language files and preferences are copied to $XDG_CONFIG_HOME, so be sure
-to set this environment variable to a user-writeable location if it isn't already set. (This
-normally points to /home/$USER/.config on most modern Linux systems.)
+Language files and preferences are copied to `$XDG_CONFIG_HOME`  or `/home/$USER/.config`. Be sure $USER references a valid, writable location, such as /home/Henry (or whatever the username is).
 
 == Using FreeSpeech ==
 
 There is no desktop icon yet. Right-click on the desktop to create one.
 Launching the program may be done via the Python interpreter.
 
-    python freespeech.py
+    `python freespeech.py`
 
-Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
+Position the microphone somewhere near your face and begin talking. 
+To end of the sentence, say "period" (or "colon", "question-mark", 
+"exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
-Voice commands are included. A list of commands pops up at start-up or you may say "show commands" to show them again. Currently the following voice commands are supported:
+Voice commands are included. A list of commands pops up at start-up 
+or you may say "show commands" to show them again. Currently the 
+following voice commands are supported:
 
   * file quit - quits the program
   * file open - open a text file in the editor
@@ -54,17 +56,23 @@ Voice commands are included. A list of commands pops up at start-up or you may s
 
 == Troubleshooting ==
 
-Make sure the various requirements work. For example, "pocketsphinx", which may be run from the command line.
+Make sure the various requirements work. For example, "pocketsphinx", 
+which may be run from the command line.
 
 == Improving accuracy  ==
 
 === Audio ===
 
-The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level is adjusted automatically and tweaking it is not likely to improve much. You may try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
+The biggest improvements in accuracy have been achieved by adjusting 
+the microphone position. The volume source levels may need to be 
+adjusted. You may try making a recording with 
+[http://audacity.sourceforge.net Audacity] and checking the levels to 
+make sure they are not clipping, and it sounds like intelligible 
+speech when played back.
 
 === Language corpus ===
 
-The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time! You may also train it by pasting in gobs of text from websites and documents.
+The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time! You may also train it by pasting in gobs of text from websites and documents. These work best if they are documents you created, or if they have grammar that is similar to yours.
 
 If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy having trouble with some words --StackOverflow].
 
@@ -73,9 +81,9 @@ It seems that the PocketSphinx folks were trying to add support for capitalized 
     new  N UW
     New  N UW
 }}}
-Now PocketSphinx will decide the capitalization depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary, using the word or acronym as it is found in the corpus, not the dictionary.
+Now PocketSphinx will decide the capitalization depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary. It already uses the word or acronym as it is found in the corpus, not the dictionary.
 
-Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
+Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but the corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
 
 The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
@@ -85,7 +93,7 @@ If there is a word that it stubbornly refuses to recognize, even after teaching 
 
 Sometimes the dictionary pronunciation can be little bit off. You will notice that some other words have alternate pronunciations denoted with (2). Go ahead and add an alternate and see if it doesn't improve immediately the next time the program starts.
 
-This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say ".full-stop" or "?question-mark") and some capitalized words. See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
+This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say ".full-stop" or "?question-mark") and some capitalized words. See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually with a text editor, along with their phonetic representation, but we are working on incorporating a word trainer.
 
 About the CMU Pronouncing Dictionary
 http://www.speech.cs.cmu.edu/cgi-bin/cmudict
@@ -95,4 +103,4 @@ See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 == Security and privacy ==
 
-Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC.
+FreeSpeech does not gather or store your information on servers. Learned speech patterns are stored offline in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC.
