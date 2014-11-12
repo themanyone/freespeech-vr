@@ -68,6 +68,8 @@ Test pocketsphinx
 pocketsphinx_continuous
 }}}
 
+Say something. (It should print lots of spam while doing some (very basic) speech recognition).
+
 Download [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cam_Toolkit_v2] and unpack it. Read the instructions in the README and edit the Makefile. To summarize, most little-endian PC hardware requires this change. Edit `CMU-Cam_Toolkit_v2/src/Makefile` and remove the # sign in front of this line:
 
 {{{
