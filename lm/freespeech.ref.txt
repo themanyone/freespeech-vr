@@ -1692,3 +1692,102 @@ this kind of applications is particularly important as speech is the main form o
 <s> geodesic domes typically start with a platonic solid ,comma such as the 20 -hyphen sided icosahedron .period </s>
 <s> the process of subdividing the edges and bringing the center points out to form the dome's iconic spherical structure is called tesselation .period </s>
 <s> I pried the cover off and removed the circuit board right where it sat .period </s>
+<s> there may be many reasons to root an Android device .period </s>
+<s> there may be many reasons to root an Android device .period </s>
+<s> I wanted to develop for the phone and experiment with ad -hyphen hoc networking .period </s>
+<s> there may be many reasons to root an Android device .period </s>
+<s> I wanted to develop for the phone and experiment with ad -hyphen hoc networking .period </s>
+<s> other reasons might be to uninstall stubborn apps .period </s>
+<s> it boils down to a matter principle ,comma being in control of ones own devices .period </s>
+<s> today I had dinner with chunky bleu chese dressing .period </s>
+<s> what Sells and Smells </s>
+<s> the top 10 over -hyphen pushed items on ebay and why I won't rush out and buy them right now .period </s>
+<s> 10 .period </s>
+<s> the new 32 "quote SEIKI LED TVs look pretty good at $dollar-sign 150 .period </s>
+<s> I haven't bought one Because I already have a 32 "quote VIZIO .period </s>
+<s> the SEIKI name is new to me .period </s>
+<s> they must have spent a ton of money on advertising to be on the front page of ebay .period </s>
+<s> the color on the LED TVs is a little hard on the eyes ,comma if you spend all day in front of them (left-paren not that I do that ever )right-paren .dot Actually I have watched maybe 20 cumulative hours of TV all summer .period </s>
+<s> we mainly use the TV to watch SciFi and Kung -hyphen fu movies on DVD ,comma or VHS after a long day's work .dot :colon )right-paren It is in winter that I like to have an extra display because programming and testing applications almost requires having a bunch of windows opened .period </s>
+<s> it's handy that a HDTV can now double as a computer monitor ,comma but there are some drawbacks .period </s>
+<s> I've had problems with newer HDTVs that did not support the frequencies put out by my laptop ,comma and I don't know if I'm ready to upgrade just yet .period </s>
+<s> 9 .dot Keurig coffee makers are perhaps the most annoying brand ever .period </s>
+<s> my sister had one for maybe a year ,comma before it broke .period </s>
+<s> first of all ,comma they gobble up little plastic containers that are filling up landfills because they are only only good for one or two cups .period </s>
+<s> there interface is horrible ,comma requiring 6 -hyphen 8 button presses to get a cup of coffee out of it .period </s>
+<s> then it groans and makes a mess everywhere if anybody requests a size bigger than their cup will hold .period </s>
+<s> it's less convenient than putting instant in the microwave .period </s>
+<s> call me old ,comma but I'd rather brew a pot on the stove ,comma or hand -hyphen strain it through a paper napkin .period </s>
+<s> 8 .dot I'm not sure about the KitchenAid mixers .period </s>
+<s> first off ,comma I don't do a whole lot of mixing .period </s>
+<s> I don't have the patience for it .period </s>
+<s> if I can't mix it up by hand in a minute or two then I'm not going to bother setting up the mixer .period </s>
+<s> I'll deal with the lumps .period </s>
+<s> and lumps is what I'd get if I had a spouse and I tried to give this to her .period </s>
+<s> there is nothing that says you belong in the kitchen better than a KitchenAid mixer .period </s>
+<s> 7 .dot The Samsung Galaxy Gear .period </s>
+<s> it's a little large for a watch and a little small for a phone .period </s>
+<s> it goes on the wrist .period </s>
+<s> at first glance ,comma aside from all the kudos I'd get for looking like Dick Tracy ,comma I can't think of any justifiable reason to get one .period </s>
+<s> it isn't a phone .period </s>
+<s> it's a device that works with your existing Samsung phone .period </s>
+<s> the phone I have ,comma a Motorola MB860 ,comma is too small as it is .period </s>
+<s> I'm looking at getting a 4G phone with a 5 "quote or 7 "quote screen .period </s>
+<s> if I can get a Samsung for a reasonable price I might consider the Gear as an add -hyphen on ,comma however .period </s>
+<s> it does have a few things going for it .period </s>
+<s> the Gear can locate a lost phone .period </s>
+<s> it secures the data on the phone if it goes more than five feet away ,comma and it unlocks the phone when near .period </s>
+<s> this may sound like a joke ,comma but it also tells the time ...ellipsis </s>
+<s> 6 .period </s>
+<s> the Sony PlayStation 4 .period </s>
+<s> this is an awesome game machine and I'll probably get booed for my opinion ,comma but this article is about me and why I don't rush out and buy these things .period </s>
+<s> you no doubt have something else to say and you should probably go make your own blog about that already .period </s>
+<s> we can't all be the same .period </s>
+<s> I have debts to pay and need to spend time on income -hyphen related activities .period </s>
+<s> somebody has to make these devices work .period </s>
+<s> the only reason I can think of to ever get one of these is if I start developing games for it .period </s>
+<s> I don't play video games much .period </s>
+<s> it goes against my desire to produce something tangible and to have something to show for my effort .period </s>
+<s> 5 .dot The Apple iPad Air .period </s>
+<s> weighing in at around $dollar-sign 750 this thing had better pack a serious punch ,comma but it doesn't really offer anything over my existing laptop .period </s>
+<s> it has a few things I don't like about it .period </s>
+<s> first of all ,comma it's an Apple .period </s>
+<s> I know they're popular ,comma but I'm an open source fanatic and an operating system developer .period </s>
+<s> I don't want the details like source code hidden away .period </s>
+<s> I may consider developing for it ,comma if there is a market ,comma and that translates to if somebody pays me .period </s>
+<s> I would more likely use it as a babysitter for anyone who comes to visit .period </s>
+<s> keep them busy ,comma so I can get some work done .period </s>
+<s> the camera is only 5 megapixels ,comma which is enough for a quick snapshot ,comma but not for any serious photography .period </s>
+<s> the battery is supposed to last up to 10 hours ,comma but that's only if it isn't being used much .period </s>
+<s> 4 .dot A Burberry Brit quilted jacket or Nanamica denim cycling vest ,comma also quilted .period </s>
+<s> I don't care if it's Autumn .period </s>
+<s> I have never been a follower of fashion .period </s>
+<s> they may be warmer than qiviut ,comma but at $dollar-sign 595 there is nothing that can make a quilt look anywhere near cool .period </s>
+<s> I may not be the ultimate authority on coolness ,comma but look at it this way .period </s>
+<s> I'm already off the radar so far it would take something impressive to bring me back home ,comma and this doesn't look like it .period </s>
+<s> besides ,comma I already have a quilted vest and it hasn't gotten me any dates .period </s>
+<s> 3 .dot Vintage Levi's denim jacket .period </s>
+<s> these are a classic ,comma but not very warm at around $dollar-sign 150 .period </s>
+<s> I haven't had much luck with the denim jackets ,comma however .period </s>
+<s> I'm not sure why .period </s>
+<s> I though I looked spiffy in my new denim jacket ,comma but nobody seemed very impressed .period </s>
+<s> on the other hand ,comma I don't really care that much what I look like ,comma or what people think about that ,comma and it shows .period </s>
+<s> I'm not into getting compliments ,comma or I would dress up more often ,comma but I have been told ,comma over and over again ,comma by many different people ,comma that I look good in a suit .period </s>
+<s> 2 .dot Scuffed -hyphen up leather boots for $dollar-sign 152 .period </s>
+<s> really ?question-mark </s>
+<s> I'd have to be dropped on my head to get these .period </s>
+<s> they are billed as something to make you look like a rebel ,comma a daredevil ,comma or an adventurous spirit .period </s>
+<s> new York cool .period </s>
+<s> hmmmm .period </s>
+<s> these are for posers who want to look like someone who's been around town for a while ,comma someone who rides a motorcycle .period </s>
+<s> I can't think of anyone who would be impressed by a pair of boots such as these ,comma and if they are ,comma I would be worried about their motives .period </s>
+<s> if I had the money ,comma I would save it up to buy a pair of comfortable sneakers .period </s>
+<s> 1 .dot A Ford Woody Streetrod from 1951 .period </s>
+<s> it's a woodie .period </s>
+<s> there is wood in the door panels .period </s>
+<s> these are great as far as sharing photos of them on Facebook ,comma but I wouldn't actually buy one .period </s>
+<s> they also seem like something impractical to me ,comma something that is loved ,comma perhaps by a dwindling selection of old car geeks ,comma possibly old ,comma rich car geeks .period </s>
+<s> that there is enough for some people to want to get one .period </s>
+<s> it's part of a look ,comma part of a role that I don't want to play yet .period </s>
+<s> I can just see myself ,comma in about 30 years ,comma stepping out of one of these with white hair and a cane .period </s>
+<s> yes ,comma somebody to hand me a fedora !exclamation-point </s>

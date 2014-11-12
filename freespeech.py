@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # FreeSpeech
 # Continuous realtime speech recognition and control via pocketsphinx
-# Copyright (c) 2013 Henry Kroll III, http://www.TheNerdShow.com
+# Copyright (c) 2013, 2014 Henry Kroll III, http://www.TheNerdShow.com
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -42,8 +42,11 @@ if os.environ.has_key('XDG_CONFIG_HOME'):
     confhome = os.environ['XDG_CONFIG_HOME']
     confdir  = os.path.join(confhome, appname)
 else:
-    # todo: determine suitable writable location for other os
-    confdir = refdir
+    if os.environ.has_key('HOME'):
+        confhome = os.path.join(os.environ['HOME'],".config")
+        confdir  = os.path.join(confhome, appname)
+    else:
+        confdir = refdir
 
 # reference files written by this application
 lang_ref= os.path.join(confdir, 'freespeech.ref.txt')
@@ -55,7 +58,7 @@ cmdtext = os.path.join(confdir, 'freespeech.cmd.txt')
 cmdjson = os.path.join(confdir, 'freespeech.cmd.json')
 
 class freespeech(object):
-    """GStreamer/PocketSphinx Demo Application"""
+    """GStreamer/PocketSphinx Continuous Speech Recognition"""
     def __init__(self):
         """Initialize a freespeech object"""
         # place to store the currently open file name, if any
@@ -97,15 +100,18 @@ class freespeech(object):
         self.scroller.add(self.text)
         vbox.pack_start(self.scroller, True, True, 5)
         vbox.pack_end(hbox, False, False)
-        self.button = gtk.Button("Learn")
-        self.button.connect('clicked', self.learn_new_words)
+        self.button0 = gtk.Button("Learn")
+        self.button0.connect('clicked', self.learn_new_words)
         self.button1 = gtk.ToggleButton("Send keys")
         self.button1.connect('clicked', self.toggle_echo)
-        self.button2 = gtk.ToggleButton("Mute")
-        self.button2.connect('clicked', self.mute)
-        hbox.pack_start(self.button, True, False, 5)
-        hbox.pack_start(self.button1, True, False, 5)
-        hbox.pack_start(self.button2, True, False, 5)
+        self.button2 = gtk.Button("Show commands")
+        self.button2.connect('clicked', self.show_commands)
+        self.button3 = gtk.ToggleButton("Mute")
+        self.button3.connect('clicked', self.mute)
+        hbox.pack_start(self.button0, True, False, 0)
+        hbox.pack_start(self.button1, True, False, 0)
+        hbox.pack_start(self.button2, True, False, 0)
+        hbox.pack_start(self.button3, True, False, 0)
         self.window.add(vbox)
         self.window.show_all()
 
@@ -121,7 +127,7 @@ class freespeech(object):
                 'file save': 'self.file_save',
                 'file save as': 'self.file_save_as',
                 'show commands': 'self.show_commands',
-                'editor clear': 'self.clear_edits',
+                'editor cleau': 'self.clear_edits',
                 'clear edits': 'self.clear_edits',
                 'file close': 'self.clear_edits',
                 'delete': 'self.delete',
@@ -137,7 +143,7 @@ class freespeech(object):
             self.write_prefs()
             try:
                 self.prefsdialog.checkbox.set_active(False)
-            except:
+            except:`
                 pass
 
     def init_prefs(self):
@@ -168,6 +174,7 @@ If new commands don't work click the learn button to train them.")
         editable.set_property('editable', True)
         editable.connect('edited', self.edited_cb)
         me.connect("expose-event", self.prefs_expose)
+        me.connect("response", self.prefs_response)
         column = gtk.TreeViewColumn("Spoken command",editable,text=0)
         me.tree.append_column(column)
         column = gtk.TreeViewColumn("What it does",fixed,text=1)
@@ -176,15 +183,7 @@ If new commands don't work click the learn button to train them.")
         me.label.show()
         me.tree.show()
         self.commands_old = self.commands
-        ret = me.run()
-        if me.checkbox.get_active():
-            self.init_commands()
-        else:
-            if ret!=gtk.RESPONSE_ACCEPT:
-                self.commands = self.commands_old
-            else:
-                self.write_prefs()
-        me.hide()
+        me.show_all()
 
     def prefs_expose(self, me, event):
         """ callback when prefs window is shown """
@@ -206,6 +205,18 @@ If new commands don't work click the learn button to train them.")
         """ read command list from file """
         with codecs.open(cmdjson, encoding='utf-8', mode='r') as f:
             self.commands=json.loads(f.read())
+            
+    def prefs_response(self, me, event):
+        """ make prefs dialog non-modal by using response event
+            instead of run() method, which waited for input """
+        if me.checkbox.get_active():
+            self.init_commands()
+        else:
+            if event!=gtk.RESPONSE_ACCEPT:
+                self.commands = self.commands_old
+            else:
+                self.write_prefs()
+        me.hide()
         
     def edited_cb(self, cellrenderertext, path, new_text):
         """ callback activated when treeview text edited """
@@ -331,7 +342,6 @@ If new commands don't work click the learn button to train them.")
     
     def toggle_echo(self, button):
         """ echo keystrokes to the desktop """
-        print("hi")
         if not button.get_active():
             button.set_label("Send keys")
             button.set_active(False)
@@ -404,18 +414,18 @@ If new commands don't work click the learn button to train them.")
             line = re.sub(r'&',           r'&ampersand',              line)
             line = re.sub(r'\$',          r'$dollar-sign',            line)
             line = re.sub(r'\+',          r'+plus-symbol',            line)
-            line = re.sub(u'§',           u'§section-sign',           line)
-            line = re.sub(u'¶',           u'¶paragraph-sign',         line)
-            line = re.sub(u'¼',           u'¼and-a-quarter',          line)
-            line = re.sub(u'½',           u'½and-a-half',             line)
-            line = re.sub(u'¾',           u'¾and-three-quarters',     line)
-            line = re.sub(u'¿',           u'¿inverted-question-mark', line)
-            line = re.sub(u'×',           u'×multiplication-sign',    line)
-            line = re.sub(u'÷',           u'÷division-sign',          line)
-            line = re.sub(u'° ',          u'°degree-sign ',           line)
-            line = re.sub(u'©',           u'©copyright-sign',         line)
-            line = re.sub(u'™',           u'™trademark-sign',         line)            
-            line = re.sub(u'®',           u'®registered-symbol',      line)
+            line = re.sub(r'§',           r'§section-sign',           line)
+            line = re.sub(r'¶',           r'¶paragraph-sign',         line)
+            line = re.sub(r'¼',           r'¼and-a-quarter',          line)
+            line = re.sub(r'½',           r'½and-a-half',             line)
+            line = re.sub(r'¾',           r'¾and-three-quarters',     line)
+            line = re.sub(r'¿',           r'¿inverted-question-mark', line)
+            line = re.sub(r'×',           r'×multiplication-sign',    line)
+            line = re.sub(r'÷',           r'÷division-sign',          line)
+            line = re.sub(r'° ',          r'°degree-sign ',           line)
+            line = re.sub(r'©',           r'©copyright-sign',         line)
+            line = re.sub(r'™',           r'™trademark-sign',         line)            
+            line = re.sub(r'®',           r'®registered-sign',      line)
             line = re.sub(r'_',           r'_underscore',             line)
             line = re.sub(r'\\',          r'\backslash',              line)
             line = re.sub(r'^(.)',        r'<s> \1',                  line)
@@ -471,8 +481,7 @@ If new commands don't work click the learn button to train them.")
         struct.set_value('uttid', uttid)
         asr.post_message(gst.message_new_application(asr, struct))
 
-    def application_message(self, bus, msg):
-        """Receive application messages from the bus."""
+g        """Receive application messages from the bus."""
         msgtype = msg.structure.get_name()
         if msgtype == 'partial_result':
             self.partial_result(msg.structure['hyp'], 
@@ -506,6 +515,7 @@ If new commands don't work click the learn button to train them.")
             if self.button1.get_active():
                 send_string(hyp)
                 display.sync()
+            print(hyp)
         ins = self.textbuf.get_insert()
         iter = self.textbuf.get_iter_at_mark(ins)
         self.text.scroll_to_iter(iter, 0, False)
@@ -516,22 +526,15 @@ If new commands don't work click the learn button to train them.")
         self.errmsg.label.set_text(errormsg)
         self.errmsg.run()
         self.errmsg.hide()
-    def show_commands(self):
+    def show_commands(self, argument=None):
         """ show these command preferences """
         me=self.prefsdialog
         self.commands_old = self.commands
-        ret = me.run()
-        if me.checkbox.get_active():
-            self.init_commands()
-        else:
-            if ret!=gtk.RESPONSE_ACCEPT:
-                self.commands = self.commands_old
-            else:
-                self.write_prefs()
-        me.hide()
+        me.show_all()
+        me.present()
         return True # command completed successfully!
     def clear_edits(self):
-        """ erase text buffer, close files """
+        """ close file and start over without saving """
         self.textbuf.set_text('')
         self.open_filename=''
         self.window.set_title("FreeSpeech")
@@ -565,7 +568,7 @@ If new commands don't work click the learn button to train them.")
     def delete(self,argument=None):
         """ delete [text] or erase selection """
         if argument:
-            print("del "+argument)
+            # print("del "+argument)
             if re.match("^to end", argument):
                 start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
                 end = self.bounds[1]
@@ -583,7 +586,7 @@ If new commands don't work click the learn button to train them.")
     def insert(self,argument=None):
         """ insert after [text] """
         if re.match("^after", argument):
-            argument = re.match(r'\w+(.*)', argument).group(1)
+            argument = re.match(u'\w+(.*)', argument).group(1)
             search_back = self.searchback(self.bounds[1], argument)
             if None == search_back:
                 return True
@@ -595,16 +598,19 @@ If new commands don't work click the learn button to train them.")
         return True # command completed successfully!
     def scratch_that(self):
         """ erase recent text """
-        scratch = self.undo.pop(-1)
-        search_back = self.bounds[1].backward_search( \
-            scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
-        self.textbuf.select_range(search_back[0], search_back[1])
-        self.textbuf.delete_selection(True, self.text.get_editable())
-        if self.button1.get_active():
-            b="".join(["\b" for x in range(0,len(scratch))])
-            send_string(b)
-            display.sync()
-        return True # command completed successfully!
+        if self.undo:
+            scratch = self.undo.pop(-1)
+            search_back = self.bounds[1].backward_search( \
+                scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
+            if search_back:
+                self.textbuf.select_range(search_back[0], search_back[1])
+                self.textbuf.delete_selection(True, self.text.get_editable())
+                if self.button1.get_active():
+                    b="".join(["\b" for x in range(0,len(scratch))])
+                    send_string(b)
+                    display.sync()
+                return True # command completed successfully!
+        return False
     def new_paragraph(self):
         """ start a new paragraph """
         self.textbuf.insert_at_cursor('\n')
@@ -646,7 +652,7 @@ If new commands don't work click the learn button to train them.")
         if commands.has_key(hyp):
             return eval(commands[hyp])()
         try:# separate command and arguments
-            reg = re.match(r'(\w+) (.*)', hyp)
+            reg = re.match(u'(\w+) (.*)', hyp)
             command = reg.group(1)
             argument = reg.group(2)
             return eval(commands[command])(argument)
@@ -665,5 +671,6 @@ If new commands don't work click the learn button to train them.")
                 return None
         return search_back
 
-app = freespeech()
-gtk.main()
+if __name__ == "__main__":
+    app = freespeech()
+    gtk.main()
