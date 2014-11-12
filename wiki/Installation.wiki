@@ -47,7 +47,8 @@ sudo apt-get update
 }}}
 
 {{{
-sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase python-pocketsphinx
+sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 \ gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase \
+python-pocketsphinx sphinxbase-utils
 }}}
 
 If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
