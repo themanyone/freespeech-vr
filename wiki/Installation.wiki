@@ -107,7 +107,10 @@ svn checkout http://freespeech-vr.googlecode.com/svn/trunk/ freespeech-vr-read-o
 There is no desktop icon yet. Right-click on the desktop to create one.
 Launching the program may be done via the Python interpreter.
 
-    python freespeech.py
+{{{
+cd ~/Downloads/freespeech-vr
+python freespeech.py
+}}}
 
 Position the microphone somewhere near your face and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
