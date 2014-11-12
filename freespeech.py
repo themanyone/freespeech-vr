@@ -127,7 +127,7 @@ class freespeech(object):
                 'file save': 'self.file_save',
                 'file save as': 'self.file_save_as',
                 'show commands': 'self.show_commands',
-                'editor cleau': 'self.clear_edits',
+                'editor clear': 'self.clear_edits',
                 'clear edits': 'self.clear_edits',
                 'file close': 'self.clear_edits',
                 'delete': 'self.delete',
@@ -143,7 +143,7 @@ class freespeech(object):
             self.write_prefs()
             try:
                 self.prefsdialog.checkbox.set_active(False)
-            except:`
+            except:
                 pass
 
     def init_prefs(self):
@@ -481,7 +481,7 @@ If new commands don't work click the learn button to train them.")
         struct.set_value('uttid', uttid)
         asr.post_message(gst.message_new_application(asr, struct))
 
-g        """Receive application messages from the bus."""
+        """Receive application messages from the bus."""
         msgtype = msg.structure.get_name()
         if msgtype == 'partial_result':
             self.partial_result(msg.structure['hyp'], 
