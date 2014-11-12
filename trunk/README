@@ -1,106 +1,197 @@
-== About ==
+=About=
 
-FreeSpeech is a free and open-source (FOSS) cross-platform dictation, voice transcription, and realtime speech recognition application for the desktop. Offline speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine.
+FreeSpeech is a free and open-source (FOSS), cross-platform desktop application front-end for PocketSphinx dictation, voice transcription, and realtime speech recognition. FreeSpeech enables speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine. Get FreeSpeech via svn from [http://code.google.com/p/freespeech-vr/ Google Code].
 
-== Installation ==
+In addition to dictation, FreeSpeech now provides voice commands and keyboard emulation, so users can dictate into other apps, remote terminals, and virtual machines.
 
-Windows: We are working on a WindowsVersion installer.
+=Installation=
 
-Linux/Cygwin The following _development_ packages should be installed through the package manager.
+Windows: Installation should work using [https://code.google.com/p/ossbuild/ ossbuild] for gstreamer. Will update this once we get a windows machine to test it.
 
-  * [http://www.python.org/ Python 2.7]
-  * [http://www.pygtk.org/ pygtk2]
-  * [http://python-xlib.sourceforge.net/ python-xlib]
-  * [http://undefined.org/python/#simplejson python-simplejson]
-  * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
-  * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
-  * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
-  
-On Fedora, for example, install these dependencies:
+===Linux/Cygwin===
+The following packages should be installed through the package manager.
+
+    * [http://www.python.org/ Python 2.7]
+    * [http://www.pygtk.org/ pygtk2]
+    * [http://python-xlib.sourceforge.net/ python-xlib]
+    * [http://undefined.org/python/#simplejson python-simplejson]
+    * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+    * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
+    * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
+
+==Fedora==
 
 {{{
-su -c 'yum -y install python-xlib gstreamer-python blas sphinxbase-libs pocketsphinx-libs pocketsphinx python-simplejson sphinxbase pocketsphinx-plugin'
+su -c 'yum groupinstall "C Development Tools and Libraries"'
+su -c 'yum -y install gstreamer-python sphinxbase-libs \
+pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
+python-simplejson python-xlib pygtk2 svn'
 }}}
 
-Unpack FreeSpeech into a folder such as /opt/freespeech
+==Ubuntu==
 
-Language files and preferences are copied to `$XDG_CONFIG_HOME`  or `/home/$USER/.config`. Be sure $USER references a valid, writable location, such as /home/Henry (or whatever the username is).
+Open a terminal and install the pocketsphinx repository:
 
-== Using FreeSpeech ==
+{{{
+sudo add-apt-repository ppa:dhuggins/cmusphinx
+}}}
+
+Enter password and press Enter twice.
+
+Get updates and install dependencies.
+
+{{{
+sudo apt-get update
+
+sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 \
+gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase \
+python-pocketsphinx sphinxbase-utils svn
+}}}
+
+If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
+
+{{{
+sudo ln -s (location, change this) /media/cdrom
+}}}
+
+=Testing=
+
+Before we begin, load pavucontrol, Audacity (or some other audio recording program that has a recording monitor) and check sound levels.
+Users should be able to record and play back audio.
+
+{{{
+arecord temp.wav -r 16000
+aplay
+}}}
+
+Test pocketsphinx
+
+{{{
+pocketsphinx_continuous
+}}}
+
+Say something. (It should print lots of spam while doing some (very basic) speech recognition).
+
+Download [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cam_Toolkit_v2] and unpack it. Read the instructions in the README and edit the Makefile. To summarize, most PC hardware is what they call "little-endian" and it requires this change: Edit `CMU-Cam_Toolkit_v2/src/Makefile` and remove the # sign in front of this line:
+
+{{{
+BYTESWAP_FLAG	= -DSLM_SWAP_BYTES
+}}}
+
+
+Run `make` to build the tools.
+
+{{{
+cd CMU-Cam_Toolkit_v2/src
+make
+}}}
+
+Manually copy the tools from ../bin to somewhere in $PATH like: `/usr/local/bin`
+
+{{{
+sudo cp ../bin/* /usr/local/bin/
+}}}
+
+The tools expect to write to /usr/tmp
+
+{{{
+sudo ln -s /tmp /usr/tmp
+}}}
+
+Language files and preferences are copied to /home/$USER/.config but the location may be changed by changing or adding the environment variable, `$XDG_CONFIG_HOME`
+
+{{{
+export XDG_CONFIG_HOME=$HOME/.config
+}}}
+
+Get FreeSpeech using svn because downloads are outdated. (Install svn from the Software Center if necessary.)
+
+{{{
+cd ~/Downloads
+svn checkout http://freespeech-vr.googlecode.com/svn/trunk/ freespeech-vr-read-only
+}}}
+
+==Using FreeSpeech==
 
 There is no desktop icon yet. Right-click on the desktop to create one.
 Launching the program may be done via the Python interpreter.
 
-    `python freespeech.py`
+{{{
+cd ~/Downloads/frees*
+python freespeech.py
+}}}
 
-Position the microphone somewhere near your face and begin talking. 
-To end of the sentence, say "period" (or "colon", "question-mark", 
-"exclamation-point") Look at the dictionary, "custom.dic" for ideas.
+Position the microphone somewhere near enough and begin talking. To end of the sentence, say "period" (or "colon", "question-mark", "exclamation-point") Look at the dictionary, "custom.dic" for ideas.
 
-Voice commands are included. A list of commands pops up at start-up 
-or you may say "show commands" to show them again. Currently the 
-following voice commands are supported:
+Voice commands are included. A list of commands pops up at start-up or say "show commands" to show them again. The following voice commands are supported (except only "scratch that" is available when using X keyboard emulation).
 
-  * file quit - quits the program
-  * file open - open a text file in the editor
-  * file save (as) - save the file
-  * show commands - pops up a customize-able list of spoken commands
-  * editor clear - clears all text in the editor and starts over
-  * delete - delete [text] or erase selected text
-  * insert - move cursor after word or punctuation example: "Insert after period"
-  * select - select [text] example: "select the states"
-  * go to the end - put cursor at end of document
-  * scratch that - erase last spoken text
-  * back space - erase one character
-  * new paragraph - equivalent to pressing Enter twice
+    * file quit - quits the program
+    * file open - open a text file in the editor
+    * file save (as) - save the file
+    * show commands - pops up a customize-able list of spoken commands
+    * editor clear - clears all text in the editor and starts over
+    * delete - delete `[text]` or erase selected text
+    * insert - move cursor after word or punctuation example: "Insert after period"
+    * select - select `[text]` example: "select the states"
+    * go to the end - put cursor at end of document
+    * scratch that - erase last spoken text
+    * back space - erase one character
+    * new paragraph - equivalent to pressing Enter twice
 
-== Troubleshooting ==
+=Troubleshooting=
 
-Make sure the various requirements work. For example, "pocketsphinx", 
-which may be run from the command line.
+Make sure the various requirements work. For example, `pocketsphinx_continuous`, which may be tested from the command line in a terminal.
 
-== Improving accuracy  ==
+In case of messages like this:
 
-=== Audio ===
+{{{
+Trouble writing /home/*/.config/FreeSpeech/freespeech.idngram
+Trouble writing...
+}}}
 
-The biggest improvements in accuracy have been achieved by adjusting 
-the microphone position. The volume source levels may need to be 
-adjusted. You may try making a recording with 
-[http://audacity.sourceforge.net Audacity] and checking the levels to 
-make sure they are not clipping, and it sounds like intelligible 
-speech when played back.
+It usually means nobody installed [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] or there is a problem with the tools themselves. Edit the Makefile and follow the instructions therein before running `make`. Manually copy the files in the bin directory somewhere in your `$PATH` like `/usr/local/bin` on Linux or `C:\windows\system32` on Windows.
 
-=== Language corpus ===
+For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in `<stdio.h>`, but the Makefile installs everything under `/usr`. The quick-fix is to provide /usr/tmp for machines that don't have it.
 
-The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn your spoken grammar. Don't be surprised if it does not work very well for you at first. Use the keyboard to manually edit the text in the box until it says what you intended to say. Then hit the "Learn" button. It will try to do better at understanding you next time! You may also train it by pasting in gobs of text from websites and documents. These work best if they are documents you created, or if they have grammar that is similar to yours.
+{{{
+sudo ln -s /tmp /usr/tmp
+}}}
 
-If all that training is not for you there is a VERY LARGE corpus for testing in the downloads section, "freespeech.ref.txt.zip", which contains all the 2-grams and 3-grams extracted from pocketsphinx /usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP. The word frequency weights have been lost, but this may be a good thing. The original was [http://stackoverflow.com/questions/4535208/pocketsphinx-adding-words-and-improving-accuracy having trouble with some words --StackOverflow].
+=Improving accuracy=
+
+The biggest improvements in accuracy have been achieved by adjusting the microphone position. The volume level and microphone selection may be found using pavucontrol. Also try making a recording with [http://audacity.sourceforge.net Audacity] and checking the noise levels to make sure it sounds like intelligible speech when played back.
+
+Adapt PocketSphinx to a particular voice or accent for better accuracy.
+See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
+
+==Language corpus==
+
+The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn spoken grammar. Don't be surprised if it does not work very well at first. Use the keyboard to manually edit the text in the box until it says what was intended to say. Then hit the "Learn" button. It will try to do better at understanding next time! One may also train personalized grammar by pasting in gobs of text from previously authored websites and documents.
 
 It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
+
 {{{
     new  N UW
     New  N UW
 }}}
-Now PocketSphinx will decide the capitalization depending on the context in which it appears in the text corpus. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary. It already uses the word or acronym as it is found in the corpus, not the dictionary.
 
-Don't worry if you inadvertently teach PocketSphinx bad grammar. It's not strictly necessary, but the corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops bad speech habits. Changes will apply next time you hit the "Learn" button.
+Now train the new grammar, by using the capatalized form in a few sentences and pressing the Learn button. PocketSphinx will henceforth decide the capitalization depending on the context in which it appears. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary, using the capatalization as it is found in the corpus, not the dictionary.
+
+Don't worry if PocketSphinx learns bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops poor speech habits. Changes will apply next time anybody presses the "Learn" button.
 
 The language model may be further [http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm tweaked and improved].
 
-=== Dictionary ===
+==Dictionary==
 
-If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, you may need to edit the dictionary: "freespeech.dic"
+If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, edit the dictionary: "freespeech.dic"
 
-Sometimes the dictionary pronunciation can be little bit off. You will notice that some other words have alternate pronunciations denoted with (2). Go ahead and add an alternate and see if it doesn't improve immediately the next time the program starts.
+Sometimes the dictionary pronunciation can be little bit off. Notice that some other words have alternate pronunciations denoted with (2). Go ahead and change the pronunciation or add an alternate and see if it doesn't improve immediately the next time the program starts.
 
-This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation (Can you say ".full-stop" or "?question-mark") and some capitalized words. See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually with a text editor, along with their phonetic representation, but we are working on incorporating a word trainer.
+This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation, such as ".full-stop" and "?question-mark"). See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
 
 About the CMU Pronouncing Dictionary
 http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 
-Adapt PocketSphinx to your voice for better accuracy.
-See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
+=Security and privacy=
 
-== Security and privacy ==
-
-FreeSpeech does not gather or store your information on servers. Learned speech patterns are stored offline in "plain text" format in "lm/freespeech.ref.txt". You probably do not want to teach FreeSpeech sensitive or private information like passwords, especially if other people will have access to your PC.
+FreeSpeech does not send information over the network. Speech recognition is done locally using pocketsphinx. Learned speech patterns are stored in "plain text" format in "lm/freespeech.ref.txt". Although the file should not be accessible to other users, it is nevertheless good practice not to teach FreeSpeech sensitive or private information like passwords, especially if others have access to the PC.
