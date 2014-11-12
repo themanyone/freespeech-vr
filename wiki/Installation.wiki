@@ -108,7 +108,7 @@ There is no desktop icon yet. Right-click on the desktop to create one.
 Launching the program may be done via the Python interpreter.
 
 {{{
-cd ~/Downloads/freespeech-vr
+cd ~/Downloads/frees*
 python freespeech.py
 }}}
 
