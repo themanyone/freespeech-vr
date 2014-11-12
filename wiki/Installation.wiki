@@ -90,12 +90,16 @@ The tools expect to write to /usr/tmp
 sudo ln -s /tmp /usr/tmp
 }}}
 
-Unpack FreeSpeech into a user-writeable folder such as Downloads/freespeech
-
 Language files and preferences are copied to /home/$USER/.config but the location may be changed by changing or adding the environment variable, `$XDG_CONFIG_HOME`
 
 {{{
 export XDG_CONFIG_HOME=$HOME/.config
+}}}
+
+Get FreeSpeech using svn because downloads are outdated.
+{{{
+cd ~/Downloads
+svn checkout http://freespeech-vr.googlecode.com/svn/trunk/ freespeech-vr-read-only
 }}}
 
 == Using FreeSpeech ==
