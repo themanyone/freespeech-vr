@@ -481,6 +481,7 @@ If new commands don't work click the learn button to train them.")
         struct.set_value('uttid', uttid)
         asr.post_message(gst.message_new_application(asr, struct))
 
+    def application_message(self, bus, msg):
         """Receive application messages from the bus."""
         msgtype = msg.structure.get_name()
         if msgtype == 'partial_result':
