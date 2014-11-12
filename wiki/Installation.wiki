@@ -40,6 +40,12 @@ sudo add-apt-repository ppa:dhuggins/cmusphinx
 
 Enter password and press Enter twice.
 
+Get updates and install dependencies.
+
+{{{
+sudo apt-get update
+}}}
+
 {{{
 sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase python-pocketsphinx
 }}}
