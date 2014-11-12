@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=FreeSpeech
+Name[en_US]=FreeSpeech
+Icon=/usr/share/pixmaps/FreeSpeech.png
+Exec=/usr/lib/python2.7/site-packages/freespeech-vr/freespeech.py
+Comment[en_US]=Voice Dictation
