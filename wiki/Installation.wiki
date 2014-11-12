@@ -82,6 +82,12 @@ Manually copy the tools from ../bin to somewhere in $PATH like: `/usr/local/bin`
 sudo cp ../bin/* /usr/local/bin/
 }}}
 
+The tools expect to write to /usr/tmp
+
+{{{
+sudo ln -s /tmp /usr/tmp
+}}}
+
 Unpack FreeSpeech into a user-writeable folder such as Downloads/freespeech
 
 Language files and preferences are copied to /home/$USER/.config but the location may be changed by changing or adding the environment variable, `$XDG_CONFIG_HOME`
@@ -130,5 +136,5 @@ It usually means you haven't installed the [http://www.speech.cs.cmu.edu/SLM/CMU
 For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in <stdio.h>, so perhaps they changed it. Building the toolkit from source should fix that. The quick-fix is to provide /usr/tmp for machines that don't have it.
 
 {{{
-ln -s /tmp /usr/tmp
+sudo ln -s /tmp /usr/tmp
 }}}
