@@ -25,7 +25,7 @@ The following packages should be installed through the package manager.
 su -c 'yum groupinstall "C Development Tools and Libraries"'
 su -c 'yum -y install gstreamer-python sphinxbase-libs \
 pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
-python-simplejson python-xlib pygtk2 svn'
+python-simplejson python-xlib pygtk2 git'
 }}}
 
 ==Ubuntu==
@@ -45,7 +45,7 @@ sudo apt-get update
 
 sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 \
 gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase \
-python-pocketsphinx sphinxbase-utils svn
+python-pocketsphinx sphinxbase-utils git
 }}}
 
 If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
@@ -55,8 +55,6 @@ sudo ln -s (location, change this) /media/cdrom
 }}}
 
 =Testing=
-
-Prior to blaming freespeech, make sure audio recording and pocksphinx works.
 
 Before we begin, load pavucontrol, Audacity (or some other audio recording program that has a recording monitor) and check sound levels.
 Users should be able to record and play back audio at good volume, but not so high that it starts clipping.
@@ -142,7 +140,7 @@ Voice commands are included. A list of commands pops up at start-up or say "show
 
 =Troubleshooting=
 
-Make sure the various requirements work. For example, `pocketsphinx_continuous`, which may be tested from the command line in a terminal.
+Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window and make sure that it works. If not, check your pocketsphinx installation. We regret that we are not affiliated with pocketsphinx and do not have the resources to support it.
 
 In case of messages like this:
 

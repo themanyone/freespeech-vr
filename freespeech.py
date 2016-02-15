@@ -38,11 +38,11 @@ refdir = 'lm'
 
 # hmmm, where to put files? How about XDG_CONFIG_HOME?
 # This will work on most Linux
-if os.environ.has_key('XDG_CONFIG_HOME'):
+if 'XDG_CONFIG_HOME' in os.environ:
     confhome = os.environ['XDG_CONFIG_HOME']
     confdir  = os.path.join(confhome, appname)
 else:
-    if os.environ.has_key('HOME'):
+    if 'HOME' in os.environ:
         confhome = os.path.join(os.environ['HOME'],".config")
         confdir  = os.path.join(confhome, appname)
     else:
@@ -190,7 +190,7 @@ If new commands don't work click the learn button to train them.")
         """ callback when prefs window is shown """
         # populate commands list with documentation
         me.liststore.clear()
-        for x,y in self.commands.items():
+        for x,y in list(self.commands.items()):
             me.liststore.append([x,eval(y).__doc__])
         
     def write_prefs(self):
@@ -199,7 +199,7 @@ If new commands don't work click the learn button to train them.")
             f.write(json.dumps(self.commands))
         # write commands text, so we don't have to train each time
         with codecs.open(cmdtext, encoding='utf-8', mode='w') as f:
-            for j in self.commands.keys():
+            for j in list(self.commands.keys()):
                 f.write('<s> '+j+' </s>\n')
 
     def read_prefs(self):
@@ -226,7 +226,7 @@ If new commands don't work click the learn button to train them.")
         liststore=self.prefsdialog.liststore
         treeiter = liststore.get_iter(path)
         old_text = liststore.get_value(treeiter,0)
-        if not self.commands.has_key(new_text):
+        if new_text not in self.commands:
             liststore.set_value(treeiter,0,new_text)
             self.commands[new_text]=self.commands[old_text]
             del(self.commands[old_text])
@@ -462,7 +462,7 @@ If new commands don't work click the learn button to train them.")
             tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
             tex = re.sub(r'\s+', ' ', tex)
             # fix the ʼunicode charactersʼ
-            tex = unicode(tex, errors='replace')
+            tex = str(tex, errors='replace')
             tex = tex.strip()
             corpus[ind] = tex
         return self.expand_punctuation(corpus)
@@ -593,7 +593,7 @@ If new commands don't work click the learn button to train them.")
             #~ return True
         #~ self.textbuf.place_cursor(search_back[1])        
         #~ return True # command completed successfully!
-        arg = re.match(u'\w+(.*)', argument).group(1)
+        arg = re.match('\w+(.*)', argument).group(1)
         search_back = self.searchback(self.bounds[1], arg)
         if None == search_back:
             return True
@@ -662,14 +662,14 @@ If new commands don't work click the learn button to train them.")
         # editable commands
         commands=self.commands
         # process commands with no arguments
-        if commands.has_key(hyp):
+        if hyp in commands:
             return eval(commands[hyp])()
         elif hyp.find(' ')>0:
             #~ reg = re.match(u'(\w+) (.*)', hyp)
             #~ command = reg.group(1)
             #~ argument = reg.group(2)
             cmd = hyp.partition(' ')
-            if commands.has_key(cmd[0]):
+            if cmd[0] in commands:
                 return eval(commands[cmd[0]])(cmd[2])
         #~ except:
             #~ pass # didn't work; not a command

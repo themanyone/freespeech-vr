@@ -19,7 +19,7 @@ try :
     import Xlib.ext.xtest
 except ImportError:
     UseXTest = False
-    print "no XTest extension; using XSendEvent"
+    print("no XTest extension; using XSendEvent")
 
 import sys, time
 
@@ -91,7 +91,7 @@ def char_to_keycode(ch) :
     keysym = get_keysym(ch)
     keycode = display.keysym_to_keycode(keysym)
     if keycode == 0 :
-        print "Sorry, can't map", ch
+        print("Sorry, can't map", ch)
 
     if (is_shifted(ch)) :
         shift_mask = Xlib.X.ShiftMask
