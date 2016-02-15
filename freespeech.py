@@ -175,6 +175,7 @@ If new commands don't work click the learn button to train them.")
         editable.connect('edited', self.edited_cb)
         me.connect("expose-event", self.prefs_expose)
         me.connect("response", self.prefs_response)
+        me.connect("delete_event", self.prefs_response)
         column = gtk.TreeViewColumn("Spoken command",editable,text=0)
         me.tree.append_column(column)
         column = gtk.TreeViewColumn("What it does",fixed,text=1)
@@ -190,7 +191,7 @@ If new commands don't work click the learn button to train them.")
         # populate commands list with documentation
         me.liststore.clear()
         for x,y in self.commands.items():
-            me.liststore.append([x,eval(y).__doc__])        
+            me.liststore.append([x,eval(y).__doc__])
         
     def write_prefs(self):
         """ write command list to file """
@@ -217,6 +218,7 @@ If new commands don't work click the learn button to train them.")
             else:
                 self.write_prefs()
         me.hide()
+        return gtk.TRUE
         
     def edited_cb(self, cellrenderertext, path, new_text):
         """ callback activated when treeview text edited """
@@ -354,9 +356,11 @@ If new commands don't work click the learn button to train them.")
         self.button1.set_active(True - self.button1.get_active())
         return True
 
-    def collapse_punctuation(self, hyp, started):
+    def collapse_punctuation(self, hyp, starting):
         index = 0
-        start = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+        insert = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
+        prior = self.textbuf.get_iter_at_offset(insert.get_offset() - 1)
+        lastchar = self.textbuf.get_text(prior, insert)
         words = hyp.split()
         # remove the extra text to the right of the punctuation mark
         while True:
@@ -370,13 +374,11 @@ If new commands don't work click the learn button to train them.")
         hyp = hyp.replace(" ...ellipsis", " ...")
         hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
-        if not start.inside_sentence():
+        if starting or (not insert.inside_sentence() and re.match("[.?!:]",lastchar)):
             hyp = hyp[0].capitalize() + hyp[1:]
-        if re.match(r"\w", hyp[0]) and started:
-            space = " "
-        else:
-            space = ""
-        return space + hyp
+        if re.match("[^.?!:,\-\"';^@]",hyp[0]) and lastchar != " " and not starting:
+            return " " + hyp
+        return hyp
         
     def expand_punctuation(self, corpus):
         # tweak punctuation to match dictionary utterances
@@ -459,10 +461,8 @@ If new commands don't work click the learn button to train them.")
             # except apostrophe followed by lower-case letter
             tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
             tex = re.sub(r'\s+', ' ', tex)
-            # fixme: needs more unicode -> dictionary replacements
-            # or we could convert the rest of the dictionary to utf-8
-            # and use the ʼunicode charactersʼ
-            tex = tex.replace(u"ʼ", "'apostrophe")
+            # fix the ʼunicode charactersʼ
+            tex = unicode(tex, errors='replace')
             tex = tex.strip()
             corpus[ind] = tex
         return self.expand_punctuation(corpus)
@@ -506,7 +506,7 @@ If new commands don't work click the learn button to train them.")
         self.bounds = self.textbuf.get_bounds()
         # Fix punctuation
         hyp = self.collapse_punctuation(hyp, \
-        not self.bounds[1].is_start())
+        self.bounds[1].starts_line())
         # handle commands
         if not self.do_command(hyp):
             self.undo.append(hyp)
@@ -586,13 +586,22 @@ If new commands don't work click the learn button to train them.")
         return True # command completed successfully!
     def insert(self,argument=None):
         """ insert after [text] """
+        #~ if re.match("^after", argument):
+            #~ argument = re.match(u'\w+ (.*)', argument).group(1)
+            #~ search_back = self.searchback(self.bounds[1], argument)
+        #~ if None == search_back:
+            #~ return True
+        #~ self.textbuf.place_cursor(search_back[1])        
+        #~ return True # command completed successfully!
+        arg = re.match(u'\w+(.*)', argument).group(1)
+        search_back = self.searchback(self.bounds[1], arg)
+        if None == search_back:
+            return True
         if re.match("^after", argument):
-            argument = re.match(u'\w+(.*)', argument).group(1)
-            search_back = self.searchback(self.bounds[1], argument)
-            if None == search_back:
-                return True
-            self.textbuf.place_cursor(search_back[1])        
-            return True # command completed successfully!
+            self.textbuf.place_cursor(search_back[1])
+        elif re.match("^before", argument):
+            self.textbuf.place_cursor(search_back[0])
+        return True # command completed successfully!
     def done_editing(self):
         """ place cursor at end """
         self.textbuf.place_cursor(self.bounds[1])
@@ -615,6 +624,9 @@ If new commands don't work click the learn button to train them.")
     def new_paragraph(self):
         """ start a new paragraph """
         self.textbuf.insert_at_cursor('\n')
+        if self.button1.get_active():
+            send_string("\n")
+            display.sync()
         return True # command completed successfully!
     def file_open(self):
         """ open file dialog """
@@ -646,30 +658,32 @@ If new commands don't work click the learn button to train them.")
     def do_command(self, hyp):
         """decode spoken commands"""
         hyp = hyp.strip()
-        hyp = hyp[0].lower() + hyp[1:]
+        hyp = hyp.lower()
         # editable commands
         commands=self.commands
-        # process editable commands
+        # process commands with no arguments
         if commands.has_key(hyp):
             return eval(commands[hyp])()
-        try:# separate command and arguments
-            reg = re.match(u'(\w+) (.*)', hyp)
-            command = reg.group(1)
-            argument = reg.group(2)
-            return eval(commands[command])(argument)
-        except:
-            pass # didn't work; not a command
-        return False
+        elif hyp.find(' ')>0:
+            #~ reg = re.match(u'(\w+) (.*)', hyp)
+            #~ command = reg.group(1)
+            #~ argument = reg.group(2)
+            cmd = hyp.partition(' ')
+            if commands.has_key(cmd[0]):
+                return eval(commands[cmd[0]])(cmd[2])
+        #~ except:
+            #~ pass # didn't work; not a command
+        #~ return False
 
     def searchback(self, iter, argument):
         """helper function to search backwards in text buffer"""
-        search_back = iter.backward_search( \
-        argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+        search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
         if None == search_back:
-            search_back = iter.backward_search( \
-            argument.capitalize(), gtk.TEXT_SEARCH_TEXT_ONLY)
-            if None == search_back:
-                return None
+            argument = argument.capitalize()
+            search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+        if None == search_back:
+            argument = argument.strip()
+            search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
         return search_back
 
 if __name__ == "__main__":
