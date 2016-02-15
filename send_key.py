@@ -8,6 +8,11 @@
 # Please share and re-use this under the terms of the GPLv2
 # or, at your option, any later GPL version.
 
+# ATTN: This file is in the process of
+# porting to GST 1.0 and Python3
+
+# requires Python3-xlib https://pypi.python.org/pypi/python3-xlib/0.15
+
 import Xlib.display
 import Xlib.X
 import Xlib.XK

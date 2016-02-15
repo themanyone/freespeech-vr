@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # FreeSpeech
-# Continuous realtime speech recognition and control via pocketsphinx
-# Copyright (c) 2013, 2014 Henry Kroll III, http://www.TheNerdShow.com
+# Copyright (C) 2016 Henry Kroll III, http://www.TheNerdShow.com
+# Continuous realtime speech recognition and control
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,15 +17,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import pygtk
-pygtk.require('2.0')
-import gtk
-import pygst
-pygst.require('0.10')
+# ATTN: This version requires Gstreamer-1.0 and python3-gobject
+# Compile sphinxbase and pocketsphinx from source
+# since Gstreamer-1.0 packages are probably not available yet.
+# See https://sourceforge.net/p/cmusphinx/discussion/help/thread/6a286ad1/
 
-import gobject
-gobject.threads_init()
-import gst
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('Gst', '1.0')
+from gi.repository import GObject, Gst, Gtk, Gdk
+GObject.threads_init()
+Gst.init(None)
+
 import subprocess
 import platform, os, shutil, sys, codecs
 import re
@@ -56,6 +59,7 @@ arpa    = os.path.join(confdir, 'freespeech.arpa')
 dmp     = os.path.join(confdir, 'freespeech.dmp')
 cmdtext = os.path.join(confdir, 'freespeech.cmd.txt')
 cmdjson = os.path.join(confdir, 'freespeech.cmd.json')
+dic     = os.path.join(confdir, 'custom.dic')
 
 class freespeech(object):
     """GStreamer/PocketSphinx Continuous Speech Recognition"""
@@ -70,6 +74,9 @@ class freespeech(object):
         if not os.access(lang_ref, os.R_OK):
             lang_ref_orig = os.path.join(refdir, 'freespeech.ref.txt')
             shutil.copy(lang_ref_orig, lang_ref)
+        # copy dictionary to confdir if not exists
+        if not os.access(dic, os.R_OK):
+            shutil.copy('custom.dic', dic)
         # initialize components
         self.init_gui()
         self.init_errmsg()
@@ -80,33 +87,33 @@ class freespeech(object):
     def init_gui(self):
         self.undo = [] # Say "Scratch that" or "Undo that"
         """Initialize the GUI components"""
-        self.window = gtk.Window()
+        self.window = Gtk.Window()
         # Change to executable's dir
         if os.path.dirname(sys.argv[0]):
             os.chdir(os.path.dirname(sys.argv[0]))     
-        self.icon = gtk.gdk.pixbuf_new_from_file(appname+".png")
-        self.window.connect("delete-event", gtk.main_quit)
+        #self.icon = Gdk.pixbuf_new_from_file(appname+".png")
+        self.window.connect("delete-event", Gtk.main_quit)
         self.window.set_default_size(400, 200)
         self.window.set_border_width(10)
-        self.window.set_icon(self.icon)
+        #self.window.set_icon(self.icon)
         self.window.set_title(appname)
-        vbox = gtk.VBox()
-        hbox = gtk.HBox(homogeneous=True)
-        self.textbuf = gtk.TextBuffer()
-        self.text = gtk.TextView(self.textbuf)
-        self.text.set_wrap_mode(gtk.WRAP_WORD)
-        self.scroller = gtk.ScrolledWindow(None, None)
-        self.scroller.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
+        vbox = Gtk.VBox()
+        hbox = Gtk.HBox(homogeneous=True)
+        self.text = Gtk.TextView()
+        self.textbuf = self.text.get_buffer()
+        self.text.set_wrap_mode(Gtk.WrapMode.WORD)
+        self.scroller = Gtk.ScrolledWindow(None, None)
+        self.scroller.set_policy(Gtk.ScrollablePolicy.NATURAL, Gtk.ScrollablePolicy.NATURAL)
         self.scroller.add(self.text)
         vbox.pack_start(self.scroller, True, True, 5)
-        vbox.pack_end(hbox, False, False)
-        self.button0 = gtk.Button("Learn")
+        vbox.pack_end(hbox, False, False, False)
+        self.button0 = Gtk.Button("Learn")
         self.button0.connect('clicked', self.learn_new_words)
-        self.button1 = gtk.ToggleButton("Send keys")
+        self.button1 = Gtk.ToggleButton("Send keys")
         self.button1.connect('clicked', self.toggle_echo)
-        self.button2 = gtk.Button("Show commands")
+        self.button2 = Gtk.Button("Show commands")
         self.button2.connect('clicked', self.show_commands)
-        self.button3 = gtk.ToggleButton("Mute")
+        self.button3 = Gtk.ToggleButton("Mute")
         self.button3.connect('clicked', self.mute)
         hbox.pack_start(self.button0, True, False, 0)
         hbox.pack_start(self.button1, True, False, 0)
@@ -116,13 +123,13 @@ class freespeech(object):
         self.window.show_all()
 
     def init_file_chooser(self):
-        self.file_chooser = gtk.FileChooserDialog(title="File Chooser",
-        parent=self.window, action=gtk.FILE_CHOOSER_ACTION_OPEN,
-        buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT), backend=None)
+        self.file_chooser = Gtk.FileChooserDialog(title="File Chooser",
+        parent=self.window, action=Gtk.FileChooserAction.OPEN,
+        buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+             Gtk.STOCK_OK, Gtk.ResponseType.OK))
     
     def init_commands(self):
-            self.commands = {'file quit': 'gtk.main_quit',
+            self.commands = {'file quit': 'Gtk.main_quit',
                 'file open': 'self.file_open',
                 'file save': 'self.file_save',
                 'file save as': 'self.file_save_as',
@@ -148,10 +155,10 @@ class freespeech(object):
 
     def init_prefs(self):
         """Initialize new GUI components"""
-        me = self.prefsdialog = gtk.Dialog("Command Preferences", None,
-            gtk.DIALOG_DESTROY_WITH_PARENT,
-            (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+        me = self.prefsdialog = Gtk.Dialog("Command Preferences", None,
+            Gtk.DialogFlags.DESTROY_WITH_PARENT,
+            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+             Gtk.STOCK_OK, Gtk.ResponseType.OK))
         me.set_default_size(400, 300)
         if not os.access(cmdjson, os.R_OK):
             #~ write some default commands to a file if it doesn't exist
@@ -159,28 +166,33 @@ class freespeech(object):
         else:
             self.read_prefs()
         
-        me.label = gtk.Label( \
+        me.label = Gtk.Label( \
 "Double-click to change command wording.\n\
 If new commands don't work click the learn button to train them.")
-        me.vbox.pack_start(me.label)
-        me.checkbox=gtk.CheckButton("Restore Defaults")
+        me.vbox.pack_start(me.label, False, False, False)
+        me.checkbox=Gtk.CheckButton("Restore Defaults")
         me.checkbox.show()
-        me.action_area.pack_start(me.checkbox)
-        me.liststore=gtk.ListStore(str, str)
-        me.liststore.set_sort_column_id(0, gtk.SORT_ASCENDING)
-        me.tree=gtk.TreeView(me.liststore)
-        editable = gtk.CellRendererText()
-        fixed = gtk.CellRendererText()
+        me.action_area.pack_start(me.checkbox, False, False, False)
+        me.liststore=Gtk.ListStore(str, str)
+        me.liststore.set_sort_column_id(0, 0)
+        me.tree=Gtk.TreeView(me.liststore)
+        editable = Gtk.CellRendererText()
+        fixed = Gtk.CellRendererText()
         editable.set_property('editable', True)
         editable.connect('edited', self.edited_cb)
-        me.connect("expose-event", self.prefs_expose)
+        # me.connect("draw", self.prefs_expose)
+        me.liststore.clear()
+        gtk = Gtk
+        for x,y in list(self.commands.items()):
+            me.liststore.append([x,eval(y).__doc__])
+            print([x,y])
         me.connect("response", self.prefs_response)
         me.connect("delete_event", self.prefs_response)
-        column = gtk.TreeViewColumn("Spoken command",editable,text=0)
+        column = Gtk.TreeViewColumn("Spoken command",editable,text=0)
         me.tree.append_column(column)
-        column = gtk.TreeViewColumn("What it does",fixed,text=1)
+        column = Gtk.TreeViewColumn("What it does",fixed,text=1)
         me.tree.append_column(column)
-        me.vbox.pack_end(me.tree)
+        me.vbox.pack_end(me.tree, False, False, False)
         me.label.show()
         me.tree.show()
         self.commands_old = self.commands
@@ -191,7 +203,8 @@ If new commands don't work click the learn button to train them.")
         # populate commands list with documentation
         me.liststore.clear()
         for x,y in list(self.commands.items()):
-            me.liststore.append([x,eval(y).__doc__])
+            me.liststore.append([x,y])
+            print([x,y])
         
     def write_prefs(self):
         """ write command list to file """
@@ -213,12 +226,12 @@ If new commands don't work click the learn button to train them.")
         if me.checkbox.get_active():
             self.init_commands()
         else:
-            if event!=gtk.RESPONSE_ACCEPT:
+            if event!=Gtk.ResponseType.OK:
                 self.commands = self.commands_old
             else:
                 self.write_prefs()
         me.hide()
-        return gtk.TRUE
+        return True
         
     def edited_cb(self, cellrenderertext, path, new_text):
         """ callback activated when treeview text edited """
@@ -233,24 +246,41 @@ If new commands don't work click the learn button to train them.")
             #~ print(old_text, new_text)
         
     def init_errmsg(self):
-        me = self.errmsg = gtk.Dialog("Error", None,
-            gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
-            (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-            gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+        me = self.errmsg = Gtk.Dialog("Error", None,
+            Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
+            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+             Gtk.STOCK_OK, Gtk.ResponseType.OK))
         me.set_default_size(400, 200)
-        me.label = gtk.Label("Nice label")
-        me.vbox.pack_start(me.label)
+        me.label = Gtk.Label("Nice label")
+        me.vbox.pack_start(me.label, False, False, False)
         me.label.show()
+        
+    def element_message(self, bus, msg):
+        """Receive element messages from the bus."""
+        msgtype = msg.get_structure().get_name()
+        if msgtype != 'pocketsphinx':
+            return
+
+        if msg.get_structure().get_value('final'):
+            self.final_result(msg.get_structure().get_value('hypothesis'), msg.get_structure().get_value('confidence'))
+            # self.pipeline.set_state(Gst.State.PAUSED)
+            self.button1.set_active(False)
+        elif msg.get_structure().get_value('hypothesis'):
+            self.partial_result(msg.get_structure().get_value('hypothesis'))
         
     def init_gst(self):
         """Initialize the speech components"""
-        self.pipeline = gst.parse_launch('autoaudiosrc ! audioconvert ! audioresample '
-                                         + '! vader name=vad auto-threshold=true '
+        self.pipeline = Gst.parse_launch('autoaudiosrc ! audioconvert ! audioresample '
                                          + '! pocketsphinx name=asr ! fakesink')
+        bus = self.pipeline.get_bus()
+        bus.add_signal_watch()
+        bus.connect('message::element', self.element_message)
+        self.pipeline.set_state(Gst.State.PAUSED)
+
         asr = self.pipeline.get_by_name('asr')
         
         """Load custom dictionary and language model"""
-        asr.set_property('dict', 'custom.dic')
+        asr.set_property('dict', dic)
         
         # The language model that came with pocketsphinx works OK...
         # asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en_US/wsj0vp.5000.DMP')
@@ -260,22 +290,13 @@ If new commands don't work click the learn button to train them.")
         asr.set_property('lm', dmp)
         
         # Adapt pocketsphinx to your voice for better accuracy.
-        # See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
+        # See http://cmusphinx.sourceforge.net/wiki/tutorialadapt_
         
         # asr.set_property('hmm', '../sphinx/hub4wsj_sc_8kadapt')
         
         #fixme: write an acoustic model trainer
         
-        asr.connect('partial_result', self.asr_partial_result)
-        asr.connect('result', self.asr_result)
-        asr.set_property('configured', True)
-
-        bus = self.pipeline.get_bus()
-        bus.add_signal_watch()
-        bus.connect('message::application', self.application_message)
-
-        #self.pipeline.set_state(gst.STATE_PAUSED)
-        self.pipeline.set_state(gst.STATE_PLAYING)
+        self.pipeline.set_state(Gst.State.PLAYING)
 
     def learn_new_words(self, button):
         """ Learn new words, jargon, or other language
@@ -325,22 +346,20 @@ If new commands don't work click the learn button to train them.")
         
         # load the dmp
         asr = self.pipeline.get_by_name('asr')
-        self.pipeline.set_state(gst.STATE_PAUSED)
+        self.pipeline.set_state(Gst.State.PAUSED)
         asr.set_property('configured', False)
         asr.set_property('lm', dmp)
         asr.set_property('configured', True)
-        self.pipeline.set_state(gst.STATE_PLAYING)
+        self.pipeline.set_state(Gst.State.PLAYING)
         
     def mute(self, button):
         """Handle button presses."""
         if not button.get_active():
             button.set_label("Mute")
-            self.pipeline.set_state(gst.STATE_PLAYING)
+            self.pipeline.set_state(Gst.State.PLAYING)
         else:
             button.set_label("Speak")
-            vader = self.pipeline.get_by_name('vad')
-            vader.set_property('silent', True)
-            self.pipeline.set_state(gst.STATE_PAUSED)
+            self.pipeline.set_state(Gst.State.PAUSED)
     
     def toggle_echo(self, button):
         """ echo keystrokes to the desktop """
@@ -359,8 +378,8 @@ If new commands don't work click the learn button to train them.")
     def collapse_punctuation(self, hyp, starting):
         index = 0
         insert = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
-        prior = self.textbuf.get_iter_at_offset(insert.get_offset() - 1)
-        lastchar = self.textbuf.get_text(prior, insert)
+        prior = self.textbuf.get_iter_at_offset(insert.get_offset() - 2)
+        lastchars = self.textbuf.get_text(prior, insert, False)
         words = hyp.split()
         # remove the extra text to the right of the punctuation mark
         while True:
@@ -374,9 +393,9 @@ If new commands don't work click the learn button to train them.")
         hyp = hyp.replace(" ...ellipsis", " ...")
         hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
-        if starting or (not insert.inside_sentence() and re.match("[.?!:]",lastchar)):
+        if starting or re.match(".*[.?!:]",lastchars) and len(hyp) > 1:
             hyp = hyp[0].capitalize() + hyp[1:]
-        if re.match("[^.?!:,\-\"';^@]",hyp[0]) and lastchar != " " and not starting:
+        if hyp and re.match("[^.?!:,\-\"';^@]",hyp[0]) and len(lastchars) and lastchars[-1] != " " and not starting:
             return " " + hyp
         return hyp
         
@@ -438,7 +457,7 @@ If new commands don't work click the learn button to train them.")
     def prepare_corpus(self, txt):
         txt.begin_user_action()
         self.bounds = self.textbuf.get_bounds()
-        text = txt.get_text(self.bounds[0], self.bounds[1])
+        text = txt.get_text(self.bounds[0], self.bounds[1], True)
         # break on end of sentence
         text = re.sub(r'(\w[.:;?!])\s+(\w)', r'\1\n\2', text)
         text = re.sub(r'\n+', r'\n', text)
@@ -462,38 +481,12 @@ If new commands don't work click the learn button to train them.")
             tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
             tex = re.sub(r'\s+', ' ', tex)
             # fix the ʼunicode charactersʼ
-            tex = str(tex, errors='replace')
+            tex = tex.encode('ascii', 'ignore')
             tex = tex.strip()
             corpus[ind] = tex
         return self.expand_punctuation(corpus)
 
-    def asr_partial_result(self, asr, text, uttid):
-        """Forward partial result signals on the bus to the main thread."""
-        struct = gst.Structure('partial_result')
-        struct.set_value('hyp', text)
-        struct.set_value('uttid', uttid)
-        asr.post_message(gst.message_new_application(asr, struct))
-
-    def asr_result(self, asr, text, uttid):
-        """Forward result signals on the bus to the main thread."""
-        struct = gst.Structure('result')
-        struct.set_value('hyp', text)
-        struct.set_value('uttid', uttid)
-        asr.post_message(gst.message_new_application(asr, struct))
-
-    def application_message(self, bus, msg):
-        """Receive application messages from the bus."""
-        msgtype = msg.structure.get_name()
-        if msgtype == 'partial_result':
-            self.partial_result(msg.structure['hyp'], 
-            msg.structure['uttid'])
-        elif msgtype == 'result':
-            self.final_result(msg.structure['hyp'], 
-            msg.structure['uttid'])
-            #self.pipeline.set_state(gst.STATE_PAUSED)
-            #self.button.set_active(False)
-
-    def partial_result(self, hyp, uttid):
+    def partial_result(self, hyp):
         """Show partial result on tooltip."""
         self.text.set_tooltip_text(hyp)
 
@@ -519,7 +512,7 @@ If new commands don't work click the learn button to train them.")
             print(hyp)
         ins = self.textbuf.get_insert()
         iter = self.textbuf.get_iter_at_mark(ins)
-        self.text.scroll_to_iter(iter, 0, False)
+        self.text.scroll_to_iter(iter, 0, False, 0.5, 0.5)
         self.textbuf.end_user_action()
 
     """Process spoken commands"""
@@ -606,12 +599,12 @@ If new commands don't work click the learn button to train them.")
         """ place cursor at end """
         self.textbuf.place_cursor(self.bounds[1])
         return True # command completed successfully!
-    def scratch_that(self):
+    def scratch_that(self,argument=None):
         """ erase recent text """
         if self.undo:
             scratch = self.undo.pop(-1)
             search_back = self.bounds[1].backward_search( \
-                scratch, gtk.TEXT_SEARCH_TEXT_ONLY)
+                scratch, Gtk.TextSearchFlags.TEXT_ONLY)
             if search_back:
                 self.textbuf.select_range(search_back[0], search_back[1])
                 self.textbuf.delete_selection(True, self.text.get_editable())
@@ -631,7 +624,7 @@ If new commands don't work click the learn button to train them.")
     def file_open(self):
         """ open file dialog """
         response=self.file_chooser.run()
-        if response==gtk.RESPONSE_ACCEPT:
+        if response==Gtk.ResponseType.OK:
             self.open_filename=self.file_chooser.get_filename()
             with codecs.open(self.open_filename, encoding='utf-8', mode='r') as f:
                 self.textbuf.set_text(f.read())
@@ -642,7 +635,7 @@ If new commands don't work click the learn button to train them.")
         """ save text buffer to disk """
         if not self.open_filename:
             response=self.file_chooser.run()
-            if response==gtk.RESPONSE_ACCEPT:
+            if response==Gtk.ResponseType.OK:
                 self.open_filename=self.file_chooser.get_filename()
             self.file_chooser.hide()
             self.window.set_title("FreeSpeech | "+ os.path.basename(self.open_filename))
@@ -657,35 +650,34 @@ If new commands don't work click the learn button to train them.")
 
     def do_command(self, hyp):
         """decode spoken commands"""
-        hyp = hyp.strip()
-        hyp = hyp.lower()
+        h = hyp.strip()
+        h = h.lower()
         # editable commands
         commands=self.commands
         # process commands with no arguments
-        if hyp in commands:
-            return eval(commands[hyp])()
-        elif hyp.find(' ')>0:
+        if h in commands:
+            return eval(commands[h])()
+        elif h.find(' ')>0:
             #~ reg = re.match(u'(\w+) (.*)', hyp)
             #~ command = reg.group(1)
             #~ argument = reg.group(2)
-            cmd = hyp.partition(' ')
+            cmd = h.partition(' ')
             if cmd[0] in commands:
                 return eval(commands[cmd[0]])(cmd[2])
-        #~ except:
-            #~ pass # didn't work; not a command
-        #~ return False
+                
+        return False
 
     def searchback(self, iter, argument):
         """helper function to search backwards in text buffer"""
-        search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+        search_back = iter.backward_search(argument, Gtk.TextSearchFlags.TEXT_ONLY)
         if None == search_back:
             argument = argument.capitalize()
-            search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+            search_back = iter.backward_search(argument, Gtk.TextSearchFlags.TEXT_ONLY)
         if None == search_back:
             argument = argument.strip()
-            search_back = iter.backward_search(argument, gtk.TEXT_SEARCH_TEXT_ONLY)
+            search_back = iter.backward_search(argument, Gtk.TextSearchFlags.TEXT_ONLY)
         return search_back
 
 if __name__ == "__main__":
     app = freespeech()
-    gtk.main()
+    Gtk.main()

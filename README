@@ -11,11 +11,11 @@ Windows: Installation might work using [https://code.google.com/p/ossbuild/ ossb
 ===Linux/Cygwin===
 The following packages should be installed through the package manager.
 
-    * [http://www.python.org/ Python 2.7]
-    * [http://www.pygtk.org/ pygtk2]
-    * [http://python-xlib.sourceforge.net/ python-xlib]
-    * [http://undefined.org/python/#simplejson python-simplejson]
-    * [http://gstreamer.freedesktop.org/ gstreamer, including gstreamer-python]
+    * [https://www.python.org/ Python3]
+    * [https://wiki.gnome.org/Projects/PyGObject python3-gobject]
+    * [https://python-xlib.sourceforge.net/ python-xlib]
+    * [https://undefined.org/python/#simplejson python-simplejson]
+    * [https://gstreamer.freedesktop.org/ gstreamer-1.0, including gstreamer-python]
     * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
     * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
 
@@ -23,9 +23,9 @@ The following packages should be installed through the package manager.
 
 {{{
 su -c 'yum groupinstall "C Development Tools and Libraries"'
-su -c 'yum -y install gstreamer-python sphinxbase-libs \
+su -c 'yum -y install python3-gstreamer1 sphinxbase-libs \
 pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
-python-simplejson python-xlib pygtk2 git'
+python-simplejson python-xlib python3-gobject git'
 }}}
 
 ==Ubuntu==
@@ -38,13 +38,13 @@ sudo add-apt-repository ppa:dhuggins/cmusphinx
 
 Enter password and press Enter twice.
 
-Get updates and install dependencies.
+Get updates and install dependencies. Bleeding-edge warning: Packages may not exist yet. Compile from source.
 
 {{{
 sudo apt-get update
 
-sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 \
-gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase \
+sudo apt-get python-xlib python-simplejson python-gtk3 python-gst1.0 \
+gstreamer1.0-pocketsphinx sphinx-common python-sphinxbase \
 python-pocketsphinx sphinxbase-utils git
 }}}
 
@@ -140,7 +140,7 @@ Voice commands are included. A list of commands pops up at start-up or say "show
 
 =Troubleshooting=
 
-Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window and make sure that it works. If not, check your pocketsphinx installation. We regret that we are not affiliated with pocketsphinx and do not have the resources to support it.
+Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window to test it. If it has problems, check your pocketsphinx installation. We regret that we are not affiliated with pocketsphinx and do not have the resources to support it.
 
 In case of messages like this:
 
