@@ -1,8 +1,12 @@
 =About=
 
-FreeSpeech is a free and open-source (FOSS), cross-platform desktop application front-end for PocketSphinx dictation, voice transcription, and realtime speech recognition. FreeSpeech enables speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine. Get FreeSpeech via git from [https://github.com/themanyone/freespeech-vr Github].
+*Experimental version for Python3, Gtk3, and Gstreamer1.0.*
 
-In addition to dictation, FreeSpeech now provides voice commands and keyboard emulation, so users can dictate into other apps, remote terminals, and virtual machines.
+FreeSpeech is a free and open-source (FOSS), cross-platform Python front-end for Carnegie Mellon University's excellent open source CMU Sphinx speech recognition toolkit.
+
+In addition to dictation, FreeSpeech provides dynamic language learning, voice commands, and keyboard emulation, so users can dictate into other apps, remote terminals, and virtual machines.
+
+Get FreeSpeech via git from [https://github.com/themanyone/freespeech-vr Github].
 
 =Installation=
 
@@ -19,33 +23,29 @@ The following packages should be installed through the package manager.
     * [http://cmusphinx.sourceforge.net/ pocketsphinx and sphinxbase]
     * [http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz CMU-Cambridge Statistical Language Modeling Toolkit v2] ([http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html documentation])
 
-==Fedora==
+Distro packages may not exist yet. Compile sphinxbase and pocketsphinx from source. Use ./configure --prefix=/usr/local --libdir=/usr/local/lib64 and set environment variable for gstreamer1:
+
+{{{
+export GST_PLUGIN_SYSTEM_PATH_1_0=/usr/local/lib64/gstreamer-1.0:/usr/lib64/gstreamer-1.0
+}}}
+
+==Fedora packages, if available==
 
 {{{
 su -c 'yum groupinstall "C Development Tools and Libraries"'
 su -c 'yum -y install python3-gstreamer1 sphinxbase-libs \
-pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
+pocketsphinx-libs pocketsphinx sphinxbase python3-pocketsphinx-plugin \
 python-simplejson python-xlib python3-gobject git'
 }}}
 
-==Ubuntu==
-
-Open a terminal and install the pocketsphinx repository: Todo: PPA is outdated. Search for a new ppa containing cmusphinx.
-
-{{{
-sudo add-apt-repository ppa:dhuggins/cmusphinx
-}}}
-
-Enter password and press Enter twice.
-
-Get updates and install dependencies. Bleeding-edge warning: Packages may not exist yet. Compile from source.
+==Ubuntu packages, if available==
 
 {{{
 sudo apt-get update
 
 sudo apt-get python-xlib python-simplejson python-gtk3 python-gst1.0 \
-gstreamer1.0-pocketsphinx sphinx-common python-sphinxbase \
-python-pocketsphinx sphinxbase-utils git
+gstreamer1.0-pocketsphinx sphinx-common python3-sphinxbase \
+python3-pocketsphinx sphinxbase-utils git
 }}}
 
 If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
@@ -140,7 +140,7 @@ Voice commands are included. A list of commands pops up at start-up or say "show
 
 =Troubleshooting=
 
-Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window to test it. If it has problems, check your pocketsphinx installation. We regret that we are not affiliated with pocketsphinx and do not have the resources to support it.
+Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window to test it. If it has problems, check your pocketsphinx installation. We regret that we are not affiliated with CMU Sphinx and do not have the resources to support it.
 
 In case of messages like this:
 
