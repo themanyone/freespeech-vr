@@ -29,7 +29,7 @@ from gi.repository import GObject, Gst, Gtk, Gdk
 GObject.threads_init()
 Gst.init(None)
 
-import subprocess
+import subprocess, time
 import platform, os, shutil, sys, codecs
 import re
 import json
@@ -155,7 +155,7 @@ class freespeech(object):
 
     def init_prefs(self):
         """Initialize new GUI components"""
-        me = self.prefsdialog = Gtk.Dialog("Command Preferences", None,
+        me = self.prefsdialog = Gtk.Dialog("Command Preferences", self.window,
             Gtk.DialogFlags.DESTROY_WITH_PARENT,
             (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
              Gtk.STOCK_OK, Gtk.ResponseType.OK))
@@ -172,7 +172,7 @@ If new commands don't work click the learn button to train them.")
         me.vbox.pack_start(me.label, False, False, False)
         me.checkbox=Gtk.CheckButton("Restore Defaults")
         me.checkbox.show()
-        me.action_area.pack_start(me.checkbox, False, False, False)
+        me.action_area.pack_start(me.checkbox, False, False, 0)
         me.liststore=Gtk.ListStore(str, str)
         me.liststore.set_sort_column_id(0, 0)
         me.tree=Gtk.TreeView(me.liststore)
@@ -185,14 +185,14 @@ If new commands don't work click the learn button to train them.")
         gtk = Gtk
         for x,y in list(self.commands.items()):
             me.liststore.append([x,eval(y).__doc__])
-            print([x,y])
         me.connect("response", self.prefs_response)
         me.connect("delete_event", self.prefs_response)
         column = Gtk.TreeViewColumn("Spoken command",editable,text=0)
+        column.set_fixed_width(200)
         me.tree.append_column(column)
         column = Gtk.TreeViewColumn("What it does",fixed,text=1)
         me.tree.append_column(column)
-        me.vbox.pack_end(me.tree, False, False, False)
+        me.vbox.pack_end(me.tree, False, False, 0)
         me.label.show()
         me.tree.show()
         self.commands_old = self.commands
@@ -264,7 +264,7 @@ If new commands don't work click the learn button to train them.")
         if msg.get_structure().get_value('final'):
             self.final_result(msg.get_structure().get_value('hypothesis'), msg.get_structure().get_value('confidence'))
             # self.pipeline.set_state(Gst.State.PAUSED)
-            self.button1.set_active(False)
+            # self.button1.set_active(False)
         elif msg.get_structure().get_value('hypothesis'):
             self.partial_result(msg.get_structure().get_value('hypothesis'))
         
@@ -347,9 +347,8 @@ If new commands don't work click the learn button to train them.")
         # load the dmp
         asr = self.pipeline.get_by_name('asr')
         self.pipeline.set_state(Gst.State.PAUSED)
-        asr.set_property('configured', False)
         asr.set_property('lm', dmp)
-        asr.set_property('configured', True)
+        time.sleep(1)
         self.pipeline.set_state(Gst.State.PLAYING)
         
     def mute(self, button):
@@ -393,7 +392,7 @@ If new commands don't work click the learn button to train them.")
         hyp = hyp.replace(" ...ellipsis", " ...")
         hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
         hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
-        if starting or re.match(".*[.?!:]",lastchars) and len(hyp) > 1:
+        if (starting or re.match(".*[.?!:]",lastchars)) and len(hyp) > 1:
             hyp = hyp[0].capitalize() + hyp[1:]
         if hyp and re.match("[^.?!:,\-\"';^@]",hyp[0]) and len(lastchars) and lastchars[-1] != " " and not starting:
             return " " + hyp
@@ -465,12 +464,12 @@ If new commands don't work click the learn button to train them.")
         for ind, tex in enumerate(corpus):
             # try to remove blank lines
             tex = tex.strip()
-            if len(tex) == 0:
+            if not re.match(r".*\w.*", tex):
                 try:
                     corpus.remove(ind)
                 except:
                     pass
-                continue;
+                continue
             # lower case maybe
             if len(tex) > 1 and tex[1] > 'Z':
                 tex = tex[0].lower() + tex[1:]
@@ -480,9 +479,9 @@ If new commands don't work click the learn button to train them.")
             # except apostrophe followed by lower-case letter
             tex = re.sub(r"(\w) ' ([a-z])", r"\1'\2", tex)
             tex = re.sub(r'\s+', ' ', tex)
-            # fix the ʼunicode charactersʼ
-            tex = tex.encode('ascii', 'ignore')
             tex = tex.strip()
+            # fix the ʼunicode charactersʼ
+            tex = tex.encode('ascii', 'ignore').decode()
             corpus[ind] = tex
         return self.expand_punctuation(corpus)
 
@@ -578,13 +577,7 @@ If new commands don't work click the learn button to train them.")
         self.textbuf.delete_selection(True, self.text.get_editable())
         return True # command completed successfully!
     def insert(self,argument=None):
-        """ insert after [text] """
-        #~ if re.match("^after", argument):
-            #~ argument = re.match(u'\w+ (.*)', argument).group(1)
-            #~ search_back = self.searchback(self.bounds[1], argument)
-        #~ if None == search_back:
-            #~ return True
-        #~ self.textbuf.place_cursor(search_back[1])        
+        """ insert after [text] """      
         #~ return True # command completed successfully!
         arg = re.match('\w+(.*)', argument).group(1)
         search_back = self.searchback(self.bounds[1], arg)
