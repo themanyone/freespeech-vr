@@ -38,7 +38,8 @@ from send_key import *
 """ global variables """
 appname = 'FreeSpeech'
 refdir = 'lm'
-
+gtk = Gtk
+        
 # hmmm, where to put files? How about XDG_CONFIG_HOME?
 # This will work on most Linux
 if 'XDG_CONFIG_HOME' in os.environ:
@@ -189,7 +190,6 @@ If new commands don't work click the learn button to train them.")
         editable.connect('edited', self.edited_cb)
         # me.connect("draw", self.prefs_expose)
         me.liststore.clear()
-        gtk = Gtk
         for x,y in list(self.commands.items()):
             me.liststore.append([x,eval(y).__doc__])
         me.connect("response", self.prefs_response)
@@ -382,7 +382,7 @@ If new commands don't work click the learn button to train them.")
     
     def time_up(self, textbuf):
         """ add changed textbuf to undo buffer """
-        if self.ttext and self.editing:
+        if self.editing:
             self.editing = False
             self.undo.append(self.ttext)
             self.ttext = ""
@@ -627,9 +627,11 @@ If new commands don't work click the learn button to train them.")
         self.textbuf.place_cursor(self.bounds[1])
         return True # command completed successfully!
     def doscratch(self, a, b, c, d):
-        return self.scratch_that()
-    def scratch_that(self):
+        self.scratch_that()
+        return False
+    def scratch_that(self,command=None):
         """ erase recent text """
+        self.bounds = self.textbuf.get_bounds()
         if self.undo:
             scratch = self.undo.pop(-1)
             search_back = self.bounds[1].backward_search( \
@@ -679,7 +681,6 @@ If new commands don't work click the learn button to train them.")
 
     def do_command(self, hyp):
         """decode spoken commands"""
-        gtk = Gtk
         h = hyp.strip()
         h = h.lower()
         # editable commands
