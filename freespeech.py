@@ -159,7 +159,7 @@ class freespeech(object):
             Gtk.DialogFlags.DESTROY_WITH_PARENT,
             (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
              Gtk.STOCK_OK, Gtk.ResponseType.OK))
-        me.set_default_size(400, 300)
+        me.set_default_size(200, 300)
         if not os.access(cmdjson, os.R_OK):
             #~ write some default commands to a file if it doesn't exist
             self.init_commands()
@@ -270,8 +270,7 @@ If new commands don't work click the learn button to train them.")
         
     def init_gst(self):
         """Initialize the speech components"""
-        self.pipeline = Gst.parse_launch('autoaudiosrc ! audioconvert ! audioresample '
-                                         + '! pocketsphinx name=asr ! fakesink')
+        self.pipeline = Gst.parse_launch('autoaudiosrc ! ladspa-gate-1410-so-gate threshold=200.0 decay=2.0 hold=2.0 attack=0.01 ! audioconvert ! audioresample ! pocketsphinx name=asr ! fakesink')
         bus = self.pipeline.get_bus()
         bus.add_signal_watch()
         bus.connect('message::element', self.element_message)
@@ -344,12 +343,12 @@ If new commands don't work click the learn button to train them.")
             ' -o ' + dmp + ' -ofmt dmp', shell=True):
             self.err('Trouble writing ' + dmp)
         
-        # load the dmp
-        asr = self.pipeline.get_by_name('asr')
+        # fixme: reload the dmp
         self.pipeline.set_state(Gst.State.PAUSED)
-        asr.set_property('lm', dmp)
-        time.sleep(1)
-        self.pipeline.set_state(Gst.State.PLAYING)
+        #asr = self.pipeline.get_by_name('asr')
+        #asr.set_property('lm', dmp)
+        if not self.button3.get_active():
+            self.pipeline.set_state(Gst.State.PLAYING)
         
     def mute(self, button):
         """Handle button presses."""
@@ -374,12 +373,14 @@ If new commands don't work click the learn button to train them.")
         self.button1.set_active(True - self.button1.get_active())
         return True
 
-    def collapse_punctuation(self, hyp, starting):
+    def collapse_punctuation(self, txt, starting):
         index = 0
         insert = self.textbuf.get_iter_at_mark(self.textbuf.get_insert())
         prior = self.textbuf.get_iter_at_offset(insert.get_offset() - 2)
+        next = self.textbuf.get_iter_at_offset(insert.get_offset() + 1)
+        nextchar = self.textbuf.get_text(insert, next, False)
         lastchars = self.textbuf.get_text(prior, insert, False)
-        words = hyp.split()
+        words = txt.split()
         # remove the extra text to the right of the punctuation mark
         while True:
             if (index >= len(words)):
@@ -388,15 +389,24 @@ If new commands don't work click the learn button to train them.")
             if (re.match("^\W\w", word)):
                 words[index] = word[0]
             index += 1
-        hyp = " ".join(words)
-        hyp = hyp.replace(" ...ellipsis", " ...")
-        hyp = re.sub(r" ([^\w\s]+)\s*", r"\1 ", hyp)
-        hyp = re.sub(r"([({[]) ", r" \1", hyp).strip()
-        if (starting or re.match(".*[.?!:]",lastchars)) and len(hyp) > 1:
-            hyp = hyp[0].capitalize() + hyp[1:]
-        if hyp and re.match("[^.?!:,\-\"';^@]",hyp[0]) and len(lastchars) and lastchars[-1] != " " and not starting:
-            return " " + hyp
-        return hyp
+        txt = " ".join(words)
+        txt = txt.replace(" ...ellipsis", " ...")
+        # move space before punctuation to after
+        txt = re.sub(r" ([^\w\s]+)\s*", r"\1 ", txt)
+        # remove space after opening bracket
+        txt = re.sub(r"([({[]) ", r" \1", txt).strip()
+        # capitalize if necessary
+        if (starting or re.match(".*[.?!:]",lastchars)) and len(txt) > 1:
+            txt = txt[0].capitalize() + txt[1:]
+        # add space to beginning if necessary
+        if txt and re.match("[^.?!:,\-\"';^@]",txt[0]) and len(lastchars) and lastchars[-1] != " " and not starting:
+            txt = " " + txt
+        # add space to end if necessary
+        # abort if text selected
+        if not self.textbuf.get_selection_bounds():
+            if len(nextchar) and (nextchar != " "):
+                txt = txt + " "
+        return txt
         
     def expand_punctuation(self, corpus):
         # tweak punctuation to match dictionary utterances
