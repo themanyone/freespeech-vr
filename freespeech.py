@@ -277,7 +277,7 @@ If new commands don't work click the learn button to train them.")
         
     def init_gst(self):
         """Initialize the speech components"""
-        self.pipeline = Gst.parse_launch('autoaudiosrc ! ladspa-gate-1410-so-gate threshold=20.0 decay=2.0 hold=2.0 attack=0.01 ! audioconvert ! audioresample ! pocketsphinx name=asr ! fakesink')
+        self.pipeline = Gst.parse_launch('autoaudiosrc ! ladspa-gate-1410-so-gate threshold=-23.0 decay=2.0 hold=2.0 attack=0.01 ! audioconvert ! audioresample ! pocketsphinx name=asr ! fakesink')
         bus = self.pipeline.get_bus()
         bus.add_signal_watch()
         bus.connect('message::element', self.element_message)
@@ -389,11 +389,11 @@ If new commands don't work click the learn button to train them.")
         return True
         
     def text_inserted(self, textbuf, iter, text, length):
-        # start editing for 5 seconds
+        # start editing for 2 seconds
         if not self.editing:
             self.editing = True
             self.ttext = ""
-            GObject.timeout_add_seconds(5, self.time_up, textbuf)
+            GObject.timeout_add_seconds(2, self.time_up, textbuf)
         self.ttext += text
         return True
 
