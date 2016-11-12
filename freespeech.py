@@ -78,6 +78,8 @@ class freespeech(object):
         if not os.access(dic, os.R_OK):
             shutil.copy('custom.dic', dic)
         # initialize components
+        self.editing = False
+        self.ttext = ""
         self.init_gui()
         self.init_errmsg()
         self.init_prefs()
@@ -93,14 +95,19 @@ class freespeech(object):
             os.chdir(os.path.dirname(sys.argv[0]))     
         #self.icon = Gdk.pixbuf_new_from_file(appname+".png")
         self.window.connect("delete-event", Gtk.main_quit)
-        self.window.set_default_size(400, 200)
-        self.window.set_border_width(10)
+        self.window.set_default_size(200, 200)
+        #self.window.set_border_width(10)
         #self.window.set_icon(self.icon)
         self.window.set_title(appname)
         vbox = Gtk.VBox()
-        hbox = Gtk.HBox(homogeneous=True)
+        hbox = Gtk.HBox(homogeneous=False)
         self.text = Gtk.TextView()
+        self.accel = Gtk.AccelGroup()
+        accel_key, accel_mods = Gtk.accelerator_parse("<Ctrl>z")
+        self.accel.connect(accel_key, accel_mods, 0, self.doscratch)
+        self.window.add_accel_group(self.accel)
         self.textbuf = self.text.get_buffer()
+        self.textbuf.connect("insert-text", self.text_inserted)
         self.text.set_wrap_mode(Gtk.WrapMode.WORD)
         self.scroller = Gtk.ScrolledWindow(None, None)
         self.scroller.set_policy(Gtk.ScrollablePolicy.NATURAL, Gtk.ScrollablePolicy.NATURAL)
@@ -270,7 +277,7 @@ If new commands don't work click the learn button to train them.")
         
     def init_gst(self):
         """Initialize the speech components"""
-        self.pipeline = Gst.parse_launch('autoaudiosrc ! ladspa-gate-1410-so-gate threshold=200.0 decay=2.0 hold=2.0 attack=0.01 ! audioconvert ! audioresample ! pocketsphinx name=asr ! fakesink')
+        self.pipeline = Gst.parse_launch('autoaudiosrc ! ladspa-gate-1410-so-gate threshold=20.0 decay=2.0 hold=2.0 attack=0.01 ! audioconvert ! audioresample ! pocketsphinx name=asr ! fakesink')
         bus = self.pipeline.get_bus()
         bus.add_signal_watch()
         bus.connect('message::element', self.element_message)
@@ -371,6 +378,23 @@ If new commands don't work click the learn button to train them.")
     def toggle_keys(self):
         """ echo keystrokes to the desktop """
         self.button1.set_active(True - self.button1.get_active())
+        return True
+    
+    def time_up(self, textbuf):
+        """ add changed textbuf to undo buffer """
+        if self.ttext and self.editing:
+            self.editing = False
+            self.undo.append(self.ttext)
+            self.ttext = ""
+        return True
+        
+    def text_inserted(self, textbuf, iter, text, length):
+        # start editing for 5 seconds
+        if not self.editing:
+            self.editing = True
+            self.ttext = ""
+            GObject.timeout_add_seconds(5, self.time_up, textbuf)
+        self.ttext += text
         return True
 
     def collapse_punctuation(self, txt, starting):
@@ -511,7 +535,7 @@ If new commands don't work click the learn button to train them.")
         self.bounds[1].starts_line())
         # handle commands
         if not self.do_command(hyp):
-            self.undo.append(hyp)
+            #self.undo.append(hyp)
             self.textbuf.delete_selection(True, self.text.get_editable())
             self.textbuf.insert_at_cursor(hyp)
             # send keystrokes to the desktop?
@@ -602,7 +626,9 @@ If new commands don't work click the learn button to train them.")
         """ place cursor at end """
         self.textbuf.place_cursor(self.bounds[1])
         return True # command completed successfully!
-    def scratch_that(self,argument=None):
+    def doscratch(self, a, b, c, d):
+        return self.scratch_that()
+    def scratch_that(self):
         """ erase recent text """
         if self.undo:
             scratch = self.undo.pop(-1)
@@ -653,6 +679,7 @@ If new commands don't work click the learn button to train them.")
 
     def do_command(self, hyp):
         """decode spoken commands"""
+        gtk = Gtk
         h = hyp.strip()
         h = h.lower()
         # editable commands
