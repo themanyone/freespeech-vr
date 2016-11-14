@@ -302,7 +302,8 @@ If new commands don't work click the learn button to train them.")
         
         #fixme: write an acoustic model trainer
         
-        self.pipeline.set_state(Gst.State.PLAYING)
+        if not self.button3.get_active():
+            self.pipeline.set_state(Gst.State.PLAYING)
 
     def learn_new_words(self, button):
         """ Learn new words, jargon, or other language
@@ -350,12 +351,8 @@ If new commands don't work click the learn button to train them.")
             ' -o ' + dmp + ' -ofmt dmp', shell=True):
             self.err('Trouble writing ' + dmp)
         
-        # fixme: reload the dmp
-        self.pipeline.set_state(Gst.State.PAUSED)
-        #asr = self.pipeline.get_by_name('asr')
-        #asr.set_property('lm', dmp)
-        if not self.button3.get_active():
-            self.pipeline.set_state(Gst.State.PLAYING)
+        self.pipeline.set_state(Gst.State.NULL)
+        self.init_gst()
         
     def mute(self, button):
         """Handle button presses."""
@@ -417,8 +414,8 @@ If new commands don't work click the learn button to train them.")
         txt = txt.replace(" ...ellipsis", " ...")
         # move space before punctuation to after
         txt = re.sub(r" ([^\w\s]+)\s*", r"\1 ", txt)
-        # remove space after opening bracket
-        txt = re.sub(r"([({[]) ", r" \1", txt).strip()
+        # remove space after opening bracket, hyphen
+        txt = re.sub(r"([({\[\-]) ", r"\1", txt).strip()
         # capitalize if necessary
         if (starting or re.match(".*[.?!:]",lastchars)) and len(txt) > 1:
             txt = txt[0].capitalize() + txt[1:]
