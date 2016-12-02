@@ -1,12 +1,12 @@
 ## About
 
-FreeSpeech is a free and open-source (FOSS), cross-platform desktop application front-end for PocketSphinx dictation, voice transcription, and realtime speech recognition. FreeSpeech enables speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine. Get FreeSpeech via git from Github (github.com/themanyone/freespeech-vr).
+FreeSpeech is a free and open-source (FOSS), cross-platform desktop application front-end for PocketSphinx dictation, voice transcription, and realtime speech recognition. FreeSpeech enables speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine. Get FreeSpeech via git from Github (https://github.com/themanyone/freespeech-vr).
 
 In addition to dictation, FreeSpeech now provides voice commands and keyboard emulation, so users can dictate into other apps, remote terminals, and virtual machines.
 
 ## Installation
 
-Windows: Installation might work using ossbuild (code.google.com/p/ossbuild/) for gstreamer. Will update this once we get a windows machine to test it.
+Windows: Installation might work using ossbuild (http://code.google.com/p/ossbuild/) for gstreamer. Will update this once we get a windows machine to test it.
 
 ## Linux/Cygwin
 
@@ -14,14 +14,14 @@ Windows: Installation might work using ossbuild (code.google.com/p/ossbuild/) fo
 
 The following packages may be installed through the package manager.
 
-* Python 2.7 (www.python.org/)
-* pygtk2 (www.pygtk.org/)
-* python-xlib (python-xlib.sourceforge.net/)
-* python-simplejson (undefined.org/python/#simplejson)
-* gstreamer-python gstreamer, including (gstreamer.freedesktop.org/)
-* pocketsphinx and sphinxbase (cmusphinx.sourceforge.net/)
-* CMU-Cambridge Statistical Language Modeling Toolkit v2 (www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz)
-* documentation (www.speech.cs.cmu.edu/SLM/toolkit_documentation.html)
+* [Python 2.7] (http://www.python.org/)
+* [pygtk2] (http://www.pygtk.org/)
+* [python-xlib] (http://python-xlib.sourceforge.net/)
+* [python-simplejson] (http://undefined.org/python/#simplejson)
+* [gstreamer-python gstreamer] (http://gstreamer.freedesktop.org/)
+* [pocketsphinx and sphinxbase] (http://cmusphinx.sourceforge.net/)
+* [CMU-Cambridge Statistical Language Modeling Toolkit v2] (http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz)
+* [documentation] (http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html)
 
 ## Fedora
 
@@ -76,7 +76,12 @@ pocketsphinx_continuous
 
 Say something. (It should print lots of spam while doing some (very basic) speech recognition).
 
-Download CMU-Cam_Toolkit_v2 (www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz) and unpack it. Read the instructions in the README and edit the Makefile. To summarize, most PC hardware is what they call "little-endian" and it requires this change: Edit `CMU-Cam_Toolkit_v2/src/Makefile` and remove the # sign in front of this line:
+[Download CMU-Cam_Toolkit_v2] 
+(http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz) and unpack 
+it. Read the instructions in the README and edit the Makefile. To 
+summarize, most PC hardware is what they call "little-endian" and it 
+requires this change: Edit `CMU-Cam_Toolkit_v2/src/Makefile` and remove 
+the # sign in front of this line:
 
 ```bash
 BYTESWAP_FLAG	= -DSLM_SWAP_BYTES
@@ -159,7 +164,7 @@ Trouble writing /home/*/.config/FreeSpeech/freespeech.idngram
 Trouble writing...
 ```
 
-It usually means nobody installed CMU-Cambridge Statistical Language Modeling Toolkit v2 (www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz) or there is a problem with the tools themselves. Edit the Makefile and follow the instructions therein before running `make`. Manually copy the files in the bin directory somewhere in your `$PATH` like `/usr/local/bin` on Linux or `C:\windows\system32` on Windows.
+It usually means nobody installed [CMU-Cambridge Statistical Language Modeling Toolkit v2] (http://www.speech.cs.cmu.edu/SLM/CMU-Cam_Toolkit_v2.tar.gz) or there is a problem with the tools themselves. Edit the Makefile and follow the instructions therein before running `make`. Manually copy the files in the bin directory somewhere in your `$PATH` like `/usr/local/bin` on Linux or `C:\windows\system32` on Windows.
 
 For some reason, the toolkit expects to be able to write to /usr/tmp. The `tmpfile()` function uses the P_tmpdir defined in `<stdio.h>`, but the Makefile installs everything under `/usr`. The quick-fix is to provide /usr/tmp for machines that don't have it.
 
@@ -169,7 +174,7 @@ sudo ln -s /tmp /usr/tmp
 
 ## Improving accuracy
 
-The biggest improvements in accuracy have been achieved by adjusting the microphone position. Open up the volume control app. On systems that use pulseaudio (Fedora) volume level and microphone selection may be found using pavucontrol. Try making a recording with Audacity (audacity.sourceforge.net) and checking the noise levels to make sure it sounds like intelligible speech when played back. Make sure freespeech is using the same mic levels in the volume controls recording tab.
+The biggest improvements in accuracy have been achieved by adjusting the microphone position. Open up the volume control app. On systems that use pulseaudio (Fedora) volume level and microphone selection may be found using pavucontrol. Try making a recording with Audacity (http://audacity.sourceforge.net) and checking the noise levels to make sure it sounds like intelligible speech when played back. Make sure freespeech is using the same mic levels in the volume controls recording tab.
 
 Adapt PocketSphinx to a particular voice or accent for better accuracy.
 See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
@@ -189,7 +194,7 @@ Now train the new grammar, by using the capatalized form in a few sentences and 
 
 Don't worry if PocketSphinx learns bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops poor speech habits. Changes will apply next time anybody presses the "Learn" button.
 
-The language model may be further tweaked and improved (www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm).
+The language model may be further [tweaked and improved] (http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm).
 
 ## Dictionary
 
