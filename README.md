@@ -2,15 +2,20 @@
 
 FreeSpeech is a free and open-source (FOSS), cross-platform desktop application front-end for PocketSphinx dictation, voice transcription, and realtime speech recognition. FreeSpeech enables speaker-independent voice recognition with dynamic language learning capability using the PocketSphinx speech recognition engine. Get FreeSpeech via git from Github (https://github.com/themanyone/freespeech-vr).
 
-In addition to dictation, FreeSpeech now provides voice commands and keyboard emulation, so users can dictate into other apps, remote terminals, and virtual machines.
+Author: Henry Kroll III http://thenerdshow.com
+
+In addition to dictation, FreeSpeech provides voice commands and keyboard 
+emulation, so users can dictate into other apps, remote terminals, and virtual machines.
 
 ## Installation
 
-Windows: Installation might work using ossbuild (http://code.google.com/p/ossbuild/) for gstreamer. Will update this once we get a windows machine to test it.
+Windows: Installation should work using ossbuild (http://code.google.com/p/ossbuild/) for 
+gstreamer. We will update this once we get a windows machine to test it.
 
 ## Linux/Cygwin
 
-**Update:** Python3 branch is available. Some packages listed here may need updated versions if planning to check out new python3 branch. Use own judgement.
+**Update:** A Python3 branch is available. Some packages listed here may need updated 
+versions if planning to check out new python3 branch.
 
 The following packages may be installed through the package manager.
 
@@ -28,13 +33,19 @@ The following packages may be installed through the package manager.
 ```bash
 su -c 'yum groupinstall "C Development Tools and Libraries"'
 su -c 'yum -y install gstreamer-python sphinxbase-libs \
+gstreamer-0.10 gstreamer-plugins-good-0.10 gstreamer-plugins-base-0.10 \
 pocketsphinx-libs pocketsphinx sphinxbase pocketsphinx-plugin \
 python-simplejson python-xlib pygtk2 git'
 ```
 
 ## Ubuntu
 
-Open a terminal and install the pocketsphinx repository: Todo: PPA is outdated. Search for a new ppa containing cmusphinx.
+Searches for a cmusphinx ppa for recent versions of Ubuntu haven't returned good 
+results, but [this 
+site](http://jrmeyer.github.io/asr/2016/01/09/Installing-CMU-Sphinx-on-Ubuntu.html) 
+contains recent walkthroughs to help build from source.
+
+For older versions of Ubuntu, open a terminal and install the pocketsphinx repository: 
 
 ```bash
 sudo add-apt-repository ppa:dhuggins/cmusphinx
@@ -48,11 +59,14 @@ Get updates and install dependencies.
 sudo apt-get update
 
 sudo apt-get python-xlib python-simplejson python-gtk2 python-gst0.1 \
-gstreamer0.10-pocketsphinx sphinx-common python-sphinxbase \
-python-pocketsphinx sphinxbase-utils git
+gstreamer0.10-pocketsphinx gstreamer0.10-plugins-base gstreamer0.10-plugins-good \
+sphinx-common python-sphinxbase python-pocketsphinx sphinxbase-utils git \
+jackd libjack0 libjack-dev
 ```
 
-If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
+If installation balks and says it can't find /media/cdrom the location may be different. The 
+trick is to use the mount command from a terminal to discover where the CD is mounted and 
+make it a link to /media/cdrom
 
 ```bash
 sudo ln -s (location, change this) /media/cdrom
