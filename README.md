@@ -227,7 +227,8 @@ with several sentences, edit the dictionary: "custom.dic"
 Sometimes the dictionary pronunciation can be little bit off. Notice that some other words have alternate pronunciations denoted with (2). Go ahead and change the pronunciation or add an alternate and see if it doesn't improve immediately the next time the program starts.
 
 Our dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation, such 
-".full-stop" and "?question-mark"). See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
+".full-stop" and "?question-mark"). See "custom.dic" for the list of punctuation and 
+their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
 
 More about the CMU Pronouncing Dictionary
 http://www.speech.cs.cmu.edu/cgi-bin/cmudict
