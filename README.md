@@ -169,7 +169,10 @@ Voice commands are included. A list of commands pops up at start-up or say "show
 
 ## Troubleshooting
 
-Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window and make sure that it works. If not, check your pocketsphinx installation. We regret that we are not affiliated with pocketsphinx and do not have the resources to support it.
+Prior to blaming freespeech, test audio recording and pocksphinx. Run 
+`pocketsphinx_continuous` from the command line in a terminal window and make sure that it 
+recognizes speech. If not, check the pocketsphinx installation. We regret that we are not 
+affiliated with pocketsphinx and do not have the resources to support it.
 
 In case of messages like this:
 
@@ -197,14 +200,20 @@ See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn spoken grammar. Don't be surprised if it does not work very well at first. Use the keyboard to manually edit the text in the box until it says what was intended to say. Then hit the "Learn" button. It will try to do better at understanding next time! One may also train personalized grammar by pasting in gobs of text from previously authored websites and documents.
 
-It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
+It seems that the PocketSphinx folks were trying to add support for capitalized words. If 
+there is a word in the dictionary which could also be capitalized as part of a proper name, 
+as in "New" from "New 
+Mexico" it is enough to insert a duplicate, capitalized entry into the dictionary after the 
+original like so:
 
 ```
     new  N UW
     New  N UW
 ```
 
-Now train the new grammar, by using the capatalized form in a few sentences and pressing the Learn button. PocketSphinx will henceforth decide the capitalization depending on the context in which it appears. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary, using the capatalization as it is found in the corpus, not the dictionary.
+After this, it is possible to retrain the system by using the capatalized form in a few 
+sentences and pressing the Learn button. 
+PocketSphinx will henceforth decide the capitalization depending on the context in which it appears. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing _both_ capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make make PocketSphinx ignore case in the dictionary, using the capatalization as it is found in the corpus, not the dictionary.
 
 Don't worry if PocketSphinx learns bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops poor speech habits. Changes will apply next time anybody presses the "Learn" button.
 
@@ -212,13 +221,15 @@ The language model may be further [tweaked and improved] (http://www.speech.cs.c
 
 ## Dictionary
 
-If there is a word that it stubbornly refuses to recognize, even after teaching it with several sentences, edit the dictionary: "freespeech.dic"
+If there is a word that FreeSpeech stubbornly refuses to recognize, even after teaching it 
+with several sentences, edit the dictionary: "custom.dic"
 
 Sometimes the dictionary pronunciation can be little bit off. Notice that some other words have alternate pronunciations denoted with (2). Go ahead and change the pronunciation or add an alternate and see if it doesn't improve immediately the next time the program starts.
 
-This dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation, such as ".full-stop" and "?question-mark"). See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
+Our dictionary is based on Pocketsphinx's cmu07a.dic because it contains punctuation, such 
+".full-stop" and "?question-mark"). See "freespeech.dic" for the list of punctuation and their pronunciations. Adding new words to the dictionary may be done manually, along with their phonetic representation, but we are working on incorporating a word trainer.
 
-About the CMU Pronouncing Dictionary
+More about the CMU Pronouncing Dictionary
 http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 
 ## Security and privacy
