@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # FreeSpeech
-# Copyright (C) 2016 Henry Kroll III, http://www.TheNerdShow.com
+# Copyright (C) 2016-2023 Henry Kroll III, http://www.TheNerdShow.com
 # Continuous realtime speech recognition and control
 
 # This program is free software: you can redistribute it and/or modify

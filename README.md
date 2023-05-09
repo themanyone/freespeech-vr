@@ -56,9 +56,7 @@ sphinx-common python3-sphinxbase \ python3-pocketsphinx sphinxbase-utils git \
 jackd libjack0 libjack-dev swh-plugins
 ```
 
-If installation balks and says it can't find /media/cdrom the location may be different. 
-The trick is to use the mount command from a terminal to discover where the cd is 
-mounted and make it a link to /media/cdrom
+If installation balks and says it can't find /media/cdrom the location may be different. The trick is to use the mount command from a terminal to discover where the cd is mounted and make it a link to /media/cdrom
 
 ```bash
 sudo ln -s (location, change this) /media/cdrom
@@ -66,9 +64,7 @@ sudo ln -s (location, change this) /media/cdrom
 
 ## Testing
 
-Before we begin, load pavucontrol, Audacity (or some other audio recording program that 
-has a recording monitor) and check sound levels. Users should be able to record and play 
-back audio at good volume, but not so high that it starts clipping.
+Before we begin, load pavucontrol, Audacity (or some other audio recording program that has a recording monitor) and check sound levels. Users should be able to record and play back audio at good volume, but not so high that it starts clipping.
 
 ```bash
 arecord temp.wav -r 16000
@@ -151,10 +147,7 @@ Voice commands are included. A list of commands pops up at start-up or say "show
 
 ## Troubleshooting
 
-Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run 
-`pocketsphinx_continuous` from the command line in a terminal window to test it. If it 
-has problems, check your pocketsphinx installation. We regret that we are not affiliated 
-with CMU Sphinx and do not have the resources to support it.
+Prior to blaming freespeech, make sure audio recording and pocksphinx works. Run `pocketsphinx_continuous` from the command line in a terminal window to test it. If it has problems, check your pocketsphinx installation. We regret that we are not affiliated with CMU Sphinx and do not have the resources to support it.
 
 In case of messages like this:
 
@@ -175,40 +168,22 @@ sudo ln -s /tmp /usr/tmp
 
 The biggest improvements in accuracy have been achieved by adjusting the microphone position. Open up the volume control app. On systems that use pulseaudio (Fedora) volume level and microphone selection may be found using pavucontrol. Try making a recording with [Audacity](http://audacity.sourceforge.net) and checking the noise levels to make sure it sounds like intelligible speech when played back. Make sure freespeech is using the same mic levels in the volume controls recording tab.
 
-Adapt PocketSphinx to a particular voice or accent for better accuracy.
-See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
+Adapt PocketSphinx to a particular voice or accent for better accuracy. See http://cmusphinx.sourceforge.net/wiki/tutorialadapt
 
 ## Language corpus
 
-The language corpus that ships with this download, "freespeech.ref.txt" is likely to be 
-very limited. Our excuse is that the small size saves memory while providing room to 
-learn spoken grammar. Don't be surprised if it does not work very well at first. Use the 
-keyboard to manually edit the text in the box until it says what was intended to say. 
-Then hit the "Learn" button. It will try to do better at understanding next time! One 
-may also train personalized grammar by pasting in gobs of text from previously-authored 
-websites and documents.
+The language corpus that ships with this download, "freespeech.ref.txt" is likely to be very limited. Our excuse is that the small size saves memory while providing room to learn spoken grammar. Don't be surprised if it does not work very well at first. Use the keyboard to manually edit the text in the box until it says what was intended to say. Then hit the "Learn" button. It will try to do better at understanding next time! One may also train personalized grammar by pasting in gobs of text from previously-authored websites and documents.
 
-It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like 
-"new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized 
-copy like so:
+It seems that the PocketSphinx folks were trying to add support for capitalized words. If there is a word like "new" in the dictionary which could also be capitalized, as in "New Mexico" it is enough to make a capitalized copy like so:
 
 ```
 *new  N UW
 *New  N UW
 ```
 
-Now train the new grammar, by using the capatalized form in a few sentences and pressing the Learn button. 
-PocketSphinx will henceforth decide the capitalization depending on the context in which it appears. We tested 
-it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not 
-capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary 
-containing both capitalized and un-capitalized words. That would save us the effort of going through and 
-capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution 
-is probably to propose a patch to make PocketSphinx ignore case in the dictionary, using capitalization as it is 
-found in the corpus, not the dictionary.
+Now train the new grammar, by using the capatalized form in a few sentences and pressing the Learn button. PocketSphinx will henceforth decide the capitalization depending on the context in which it appears. We tested it and it works! It capitalizes words like "New Mexico" and "The United States of America" but does not capitalize "altered states" nor "new pants". This is a wild idea, but maybe we could make a dictionary containing both capitalized and un-capitalized words. That would save us the effort of going through and capitalizing all the proper names. The only question is would the resulting dictionary be too big? The solution is probably to propose a patch to make PocketSphinx ignore case in the dictionary, using capitalization as it is found in the corpus, not the dictionary.
 
-Don't worry if PocketSphinx learns bad grammar. It's not strictly necessary, but our corpus file, 
-"lm/freespeech.ref.txt" may be manually corrected if it develops poor speech habits. Changes will apply next 
-time anybody presses the "Learn" button.
+Don't worry if PocketSphinx learns bad grammar. It's not strictly necessary, but our corpus file, "lm/freespeech.ref.txt" may be manually corrected if it develops poor speech habits. Changes will apply next time anybody presses the "Learn" button.
 
 The language model may be further [tweaked and 
 improved](http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html#evallm).
