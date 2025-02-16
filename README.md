@@ -1,6 +1,8 @@
 # FreeSpeech-vr
 
-*Experimental version for Python3, Gtk3, and Gstreamer1.0.*
+*Experimental version for Python3, Gtk3, and Gstreamer1.0.* This project has largely been replaced by 
+[whisper_dictation](https://github.com/themanyone/whisper_dictation), which retains the ability to type text into graphical applications,
+but does not technically require a graphical OS (yay for Linux from scratch). And it has better voice recognition.
 
 FreeSpeech is a free and open-source (FOSS), cross-platform Python front-end for [Carnegie Mellon University's excellent open source CMU Sphinx speech recognition toolkit](http://cmusphinx.sourceforge.net/).
 
